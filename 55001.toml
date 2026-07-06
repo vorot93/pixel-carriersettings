@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "55001"
+
+[[settings.apns.apn]]
+name = "FSMTC"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

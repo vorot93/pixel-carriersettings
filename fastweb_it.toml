@@ -1,0 +1,89 @@
+[[carrier_id]]
+mcc_mnc = "22208"
+
+[[carrier_id]]
+mcc_mnc = "22299"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "FASTWEB"
+
+[[carrier_id]]
+mcc_mnc = "22801"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "FASTWEB"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "Fastweb"
+value = "apn.fastweb.it"
+type = ["default", "mms", "supl"]
+mmsc = "http://mms.fastweb.it/mms/wapenc"
+mmsc_proxy = "85.18.189.217"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["xcap"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_wfc_mode = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.mnc008.mcc222.pub.3gppnetwork.org"
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc008.mcc222.pub.3gppnetwork.org"
+ut_as_server_port = 443
+ut_server_based_services = [1, 2, 3, 4, 5, 6, 7, 12, 17, 18, 19, 20, 21, 13, 14, 15, 16, 0, 8, 11, 9]
+ut_terminal_based_services = [10]
+ut_transport_type = 3
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14, 2]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.fastweb.it"
+
+[settings.config.qns]
+support_wfc_during_airplane_mode = false
+
+[settings.field8]
+seconds = 1739962093

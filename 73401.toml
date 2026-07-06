@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "73401"
+
+[[settings.apns.apn]]
+name = "Digitel 412"
+value = "internet.digitel.ve"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Venezuela:Digitel:MODEM:1"
+value = "gprsweb.digitel.ve"
+type = ["dun"]
+authtype = 1
+user_editable = false
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "expresate.digitel.ve"
+type = ["mms"]
+mmsc = "http://mms.412.com.ve/servlets/mms"
+mmsc_proxy = "10.99.0.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]

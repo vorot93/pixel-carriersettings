@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "310000"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "COMMNET"
+
+[[settings.apns.apn]]
+name = "Commnet"
+value = "CdmaNai"
+type = ["mms"]
+bearer_bitmask = "6"
+mmsc = "http://mmsc.cccomm.csky.us"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

@@ -1,0 +1,30 @@
+[[carrier_id]]
+mcc_mnc = "314720"
+
+[[carrier_id]]
+mcc_mnc = "334170"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet"
+type = ["default", "dun", "xcap", "fota"]
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+enabledMMS = false
+
+[settings.field8]
+seconds = 1770819167

@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "74404"
+
+[[settings.apns.apn]]
+name = "TIGO PY"
+value = "internet.tigo.py"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MMS Tigo"
+value = "mms.tigo.py"
+type = ["mms"]
+user = "tigo"
+password = "tigo"
+authtype = 1
+mmsc = "http://mms"
+mmsc_proxy = "10.16.17.12"
+mmsc_proxy_port = "8888"
+
+[settings.config]

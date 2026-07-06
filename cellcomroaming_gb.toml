@@ -1,0 +1,176 @@
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096036200"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2345070960212"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2345070960213"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2345070960214"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2345070960215"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2345070960216"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2345070960217"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2345070960218"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2345070960219"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2345070960361"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096022"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096023"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096024"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096025"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096026"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096027"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096028"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096029"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096030"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096031"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096032"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096033"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096034"
+
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "234507096035"
+
+[[settings.apns.apn]]
+name = "Cellcom"
+value = "international.cellcom.com"
+type = ["default", "mms"]
+mmsc = "http://mms.cellcom.com/cellcom/mms.php"
+
+[settings.config]
+cdma_3waycall_flash_delay = 0

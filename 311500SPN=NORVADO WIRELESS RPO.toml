@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "311500"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "NORVADO WIRELESS RPO"
+
+[[settings.apns.apn]]
+name = "Norvado Other networks"
+value = "wap"
+type = ["default", "mms"]
+mmsc = "http://mmsc.ctc.csky.us:6672/"
+mmsc_proxy = "209.4.229.46"
+mmsc_proxy_port = "9201"
+
+[settings.config]

@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "25502"
+
+[[settings.apns.apn]]
+name = "Beeline-internet"
+value = "internet.beeline.ua"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Beeline MMS"
+value = "mms.beeline.ua"
+type = ["mms"]
+mmsc = "http://mms/"
+mmsc_proxy = "172.29.18.192"
+mmsc_proxy_port = "8080"
+
+[settings.config]

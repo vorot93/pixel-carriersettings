@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "23430"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "B2"
+
+[[settings.apns.apn]]
+name = "BT One Phone Internet"
+value = "internet.btonephone.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "BT One Phone MMS"
+value = "mms.btonephone.com"
+type = ["mms"]
+mmsc = "http://MMSC/"
+mmsc_proxy = "proxy.btonephone.com"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_enhanced_4g_lte = false
+editable_wfc_mode = false
+hide_ims_apn = true
+non_roaming_operator = ["23430", "23431", "23432", "23433", "23434", "23486"]
+prefer_2g = false
+show_4g_for_lte_data_icon = true
+wfc_operator_error_codes = ["REG09|0"]
+wfc_spn_format_idx = 1

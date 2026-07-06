@@ -1,0 +1,51 @@
+[[carrier_id]]
+mcc_mnc = "310032"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "ITEWIRE"
+
+[[settings.apns.apn]]
+name = "itewire"
+value = "CdmaNai"
+type = ["mms"]
+bearer_bitmask = "6"
+mmsc = ""
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Itewire IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13|14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Itewire FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "13|14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Itewire"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "13|14"
+mmsc = ""
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Itewire IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13|14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

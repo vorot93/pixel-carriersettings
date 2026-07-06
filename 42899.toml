@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "42899"
+
+[[settings.apns.apn]]
+name = "MobiCom"
+value = "internet"
+type = ["default", "supl"]
+
+[settings.config]

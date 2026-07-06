@@ -1,0 +1,36 @@
+[[carrier_id]]
+mcc_mnc = "27201"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0A"
+
+[[carrier_id]]
+mcc_mnc = "27201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "27201110"
+
+[[carrier_id]]
+mcc_mnc = "27201"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "An Post Mobile"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "An Post Mobile"
+value = "isp.postfone.ie"
+type = ["default", "supl", "mms"]
+mmsc = "http://mms.postfone.ie"
+mmsc_proxy = "10.192.15.133"
+mmsc_proxy_port = "80"
+
+[settings.config]
+
+[settings.field8]
+seconds = 1769617073

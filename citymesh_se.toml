@@ -1,0 +1,70 @@
+[[carrier_id]]
+mcc_mnc = "24007"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0002B"
+
+[[carrier_id]]
+mcc_mnc = "24007"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2400756111"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Tele2 Internet"
+value = "4g.tele2.se"
+type = ["default", "xcap", "ia"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Tele2 Internet 3G"
+value = "internet.tele2.se"
+type = ["supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Hotspot"
+value = "hotspot.citymesh.com"
+type = ["dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+
+[settings.config.imsvoice]
+oip_source_from_header = true
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

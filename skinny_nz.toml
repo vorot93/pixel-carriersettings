@@ -1,0 +1,82 @@
+[[carrier_id]]
+mcc_mnc = "53005"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Skinny"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Data"
+value = "wapaccess.co.nz"
+type = ["default", "supl", "mms", "dun"]
+mmsc = "http://lsmmsc.xtra.co.nz"
+mmsc_proxy = "210.55.11.73"
+mmsc_proxy_port = "80"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "SOS"
+value = "sos"
+type = ["emergency"]
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap"
+type = ["xcap"]
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = false
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "+64204864236"
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+show_4g_for_lte_data_icon = true
+supportMmsContentDisposition = false
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc005.mcc530.pub.3gppnetwork.spark.co.nz"
+bsf_server_port = 8444
+bsf_transport_type = 3
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc005.mcc530.pub.3gppnetwork.spark.co.nz"
+ut_as_server_port = 8443
+ut_iptype_home = 0
+ut_iptype_roaming = 0
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+ut_transport_type = 3
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1724979979

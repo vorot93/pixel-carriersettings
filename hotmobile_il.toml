@@ -1,0 +1,79 @@
+[[carrier_id]]
+mcc_mnc = "20404"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "HOT MOBILE"
+
+[[carrier_id]]
+mcc_mnc = "42507"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "HOT mobile PC"
+value = "pc.hotm"
+type = ["dun"]
+user_visible = false
+
+[[settings.apns.apn]]
+name = "HOT mobile Internet"
+value = "net.hotm"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "HOT mobile MMS"
+value = "mms.hotm"
+type = ["mms"]
+mmsc = "http://mms.hotmobile.co.il"
+mmsc_proxy = "80.246.131.99"
+mmsc_proxy_port = "80"
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+non_roaming_operator = ["42503"]
+sim_country_iso_override = "il"
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_as_server_port = 8090
+ut_requires_ims_registration = true
+xcap_over_ut_supported_rats = [3, 6, 5]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+
+[settings.field8]
+seconds = 1756276532

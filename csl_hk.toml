@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "45400"
+
+[[carrier_id]]
+mcc_mnc = "45402"
+
+[[carrier_id]]
+mcc_mnc = "45418"
+
+[[settings.apns.apn]]
+name = "1O1O"
+value = "mobile"
+type = ["default", "mms", "supl"]
+authtype = 3
+mmsc = "http://192.168.58.171:8002"
+mmsc_proxy = "192.168.59.51"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "SUN Mobile"
+value = "SUNMobile"
+type = ["default", "mms", "supl"]
+authtype = 3
+mmsc = "http://192.168.58.171:8002"
+mmsc_proxy = "192.168.59.61"
+mmsc_proxy_port = "8080"
+
+[settings.config]

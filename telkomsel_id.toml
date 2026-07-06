@@ -1,0 +1,46 @@
+[[carrier_id]]
+mcc_mnc = "51010"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "TSEL-WAP"
+value = "telkomsel"
+type = ["default", "supl"]
+proxy = "10.1.89.130"
+port = "8000"
+user = "wap"
+password = "wap123"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "TSEL-MMS"
+value = "mms"
+type = ["mms"]
+user = "wap"
+password = "wap123"
+authtype = 1
+mmsc = "http://mms.telkomsel.com"
+mmsc_proxy = "10.1.89.150"
+mmsc_proxy_port = "8000"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1724979979

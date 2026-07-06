@@ -1,0 +1,52 @@
+[[carrier_id]]
+mcc_mnc = "45412"
+
+[[carrier_id]]
+mcc_mnc = "45413"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "CMHK MMS"
+value = "cmhk"
+type = ["mms"]
+mmsc = "http://mms.hk.chinamobile.com/mms"
+
+[[settings.apns.apn]]
+name = "CMHK Data"
+value = "cmhk"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_mode = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+support_tdscdma_roaming_networks = []
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1748421173

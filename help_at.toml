@@ -1,0 +1,47 @@
+[[carrier_id]]
+mcc_mnc = "23217"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "42"
+
+[[carrier_id]]
+mcc_mnc = "24007"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "42"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "HELP mobile"
+value = "web"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+
+[settings.config.ims]
+request_uri_type = 1
+sip_over_ipsec_enabled = false
+sip_preferred_transport = 0
+
+[settings.field8]
+seconds = 1736946312

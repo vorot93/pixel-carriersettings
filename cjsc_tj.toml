@@ -1,0 +1,36 @@
+[[carrier_id]]
+mcc_mnc = "43604"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Babilon default"
+value = "babilon"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Babilon IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+user_visible = false
+
+[settings.config.imsvoice]
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

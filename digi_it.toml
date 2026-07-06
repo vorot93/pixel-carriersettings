@@ -1,0 +1,29 @@
+[[carrier_id]]
+mcc_mnc = "22236"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Digi"
+value = "digi.mobile"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+
+[settings.field8]
+seconds = 1753863668

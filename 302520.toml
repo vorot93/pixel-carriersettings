@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "302520"
+
+[[settings.apns.apn]]
+name = "Videotron Mobile"
+value = "media.ng"
+type = ["default", "mms", "supl"]
+mmsc = "http://media.videotron.com"
+mmsc_proxy = "10.208.89.17"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 3072000
+maxSubjectLength = 80
+recipientLimit = 20
+smsToMmsTextThreshold = 6

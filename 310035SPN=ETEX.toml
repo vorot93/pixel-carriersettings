@@ -1,0 +1,85 @@
+[[carrier_id]]
+mcc_mnc = "310035"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "ETEX"
+
+[[settings.apns.apn]]
+name = "etex"
+value = "CdmaNai"
+type = ["mms"]
+bearer_bitmask = "6"
+mmsc = "http://mmsi.etex.mobi"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Etex IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Etex IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Etex FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Etex FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Etex"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "13"
+mmsc = "http://mmsi.etex.mobi"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Etex"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "14"
+mmsc = "http://mmsi.etex.mobi"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Etex IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Etex IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

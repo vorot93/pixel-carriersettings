@@ -1,0 +1,83 @@
+[[carrier_id]]
+mcc_mnc = "26803"
+
+[[carrier_id]]
+mcc_mnc = "26897"
+
+[[carrier_id]]
+mcc_mnc = "26898"
+
+[[carrier_id]]
+mcc_mnc = "26899"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "umts"
+type = ["default", "mms", "supl", "dun", "ia"]
+mmsc = "http://mmsc:10021/mmsc"
+mmsc_proxy = "62.169.66.5"
+mmsc_proxy_port = "8799"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "xcap"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_wfc_mode = false
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc003.mcc268.pub.3gppnetwork.org"
+bsf_server_port = 8081
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = [3, 6]
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc003.mcc268.pub.3gppnetwork.org"
+ut_as_server_port = 8080
+ut_requires_ims_registration = true
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 28800
+child_sa_rekey_soft_timer_sec = 28700
+epdg_address_priority = [0, 1]
+epdg_static_address = "epdg.epc.mnc003.mcc268.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 86400
+ike_rekey_soft_timer_sec = 86300
+
+[settings.field8]
+seconds = 1740560798

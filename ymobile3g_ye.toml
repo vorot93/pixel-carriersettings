@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "42103"
+
+[[settings.apns.apn]]
+name = "YemenMobile"
+value = "ymobile"
+type = ["default", "supl"]
+user = "ymobile"
+password = "ymobile"
+authtype = 3
+
+[settings.config]

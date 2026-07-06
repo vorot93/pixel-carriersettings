@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64503"
+
+[[settings.apns.apn]]
+name = "ZAMTEL"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

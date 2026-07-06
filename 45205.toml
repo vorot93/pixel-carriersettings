@@ -1,0 +1,29 @@
+[[carrier_id]]
+mcc_mnc = "45205"
+
+[[settings.apns.apn]]
+name = "Vietnamobile_GPRS3"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Vietnamobile_GPRS1"
+value = "wap"
+type = ["default", "supl"]
+proxy = "10.10.128.44"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Vietnamobile_GPRS2"
+value = "wap"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Vietnamobile_MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://10.10.128.58/servlets/mms"
+mmsc_proxy = "10.10.128.44"
+mmsc_proxy_port = "8080"
+
+[settings.config]

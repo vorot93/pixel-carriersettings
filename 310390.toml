@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "310390"
+
+[[settings.apns.apn]]
+name = "Celloneet MMS"
+value = "mms.celloneet.com"
+type = ["mms"]
+user = "user1@mms.celloneet.com"
+password = "celloneet"
+mmsc = "http://mms.celloneet.com/servlets/mms"
+mmsc_proxy = "63.99.231.135"
+mmsc_proxy_port = "8080"
+
+[settings.config]

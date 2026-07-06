@@ -1,0 +1,40 @@
+[[carrier_id]]
+mcc_mnc = "405915"
+
+[[carrier_id]]
+mcc_mnc = "405916"
+
+[[carrier_id]]
+mcc_mnc = "405918"
+
+[[carrier_id]]
+mcc_mnc = "405919"
+
+[[carrier_id]]
+mcc_mnc = "405920"
+
+[[carrier_id]]
+mcc_mnc = "405921"
+
+[[carrier_id]]
+mcc_mnc = "405922"
+
+[[carrier_id]]
+mcc_mnc = "405923"
+
+[[carrier_id]]
+mcc_mnc = "405924"
+
+[[carrier_id]]
+mcc_mnc = "405930"
+
+[[carrier_id]]
+mcc_mnc = "405931"
+
+[[settings.apns.apn]]
+name = "Cheers"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[settings.config]

@@ -1,0 +1,5 @@
+[[carrier_id]]
+mcc_mnc = "310890"
+
+[settings.config]
+mmsCloseConnection = true

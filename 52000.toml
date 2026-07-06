@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "52000"
+
+[[settings.apns.apn]]
+name = "CAT3G INTERNET"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "CAT3G MMS"
+value = "catmms"
+type = ["mms"]
+mmsc = "http://mms.cat3g.com:8002/"
+mmsc_proxy = "10.4.7.39"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+roaming_operator = ["520"]

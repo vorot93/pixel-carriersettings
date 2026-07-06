@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "712019"
+
+[[carrier_id]]
+mcc_mnc = "712190"
+
+[[settings.apns.apn]]
+name = "Internet Tuyo"
+value = "tm7datos"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS Tuyo"
+value = "tm7mms"
+type = ["mms"]
+mmsc = "http://mmsc.tuyomovil.com:1981"
+mmsc_proxy = "10.186.181.5"
+mmsc_proxy_port = "3128"
+
+[settings.config]

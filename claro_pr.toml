@@ -1,0 +1,73 @@
+[[carrier_id]]
+mcc_mnc = "330110"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Puerto Rico:Claro:LTE"
+value = "lte.claropr.com"
+type = ["default", "mms", "supl"]
+authtype = 1
+mmsc = "http://mmsg.claropr.com:10021/mmsc"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_wfc_mode = false
+enableGroupMms = false
+maxMessageSize = 1048576
+maxSubjectLength = 80
+recipientLimit = 20
+smsToMmsTextThreshold = 6
+
+[settings.config.ims]
+ipv4_sip_mtu_size_cellular = 1300
+ipv6_sip_mtu_size_cellular = 1280
+registration_expiry_timer_sec = 3600
+request_uri_type = 1
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+audio_rtcp_inactivity_timer_millis = 25000
+audio_rtp_inactivity_timer_millis = 30000
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 87000
+child_sa_rekey_soft_timer_sec = 86400
+diffie_hellman_groups = [2]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc110.mcc330.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 87000
+ike_rekey_soft_timer_sec = 86400
+
+[settings.config.qns]
+sos_transport_type = 2
+
+[settings.field8]
+seconds = 1724979979

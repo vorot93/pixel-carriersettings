@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "20815"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F008"
+
+[[carrier_id]]
+mcc_mnc = "34004"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Free Mq"
+value = "free.mq"
+type = ["default", "mms"]
+mmsc = "http://mms.free.mq"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+maxMessageSize = 614400
+show_4g_for_lte_data_icon = true
+
+[settings.field8]
+seconds = 1753205231

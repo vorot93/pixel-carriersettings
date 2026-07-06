@@ -1,0 +1,10 @@
+[[carrier_id]]
+mcc_mnc = "732130"
+
+[[settings.apns.apn]]
+name = "Avantel"
+value = "lte.avantel.com.co"
+type = ["default"]
+authtype = 0
+
+[settings.config]

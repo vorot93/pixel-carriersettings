@@ -1,0 +1,40 @@
+[[carrier_id]]
+mcc_mnc = "21405"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "214050111"
+
+[[carrier_id]]
+mcc_mnc = "21406"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2140613"
+
+[[carrier_id]]
+mcc_mnc = "21416"
+
+[[settings.apns.apn]]
+name = "TeleCable Internet"
+value = "internet.telecable.es"
+type = ["default", "supl"]
+user = "telecable"
+password = "telecable"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "TeleCable MMS"
+value = "mms.telecable.es"
+type = ["mms"]
+user = "telecable"
+password = "telecable"
+authtype = 1
+mmsc = "http://mms.telecable.es/mms/"
+mmsc_proxy = "212.89.0.84"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+non_roaming_operator = ["21401", "21402", "21403", "21404", "21406", "21407", "21408", "21409", "214010", "214011", "214012", "214013", "214014", "214015", "214016", "214017", "214018", "214019", "214020", "214021"]
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]

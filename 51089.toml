@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "51089"
+
+[[settings.apns.apn]]
+name = "3GPRS"
+value = "3gprs"
+type = ["default", "supl"]
+user = "3gprs"
+password = "3gprs"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "3MMS"
+value = "3mms"
+type = ["mms"]
+user = "3mms"
+password = "3mms"
+authtype = 1
+mmsc = "http://mms.three.co.id"
+mmsc_proxy = "10.4.0.10"
+mmsc_proxy_port = "3128"
+
+[settings.config]

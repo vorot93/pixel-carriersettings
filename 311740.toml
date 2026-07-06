@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "311740"
+
+[[settings.apns.apn]]
+name = "TelAlaska Cellular"
+value = "akcell.mobi"
+type = ["default"]
+
+[settings.config]

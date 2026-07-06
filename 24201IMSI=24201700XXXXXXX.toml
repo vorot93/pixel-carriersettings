@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "24201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "24201700"
+
+[[settings.apns.apn]]
+name = "Phonero Internett"
+value = "internet.phonero.no"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Phonero MMS"
+value = "mms.phonero.no"
+type = ["mms"]
+user = "phonero"
+password = "1111"
+authtype = 1
+mmsc = "http://mmsc/"
+mmsc_proxy = "10.10.10.11"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 2097152
+show_4g_for_lte_data_icon = true

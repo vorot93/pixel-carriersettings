@@ -1,0 +1,118 @@
+[[carrier_id]]
+mcc_mnc = "23211"
+
+[settings]
+version = 77000000005
+
+[[settings.apns.apn]]
+name = "data.bob"
+value = "bob.at"
+type = ["default", "supl"]
+user = "data@bob.at"
+password = "ppp"
+authtype = 3
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "data.bob MMS"
+value = "mms.bob.at"
+type = ["mms"]
+user = "data@bob.at"
+password = "ppp"
+authtype = 3
+mmsc = "http://mmsc.bob.at"
+mmsc_proxy = "194.48.124.7"
+mmsc_proxy_port = "8001"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Emergency"
+value = "sos"
+type = ["emergency"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "66477"
+editable_wfc_roaming_mode = true
+ignore_rtt_mode_setting = true
+non_roaming_operator = ["23201"]
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 10
+
+[settings.config.bsf]
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.ims]
+registration_retry_max_timer_millis = 300000
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_registration_timer_millis = 10000
+
+[settings.config.imsrtt]
+text_qos_precondition_supported = false
+
+[settings.config.imsss]
+ut_as_server_port = 443
+ut_transport_type = 3
+xcap_over_ut_supported_rats = [6, 3, 1, 2]
+
+[settings.config.imsvoice]
+conference_factory_uri = "*28@ims.mnc001.mcc232.3gppnetwork.org"
+voice_qos_precondition_supported = false
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 4]
+
+[settings.config.imsvt]
+video_as_bandwidth_kbps = 384
+video_qos_precondition_supported = false
+video_rr_bandwidth_bps = 14400
+video_rs_bandwidth_bps = 4800
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 3000
+child_sa_rekey_soft_timer_sec = 3600
+ike_rekey_hard_timer_in_sec = 1500
+ike_rekey_soft_timer_sec = 1800
+ike_remote_id_type = 11
+
+[settings.field8]
+seconds = 1772636232

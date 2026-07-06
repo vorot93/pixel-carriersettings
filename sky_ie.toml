@@ -1,0 +1,68 @@
+[[carrier_id]]
+mcc_mnc = "27225"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0D"
+
+[[carrier_id]]
+mcc_mnc = "27225"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Sky IE"
+
+[settings]
+version = 77000000006
+
+[[settings.apns.apn]]
+name = "Sky IE Internet"
+value = "mobile.sky"
+type = ["default", "ia", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Sky IE Ut"
+value = "ut.mobile.sky"
+type = ["xcap"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+call_barring_visibility = true
+carrier_default_wfc_ims_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_wfc_mode = false
+enabledMMS = false
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsrtt]
+text_qos_precondition_supported = false
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14, 2]
+
+[settings.field8]
+seconds = 1751443033

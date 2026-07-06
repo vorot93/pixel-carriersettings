@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "311660"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "T-Mobile US"
+value = "fast.t-mobile.com"
+type = ["default"]
+protocol = "ipv4v6"
+mtu = 1440
+
+[settings.config]
+carrier_nr_availabilities = [1, 2]
+cellular_usage_setting = 2
+vonr_enabled = true
+vonr_setting_visibility = false
+
+[settings.config.imsemergency]
+emergency_over_ims_roaming_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_rats = [6, 3, 5]
+
+[settings.field8]
+seconds = 1773841160

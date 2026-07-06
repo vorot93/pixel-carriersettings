@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64902"
+
+[[settings.apns.apn]]
+name = "switch"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

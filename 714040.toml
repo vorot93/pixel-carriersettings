@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "714040"
+
+[[settings.apns.apn]]
+name = "Panama:Digicel:Internet:2"
+value = "web.digicelpanama.com"
+type = ["default"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Panama:Digicel:Mms:2"
+value = "wap.digicelpanama.com"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mmc.digicelpanama.com/servlets/mms"
+mmsc_proxy = "172.27.99.99"
+mmsc_proxy_port = "9201"
+
+[settings.config]

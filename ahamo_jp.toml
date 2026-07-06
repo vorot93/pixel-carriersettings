@@ -1,0 +1,117 @@
+[[carrier_id]]
+mcc_mnc = "44010"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "01FFFF"
+
+[settings]
+version = 77000000005
+
+[[settings.apns.apn]]
+name = "spモード"
+value = "spmode.ne.jp"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "lte_ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+user_editable = false
+
+[[settings.apns.apn]]
+name = "mopera U"
+value = "mopera.net"
+type = ["default", "supl"]
+
+[settings.config]
+_5g_icon_configuration = "connected_mmwave:5G_Plus,connected:5G,connected_rrc_idle:5G,not_restricted_rrc_idle:5G"
+_5g_icon_display_grace_period = "connected_mmwave,connected,31;connected_mmwave,legacy,31;connected,legacy,31;connected_mmwave,not_restricted_rrc_con,31;connected,not_restricted_rrc_con,31;not_restricted_rrc_idle,not_restricted_rrc_con,15"
+_5g_nr_ssrsrp_thresholds = [-128, -118, -108, -98]
+additional_nr_advanced_bands = [77, 78, 79]
+allow_emergency_numbers_in_call_log = true
+allow_hold_call_during_emergency = false
+allow_metered_network_for_cert_download = true
+always_show_emergency_alert_onoff = true
+call_waiting_service_class = 0
+carrier_additional_cbs_channels = ["0xA001-0xA002:type=other, emergency=true", "0xA004-0xA3FF:type=other, emergency=true"]
+carrier_default_2g_protection_enabled = true
+carrier_force_disable_etws_cmas_test = false
+carrier_nr_availabilities = [1, 2]
+carrier_roaming_satellite_default_services = [2, 3]
+carrier_ussd_method = 1
+carrier_volte_available = true
+default_vm_number = "1417"
+display_hd_plus_icon = true
+emergency_call_to_satellite_t911_handover_timeout_millis = 3600000
+emergency_messaging_supported = false
+enabledMMS = false
+hide_enhanced_4g_lte = true
+hide_ims_apn = true
+hide_lte_plus_data_icon = false
+ignore_data_enabled_changed_for_video_calls = true
+ims_reasoninfo_mapping = ["332||510", "510|Call completed elsewhere|1014"]
+imsi_key_availability = 2
+imsi_key_download_url = "https://cert.m-zone.jp/getPublicKeyForAndroid"
+lte_endc_using_user_data_for_rrc_detection = true
+min_udp_port_4500_nat_timeout_sec = 120
+non_roaming_operator = ["44091", "44092", "44093", "44094"]
+nr_advanced_requires_single_cc_above_bandwidth_threshold_bool = true
+nr_advanced_threshold_bandwidth_khz = 100000
+nr_timers_reset_if_non_endc_and_rrc_idle = true
+prefer_3g_visibility = false
+preferred_ike_protocol = 40
+satellite_attach_supported = true
+satellite_data_support_mode = 1
+satellite_ignore_data_roaming_setting = true
+show_4g_for_lte_data_icon = true
+show_blocking_pay_phone_option = true
+support_ims_conference_call = false
+support_ims_conference_event_package = false
+tty_supported = false
+use_call_forwarding_ussd = true
+use_call_waiting_ussd = true
+use_caller_id_ussd = true
+vilte_data_is_metered = false
+volte_replacement_rat = 3
+
+[settings.config.carrier_supported_satellite_services_per_provider]
+44026 = [2, 3]
+
+[settings.config.gps]
+es_extension_sec = "300"
+
+[settings.config.ims]
+request_uri_type = 1
+sip_preferred_transport = 0
+
+[settings.config.imsemergency]
+cross_stack_redial_timer_sec = 35
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+quick_cross_stack_redial_timer_sec = 3
+
+[settings.config.imsss]
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+audio_rtp_inactivity_timer_millis = 12000
+conference_subscribe_type = 0
+session_privacy_type = 2
+session_timer_supported = false
+
+[settings.config.wifi]
+carrier_profiles_version = 1
+network_profiles = ['<?xml version="1.0" encoding="UTF-8"?><WifiNetwork><SSID>0001docomo</SSID><Credential><SIM><EAPType>50</EAPType></SIM></Credential></WifiNetwork>']
+
+[settings.field8]
+seconds = 1773236747

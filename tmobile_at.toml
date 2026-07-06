@@ -1,0 +1,117 @@
+[[carrier_id]]
+mcc_mnc = "23203"
+
+[[carrier_id]]
+mcc_mnc = "23204"
+
+[[carrier_id]]
+mcc_mnc = "23207"
+
+[settings]
+version = 77000000006
+
+[[settings.apns.apn]]
+name = "T-Mobile IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+mtu = 1500
+user_visible = false
+field27 = "1|2|3|8|9|10|13|14|15|18|20"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet.t-mobile.at"
+type = ["default", "supl"]
+user = "T"
+password = "tm"
+authtype = 1
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["mms", "xcap"]
+user = "t-mobile"
+password = "tm"
+authtype = 1
+mmsc = "http://mmsc.t-mobile.at/servlets/mms"
+mmsc_proxy = "10.12.0.20"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+max_conns_time = 120
+user_visible = false
+
+[settings.config]
+carrier_allow_transfer_ims_call = true
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_default_wfc_ims_roaming_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "+436762200"
+display_hd_audio_property = false
+editable_wfc_roaming_mode = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+prefer_3g_visibility = false
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+telephony_data_setup_retry_rules = ["capabilities=eims, retry_interval=1000, maximum_retries=20", "permanent_fail_causes=8|27|28|29|30|32|35|50|51|111|-5|-6|65537|65538|-3|65543|2253|2254, retry_interval=2500", "capabilities=mms|supl|cbs, retry_interval=2000", "capabilities=internet|enterprise|dun|ims|fota, retry_interval=2500|3000|5000|10000|15000|20000|40000|60000|120000|240000|600000|1200000|1800000, maximum_retries=20"]
+wfc_spn_format_idx = 2
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# - #MODEL# - #BUILD#"
+keep_pdn_up_in_no_vops = true
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_registration_timer_millis = 5000
+
+[settings.config.imsss]
+ut_iptype_roaming = 0
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice]
+mo_call_request_timeout_millis = 0
+ringback_timer_millis = 130000
+ringing_timer_millis = 130000
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [97]
+amrwb_payload_type = [96]
+dtmfnb_payload_type = [99]
+dtmfwb_payload_type = [98]
+evs_payload_type = [126]
+
+[settings.config.imsvoice.evs_payload_description.126]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = -1
+
+[settings.config.imsvt]
+video_as_bandwidth_kbps = 384
+video_rr_bandwidth_bps = 14400
+video_rs_bandwidth_bps = 4800
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 3000
+child_sa_rekey_soft_timer_sec = 1500
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc003.mcc232.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 64900
+ike_rekey_soft_timer_sec = 64800
+
+[settings.config.qns]
+support_wfc_recovery = false
+
+[settings.field8]
+seconds = 1765981876

@@ -1,0 +1,13 @@
+[[carrier_id]]
+mcc_mnc = "45505"
+
+[[settings.apns.apn]]
+name = "3 Macau"
+value = "mobile.three.com.mo"
+type = ["default", "mms", "supl"]
+authtype = 1
+mmsc = "http://mms.three.com.mo:10021/mmsc"
+mmsc_proxy = "mms.three.com.mo"
+mmsc_proxy_port = "8080"
+
+[settings.config]

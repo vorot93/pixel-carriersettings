@@ -1,0 +1,45 @@
+[[carrier_id]]
+mcc_mnc = "73002"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Movistar INTERNET"
+value = "wap.tmovil.cl"
+type = ["default", "supl"]
+user = "wap"
+password = "wap"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Movistar MMS"
+value = "mms.tmovil.cl"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms.movistar.cl"
+mmsc_proxy = "172.17.8.10"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Movistar CL IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+enableGroupMms = false
+enabledMMS = false
+groupChatDefaultsToMMS = false
+
+[settings.config.imsvoice]
+conference_factory_uri = "conference@ims.mnc002.mcc730.3gppnetwork.org"
+
+[settings.field8]
+seconds = 1739493502

@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "20412"
+
+[[carrier_id]]
+mcc_mnc = "20418"
+
+[[settings.apns.apn]]
+name = "Telfort Internet"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+default_vm_number = "1233"
+non_roaming_operator = ["20408"]
+show_4g_for_lte_data_icon = true

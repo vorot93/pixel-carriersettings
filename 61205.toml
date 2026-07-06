@@ -1,0 +1,11 @@
+[[carrier_id]]
+mcc_mnc = "61205"
+
+[[settings.apns.apn]]
+name = "MTN Internet CI"
+value = "web.mtn.ci"
+type = ["default"]
+user = "vide"
+password = "vide"
+
+[settings.config]

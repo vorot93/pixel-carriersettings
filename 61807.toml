@@ -1,0 +1,10 @@
+[[carrier_id]]
+mcc_mnc = "61807"
+
+[[settings.apns.apn]]
+name = "Cellcom"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]
+cdma_3waycall_flash_delay = 0

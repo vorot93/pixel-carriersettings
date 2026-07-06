@@ -1,0 +1,52 @@
+[[carrier_id]]
+mcc_mnc = "999480"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "D100000000000000"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Verizon Internet(PN)"
+value = ""
+type = ["default"]
+bearer_bitmask = "1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+protocol = "ipv4v6"
+profile_id = 0
+modem_cognitive = true
+
+[[settings.apns.apn]]
+name = "Verizon Initial Attach(PN)"
+value = ""
+type = ["ia"]
+bearer_bitmask = "1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Verizon"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+authtype = 0
+protocol = "ipv4v6"
+profile_id = 3
+max_conns = 20
+max_conns_time = 300
+modem_cognitive = true
+user_visible = false
+
+[settings.config]
+carrier_nr_availabilities = [2, 1]
+cellular_usage_setting = 2
+
+[settings.config.imsemergency]
+emergency_callback_mode_supported = true
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.field8]
+seconds = 1741781059

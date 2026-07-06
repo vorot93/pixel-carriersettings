@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "23410"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2341040991"
+
+[[carrier_id]]
+mcc_mnc = "52505"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "5250530996"
+
+[[carrier_id]]
+mcc_mnc = "732123"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "7321232010"
+
+[[settings.apns.apn]]
+name = "travelfy"
+value = "travelfy"
+type = ["default", "supl"]
+
+[settings.config]

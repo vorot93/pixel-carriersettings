@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "IENTC"
+
+[[settings.apns.apn]]
+name = "IENTC"
+value = "internet.ientc.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "IENTC"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

@@ -1,0 +1,29 @@
+[[carrier_id]]
+mcc_mnc = "732360"
+
+[[settings.apns.apn]]
+name = "Internet WOM"
+value = "internet.wom.co"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+mtu = 1500
+
+[[settings.apns.apn]]
+name = "WOM Vo4G"
+value = "ims"
+type = ["ims"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+mtu = 1500
+
+[[settings.apns.apn]]
+name = "Ut"
+value = "Ut"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+mtu = 1500
+user_visible = false
+
+[settings.config]

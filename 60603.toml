@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60603"
+
+[[settings.apns.apn]]
+name = "Libya Phone"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

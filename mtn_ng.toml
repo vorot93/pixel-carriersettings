@@ -1,0 +1,43 @@
+[[carrier_id]]
+mcc_mnc = "62130"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "MTN-WEB"
+value = "internet"
+type = ["default", "supl"]
+user = "web"
+password = "web"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MTN ACCESS"
+value = "web.gprs.mtnnigeria.net"
+type = ["default", "supl"]
+user = "web"
+password = "web"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MTN MMS"
+value = "web.gprs.mtnnigeria.net"
+type = ["mms"]
+mmsc = "http://10.199.212.8/servlets/mms"
+mmsc_proxy = "10.199.212.2"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "IMS"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1753863668

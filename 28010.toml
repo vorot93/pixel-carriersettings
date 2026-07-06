@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "28010"
+
+[[settings.apns.apn]]
+name = "MTN MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+mmsc = "http://mms.mtn.com.cy/mmsc"
+mmsc_proxy = "172.24.97.1"
+mmsc_proxy_port = "3130"
+
+[[settings.apns.apn]]
+name = "MTN Wap"
+value = "wap"
+type = ["default", "supl"]
+proxy = "172.24.97.3"
+port = "3130"
+user = "wap"
+password = "wap"
+
+[settings.config]

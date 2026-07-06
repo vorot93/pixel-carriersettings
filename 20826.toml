@@ -1,0 +1,10 @@
+[[carrier_id]]
+mcc_mnc = "20826"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+non_roaming_operator = ["20801", "20810"]
+prefer_2g = true
+show_4g_for_lte_data_icon = true

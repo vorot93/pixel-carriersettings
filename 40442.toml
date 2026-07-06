@@ -1,0 +1,58 @@
+[[carrier_id]]
+mcc_mnc = "40442"
+
+[[settings.apns.apn]]
+name = "Aircel-GPRS-Postpaid"
+value = "aircelgprs.po"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Aircel-GPRS-Prepaid"
+value = "aircelgprs.pr"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Pocket Internet-Postpaid"
+value = "aircelwap.po"
+type = ["default", "supl"]
+proxy = "192.168.35.201"
+port = "8081"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Pocket Internet-Prepaid"
+value = "aircelwap.pr"
+type = ["default", "supl"]
+proxy = "192.168.35.201"
+port = "8081"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Aircel Internet (40442)"
+value = "aircelgprs"
+type = ["default", "supl", "dun", "fota"]
+protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Aircel-MMS-Postpaid"
+value = "aircelmms.po"
+type = ["mms"]
+mmsc = "http://mmsc/mmrelay.app"
+mmsc_proxy = "192.168.35.196"
+mmsc_proxy_port = "8081"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Aircel-MMS-Prepaid"
+value = "aircelmms.pr"
+type = ["mms"]
+mmsc = "http://mmsc/mmrelay.app"
+mmsc_proxy = "192.168.35.196"
+mmsc_proxy_port = "8081"
+protocol = "ipv4v6"
+
+[settings.config]
+roaming_operator = ["404", "405"]

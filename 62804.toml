@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "62804"
+
+[[settings.apns.apn]]
+name = "Azur"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

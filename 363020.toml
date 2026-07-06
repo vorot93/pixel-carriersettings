@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "36302"
+
+[[carrier_id]]
+mcc_mnc = "363020"
+
+[[settings.apns.apn]]
+name = "INTERNET Aruba"
+value = "web.digicelaruba.com"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MMS Digicel"
+value = "wap"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms.digicelgroup.com"
+mmsc_proxy = "172.16.7.12"
+mmsc_proxy_port = "8080"
+
+[settings.config]

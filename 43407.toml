@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "43407"
+
+[[settings.apns.apn]]
+name = "MTS-UZB Internet"
+value = "net.mts.uz"
+type = ["default", "supl"]
+user = "mts"
+password = "mts"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MTS-UZB MMS"
+value = "mms.mts.uz"
+type = ["mms"]
+mmsc = "http://mmsc/was"
+mmsc_proxy = "10.10.0.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "20408"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "RABO MOBIEL"
+
+[[settings.apns.apn]]
+name = "Rabo Mobiel Int."
+value = "rabo"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Rabo Mobiel MMS"
+value = "rabo"
+type = ["mms"]
+mmsc = "http://mp.mobiel.kpn/mmsc"
+mmsc_proxy = "10.10.100.10"
+mmsc_proxy_port = "5080"
+
+[settings.config]

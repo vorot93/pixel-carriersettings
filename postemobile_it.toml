@@ -1,0 +1,42 @@
+[[carrier_id]]
+mcc_mnc = "22233"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "PosteMobile"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "PosteMobile WAP"
+value = "wap.postemobile.it"
+type = ["default", "supl", "fota", "dun"]
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "PosteMobile MMS"
+value = "mms.postemobile.it"
+type = ["mms"]
+mmsc = "http://mms.postemobile.it/servlets/mms"
+mmsc_proxy = "10.128.224.10"
+mmsc_proxy_port = "80"
+
+[settings.config]
+carrier_volte_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+
+[settings.field8]
+seconds = 1736946312

@@ -1,0 +1,54 @@
+[[carrier_id]]
+mcc_mnc = "72234"
+
+[[carrier_id]]
+mcc_mnc = "722340"
+
+[[carrier_id]]
+mcc_mnc = "722341"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Personal Datos"
+value = "datos.personal.com"
+type = ["default", "supl"]
+user = "datos"
+password = "datos"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Personal MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms.personal.com"
+mmsc_proxy = "172.25.7.31"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Personal IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Personal Internet Movil"
+value = "internet.personal.com"
+type = ["dun"]
+user = "internet"
+password = "internet"
+authtype = 1
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1755679363

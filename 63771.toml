@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63771"
+
+[[settings.apns.apn]]
+name = "Somtel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

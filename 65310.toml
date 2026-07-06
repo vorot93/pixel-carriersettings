@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "65310"
+
+[[settings.apns.apn]]
+name = "Swazi MTN"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

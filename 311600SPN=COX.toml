@@ -1,0 +1,85 @@
+[[carrier_id]]
+mcc_mnc = "311600"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "COX"
+
+[[settings.apns.apn]]
+name = "cox"
+value = "CdmaNai"
+type = ["mms"]
+bearer_bitmask = "6"
+mmsc = "http://mms.cox.net/cox/mms.php"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Cox IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Cox IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Cox FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Cox FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Cox"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "13"
+mmsc = "http://mms.cox.net/cox/mms.php"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Cox"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "14"
+mmsc = "http://mms.cox.net/cox/mms.php"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Cox IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Cox IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

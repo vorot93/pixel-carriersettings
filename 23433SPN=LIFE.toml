@@ -1,0 +1,34 @@
+[[carrier_id]]
+mcc_mnc = "23433"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "LIFE"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "tslpaygnet"
+type = ["default", "supl", "dun", "fota"]
+authtype = 0
+user_editable = false
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "tslmms"
+type = ["mms"]
+user = "wap"
+password = "wap"
+authtype = 1
+mmsc = "http://mms/"
+mmsc_proxy = "193.35.133.194"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+editable_enhanced_4g_lte = false
+editable_wfc_mode = false
+hide_ims_apn = true
+non_roaming_operator = ["23430", "23431", "23432", "23433", "23434", "23486"]
+prefer_2g = false
+show_4g_for_lte_data_icon = true
+wfc_operator_error_codes = ["REG09|0"]
+wfc_spn_format_idx = 1

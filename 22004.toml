@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "22004"
+
+[[settings.apns.apn]]
+name = "T-Mobile MMS"
+value = "mms"
+type = ["mms"]
+user = "38267"
+password = "38267"
+mmsc = "http://192.168.180.100/servlets/mms"
+mmsc_proxy = "10.0.5.19"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "T-Mobile Internet"
+value = "tmcg-wnw"
+type = ["default", "supl"]
+proxy = "10.0.5.19"
+port = "8080"
+user = "38267"
+password = "38267"
+
+[settings.config]
+display_hd_audio_property = false
+mmi_two_digit_number_pattern = ["92", "93", "94", "95", "96"]

@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "310000"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "TRACFONE"
+
+[[settings.apns.apn]]
+name = "Verizon CDMA HRPD"
+value = ""
+type = ["default", "mms", "supl", "dun", "hipri"]
+authtype = 3
+mmsc = "http://mms.vtext.com/servlets/mms"
+user_editable = false
+
+[settings.config]

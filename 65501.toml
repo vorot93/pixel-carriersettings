@@ -1,0 +1,30 @@
+[[carrier_id]]
+mcc_mnc = "65501"
+
+[[settings.apns.apn]]
+name = "LTE.Vodacom"
+value = "lte.vodacom.za"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS.Vodacom"
+value = "lte.vodacom.za"
+type = ["mms"]
+mmsc = "http://mmsc.vodacom4me.co.za"
+mmsc_proxy = "196.6.128.13"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Smart.Vodacom"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS.Vodacom"
+value = "mms.vodacom.net"
+type = ["mms"]
+mmsc = "http://mmsc.vodacom4me.co.za"
+mmsc_proxy = "196.6.128.13"
+mmsc_proxy_port = "8080"
+
+[settings.config]

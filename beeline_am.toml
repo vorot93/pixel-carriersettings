@@ -1,0 +1,11 @@
+[[carrier_id]]
+mcc_mnc = "28301"
+
+[[settings.apns.apn]]
+name = "Beeline Internet"
+value = "internet.beeline.am"
+type = ["default", "supl"]
+user = "internet"
+password = "internet"
+
+[settings.config]

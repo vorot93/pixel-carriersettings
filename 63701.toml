@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63701"
+
+[[settings.apns.apn]]
+name = "Telesom"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

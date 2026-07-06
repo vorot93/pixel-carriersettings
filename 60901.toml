@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60901"
+
+[[settings.apns.apn]]
+name = "Mattel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

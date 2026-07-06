@@ -1,0 +1,15 @@
+[[carrier_id]]
+mcc_mnc = "311910"
+
+[[settings.apns.apn]]
+name = "MobileNation"
+value = "mymn4g.net"
+type = ["default", "mms", "dun", "fota"]
+server = "*"
+mmsc = "http://mms.mymn3g.net"
+mmsc_proxy = "mms.mymn3g.net"
+mmsc_proxy_port = "8081"
+protocol = "ipv4v6"
+user_editable = false
+
+[settings.config]

@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "42505"
+
+[[settings.apns.apn]]
+name = "Jawwal WAP"
+value = "wap"
+type = ["default", "supl"]
+proxy = "213.244.118.129"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Jawwal MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.jawwal.ps/servlets/mms"
+mmsc_proxy = "213.244.118.129"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "20830"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "208300"
+
+[[settings.apns.apn]]
+name = "Syma"
+value = "symamobile.com"
+type = ["default", "hipri", "mms"]
+mmsc = "http://mms.symamobile.com"
+mmsc_proxy = "10.255.2.141"
+mmsc_proxy_port = "8080"
+
+[settings.config]

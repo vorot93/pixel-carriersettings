@@ -1,0 +1,56 @@
+[[carrier_id]]
+mcc_mnc = "208506"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "aircraft"
+value = "aircraft"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "industrial"
+value = "nin"
+type = ["default"]
+authtype = 1
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "internet"
+value = "internet"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "iot"
+value = "iot"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "manuf"
+value = "manuf"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "mcs"
+value = "mcs"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+carrier_nr_availabilities = [1, 2]
+cellular_usage_setting = 2
+show_4g_for_lte_data_icon = true
+
+[settings.field8]
+seconds = 1731496831

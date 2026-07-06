@@ -1,0 +1,119 @@
+[[carrier_id]]
+mcc_mnc = "302681"
+
+[[carrier_id]]
+mcc_mnc = "302780"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "5A"
+
+[[carrier_id]]
+mcc_mnc = "302781"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "SaskTel"
+value = "pda.stm.sk.ca"
+type = ["default", "mms", "supl", "xcap"]
+mmsc = "http://mms.sasktel.com/"
+mmsc_proxy = "mig.sasktel.com"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+_5g_icon_configuration = "connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G"
+additional_nr_advanced_bands = [77, 78]
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+enable_nr_advanced_for_roaming = false
+hide_enhanced_4g_lte = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+non_roaming_operator = ["302"]
+sim_country_iso_override = "ca"
+wfc_emergency_address_carrier_app = "com.android.imsserviceentitlement/.WfcActivationActivity"
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.sasktel.com"
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.ims]
+gruu_enabled = true
+phone_context_domain_name = "ims.sasktel.com"
+registration_expiry_timer_sec = 86400
+registration_subscribe_expiry_timer_sec = 43200
+request_uri_type = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3, 5]
+emergency_registration_timer_millis = 10000
+emergency_scan_timer_sec = 10
+maximum_cellular_search_timer_sec = 10
+
+[settings.config.imsserviceentitlement]
+entitlement_server_url = "https://aes.mnc780.mcc302.pub.3gppnetwork.org"
+show_vowifi_webview = true
+
+[settings.config.imsss]
+ut_as_server_fqdn = "naf.ims.sasktel.com"
+ut_as_server_port = 443
+ut_transport_type = 3
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+conference_factory_uri = "conference@ibc.sasktel.com"
+conference_subscribe_type = 0
+ringback_timer_millis = 182000
+ringing_timer_millis = 180000
+session_expires_timer_sec = 3600
+srvcc_type = [0, 3]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 28800
+diffie_hellman_groups = [14]
+dpd_timer_sec = 60
+ike_device_identity_supported = true
+ike_rekey_hard_timer_in_sec = 86400
+
+[settings.config.qns]
+condition_rove_in_idle_wifi_pref_home = ["Condition:WIFI_GOOD"]
+condition_rove_in_idle_wifi_pref_roam = ["Condition:WIFI_GOOD"]
+condition_rove_out_idle_wifi_pref_home = ["Condition:WIFI_BAD"]
+condition_rove_out_idle_wifi_pref_roam = ["Condition:WIFI_BAD"]
+override_cell_pref_to_ims_pref_home = true
+sos_transport_type = 2
+
+[settings.config.wifi]
+carrier_profiles_version = 1
+network_profiles = ['<?xml version="1.0" encoding="UTF-8"?><WifiNetwork><SSID>SaskTel Select Wi-Fi 1</SSID><Credential><SIM><EAPType>23</EAPType></SIM></Credential></WifiNetwork>']
+
+[settings.field8]
+seconds = 1741179747

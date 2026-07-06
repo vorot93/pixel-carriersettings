@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "70299"
+
+[[settings.apns.apn]]
+name = "Smart"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

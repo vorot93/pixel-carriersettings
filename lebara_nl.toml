@@ -1,0 +1,35 @@
+[[carrier_id]]
+mcc_mnc = "20417"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Lebara"
+value = "internet.lebara.nl"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+user_editable = false
+
+[settings.config]
+allow_hold_call_during_emergency = false
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+wfc_spn_format_idx = 1
+
+[settings.field8]
+seconds = 1764767000

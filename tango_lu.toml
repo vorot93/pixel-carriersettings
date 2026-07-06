@@ -1,0 +1,71 @@
+[[carrier_id]]
+mcc_mnc = "27077"
+
+[settings]
+version = 77000000005
+
+[[settings.apns.apn]]
+name = "Tango Internet"
+value = "internet"
+type = ["default", "supl", "mms"]
+user = "tango"
+password = "tango"
+mmsc = "http://mms.tango.lu"
+mmsc_proxy = "212.66.75.3"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Tango MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.tango.lu"
+mmsc_proxy = "212.66.75.3"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Tango XCAP"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_port = 8081
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_as_server_port = 8080
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+diffie_hellman_groups = [16, 14, 5, 2]
+
+[settings.field8]
+seconds = 1770819167

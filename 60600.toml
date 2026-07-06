@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "60600"
+
+[[settings.apns.apn]]
+name = "Libyana"
+value = "default"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Libyana MMS"
+value = "mms"
+type = ["mms"]
+authtype = 0
+mmsc = "http://62.240.62.180:80"
+mmsc_proxy = "192.168.8.148"
+mmsc_proxy_port = "8000"
+
+[settings.config]

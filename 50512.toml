@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "50512"
+
+[[settings.apns.apn]]
+name = "3Internet"
+value = "3netaccess"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "3"
+value = "3services"
+type = ["default", "mms", "supl"]
+mmsc = "http://mmsc.three.net.au:10021/mmsc"
+mmsc_proxy = "10.176.57.25"
+mmsc_proxy_port = "8799"
+
+[settings.config]

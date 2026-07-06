@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "41862"
+
+[[settings.apns.apn]]
+name = "Itisaluna"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

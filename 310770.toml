@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "310770"
+
+[[settings.apns.apn]]
+name = "Web 2"
+value = "i2.iwireless.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Web 1"
+value = "wap1.iwireless.com"
+type = ["default", "supl"]
+proxy = "209.4.229.31"
+port = "9401"
+
+[[settings.apns.apn]]
+name = "Picture Messaging"
+value = "wap1.iwireless.com"
+type = ["mms"]
+mmsc = "http://mmsc.iwireless.dataonair.net:6672"
+mmsc_proxy = "209.4.229.31"
+mmsc_proxy_port = "9401"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576

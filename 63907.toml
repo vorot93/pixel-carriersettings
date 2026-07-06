@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "63907"
+
+[[settings.apns.apn]]
+name = "Orange Internet"
+value = "bew.orange.co.ke"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Orange MMS"
+value = "mms.orange.co.ke"
+type = ["mms"]
+authtype = 1
+mmsc = "http://10.36.16.5/servlets/mms"
+mmsc_proxy = "10.36.17.130"
+mmsc_proxy_port = "8080"
+
+[settings.config]

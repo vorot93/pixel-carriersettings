@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "25501"
+
+[[settings.apns.apn]]
+name = "MTS MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mmsc:8002/"
+mmsc_proxy = "192.168.10.10"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "MTS-internet"
+value = "internet"
+type = ["default", "supl"]
+
+[settings.config]

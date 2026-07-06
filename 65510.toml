@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "65510"
+
+[[settings.apns.apn]]
+name = "MTN GPRS"
+value = "myMTN"
+type = ["default", "supl"]
+user = "mtnwap"
+password = "mtnwap"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MTN MMS"
+value = "myMTN"
+type = ["mms"]
+user = "mtnmms"
+password = "mtnmms"
+authtype = 1
+mmsc = "http://mms.mtn.co.za/mms/wapenc"
+mmsc_proxy = "196.11.240.241"
+mmsc_proxy_port = "8080"
+
+[settings.config]

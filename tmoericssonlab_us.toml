@@ -1,0 +1,68 @@
+[[carrier_id]]
+mcc_mnc = "262800"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "T-Mobile Tethering"
+value = "pcweb.tmobile.com"
+type = ["dun"]
+protocol = "ipv6"
+user_visible = false
+field30 = 1
+
+[[settings.apns.apn]]
+name = "T-Mobile US"
+value = "fast.t-mobile.com"
+type = ["default", "supl", "ia", "mms", "xcap"]
+bearer_bitmask = "1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+mmsc = "http://mms.msg.eng.t-mobile.com/mms/wapenc"
+protocol = "ipv6"
+mtu = 1440
+user_editable = false
+
+[[settings.apns.apn]]
+name = "T-Mobile US IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+mtu = 1440
+user_visible = false
+field28 = 1
+
+[[settings.apns.apn]]
+name = "T-Mobile MMS"
+value = "TMUS"
+type = ["mms", "xcap"]
+bearer_bitmask = "18"
+mmsc = "http://mms.msg.eng.t-mobile.com/mms/wapenc"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "T-Mobile Emergency"
+value = "sos"
+type = ["emergency"]
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+field28 = 1
+
+[settings.config]
+disconnect_cause_network_busy = [60]
+vonr_enabled = true
+
+[settings.config.iwlan]
+ike_session_encryption_aes_cbc_key_size = [128, 256]
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["10500"],"RetryArray": ["3600","7200","10800"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"]},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["15500"],"NumAttemptsPerFqdn": "6","RetryArray": ["0","0","300","600","1200","0","0","0","300","600","1200","-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"]},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["11001","11011"],"RetryArray": [],"UnthrottlingEvents": []},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["8192"],"RetryArray": ["5","10","10","20","40","80","160","320","640","1280","1800","3600","-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"],"HandoverAttemptCount": "3"}]}]'
+supported_integrity_algorithms = [5, 12]
+supported_prf_algorithms = [2, 4, 5]
+supports_child_session_multiple_sa_proposals = false
+supports_ike_session_multiple_sa_proposals = false
+
+[settings.field8]
+seconds = 1777512376

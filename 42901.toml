@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "42901"
+
+[[settings.apns.apn]]
+name = "Namaste / NT Mobile"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

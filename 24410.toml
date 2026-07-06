@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "24410"
+
+[[settings.apns.apn]]
+name = "TDC Internet"
+value = "internet.song.fi"
+type = ["default", "supl"]
+user = "song@internet"
+password = "songnet"
+
+[[settings.apns.apn]]
+name = "TDC MMS"
+value = "mms.song.fi"
+type = ["mms"]
+mmsc = "http://mms.song.fi"
+mmsc_proxy = "213.161.41.58"
+mmsc_proxy_port = "80"
+
+[settings.config]

@@ -1,0 +1,92 @@
+[[carrier_id]]
+mcc_mnc = "334020"
+
+[settings]
+version = 77000000010
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet.itelcel.com"
+type = ["default", "supl", "xcap"]
+user = "webgprs"
+password = "webgprs2002"
+authtype = 1
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Mensajes Multimedia"
+value = "mms.itelcel.com"
+type = ["mms"]
+user = "mmsgprs"
+password = "mmsgprs2003"
+authtype = 1
+mmsc = "http://mms.itelcel.com/servlets/mms"
+mmsc_proxy = "148.233.151.240"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+allow_emergency_numbers_in_call_log = true
+carrier_certificate = ["7D7226772D4F6D778FEF53A36BE15AD78D8D9D4BC4CE00C5F2E3216C19480FA0"]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_service_name_array = ["Denun Ciudadana", "Rescatel", "Atencion a Clientes", "Emergencias", "Transito", "IMSS", "Serv comunidad", "Locatel", "9-1-1 Emergencias"]
+carrier_service_number_array = ["089", "100", "*111", "112", "113", "115", "118", "119", "911"]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+display_call_type_icon = true
+display_hd_audio_property = false
+display_no_data_notification_on_permanent_failure = true
+editable_voicemail_number_setting = false
+editable_wfc_mode = false
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+show_4g_for_lte_data_icon = true
+telephony_data_setup_retry_rules = ["capabilities=eims, retry_interval=1000, maximum_retries=20", "permanent_fail_causes=8|27|28|30|32|35|50|51|111|-5|-6|65537|65538|-3, retry_interval=2500", "capabilities=mms|supl|cbs, retry_interval=2000", "capabilities=internet|enterprise|dun|ims|fota, retry_interval=2500|3000|5000|10000|15000|20000|40000|60000|120000|240000|600000|1200000|1800000, maximum_retries=20"]
+unthrottle_data_retry_when_tac_changes = true
+wfc_spn_format_idx = 10
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# #MODEL#/AMX MEX"
+request_uri_type = 1
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+audio_rtcp_inactivity_timer_millis = 25000
+audio_rtp_inactivity_timer_millis = 30000
+
+[settings.config.iwlan]
+child_session_aes_cbc_key_size = [128, 256]
+diffie_hellman_groups = [2, 14]
+epdg_static_address = "epdg.ims.mnc020.mcc334.pub.3gppnetwork.org"
+ike_device_identity_supported = true
+ike_rekey_hard_timer_in_sec = 87000
+ike_rekey_soft_timer_sec = 86400
+ike_session_encryption_aes_cbc_key_size = [128, 256]
+supported_integrity_algorithms = [2, 12]
+supported_prf_algorithms = [2, 5]
+
+[settings.field8]
+seconds = 1747202480

@@ -1,0 +1,29 @@
+[[carrier_id]]
+mcc_mnc = "20810"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "ZERO FORFAIT"
+
+[[settings.apns.apn]]
+name = "Zero forfait"
+value = "internet68"
+type = ["default", "supl", "dun", "fota"]
+authtype = 0
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Zero forfait MMS"
+value = "mms68"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mms68"
+mmsc_proxy = "10.143.156.11"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+prefer_2g = true
+show_4g_for_lte_data_icon = true

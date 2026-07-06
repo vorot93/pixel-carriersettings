@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64202"
+
+[[settings.apns.apn]]
+name = "Tempo"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

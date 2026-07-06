@@ -1,0 +1,57 @@
+[[carrier_id]]
+mcc_mnc = "40425"
+
+[[carrier_id]]
+mcc_mnc = "40428"
+
+[[carrier_id]]
+mcc_mnc = "40437"
+
+[[settings.apns.apn]]
+name = "Aircel-GPRS-Postpaid"
+value = "aircelwebpost"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Pocket Internet-Postpaid"
+value = "aircelwappost"
+type = ["default", "supl"]
+proxy = "172.17.83.69"
+port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Pocket Internet-Prepaid"
+value = "aircelwap"
+type = ["default", "supl"]
+proxy = "172.17.83.69"
+port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Aircel-GPRS-Prepaid"
+value = "aircelweb"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Aircel Internet"
+value = "aircelgprs"
+type = ["default", "supl", "dun", "fota"]
+protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Aircel-MMS"
+value = "aircelmms"
+type = ["mms"]
+mmsc = "http://10.50.1.166/servlets/mms"
+mmsc_proxy = "172.17.83.69"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+prevent_clir_activation_and_deactivation_code = true
+roaming_operator = ["404", "405"]

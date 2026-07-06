@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "50588"
+
+[[settings.apns.apn]]
+name = "VF AU PXT"
+value = "live.vodafone.com"
+type = ["mms"]
+mmsc = "http://pxt.vodafone.net.au/pxtsend"
+mmsc_proxy = "10.202.2.60"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "VF Internet"
+value = "vfinternet.au"
+type = ["default", "supl"]
+
+[settings.config]

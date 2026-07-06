@@ -1,0 +1,77 @@
+[[carrier_id]]
+mcc_mnc = "22610"
+
+[settings]
+version = 77000000007
+
+[[settings.apns.apn]]
+name = "Orange Internet"
+value = "net"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Orange MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://wap.mms.orange.ro:8002"
+mmsc_proxy = "62.217.247.252"
+mmsc_proxy_port = "8799"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[settings.config]
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsss]
+ut_server_based_services = []
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.amrnb_payload_description.101]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.99]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [100, 101]
+amrwb_payload_type = [98, 99]
+dtmfnb_payload_type = [106]
+dtmfwb_payload_type = [105]
+evs_payload_type = [97]
+
+[settings.config.imsvoice.evs_payload_description.97]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+
+[settings.config.qns]
+idle_wifi_rssi = [-65, -75]
+idle_wifi_rssi_without_cellular = [-85, -90]
+sos_transport_type = 2
+voice_wifi_rssi = [-65, -75]
+voice_wifi_rssi_without_cellular = [-85, -90]
+
+[settings.field8]
+seconds = 1740560798

@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "310080"
+
+[[settings.apns.apn]]
+name = "Corr Wap"
+value = "corrgprs"
+type = ["default"]
+server = "http://w.iot1.com/corr/wml.php"
+proxy = "74.112.57.172"
+port = "9201"
+
+[[settings.apns.apn]]
+name = "CorrMMS"
+value = "corrmms"
+type = ["mms"]
+mmsc = "http://mms.iot1.com/corr/mms.php"
+mmsc_proxy = "66.255.55.23"
+mmsc_proxy_port = "80"
+
+[settings.config]

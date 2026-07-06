@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "23877"
+
+[[settings.apns.apn]]
+name = "Telenor Internet"
+value = "Internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Telenor MMS"
+value = "telenor"
+type = ["mms"]
+mmsc = "http://mms.telenor.dk"
+mmsc_proxy = "212.88.64.8"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "51518"
+
+[[settings.apns.apn]]
+name = "Redinternet"
+value = "redinternet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Redmms"
+value = "real.globe.com.ph"
+type = ["mms"]
+mmsc = "http://10.102.61.193:8002/mmsc"
+mmsc_proxy = "10.138.3.35"
+mmsc_proxy_port = "8080"
+
+[settings.config]

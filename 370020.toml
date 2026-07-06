@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "37002"
+
+[[carrier_id]]
+mcc_mnc = "370020"
+
+[[settings.apns.apn]]
+name = "Internet Móvil Claro"
+value = "internet.ideasclaro.com.do"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "internet.ideasclaro.com.do"
+type = ["mms"]
+mmsc = "http://mms.ideasclaro.com.do/mms/wapenc"
+
+[settings.config]

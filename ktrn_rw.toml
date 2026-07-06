@@ -1,0 +1,56 @@
+[[carrier_id]]
+mcc_mnc = "63517"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "6351765"
+
+[[carrier_id]]
+mcc_mnc = "63517"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "KTRN"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "KTRN"
+value = "ktrn.rw"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap"
+type = ["xcap"]
+user_visible = false
+
+[settings.config.ims]
+registration_retry_base_timer_millis = 15000
+
+[settings.config.imsemergency]
+emergency_registration_timer_millis = 2000
+
+[settings.config.imsss]
+use_csfb_on_xcap_over_ut_failure = false
+ut_as_server_fqdn = "xcap.ims.mnc017.mcc635.pub.3gppnetwork.org"
+
+[settings.config.imsvoice]
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

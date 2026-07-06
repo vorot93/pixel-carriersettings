@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "42102"
+
+[[settings.apns.apn]]
+name = "MTN"
+value = "default"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MTN MMS YE"
+value = "fast-mms"
+type = ["mms"]
+user = "mms"
+authtype = 0
+mmsc = "http://192.168.97.1/mmsc"
+mmsc_proxy = "192.168.97.1"
+mmsc_proxy_port = "3130"
+
+[settings.config]

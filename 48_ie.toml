@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "27211"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "FFFF"
+
+[[carrier_id]]
+mcc_mnc = "27211"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "48"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "48 Internet"
+value = "48months.liffeytelecom.com"
+type = ["default", "mms", "supl"]
+user = "User"
+authtype = 1
+mmsc = "http://mmc1/servlets/mms"
+mmsc_proxy = "10.1.11.19"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+
+[settings.field8]
+seconds = 1724979979

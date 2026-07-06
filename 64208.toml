@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64208"
+
+[[settings.apns.apn]]
+name = "HiTs Telecom"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

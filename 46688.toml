@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "46688"
+
+[[settings.apns.apn]]
+name = "和信電訊(KGT-Online) (Internet)"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "和信電訊(KGT-Online) (MMS)"
+value = "kgtmms"
+type = ["mms"]
+mmsc = "http://mms.kgtmms.net.tw/mms/wapenc"
+mmsc_proxy = "172.28.33.5"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+hide_lte_plus_data_icon = false

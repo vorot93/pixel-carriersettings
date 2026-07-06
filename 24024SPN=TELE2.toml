@@ -1,0 +1,45 @@
+[[carrier_id]]
+mcc_mnc = "24024"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "TELE2"
+
+[[settings.apns.apn]]
+name = "Tele2 Internet"
+value = "4g.tele2.se"
+type = ["default", "supl"]
+authtype = 0
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Tele2 MMS"
+value = "4g.tele2.se"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mmsc.tele2.se"
+mmsc_proxy = "130.244.202.30"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Tele2 Internet 3G"
+value = "internet.tele2.se"
+type = ["default", "supl"]
+authtype = 0
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Tele2 MMS 3G"
+value = "internet.tele2.se"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mmsc.tele2.se"
+mmsc_proxy = "130.244.202.30"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+show_4g_for_lte_data_icon = true

@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "21418"
+
+[[settings.apns.apn]]
+name = "ONO Internet"
+value = "internet.ono.com"
+type = ["default", "supl"]
+authtype = 0
+
+[[settings.apns.apn]]
+name = "ONO MMS"
+value = "mms.ono.com"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mms.ono.com/"
+mmsc_proxy = "10.126.0.50"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+non_roaming_operator = ["21401", "21402", "21403", "21404", "21405", "21406", "21407", "21408", "21409", "214010", "214011", "214012", "214013", "214014", "214015", "214016", "214017", "214019", "214020", "214021"]
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]

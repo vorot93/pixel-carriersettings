@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "45207"
+
+[[settings.apns.apn]]
+name = "Gmobile-wap-gprs"
+value = "internet"
+type = ["default", "supl"]
+proxy = "10.16.70.199"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Gmobile MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 2
+mmsc = "http://mms"
+mmsc_proxy = "10.16.70.199"
+mmsc_proxy_port = "8080"
+
+[settings.config]

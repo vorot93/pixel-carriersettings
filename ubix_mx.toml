@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Ubix"
+
+[[settings.apns.apn]]
+name = "Ubix"
+value = "internet.ubix.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Ubix"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

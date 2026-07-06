@@ -1,0 +1,38 @@
+[[carrier_id]]
+mcc_mnc = "60400"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet1.meditel.ma"
+type = ["default", "supl"]
+user = "MEDINET"
+password = "MEDINET"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Imedia"
+value = "wap.meditel.ma"
+type = ["default", "supl"]
+proxy = "10.8.8.8"
+port = "8080"
+user = "MEDIWAP"
+password = "MEDIWAP"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "GPRS MMS"
+value = "mms.meditel.ma"
+type = ["mms"]
+user = "MEDIMMS"
+password = "MEDIMMS"
+authtype = 1
+mmsc = "http://mms.meditel.ma:8088/mms"
+mmsc_proxy = "10.8.8.9"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+carrier_certificate = ["b67affcda89e3193b1595036d7c6cdbe22be5ca24c9f6cf93fc6b48f91d7310d:com.orange.meditel.mediteletmoi,com.orange.phone.mea,com.orange.ma.entreprise,com.orange.update"]
+config_plans_package_override = "com.orange.meditel.mediteletmoi"
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 102400

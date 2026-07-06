@@ -1,0 +1,46 @@
+[[carrier_id]]
+mcc_mnc = "71617"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Entel PE"
+value = "entel.pe"
+type = ["default", "dun"]
+authtype = 0
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Entel MMS"
+value = "mms.entel.pe"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mms.entel.pe"
+mmsc_proxy = "10.0.215.74"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Entel Location"
+value = "location.entel.pe"
+type = ["supl"]
+server = "http://location.entel.pe"
+authtype = 0
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.config.ims]
+sip_over_ipsec_enabled = false
+
+[settings.field8]
+seconds = 1772636232

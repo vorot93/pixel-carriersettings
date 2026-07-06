@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "71615"
+
+[[settings.apns.apn]]
+name = "Bitel - Internet"
+value = "bitel"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Bitel - MMS"
+value = "bitel-mms"
+type = ["mms"]
+authtype = 1
+mmsc = "http://181.176.241.99:8080"
+mmsc_proxy = "10.121.144.3"
+mmsc_proxy_port = "8000"
+
+[settings.config]

@@ -1,0 +1,66 @@
+[[carrier_id]]
+mcc_mnc = "24214"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "ice.net Internet"
+value = "ice.net"
+type = ["default"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ice.net MMS"
+value = "mms.ice.net"
+type = ["mms"]
+user = "mms"
+mmsc = "http://mms"
+mmsc_proxy = "10.10.10.10"
+mmsc_proxy_port = "80"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_wfc_roaming_mode = false
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+ringback_timer_millis = 180000
+ringing_timer_millis = 180000
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 28800
+child_sa_rekey_soft_timer_sec = 28700
+diffie_hellman_groups = [14]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc014.mcc242.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 86400
+ike_rekey_soft_timer_sec = 86300
+
+[settings.field8]
+seconds = 1756276532

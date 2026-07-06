@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "42903"
+
+[[settings.apns.apn]]
+name = "Sky/C-Phone"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

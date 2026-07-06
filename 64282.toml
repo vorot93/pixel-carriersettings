@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64282"
+
+[[settings.apns.apn]]
+name = "Leo"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

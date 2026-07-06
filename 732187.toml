@@ -1,0 +1,10 @@
+[[carrier_id]]
+mcc_mnc = "732187"
+
+[[settings.apns.apn]]
+name = "ETB 4G"
+value = "internetmovil.etb.net.co"
+type = ["default"]
+authtype = 0
+
+[settings.config]

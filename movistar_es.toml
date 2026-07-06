@@ -1,0 +1,110 @@
+[[carrier_id]]
+mcc_mnc = "21405"
+
+[[carrier_id]]
+mcc_mnc = "21407"
+
+[settings]
+version = 77000000006
+
+[[settings.apns.apn]]
+name = "Movistar"
+value = "telefonica.es"
+type = ["default"]
+user = "telefonica"
+password = "telefonica"
+authtype = 1
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "XCAP"
+type = ["xcap"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|20"
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+call_barring_visibility = true
+call_redirection_service_component_name = "com.movistar.android.mimovistar.es/com.tuenti.messenger.callinterceptor.CallInterceptorService"
+carrier_allow_transfer_ims_call = true
+carrier_certificate = ["e1b6e6cbfe0673164931be46d95fa7e43fb92dac49acc10a6c0909e5eada15fa"]
+carrier_default_wfc_ims_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "22123"
+ignore_rtt_mode_setting = true
+ims_conference_size_limit = 4
+is_ims_conference_size_enforced = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 512000
+non_roaming_operator = ["21401", "21402", "21403", "21404", "21406", "21407", "21408", "21409", "214010", "214011", "214012", "214013", "214014", "214015", "214016", "214017", "214018", "214019", "214020", "214021"]
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]
+use_wfc_home_network_mode_in_roaming_network = true
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_port = 8088
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+use_csfb_on_xcap_over_ut_failure = false
+ut_as_server_port = 8089
+xcap_over_ut_supported_rats = [6, 3, 1, 2]
+
+[settings.config.imsvoice]
+conference_subscribe_type = 1
+oip_source_from_header = true
+prack_supported_for_18x = true
+ringback_timer_millis = 180000
+ringing_timer_millis = 180000
+session_refresh_method = 0
+srvcc_type = [0, 1, 3]
+
+[settings.config.imsvoice.amrnb_payload_description.108]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.110]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102, 108]
+amrwb_payload_type = [104, 110]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [126]
+
+[settings.config.imsvoice.evs_payload_description.126]
+evs_codec_attribute_bitrate = [3, 6]
+
+[settings.config.iwlan]
+add_ke_to_child_session_rekey = true
+child_sa_rekey_hard_timer_sec = 64900
+child_sa_rekey_soft_timer_sec = 64800
+diffie_hellman_groups = [14, 16]
+dpd_timer_sec = 30
+epdg_static_address = "epdg.epc.mnc007.mcc214.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 64900
+ike_rekey_soft_timer_sec = 64800
+
+[settings.config.qns]
+xcap_transport_type = 0
+
+[settings.field8]
+seconds = 1773236747

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60701"
+
+[[settings.apns.apn]]
+name = "Gamcel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

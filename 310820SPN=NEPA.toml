@@ -1,0 +1,85 @@
+[[carrier_id]]
+mcc_mnc = "310820"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "NEPA"
+
+[[settings.apns.apn]]
+name = "nepa"
+value = "CdmaNai"
+type = ["mms"]
+bearer_bitmask = "6"
+mmsc = "http://mmsc.c1nepa.csky.us:6672/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nepa IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nepa IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nepa FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nepa FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nepa"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "13"
+mmsc = "http://mmsc.c1nepa.csky.us:6672/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Nepa"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "14"
+mmsc = "http://mmsc.c1nepa.csky.us:6672/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Nepa IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nepa IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

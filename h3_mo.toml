@@ -1,0 +1,38 @@
+[[carrier_id]]
+mcc_mnc = "45503"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "3 Macau LTE"
+value = "3mobile.three.com.mo"
+type = ["default", "mms", "supl"]
+authtype = 1
+mmsc = "http://mms.three.com.mo:10021/mmsc"
+mmsc_proxy = "mms.three.com.mo"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "3 Macau"
+value = "mobile.three.com.mo"
+type = ["default", "mms", "supl"]
+authtype = 1
+mmsc = "http://mms.three.com.mo:10021/mmsc"
+mmsc_proxy = "mms.three.com.mo"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1756887206

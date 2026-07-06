@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "73602"
+
+[[settings.apns.apn]]
+name = "ENTEL WAP GPRS"
+value = "wap.movil.com.bo"
+type = ["default", "supl"]
+proxy = "172.27.7.10"
+port = "8080"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "ENTEL MMS GPRS"
+value = "mms.movil.com.bo"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms.movil.com.bo/servlets/mms"
+mmsc_proxy = "172.27.7.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]

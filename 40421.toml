@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "40421"
+
+[[settings.apns.apn]]
+name = "Loop Mobile MMS"
+value = "mizone"
+type = ["mms"]
+password = "mmsc"
+mmsc = "http://mms.loopmobile.in:8080"
+mmsc_proxy = "10.0.0.10"
+mmsc_proxy_port = "9401"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Loop Mobile"
+value = "www"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[settings.config]
+roaming_operator = ["404", "405"]

@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "20402"
+
+[[settings.apns.apn]]
+name = "Tele2 GPRS"
+value = "internet.tele2.nl"
+type = ["default", "mms", "supl"]
+mmsc = "http://mmsc.tele2.nl"
+mmsc_proxy = "193.12.40.64"
+mmsc_proxy_port = "8080"
+
+[settings.config]

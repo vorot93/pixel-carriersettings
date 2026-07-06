@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "43703"
+
+[[settings.apns.apn]]
+name = "Fonex"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

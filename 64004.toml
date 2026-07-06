@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "64004"
+
+[[settings.apns.apn]]
+name = "Vodacom WAP"
+value = "Wap"
+type = ["default", "supl"]
+proxy = "10.154.0.8"
+port = "9401"
+
+[[settings.apns.apn]]
+name = "Vodacom MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://10.154.0.12/mms/"
+
+[settings.config]

@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "42516"
+
+[[settings.apns.apn]]
+name = "Rami Levi 3G"
+value = "internet.rl"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Rami Levi Multimedia"
+value = "mms.pelephone.net.il"
+type = ["mms"]
+mmsc = "http://mmsu.pelephone.net.il"
+mmsc_proxy = "10.170.252.104"
+mmsc_proxy_port = "9093"
+
+[settings.config]

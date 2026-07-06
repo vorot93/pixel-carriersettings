@@ -1,0 +1,33 @@
+[[carrier_id]]
+mcc_mnc = "25506"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Lifecell Internet"
+value = "internet"
+type = ["default", "dun", "hipri", "supl", "fota", "cbs"]
+authtype = 1
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+read_only_apn_types = []
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 6
+
+[settings.field8]
+seconds = 1745372877

@@ -1,0 +1,13 @@
+[[carrier_id]]
+mcc_mnc = "45500"
+
+[[settings.apns.apn]]
+name = "SmarTone Macau"
+value = "smartgprs"
+type = ["default", "mms", "supl"]
+authtype = 3
+mmsc = "http://momms.smartone.com/dmog/mo"
+mmsc_proxy = "10.9.9.29"
+mmsc_proxy_port = "8080"
+
+[settings.config]

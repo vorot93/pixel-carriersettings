@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "51402"
+
+[[settings.apns.apn]]
+name = "Timor Telecom"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

@@ -1,0 +1,11 @@
+[[carrier_id]]
+mcc_mnc = "23213"
+
+[[settings.apns.apn]]
+name = "UPC mobiles Internet"
+value = "Internet.at.upcmobile.com"
+type = ["default"]
+authtype = 0
+
+[settings.config]
+non_roaming_operator = ["23203"]

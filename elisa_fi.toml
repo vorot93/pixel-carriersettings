@@ -1,0 +1,85 @@
+[[carrier_id]]
+mcc_mnc = "24405"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Elisa Internet"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Elisa MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.elisa.fi"
+mmsc_proxy = "213.161.41.57"
+mmsc_proxy_port = "80"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "xcap"
+value = "xcap"
+type = ["xcap"]
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+call_barring_visibility = true
+carrier_allow_transfer_ims_call = true
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_nr_availabilities = [1, 2]
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+prefer_3g_visibility = false
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+vonr_enabled = true
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc005.mcc244.pub.3gppnetwork.org"
+bsf_server_port = 9001
+
+[settings.config.ims]
+sip_timer_t4_millis = 20000
+
+[settings.config.imsemergency]
+emergency_over_ims_roaming_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_rats = [6, 3, 5]
+
+[settings.config.imsss]
+ut_as_server_fqdn = "ap.ims.mnc005.mcc244.pub.3gppnetwork.org"
+ut_as_server_port = 9002
+ut_server_based_services = [12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 8, 9, 11]
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice]
+conference_factory_uri = "7888@ims.mnc005.mcc244.3gppnetwork.org"
+
+[settings.config.imsvoice.evs_payload_description.127]
+codec_attribute_cmr = 1
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.field8]
+seconds = 1764155482

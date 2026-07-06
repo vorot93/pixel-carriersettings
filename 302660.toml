@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "302660"
+
+[[settings.apns.apn]]
+name = "MTS -Tethering"
+value = "internet.mts"
+type = ["dun"]
+user_visible = false
+
+[[settings.apns.apn]]
+name = "MTS"
+value = "sp.mts"
+type = ["default", "mms", "supl"]
+mmsc = "http://mmsc2.mts.net/"
+mmsc_proxy = "wapgw1.mts.net"
+mmsc_proxy_port = "9401"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+maxSubjectLength = 80
+non_roaming_operator = ["302220", "302370", "302610", "302720", "302780"]
+recipientLimit = 20
+smsToMmsTextThreshold = 6

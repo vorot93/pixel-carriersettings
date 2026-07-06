@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "29402"
+
+[[settings.apns.apn]]
+name = "Cosmofon"
+value = "Internet"
+type = ["default", "supl"]
+proxy = "wap.planet.mk"
+port = "8080"
+user = "Internet"
+password = "Internet"
+
+[[settings.apns.apn]]
+name = "Cosmofon MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://195.167.65.220:8002"
+mmsc_proxy = "10.10.10.20"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 131072

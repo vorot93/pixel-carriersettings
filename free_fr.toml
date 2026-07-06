@@ -1,0 +1,93 @@
+[[carrier_id]]
+mcc_mnc = "20815"
+
+[settings]
+version = 77000000009
+
+[[settings.apns.apn]]
+name = "Free"
+value = "free"
+type = ["default", "dun", "hipri", "supl", "mms", "ia"]
+authtype = 0
+mmsc = "http://mms.free.fr"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+mtu = 1280
+user_visible = false
+
+[settings.config]
+always_play_remote_hold_tone = true
+carrier_certificate = ["d543e9f245aa584a84c608069cffe1f507be61eb496d7585ac02a2fce05dcb28", "a1fe35ab00f6301fdafda1309b8faac2895bf5d46ef5d9ae6895c5a5ad84eeb7"]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_nr_availabilities = [1, 2]
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+display_hd_plus_icon = true
+editable_wfc_mode = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+non_roaming_operator = ["20801"]
+prefer_2g = true
+read_only_apn_types = []
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+use_wfc_home_network_mode_in_roaming_network = true
+vonr_enabled = true
+wfc_spn_format_idx = 7
+
+[settings.config.ims]
+gruu_enabled = true
+ipv4_sip_mtu_size_cellular = 1280
+ipv6_sip_mtu_size_cellular = 1280
+
+[settings.config.imsemergency]
+emergency_over_ims_roaming_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_rats = [6, 3, 5]
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+prack_supported_for_18x = true
+ringback_timer_millis = 120000
+ringing_timer_millis = 120000
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 28900
+child_sa_rekey_soft_timer_sec = 28800
+diffie_hellman_groups = [2]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc015.mcc208.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 86500
+ike_rekey_soft_timer_sec = 86400
+
+[settings.config.qns]
+sos_transport_type = 2
+
+[settings.field8]
+seconds = 1774974076

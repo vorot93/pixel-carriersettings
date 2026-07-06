@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "62802"
+
+[[settings.apns.apn]]
+name = "Moov"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

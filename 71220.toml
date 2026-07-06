@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "71220"
+
+[[settings.apns.apn]]
+name = "Internet Fullmovil"
+value = "datos.fullmovil.cr"
+type = ["default", "supl"]
+
+[settings.config]

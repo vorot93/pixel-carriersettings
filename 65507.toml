@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "65507"
+
+[[settings.apns.apn]]
+name = "Cell C GPRS"
+value = "internet"
+type = ["default", "supl"]
+proxy = "196.31.116.250"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Cell C MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.cmobile.co.za/"
+mmsc_proxy = "196.31.116.250"
+mmsc_proxy_port = "8080"
+
+[settings.config]

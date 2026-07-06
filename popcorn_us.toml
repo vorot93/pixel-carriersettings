@@ -1,0 +1,49 @@
+[[carrier_id]]
+mcc_mnc = "302220"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "7911"
+
+[[carrier_id]]
+mcc_mnc = "302220"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Popcorn"
+
+[[carrier_id]]
+mcc_mnc = "311588"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "7911"
+
+[[carrier_id]]
+mcc_mnc = "311588"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Popcorn"
+
+[[carrier_id]]
+mcc_mnc = "313460"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "7911"
+
+[[carrier_id]]
+mcc_mnc = "313460"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Popcorn"
+
+[settings]
+version = 77000000001
+
+[settings.config]
+
+[settings.field8]
+seconds = 1762942431

@@ -1,0 +1,38 @@
+[[carrier_id]]
+mcc_mnc = "46001"
+
+[[settings.apns.apn]]
+name = "沃3G连接互联网 (China Unicom)"
+value = "3gnet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "沃3G手机上网 (China Unicom)"
+value = "3gwap"
+type = ["default", "supl"]
+proxy = "10.0.0.172"
+port = "80"
+
+[[settings.apns.apn]]
+name = "联通2GNET上网 (China Unicom)"
+value = "uninet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "联通彩信 (China Unicom)"
+value = "3gwap"
+type = ["mms"]
+mmsc = "http://mmsc.myuni.com.cn"
+mmsc_proxy = "10.0.0.172"
+mmsc_proxy_port = "80"
+
+[[settings.apns.apn]]
+name = "联通2g彩信 (China Unicom)"
+value = "uniwap"
+type = ["mms"]
+mmsc = "http://mmsc.myuni.com.cn"
+mmsc_proxy = "10.0.0.172"
+mmsc_proxy_port = "80"
+
+[settings.config]
+allow_emergency_numbers_in_call_log = true

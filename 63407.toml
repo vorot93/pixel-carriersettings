@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63407"
+
+[[settings.apns.apn]]
+name = "Sudani One"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

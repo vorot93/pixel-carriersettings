@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "708002"
+
+[[carrier_id]]
+mcc_mnc = "70802"
+
+[[carrier_id]]
+mcc_mnc = "708020"
+
+[[settings.apns.apn]]
+name = "INTERNET TIGO"
+value = "internet.tigo.hn"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS TIGO"
+value = "mms.tigo.hn"
+type = ["mms"]
+mmsc = "http://mms"
+mmsc_proxy = "10.16.17.12"
+mmsc_proxy_port = "8888"
+
+[settings.config]

@@ -1,0 +1,11 @@
+[[carrier_id]]
+mcc_mnc = "72454"
+
+[[settings.apns.apn]]
+name = "Porto Seguro Conecta"
+value = "portoconecta.br"
+type = ["default", "dun"]
+authtype = 0
+user_editable = false
+
+[settings.config]

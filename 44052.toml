@@ -1,0 +1,7 @@
+[[carrier_id]]
+mcc_mnc = "44052"
+
+[settings.config]
+_5g_nr_ssrsrp_thresholds = [-128, -118, -108, -98]
+carrier_additional_cbs_channels = ["0xA003:type=other, emergency=true"]
+show_blocking_pay_phone_option = true

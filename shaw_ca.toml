@@ -1,0 +1,156 @@
+[[carrier_id]]
+mcc_mnc = "302490"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "53"
+
+[[carrier_id]]
+mcc_mnc = "302490"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "302490400"
+
+[[carrier_id]]
+mcc_mnc = "302490"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "302490500"
+
+[settings]
+version = 77000000006
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "wsp.shaw.ca"
+type = ["default", "supl", "dun"]
+protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "IMS"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms.shaw.ca"
+type = ["mms"]
+mmsc = "http://mms.shaw.ca"
+mmsc_proxy = "74.115.197.70"
+mmsc_proxy_port = "8080"
+modem_cognitive = true
+user_editable = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap.freedommobile.ca"
+type = ["xcap"]
+user_visible = false
+
+[[settings.apns.apn]]
+name = "EMERGENCY"
+value = "e911.mobilefrdm.ca"
+type = ["emergency"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+_5g_icon_configuration = "connected_mmwave:5G_Plus,connected:5G,connected_rrc_idle:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G"
+_5g_icon_display_grace_period = "connected_mmwave,connected,10;connected_mmwave,connected_rrc_idle,10;connected_mmwave,not_restricted_rrc_idle,10;connected_mmwave,not_restricted_rrc_con,10"
+additional_nr_advanced_bands = [77, 78]
+allow_metered_network_for_cert_download = true
+carrier_cross_sim_ims_available = false
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+hide_lte_plus_data_icon = false
+ims_conference_size_limit = 2
+imsi_key_availability = 2
+imsi_key_download_url = "https://wifiaccess.shaw.ca/gc"
+include_lte_for_nr_advanced_threshold_bandwidth = true
+is_ims_conference_size_enforced = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+maxSubjectLength = 80
+min_udp_port_4500_nat_timeout_sec = 55
+nr_advanced_threshold_bandwidth_khz = 60000
+prefer_3g_visibility = false
+read_only_apn_types = []
+recipientLimit = 20
+sim_country_iso_override = "ca"
+smsToMmsTextThreshold = 6
+use_wfc_home_network_mode_in_roaming_network = true
+wfc_emergency_address_carrier_app = "com.google.android.wfcactivation/.WfcActivationCanadaActivity"
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.mobilefrdm.ca"
+
+[settings.config.gps]
+es_extension_sec = "300"
+
+[settings.config.ims]
+ims_user_agent = "Freedom #MODEL# #BUILD#"
+sip_over_ipsec_enabled = false
+sip_timer_f_millis = 32000
+sip_timer_j_millis = 32000
+
+[settings.config.imsemergency]
+emergency_registration_timer_millis = 10000
+emergency_scan_timer_sec = 20
+maximum_cellular_search_timer_sec = 20
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.mobilefrdm.ca"
+ut_server_based_services = [1, 3, 4, 6, 5, 2]
+ut_terminal_based_services = [10, 8, 0]
+xcap_over_ut_supported_rats = [5, 6, 3]
+
+[settings.config.imsvoice]
+conference_factory_uri = "conf@mobilefrdm.ca"
+minimum_session_expires_timer_sec = 600
+mo_call_request_timeout_millis = 10000
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102]
+amrwb_payload_type = [104]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 8100
+child_sa_rekey_soft_timer_sec = 8000
+diffie_hellman_groups = [14, 5]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc490.mcc302.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 8100
+ike_rekey_soft_timer_sec = 8000
+ike_remote_id_type = 11
+
+[settings.config.qns]
+mms_rat_preference = 2
+sos_transport_type = 2
+xcap_rat_preference = 2
+
+[settings.config.wifi]
+carrier_profiles_version = 2
+passpoint_profiles = ['<?xml version="1.0" encoding="UTF-8"?><PasspointProfile><PPSMO><![CDATA[<MgmtTree xmlns="syncml:dmddf1.2"><VerDTD>1.2</VerDTD><Node><NodeName>PerProviderSubscription</NodeName><RTProperties><Type><DDFName>urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0</DDFName></Type></RTProperties><Node><NodeName>i001</NodeName><Node><NodeName>HomeSP</NodeName><Node><NodeName>FriendlyName</NodeName><Value>ShawPasspoint</Value></Node><Node><NodeName>FQDN</NodeName><Value>shaw.ca</Value></Node></Node><Node><NodeName>Credential</NodeName><Node><NodeName>Realm</NodeName><Value>wlan.mnc490.mcc302.3gppnetwork.org</Value></Node><Node><NodeName>SIM</NodeName><Node><NodeName>IMSI</NodeName><Value>302490*</Value></Node><Node><NodeName>EAPType</NodeName><Value>23</Value></Node></Node></Node></Node></Node></MgmtTree>]]></PPSMO></PasspointProfile>']
+
+[settings.field8]
+seconds = 1773841160

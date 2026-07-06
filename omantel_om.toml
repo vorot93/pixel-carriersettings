@@ -1,0 +1,56 @@
+[[carrier_id]]
+mcc_mnc = "42202"
+
+[[carrier_id]]
+mcc_mnc = "42204"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Oman Mobile MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mmsc.omanmobile.om:10021/mmsc"
+mmsc_proxy = "192.168.203.35"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Oman Mobile Internet"
+value = "taif"
+type = ["default", "supl"]
+user = "taif"
+password = "taif"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1724979979

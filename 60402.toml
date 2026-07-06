@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "60402"
+
+[[settings.apns.apn]]
+name = "WEB"
+value = "www.wana.ma"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "WAP"
+value = "www.wana.ma"
+type = ["default", "supl"]
+proxy = "10.86.0.10"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms.wana.ma"
+type = ["mms"]
+mmsc = "http://mms.wana.ma:38090"
+mmsc_proxy = "10.86.0.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 102400

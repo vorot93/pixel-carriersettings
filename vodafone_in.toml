@@ -1,0 +1,137 @@
+[[carrier_id]]
+mcc_mnc = "40401"
+
+[[carrier_id]]
+mcc_mnc = "40405"
+
+[[carrier_id]]
+mcc_mnc = "40411"
+
+[[carrier_id]]
+mcc_mnc = "40413"
+
+[[carrier_id]]
+mcc_mnc = "40415"
+
+[[carrier_id]]
+mcc_mnc = "40420"
+
+[[carrier_id]]
+mcc_mnc = "40427"
+
+[[carrier_id]]
+mcc_mnc = "40430"
+
+[[carrier_id]]
+mcc_mnc = "40443"
+
+[[carrier_id]]
+mcc_mnc = "40446"
+
+[[carrier_id]]
+mcc_mnc = "40460"
+
+[[carrier_id]]
+mcc_mnc = "40484"
+
+[[carrier_id]]
+mcc_mnc = "40486"
+
+[[carrier_id]]
+mcc_mnc = "40488"
+
+[[carrier_id]]
+mcc_mnc = "40566"
+
+[[carrier_id]]
+mcc_mnc = "40567"
+
+[[carrier_id]]
+mcc_mnc = "405750"
+
+[[carrier_id]]
+mcc_mnc = "405751"
+
+[[carrier_id]]
+mcc_mnc = "405752"
+
+[[carrier_id]]
+mcc_mnc = "405753"
+
+[[carrier_id]]
+mcc_mnc = "405754"
+
+[[carrier_id]]
+mcc_mnc = "405755"
+
+[[carrier_id]]
+mcc_mnc = "405756"
+
+[settings]
+version = 77000000008
+
+[[settings.apns.apn]]
+name = "Vodafone Idea"
+value = "www"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+allow_hold_call_during_emergency = false
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_wfc_roaming_mode = true
+enabledMMS = false
+hide_enhanced_4g_lte = true
+is_ims_conference_size_enforced = true
+non_roaming_operator = ["40401", "40404", "40405", "40407", "40411", "40412", "40413", "40414", "40415", "40419", "40420", "40422", "40424", "40427", "40430", "40443", "40444", "40446", "40456", "40460", "40478", "40482", "40484", "40486", "40487", "40488", "40489", "40566", "40567", "40570", "405750", "405751", "405752", "405753", "405754", "405755", "405756", "405799", "405845", "405846", "405848", "405849", "405850", "405852", "405853"]
+prevent_clir_activation_and_deactivation_code = true
+smart_forwarding_config_component_name = "com.qti.xdivert/com.qti.xdivert.XDivertSetting"
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE#_#MODEL#_#BUILD#"
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+prack_supported_for_18x = true
+ringback_timer_millis = 60000
+ringing_timer_millis = 60000
+
+[settings.config.imsvt]
+video_as_bandwidth_kbps = 768
+video_rr_bandwidth_bps = 28800
+video_rs_bandwidth_bps = 9600
+
+[settings.config.iwlan]
+ike_sa_transforms_reorder = false
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["24", "36", "9000-9003", "10500", "11001", "11011", "8192"],"RetryArray": ["30", "60", "1800", "3600", "-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}]}]'
+mcc_mncs = ["404-13", "405-751", "405-752", "404-84", "404-11", "404-05", "404-01", "405-754", "405-750", "404-15", "405-66", "404-30", "404-27", "405-756", "404-20", "405-755", "405-753", "404-60", "404-43", "404-88", "405-67", "404-86", "404-46", "404-07", "405-845", "405-70", "405-852", "404-04", "404-24", "404-12", "404-82", "405-846", "404-89", "404-56", "405-848", "404-22", "404-78", "405-799", "405-849", "405-850", "404-87", "405-852", "404-14", "405-853", "404-44", "404-19"]
+
+[settings.config.qns]
+support_wfc_during_airplane_mode = false
+
+[settings.field8]
+seconds = 1763550047

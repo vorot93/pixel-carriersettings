@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "20404"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "中国电信"
+
+[[settings.apns.apn]]
+name = "CTNET"
+value = "ctnet"
+type = ["cbs", "default", "supl", "hipri", "fota"]
+server = "*"
+authtype = 0
+
+[settings.config]
+ascii_7_bit_support_for_long_message = true
+default_vm_number = "+31654501233"
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+show_4g_for_lte_data_icon = true

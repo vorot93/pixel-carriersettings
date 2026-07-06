@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "312580"
+
+[[carrier_id]]
+mcc_mnc = "315010"
+
+[[settings.apns.apn]]
+name = "Google"
+value = "internet"
+type = ["default"]
+
+[settings.config]
+lte_rsrp_thresholds = [-115, -105, -95, -85]
+opportunistic_network_data_switch_exit_hysteresis_time = 2000
+opportunistic_network_data_switch_hysteresis_time = 2000
+opportunistic_network_entry_threshold_rsrp = -111
+opportunistic_network_entry_threshold_rssnr = 10
+opportunistic_network_exit_threshold_rsrp = -120
+opportunistic_network_exit_threshold_rssnr = 9

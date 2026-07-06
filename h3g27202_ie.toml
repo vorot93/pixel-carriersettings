@@ -1,0 +1,92 @@
+[[carrier_id]]
+mcc_mnc = "27202"
+
+[settings]
+version = 77000000009
+
+[[settings.apns.apn]]
+name = "3"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Three MMS"
+value = "internet"
+type = ["mms"]
+mmsc = "http://mms.three.ie"
+mmsc_proxy = "62.40.32.40"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "hos"
+type = ["xcap"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+allow_hold_in_rtt_call = false
+call_barring_visibility = true
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "171"
+display_hd_plus_icon = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.three.ie"
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.ims]
+registration_expiry_timer_sec = 36000
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.three.ie"
+ut_as_server_port = 80
+ut_iptype_roaming = 0
+ut_requires_ims_registration = true
+xcap_over_ut_supported_rats = [6, 3, 5]
+
+[settings.config.imsvoice]
+minimum_session_expires_timer_sec = 600
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [3, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 43200
+child_sa_rekey_soft_timer_sec = 43100
+diffie_hellman_groups = [14]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.three.ie"
+ike_rekey_hard_timer_in_sec = 43200
+ike_rekey_soft_timer_sec = 43100
+
+[settings.config.qns]
+sos_transport_type = 2
+
+[settings.field8]
+seconds = 1770819167

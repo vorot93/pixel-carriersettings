@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "22858"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Mucho"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Mucho"
+value = "internet"
+type = ["default", "supl"]
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+enabledMMS = false
+
+[settings.field8]
+seconds = 1756276532

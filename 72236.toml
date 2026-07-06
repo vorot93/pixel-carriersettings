@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "72236"
+
+[[settings.apns.apn]]
+name = "Nuestro MMS"
+value = "mms.nuestro.com.ar"
+type = ["mms"]
+user = "mms"
+authtype = 0
+mmsc = "http://mms.nuestro.com.ar"
+mmsc_proxy = "172.16.0.20"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Nuestro Internet"
+value = "gprs.nuestro.com.ar"
+type = ["default"]
+user = "gprs"
+authtype = 0
+
+[settings.config]
+non_roaming_operator = ["72234"]

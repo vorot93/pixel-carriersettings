@@ -1,0 +1,168 @@
+[[carrier_id]]
+mcc_mnc = "302610"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "3E"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Virgin Mobile"
+value = "pda.bell.ca"
+type = ["default", "mms", "supl", "dun", "hipri", "xcap"]
+bearer_bitmask = "1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+mmsc = "http://mms.bell.ca/mms/wapenc"
+protocol = "ipv6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Virgin Mobile Apps"
+value = "apps.bell.ca"
+type = ["mms", "xcap"]
+bearer_bitmask = "18"
+mmsc = "http://mms.bell.ca/mms/wapenc"
+protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Virgin Mobile IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Virgin Mobile SOS"
+value = "sos"
+type = ["emergency"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+allow_metered_network_for_cert_download = true
+carrier_cross_sim_ims_available = false
+carrier_default_wfc_ims_mode = 1
+carrier_nr_availabilities = [1, 2]
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+emailGatewayNumber = "6245"
+hide_enhanced_4g_lte = true
+hide_lte_plus_data_icon = false
+imsi_key_availability = 2
+imsi_key_download_url = "https://public-cert-imsi.bell.ca/"
+is_ims_conference_size_enforced = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+maxSubjectLength = 80
+min_udp_port_4500_nat_timeout_sec = 120
+non_roaming_operator = ["302"]
+preferred_ike_protocol = 40
+read_only_apn_types = []
+recipientLimit = 20
+smsToMmsTextThreshold = 8
+voicemail_notification_persistent = true
+volte_replacement_rat = 3
+wfc_emergency_address_carrier_app = "com.android.imsserviceentitlement/.WfcActivationActivity"
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.bell.ca"
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.gps]
+es_extension_sec = "300"
+
+[settings.config.ims]
+gruu_enabled = true
+ims_pdn_enabled_in_no_vops_support = [0, 1]
+ims_user_agent = "#MANUFACTURE# #MODEL# #BUILD#"
+registration_subscribe_expiry_timer_sec = 86400
+sip_over_ipsec_enabled = false
+sip_timer_f_millis = 32000
+
+[settings.config.imsemergency]
+emergency_registration_timer_millis = 10000
+emergency_scan_timer_sec = 3
+emergency_vowifi_requires_condition = 1
+maximum_cellular_search_timer_sec = 3
+
+[settings.config.imsserviceentitlement]
+entitlement_server_url = "https://egw.wireless.bell.ca:9014/DEGDROIDInterfaceTS43/"
+fcm_sender_id = "263945284783"
+show_vowifi_webview = true
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_as_server_fqdn = "naf.ims.bell.ca"
+ut_as_server_port = 443
+ut_requires_ims_registration = true
+ut_transport_type = 3
+xcap_over_ut_supported_rats = [5, 6, 3]
+
+[settings.config.imsvoice]
+audio_as_bandwidth_kbps = 50
+audio_rr_bandwidth_bps = 1875
+audio_rs_bandwidth_bps = 625
+conference_factory_uri = "conf@ims.bell.ca"
+minimum_session_expires_timer_sec = 600
+mo_call_request_timeout_millis = 8000
+ringback_timer_millis = 150000
+ringing_timer_millis = 30000
+rtp_inactivity_time_threshold_millis = 6000
+session_privacy_type = 2
+srvcc_type = [0, 1, 3]
+
+[settings.config.imsvoice.amrnb_payload_description.101]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.103]
+amr_codec_attribute_modeset = [0, 1, 2]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.104]
+amr_codec_attribute_modeset = [0, 1, 2]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102, 101]
+amrwb_payload_type = [104, 103]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [126]
+
+[settings.config.imsvoice.evs_payload_description.126]
+evs_codec_attribute_bitrate = [4, 6]
+evs_codec_attribute_ch_aw_recv = 2
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+add_ke_to_child_session_rekey = true
+child_sa_rekey_hard_timer_sec = 86500
+child_sa_rekey_soft_timer_sec = 86400
+diffie_hellman_groups = [14]
+ike_rekey_hard_timer_in_sec = 80100
+ike_rekey_soft_timer_sec = 80000
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["1", "4", "5", "7", "9", "11", "14", "17", "35", "37", "38", "39"],"RetryArray": ["0"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"]},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["24"],"RetryArray": ["10", "20", "20", "20"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"]}]}]'
+
+[settings.config.qns]
+mms_rat_preference = 2
+sos_transport_type = 2
+xcap_rat_preference = 2
+
+[settings.config.wifi]
+carrier_profiles_version = 2
+network_profiles = ['<?xml version="1.0" encoding="UTF-8"?><WifiNetwork priority="10"><SSID>5099251212</SSID><Credential><SIM><EAPType>23</EAPType></SIM></Credential></WifiNetwork>']
+passpoint_profiles = ['<?xml version="1.0" encoding="UTF-8"?><PasspointProfile priority="20"><PPSMO><![CDATA[<MgmtTree xmlns="syncml:dmddf1.2"><VerDTD>1.2</VerDTD><Node><NodeName>PerProviderSubscription</NodeName><RTProperties><Type><DDFName>urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0</DDFName></Type></RTProperties><Node><NodeName>i001</NodeName><Node><NodeName>HomeSP</NodeName><Node><NodeName>FriendlyName</NodeName><Value>WiFi</Value></Node><Node><NodeName>FQDN</NodeName><Value>virginplus.ca</Value></Node></Node><Node><NodeName>Credential</NodeName><Node><NodeName>Realm</NodeName><Value>wlan.mnc610.mcc302.3gppnetwork.org</Value></Node><Node><NodeName>SIM</NodeName><Node><NodeName>IMSI</NodeName><Value>302610*</Value></Node><Node><NodeName>EAPType</NodeName><Value>23</Value></Node></Node></Node></Node></Node></MgmtTree>]]></PPSMO></PasspointProfile>']
+
+[settings.field8]
+seconds = 1731496831

@@ -1,0 +1,29 @@
+[[carrier_id]]
+mcc_mnc = "20601"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "4E"
+
+[[settings.apns.apn]]
+name = "Px MMS"
+value = "event.proximus.be"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mmsc.proximus.be/mms"
+mmsc_proxy = "10.55.14.75"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "NRJ-ESM"
+value = ""
+type = ["ia"]
+
+[[settings.apns.apn]]
+name = "Px Internet"
+value = "INTERNET.PROXIMUS.BE"
+type = ["default", "supl"]
+
+[settings.config]

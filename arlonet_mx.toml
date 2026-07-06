@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Arlonet"
+
+[[settings.apns.apn]]
+name = "Arlonet"
+value = "internet.arloesinet.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Arlonet"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "53901"
+
+[[settings.apns.apn]]
+name = "U-Call"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

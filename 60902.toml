@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60902"
+
+[[settings.apns.apn]]
+name = "Chinguitel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

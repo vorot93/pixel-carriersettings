@@ -1,0 +1,38 @@
+[[carrier_id]]
+mcc_mnc = "310280"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "60FF"
+
+[[carrier_id]]
+mcc_mnc = "310410"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "60FF"
+
+[[settings.apns.apn]]
+name = "Defense Mobile"
+value = "PRODATA"
+type = ["default", "mms", "supl"]
+mmsc = "http://mmsc.mobile.att.net"
+mmsc_proxy = "proxy.mobile.att.net"
+mmsc_proxy_port = "80"
+
+[settings.config]
+csp_enabled = true
+enableSMSDeliveryReports = false
+inflate_signal_strength = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+mmi_two_digit_number_pattern = ["0", "00", "*0", "*1", "*2", "*3", "*4", "*5", "*6", "*7", "*8", "*9", "#0", "#1", "#2", "#3", "#4", "#5", "#6", "#7", "#8", "#9"]
+non_roaming_operator = ["310", "311", "312", "313", "314", "315", "316"]
+operator_name_filter_pattern = '(.*)\.{3}[12]$'
+recipientLimit = 10
+roaming_operator = ["310110", "310140", "310400", "310470", "311170"]
+rtt_supported = true
+show_carrier_data_icon_pattern = '.*\.{3}[12]$'
+support_pause_ims_video_calls = false
+volte_replacement_rat = 3

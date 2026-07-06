@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "73008"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "movil.vtr.com"
+type = ["default", "supl"]
+user = "vtrmovil"
+password = "vtrmovil"
+authtype = 2
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms.vtr.com"
+type = ["mms"]
+user = "mms"
+authtype = 0
+mmsc = "http://192.168.94.162:19090/was"
+mmsc_proxy = "192.168.94.210"
+mmsc_proxy_port = "9028"
+
+[settings.config]
+non_roaming_operator = ["73002"]

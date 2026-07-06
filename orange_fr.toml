@@ -1,0 +1,166 @@
+[[carrier_id]]
+mcc_mnc = "20800"
+
+[[carrier_id]]
+mcc_mnc = "20801"
+
+[[carrier_id]]
+mcc_mnc = "20802"
+
+[settings]
+version = 77000000012
+
+[[settings.apns.apn]]
+name = "Orange Fr IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+mtu = 1300
+user_visible = false
+field27 = "1|2|3|8|9|10|13|14|15|18|20"
+
+[[settings.apns.apn]]
+name = "Orange World"
+value = ""
+type = ["ia"]
+protocol = "ipv6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Orange World"
+value = "orange"
+type = ["default", "dun", "supl", "xcap", "mms"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|20"
+user = "orange"
+password = "orange"
+authtype = 1
+mmsc = "http://mms.orange.fr"
+protocol = "ipv6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "vowifiorange"
+value = "vowifiorange"
+type = ["xcap", "mms"]
+bearer_bitmask = "18"
+mmsc = "http://mms.orange.fr"
+user_visible = false
+
+[settings.config]
+allow_ussd_requests_via_telephony_manager = false
+carrier_certificate = ["B67AFFCDA89E3193B1595036D7C6CDBE22BE5CA24C9F6CF93FC6B48F91D7310D:com.orange.phone,com.orange.orangeetmoi,com.orange.mysosh,com.orange.obl,com.orange.orangepro,com.orange.update"]
+carrier_data_call_apn_retry_after_disconnect = 0
+carrier_metered_apn_types = ["default", "dun", "supl"]
+carrier_nr_availabilities = [2, 1]
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_volte_provisioning_required = true
+carrier_vvm_package_name_string = "com.orange.vvm"
+carrier_wfc_ims_available = true
+config_plans_package_override = "com.orange.orangeetmoi"
+default_vm_number = "888"
+display_hd_plus_icon = true
+hide_enhanced_4g_lte = true
+hide_redundant_options_menu_on_stk_input_screen = true
+ignore_rtt_mode_setting = true
+ims_reasoninfo_mapping = ["510|Call completed elsewhere|1014", "*|Call is dropped due to Wi-Fi signal is degraded|1407"]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+min_udp_port_4500_nat_timeout_sec = 120
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+show_wfc_location_privacy_policy = true
+support_no_reply_timer_for_cfnry = false
+volte_replacement_rat = 3
+vonr_enabled = true
+vonr_setting_visibility = false
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ims_user_agent = "PRD-NG114/6 #MANUFACTURE#/#MODEL#-#BUILD# device-type/#TYPE# mno-custom/#MCCMNC#"
+ipv4_sip_mtu_size_cellular = 1300
+ipv6_sip_mtu_size_cellular = 1300
+request_uri_type = 1
+
+[settings.config.ims.mmtel_requires_provisioning]
+capability_type_video = [0]
+capability_type_voice = [0, 1]
+
+[settings.config.imsemergency]
+emergency_over_ims_roaming_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_rats = [6, 3, 5]
+emergency_requires_ims_registration = true
+emergency_scan_timer_sec = 5
+
+[settings.config.imsserviceentitlement]
+default_service_entitlement_status = true
+entitlement_server_url = "https://aes.mnc001.mcc208.pub.3gppnetwork.org"
+entitlement_version = 8
+fcm_sender_id = "958953883393"
+ims_provisioning = true
+show_vowifi_webview = false
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = [1, 2, 3, 6, 5]
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_iptype_home = 1
+ut_iptype_roaming = 0
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 8]
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+minimum_session_expires_timer_sec = 600
+mo_call_request_timeout_millis = 3000
+ringback_timer_millis = 180000
+ringing_timer_millis = 180000
+
+[settings.config.imsvoice.amrnb_payload_description.100]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.amrnb_payload_description.101]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.99]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [100, 101]
+amrwb_payload_type = [98, 99]
+dtmfnb_payload_type = [106]
+dtmfwb_payload_type = [105]
+evs_payload_type = [127, 126]
+
+[settings.config.imsvoice.evs_payload_description.126]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bandwidth = 2
+evs_codec_attribute_bitrate = [3, 6]
+
+[settings.config.iwlan]
+add_ke_to_child_session_rekey = true
+child_sa_rekey_hard_timer_sec = 64900
+child_sa_rekey_soft_timer_sec = 64800
+diffie_hellman_groups = [14, 5]
+ike_rekey_hard_timer_in_sec = 64900
+ike_rekey_soft_timer_sec = 64800
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["*"],"RetryArray": ["4", "8", "16", "32", "64", "128", "256", "512", "1024", "-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9000", "11001", "11011"],"RetryArray": ["43200"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9006"],"RetryArray": ["86400"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["36"],"RetryArray": ["4", "8", "16", "32", "64", "128", "256", "512", "1024", "-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"],"HandoverAttemptCount": "3"}]}]'
+
+[settings.config.qns]
+idle_wifi_rssi = [-65, -75]
+idle_wifi_rssi_without_cellular = [-85, -90]
+voice_wifi_rssi = [-65, -75]
+voice_wifi_rssi_without_cellular = [-85, -90]
+
+[settings.field8]
+seconds = 1770215858

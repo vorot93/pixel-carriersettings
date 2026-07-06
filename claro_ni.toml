@@ -1,0 +1,29 @@
+[[carrier_id]]
+mcc_mnc = "71021"
+
+[[carrier_id]]
+mcc_mnc = "71073"
+
+[[carrier_id]]
+mcc_mnc = "710730"
+
+[[settings.apns.apn]]
+name = "Enitel WEB"
+value = "internet.ideasalo.ni"
+type = ["default", "supl"]
+user = "internet"
+password = "internet"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Enitel MMS"
+value = "mms.indeasalo.ni"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://10.6.32.27/servlets/mms"
+mmsc_proxy = "10.6.32.2"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,13 @@
+[[carrier_id]]
+mcc_mnc = "311930"
+
+[[settings.apns.apn]]
+name = "Syringa Wireless"
+value = "internet.syringawireless.com"
+type = ["default", "mms", "dun", "fota"]
+server = "*"
+mmsc = "http://mms.rinawireless.com"
+protocol = "ipv4v6"
+user_editable = false
+
+[settings.config]

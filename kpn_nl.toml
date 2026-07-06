@@ -1,0 +1,103 @@
+[[carrier_id]]
+mcc_mnc = "20408"
+
+[[carrier_id]]
+mcc_mnc = "20469"
+
+[settings]
+version = 77000000005
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "KPN Mobiel Internet"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "ut"
+type = ["xcap"]
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "1233"
+display_hd_plus_icon = true
+editable_enhanced_4g_lte = false
+gsm_cdma_calls_can_be_hd_audio = true
+ignore_rtt_mode_setting = true
+ims_reasoninfo_mapping = ["338|another device sent all devices busy response|1017", "510|Call completed elsewhere|1014"]
+prefer_3g_visibility = false
+preferred_ike_protocol = 40
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 11
+
+[settings.config.bsf]
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.imsemergency]
+emergency_qos_precondition_supported = false
+
+[settings.config.imsrtt]
+text_qos_precondition_supported = false
+
+[settings.config.imsss]
+ut_as_server_port = 443
+ut_iptype_home = 0
+ut_iptype_roaming = 0
+ut_server_based_services = [1, 3, 4, 7, 6, 5, 2, 8, 9, 11]
+ut_transport_type = 3
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+audio_inactivity_call_end_reasons = [2, 4]
+conference_subscribe_type = 0
+voice_qos_precondition_supported = false
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [112]
+
+[settings.config.imsvoice.evs_payload_description.112]
+codec_attribute_cmr = 1
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+evs_codec_attribute_mode_switch = 0
+
+[settings.config.imsvt]
+video_qos_precondition_supported = false
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 86500
+child_sa_rekey_soft_timer_sec = 86400
+diffie_hellman_groups = [14]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc008.mcc204.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 86500
+ike_rekey_soft_timer_sec = 86400
+ike_remote_id_type = 11
+
+[settings.field8]
+seconds = 1772035424

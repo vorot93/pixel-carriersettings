@@ -1,0 +1,108 @@
+[[carrier_id]]
+mcc_mnc = "20809"
+
+[[carrier_id]]
+mcc_mnc = "20810"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "SFR webphone"
+value = "sl2sfr"
+type = ["default", "mms", "supl", "dun", "hipri", "xcap"]
+mmsc = "http://mms1"
+mmsc_proxy = "10.151.0.1"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "SFR IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "SFR attach"
+value = ""
+type = ["ia"]
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+auto_retry_failed_wifi_emergency_call = true
+carrier_certificate = ["5f00d30d66af74dd43e98a00695362719d8e7c9e7de367b962769cdfe12bd9da:com.sfr.otp,com.sfr.mobileconnect,com.sfr.android.moncompte,com.sfr.android.redmoncompte"]
+carrier_nr_availabilities = [1, 2]
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "123"
+display_hd_plus_icon = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+ims_reasoninfo_mapping = ["510|Call completed elsewhere|1014", "*|Call is dropped due to Wi-Fi signal is degraded|1407"]
+is_ims_conference_size_enforced = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+prefer_2g = true
+read_only_apn_types = []
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+support_ims_conference_event_package = false
+volte_replacement_rat = 3
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.ims]
+request_uri_type = 1
+
+[settings.config.imsemergency]
+emergency_scan_timer_sec = 5
+
+[settings.config.imsserviceentitlement]
+entitlement_server_url = "https://aes.mnc010.mcc208.pub.3gppnetwork.org"
+fcm_sender_id = "96170559701"
+ims_provisioning = true
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_as_server_port = 443
+ut_transport_type = 3
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+audio_rtcp_inactivity_timer_millis = 0
+audio_rtp_inactivity_timer_millis = 30000
+minimum_session_expires_timer_sec = 600
+ringback_timer_millis = 200000
+ringing_timer_millis = 200000
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102]
+amrwb_payload_type = [104]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [127]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14, 2]
+
+[settings.config.qns]
+xcap_transport_type = 0
+
+[settings.field8]
+seconds = 1766559539

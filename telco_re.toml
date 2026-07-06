@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "20815"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F006"
+
+[[carrier_id]]
+mcc_mnc = "64703"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F006"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Telco OI Re"
+value = "internet.telco.re"
+type = ["default", "dun", "supl", "mms"]
+mmsc = "http://mms.telco.re"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+maxMessageSize = 614400
+read_only_apn_types = []
+
+[settings.field8]
+seconds = 1769617073

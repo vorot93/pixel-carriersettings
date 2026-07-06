@@ -1,0 +1,47 @@
+[[carrier_id]]
+mcc_mnc = "28601"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "TURKCELL INTERNET"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "TURKCELL MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms.turkcell.com.tr/servlets/mms"
+mmsc_proxy = "212.252.169.217"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 512000
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+
+[settings.field8]
+seconds = 1724979979

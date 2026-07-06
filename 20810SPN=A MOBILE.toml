@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "20810"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "A MOBILE"
+
+[[settings.apns.apn]]
+name = "Auchan WAP"
+value = "wap65"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Auchan MMS"
+value = "mms65"
+type = ["mms"]
+mmsc = "http://mms65"
+mmsc_proxy = "10.143.156.8"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+prefer_2g = true
+show_4g_for_lte_data_icon = true

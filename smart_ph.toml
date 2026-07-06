@@ -1,0 +1,68 @@
+[[carrier_id]]
+mcc_mnc = "51503"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "SMARTLTE"
+value = "smartlte"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "SMART INTERNET"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Smart GPRS"
+value = "Smart1"
+type = ["default", "supl"]
+proxy = "10.102.61.46"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Smart MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://10.102.61.238:8002"
+mmsc_proxy = "10.102.61.46"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_volte_available = true
+hide_enhanced_4g_lte = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_server_based_services = []
+ut_terminal_based_services = [0]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+child_session_aes_cbc_key_size = [256]
+ike_remote_id_type = 11
+ike_session_encryption_aes_cbc_key_size = [128, 256]
+
+[settings.field8]
+seconds = 1770215858

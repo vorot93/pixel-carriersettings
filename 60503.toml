@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "60503"
+
+[[settings.apns.apn]]
+name = "Tunisiana-Internet"
+value = "internet.tunisiana.com"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MMS Tunisiana"
+value = "mms.tunisiana.com"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mmsc.tunisiana.com"
+mmsc_proxy = "10.3.2.100"
+mmsc_proxy_port = "80"
+
+[settings.config]

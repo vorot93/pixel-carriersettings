@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "41805"
+
+[[settings.apns.apn]]
+name = "Asiacell GPRS"
+value = "net.asiacell.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Asiacell MMS"
+value = "wap.asiacell.com"
+type = ["mms"]
+mmsc = "http://192.168.107.10:19090/was"
+mmsc_proxy = "192.168.107.50"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 102400

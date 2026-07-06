@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "TURBORED"
+
+[[settings.apns.apn]]
+name = "Topos"
+value = "internet.turbored.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Topos"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

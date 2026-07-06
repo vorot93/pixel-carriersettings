@@ -1,0 +1,32 @@
+[[carrier_id]]
+mcc_mnc = "72416"
+
+[[carrier_id]]
+mcc_mnc = "72424"
+
+[[carrier_id]]
+mcc_mnc = "72430"
+
+[[carrier_id]]
+mcc_mnc = "72431"
+
+[[settings.apns.apn]]
+name = "Oi GPRS Internet"
+value = "gprs.oi.com.br"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "MMS GPRS"
+value = "mmsgprs.oi.com.br"
+type = ["mms"]
+user = "oimms"
+password = "oioioi"
+authtype = 1
+mmsc = "http://200.222.42.204:8002"
+mmsc_proxy = "192.168.10.50"
+mmsc_proxy_port = "3128"
+protocol = "ipv4v6"
+
+[settings.config]
+show_4g_for_lte_data_icon = true

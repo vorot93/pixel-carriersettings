@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "FreedomPop"
+
+[[settings.apns.apn]]
+name = "Freedompop"
+value = "Internet.mvne1.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Freedompop"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

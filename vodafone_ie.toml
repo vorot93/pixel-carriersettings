@@ -1,0 +1,108 @@
+[[carrier_id]]
+mcc_mnc = "27201"
+
+[settings]
+version = 77000000007
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "live.vodafone.com"
+type = ["default", "supl"]
+authtype = 0
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Vodafone MMS"
+value = "mms.vodafone.net"
+type = ["mms"]
+mmsc = "http://www.vodafone.ie/mms"
+mmsc_proxy = "10.24.59.200"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap"
+type = ["xcap"]
+user_visible = false
+
+[settings.config]
+auto_retry_failed_wifi_emergency_call = true
+call_barring_visibility = true
+carrier_certificate = ["DD839AD437E56CDCE41B683F35777EA73DD2B5571FE6849B26176FC26F03CC40:com.VodafoneIreland.MyVodafone"]
+carrier_default_wfc_ims_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "171"
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+prefer_3g_visibility = false
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+smsToMmsTextThreshold = 5
+
+[settings.config.bsf]
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.ims]
+ipsec_authentication_algorithms = [1]
+ipsec_encryption_algorithms = [0, 2]
+ipv4_sip_mtu_size_cellular = 1330
+ipv6_sip_mtu_size_cellular = 1330
+registration_retry_max_timer_millis = 300000
+sip_timer_b_millis = 32000
+sip_timer_f_millis = 32000
+sip_timer_j_millis = 32000
+sip_timer_t1_millis = 500
+sip_timer_t2_millis = 4000
+sip_timer_t4_millis = 4000
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_as_server_port = 443
+ut_iptype_home = 0
+ut_requires_ims_registration = true
+ut_transport_type = 3
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+audio_rtcp_inactivity_timer_millis = 0
+conference_factory_uri = "teleconferenceuri-factory@ims.vodafone.ie"
+conference_subscribe_type = 0
+ringback_timer_millis = 240000
+ringing_timer_millis = 240000
+
+[settings.config.imsvoice.evs_payload_description.127]
+codec_attribute_cmr = 3
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9002"],"RetryArray": ["1800", "-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}]}]'
+
+[settings.config.qns]
+block_iwlan_in_international_roaming_without_wwan = true
+support_wfc_recovery = false
+
+[settings.field8]
+seconds = 1765981876

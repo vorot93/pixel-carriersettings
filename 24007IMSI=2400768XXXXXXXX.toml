@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "24007"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2400768"
+
+[[settings.apns.apn]]
+name = "Tele2 Internet"
+value = "internet.tele2.no"
+type = ["default", "supl"]
+user = "wap"
+password = "wap"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Tele2 MMS"
+value = "internet.tele2.no"
+type = ["mms"]
+mmsc = "http://mmsc.tele2.no"
+mmsc_proxy = "193.12.40.14"
+mmsc_proxy_port = "8080"
+
+[settings.config]

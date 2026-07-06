@@ -1,0 +1,15 @@
+[[carrier_id]]
+mcc_mnc = "43601"
+
+[[carrier_id]]
+mcc_mnc = "43602"
+
+[[carrier_id]]
+mcc_mnc = "43612"
+
+[[settings.apns.apn]]
+name = "Tcell"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

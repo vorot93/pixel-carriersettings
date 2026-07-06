@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "311100"
+
+[[settings.apns.apn]]
+name = "NexTech Wireless"
+value = ""
+type = ["mms"]
+server = "*"
+authtype = 3
+mmsc = "http://mms.ntwls.net/nex-tech/mms.php"
+protocol = "ipv4v6"
+
+[settings.config]
+emailGatewayNumber = "6245"
+enableMultipartSMS = false
+enableSMSDeliveryReports = false
+httpParams = "X-MDN: ##LINE1##"
+maxImageHeight = 2432
+maxImageWidth = 4320
+maxMessageSize = 1048576
+maxSubjectLength = 80
+recipientLimit = 10

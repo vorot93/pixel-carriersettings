@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "20465"
+
+[[settings.apns.apn]]
+name = "agms"
+value = "agms"
+type = ["default", "supl"]
+
+[settings.config]

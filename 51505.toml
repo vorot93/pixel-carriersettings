@@ -1,0 +1,29 @@
+[[carrier_id]]
+mcc_mnc = "51505"
+
+[[settings.apns.apn]]
+name = "Sun Internet"
+value = "minternet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "SUN WAP GPRS"
+value = "wap"
+type = ["default", "supl"]
+proxy = "202.138.159.78"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Sun SBW"
+value = "fbband"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "SUN MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mmscenter.suncellular.com.ph"
+mmsc_proxy = "202.138.159.78"
+mmsc_proxy_port = "8080"
+
+[settings.config]

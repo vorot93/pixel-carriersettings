@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "311190"
+
+[[settings.apns.apn]]
+name = "Tether"
+value = "broadband.cellular1.net"
+type = ["dun"]
+user_visible = false
+
+[[settings.apns.apn]]
+name = "ISP"
+value = "isp.cellular1.net"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms.cellular1.net"
+type = ["mms"]
+mmsc = "http://mms.cellular1.net"
+mmsc_proxy = "10.10.0.97"
+mmsc_proxy_port = "9201"
+
+[settings.config]

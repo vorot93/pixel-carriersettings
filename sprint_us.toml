@@ -1,0 +1,152 @@
+[[carrier_id]]
+mcc_mnc = "310120"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "000001"
+
+[[carrier_id]]
+mcc_mnc = "310120"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "FFFFFF"
+
+[[carrier_id]]
+mcc_mnc = "312530"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "000001"
+
+[[carrier_id]]
+mcc_mnc = "312530"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "FFFFFF"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Sprint"
+value = "sprint"
+type = ["cbs", "default", "mms", "supl"]
+bearer_bitmask = "4|5|6|7|8|12"
+mmsc = "http://mms.sprintpcs.com"
+mmsc_proxy = "oap7.sprintpcs.com"
+mmsc_proxy_port = "80"
+
+[[settings.apns.apn]]
+name = "Sprint"
+value = "sprint"
+type = ["default", "mms", "supl", "dun", "cbs"]
+bearer_bitmask = "4|5|6|7|8|12"
+mmsc = "http://mms.sprintpcs.com"
+mmsc_proxy = "oap7.sprintpcs.com"
+mmsc_proxy_port = "80"
+profile_id = 1
+modem_cognitive = true
+user_editable = false
+
+[[settings.apns.apn]]
+name = "OTA"
+value = "otasn"
+type = ["ia", "fota"]
+user = "null"
+password = "null"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "SPCS Global"
+value = "cinet.spcs"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "1|2|3|9|10|11|15"
+mmsc = "http://mms.sprintpcs.com"
+mmsc_proxy = "oap7.sprintpcs.com"
+mmsc_proxy_port = "80"
+user_editable = false
+
+[settings.config]
+allow_non_emergency_calls_in_ecm = false
+apn_expand = false
+carrier_allow_turnoff_ims = false
+carrier_certificate = ["27F96DBAB77B31F6953E4CD2C2DEFE15F5D7C78F073DD7162018EF476B097C34", "3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562", "92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920"]
+carrier_default_data_roaming_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_default_wfc_ims_roaming_mode = 1
+carrier_eri_file_name = "eri.xml"
+carrier_name = "Sprint"
+carrier_name_override = true
+carrier_settings_activity_component_name = "com.android.sdm.plugins.sprintdm/.SprintCarrierSettingsActivity"
+carrier_settings_enable = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_volte_provisioning_required = false
+carrier_wfc_ims_available = true
+cdma_3waycall_flash_delay = 0
+config_telephony_use_own_number_for_voicemail = true
+dtmf_type_enabled = true
+emailGatewayNumber = "6245"
+emergency_number_prefix = ["*272"]
+enableSMSDeliveryReports = false
+enable_apps = ["com.android.omadm.service", "com.android.sdm.plugins.sprintdm"]
+gsm_nonroaming_networks = ["311490"]
+hide_enhanced_4g_lte = true
+httpParams = "X-MDN: ##LINE1##|Proxy-Authorization: Basic ##NAI##"
+ignore_rtt_mode_setting = true
+ims_reasoninfo_mapping = ["510|Call completed elsewhere|1014", "*|Call is dropped due to Wi-Fi signal is degraded|1407"]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 2097152
+maxSubjectLength = 80
+mmi_two_digit_number_pattern = ["*2"]
+naiSuffix = ":pcs"
+recipientLimit = 40
+rtt_downgrade_supported = true
+rtt_supported = true
+show_cdma_choices = false
+smsToMmsTextThreshold = 6
+stk_disable_launch_browser = true
+supportMmsContentDisposition = false
+support_swap_after_merge = true
+use_hfa_for_provisioning = true
+use_wfc_home_network_mode_in_roaming_network = true
+voice_privacy_disable_ui = true
+voicemail_notification_persistent = true
+volte_5g_limited_alert_dialog = true
+volte_replacement_rat = 6
+wfc_emergency_address_carrier_app = "com.google.android.wfcactivation/.WfcActivationActivity"
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# #MODEL# #BUILD#"
+
+[settings.config.ims.mmtel_requires_provisioning]
+capability_type_video = [0]
+capability_type_voice = [1]
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+include_caller_id_service_codes_in_sip_invite = true
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.field8]
+seconds = 1724979979

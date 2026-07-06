@@ -1,0 +1,71 @@
+[[carrier_id]]
+mcc_mnc = "27203"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "EIR Data"
+value = "data.myeirmobile.ie"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "EIR MMS"
+value = "mms.myeirmobile.ie"
+type = ["mms"]
+user = "my"
+password = "wap"
+authtype = 1
+mmsc = "http://mms.mymeteor.ie"
+mmsc_proxy = "10.85.85.85"
+mmsc_proxy_port = "8799"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference = [1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_3gpp_network_types = []
+emergency_over_ims_supported_rats = []
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 0
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 7200
+child_sa_rekey_soft_timer_sec = 3600
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc003.mcc272.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 14400
+ike_rekey_soft_timer_sec = 7200
+
+[settings.config.qns]
+idle_eutran_rsrp = [-115, -118]
+idle_ngran_ssrsrp = [-115, -118]
+voice_eutran_rsrp = [-115, -118]
+voice_ngran_ssrsrp = [-115, -118]
+
+[settings.field8]
+seconds = 1769617073

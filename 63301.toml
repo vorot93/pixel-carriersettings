@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63301"
+
+[[settings.apns.apn]]
+name = "Cable & Wireless"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

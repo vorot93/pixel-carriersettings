@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "60501"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "weborange"
+value = "weborange"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS Orange"
+value = "mms.otun"
+type = ["mms"]
+mmsc = "http://mms.orange.tn"
+mmsc_proxy = "10.12.1.52"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+
+[settings.field8]
+seconds = 1756887206

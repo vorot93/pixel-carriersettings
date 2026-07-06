@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "73010"
+
+[[settings.apns.apn]]
+name = "Internet Movil"
+value = "bam.entelpcs.cl"
+type = ["default", "supl"]
+user = "entelpcs"
+password = "entelpcs"
+authtype = 1
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "MMS Entel PCS"
+value = "mms.entelpcs.cl"
+type = ["mms"]
+user = "entelpcs"
+password = "entelpcs"
+authtype = 1
+mmsc = "http://mmsc.entelpcs.cl"
+mmsc_proxy = "10.99.0.10"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[settings.config]
+non_roaming_operator = ["73001"]

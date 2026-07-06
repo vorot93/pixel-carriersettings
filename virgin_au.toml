@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "50502"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "505029"
+
+[[settings.apns.apn]]
+name = "Virgin Internet"
+value = "yesinternet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Virgin MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mmsc.optus.com.au:8002/"
+mmsc_proxy = "61.88.190.10"
+mmsc_proxy_port = "8070"
+
+[settings.config]

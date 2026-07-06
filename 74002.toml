@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "74002"
+
+[[settings.apns.apn]]
+name = "CNT 3G"
+value = "internet3gsp.alegro.net.ec"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "CNT MMS"
+value = "mms.alegro.net.ec"
+type = ["mms"]
+mmsc = "http://mms.alegro.net.ec/mms/"
+mmsc_proxy = "10.4.85.3"
+mmsc_proxy_port = "8080"
+
+[settings.config]

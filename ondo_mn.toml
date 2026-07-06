@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "42833"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "4283399"
+
+[[carrier_id]]
+mcc_mnc = "42833"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "ONDO"
+
+[[carrier_id]]
+mcc_mnc = "42833"
+
+[settings]
+version = 77000000004
+
+[settings.config]
+
+[settings.field8]
+seconds = 1770819167

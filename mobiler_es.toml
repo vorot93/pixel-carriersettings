@@ -1,0 +1,40 @@
+[[carrier_id]]
+mcc_mnc = "21403"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "21403508"
+
+[[carrier_id]]
+mcc_mnc = "21403"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "21403509"
+
+[[carrier_id]]
+mcc_mnc = "21406"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2140612"
+
+[[settings.apns.apn]]
+name = "Internet R"
+value = "internet.mundo-r.com"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MMS R"
+value = "mms.mundo-r.com"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms.mundo-r.com"
+mmsc_proxy = "10.0.157.169"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+non_roaming_operator = ["21401", "21402", "21403", "21404", "21405", "21407", "21408", "21409", "214010", "214011", "214012", "214013", "214014", "214015", "214016", "214017", "214018", "214019", "214020", "214021"]
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]

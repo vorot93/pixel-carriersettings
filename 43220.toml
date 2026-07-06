@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "43220"
+
+[[settings.apns.apn]]
+name = "rightel"
+value = "rightel"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "RighTel-MMS"
+value = "RighTel-WAP"
+type = ["mms"]
+mmsc = "http://10.200.40.55:38090/was"
+mmsc_proxy = "10.200.39.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]

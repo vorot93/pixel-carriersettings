@@ -1,0 +1,71 @@
+[[carrier_id]]
+mcc_mnc = "302220"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "2273"
+
+[[carrier_id]]
+mcc_mnc = "302220"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "302220723"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Cape"
+value = "chesapeake"
+type = ["default", "mms", "dun", "ia"]
+mmsc = "http://mms.cape.net:10021"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+read_only_apn_types = []
+
+[settings.config.imsss]
+use_csfb_on_xcap_over_ut_failure = false
+ut_as_server_fqdn = "xcap.ims.cape.net"
+
+[settings.config.imsvoice]
+conference_factory_uri = "mmtel@conf-factory.ims.cape.net"
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+epdg_static_address = "epdg.cape.net"
+
+[settings.field8]
+seconds = 1769617073

@@ -1,0 +1,75 @@
+[[carrier_id]]
+mcc_mnc = "21670"
+
+[settings]
+version = 77000000007
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet"
+type = ["default", "supl", "dun"]
+authtype = 0
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.one.hu/servlets/mms"
+mmsc_proxy = "80.244.97.2"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["xcap"]
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = false
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_name = "One HU"
+carrier_name_override = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+ignore_rtt_mode_setting = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+read_only_apn_types = []
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+smsToMmsTextThreshold = 10
+wfc_spn_format_idx = 4
+xcap_apn_name = "hos"
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_iptype_home = 0
+ut_iptype_roaming = 0
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice.evs_payload_description.127]
+codec_attribute_cmr = 3
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.iwlan]
+ike_device_identity_supported = true
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9002"],"RetryArray": ["1800", "-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}]}]'
+
+[settings.field8]
+seconds = 1770819167

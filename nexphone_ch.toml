@@ -1,0 +1,37 @@
+[[carrier_id]]
+mcc_mnc = "22865"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "4E657870686F6E65"
+
+[[carrier_id]]
+mcc_mnc = "22865"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Nexphone"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "NX"
+value = "chili"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+enabledMMS = false
+
+[settings.field8]
+seconds = 1770819167

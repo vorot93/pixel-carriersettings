@@ -1,0 +1,32 @@
+[[carrier_id]]
+mcc_mnc = "20810"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "4E"
+
+[[settings.apns.apn]]
+name = "INTERNET NRJ"
+value = "internetnrj"
+type = ["dun"]
+user_visible = false
+
+[[settings.apns.apn]]
+name = "NRJWEB"
+value = "fnetnrj"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "NRJMMS"
+value = "mmsnrj"
+type = ["mms"]
+mmsc = "http://mmsnrj"
+mmsc_proxy = "10.143.156.5"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+prefer_2g = true
+show_4g_for_lte_data_icon = true

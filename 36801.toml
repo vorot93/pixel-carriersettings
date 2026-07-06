@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "36801"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Cubacel MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.cubacel.cu"
+mmsc_proxy = "200.13.145.52"
+mmsc_proxy_port = "8080"
+
+[settings.config]

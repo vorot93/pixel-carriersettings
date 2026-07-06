@@ -1,0 +1,188 @@
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "222013071390"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "222013071391"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "222013071392"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "222013071393"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "222013071394"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201307130"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201307131"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201307132"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201307133"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201307134"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201307135"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201307136"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201307137"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201307138"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201309670"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201344000"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201344001"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "22201344002"
+
+[[carrier_id]]
+mcc_mnc = "23453"
+
+[[carrier_id]]
+mcc_mnc = "313770"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "globaldata"
+value = "globaldata"
+type = ["default", "ia", "supl", "mms", "fota", "hipri"]
+mmsc = "http://mms.mobileuc.global/"
+mmsc_proxy = "37.18.129.98"
+mmsc_proxy_port = "8008"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "globalhotspot"
+value = "globalhotspot"
+type = ["dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS|IMS"]
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_registration_timer_millis = 10000
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+include_caller_id_service_codes_in_sip_invite = true
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1770819167

@@ -1,0 +1,33 @@
+[[carrier_id]]
+mcc_mnc = "22606"
+
+[[settings.apns.apn]]
+name = "Cosmote Connect Mobile"
+value = ""
+type = ["ia"]
+
+[[settings.apns.apn]]
+name = "Cosmote Connect Mobile"
+value = "broadband"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Cosmote MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+mmsc = "http://mmsc1.mms.cosmote.ro:8002"
+mmsc_proxy = "10.252.1.62"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "web'n'walk"
+value = "wnw"
+type = ["default", "supl"]
+user = "wnw"
+password = "wnw"
+
+[settings.config]
+display_hd_audio_property = false
+show_4g_for_lte_data_icon = true

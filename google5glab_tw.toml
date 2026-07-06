@@ -1,0 +1,30 @@
+[[carrier_id]]
+mcc_mnc = "24099"
+
+[[settings.apns.apn]]
+name = "internet"
+value = "apn02.goo01"
+type = ["default"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "intranet"
+value = "apn01.goo01"
+type = ["default"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+protocol = "ipv4v6"
+
+[settings.config]
+carrier_nr_availabilities = [1, 2]
+carrier_volte_available = true
+carrier_vt_available = true
+
+[settings.config.imsemergency]
+emergency_over_ims_roaming_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_rats = [6, 3, 5]

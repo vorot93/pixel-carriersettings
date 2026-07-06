@@ -1,0 +1,59 @@
+[[carrier_id]]
+mcc_mnc = "41903"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Ooredoo Internet"
+value = "action.ooredoo.com"
+type = ["default", "supl"]
+authtype = 0
+
+[[settings.apns.apn]]
+name = "Ooredoo MMS"
+value = "mms.ooredoo.com"
+type = ["mms"]
+authtype = 0
+mmsc = "http://action.ooredoo.com"
+mmsc_proxy = "194.126.53.64"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_qos_precondition_supported = false
+
+[settings.config.imsrtt]
+text_qos_precondition_supported = false
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+voice_qos_precondition_supported = false
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imsvt]
+video_qos_precondition_supported = false
+
+[settings.field8]
+seconds = 1739349361

@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "25507"
+
+[[settings.apns.apn]]
+name = "Utel Internet"
+value = "3g.utel.ua"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Utel MMS"
+value = "3g.utel.ua"
+type = ["mms"]
+mmsc = "http://10.212.1.4/mms/wapenc"
+mmsc_proxy = "10.212.3.148"
+mmsc_proxy_port = "8080"
+
+[settings.config]

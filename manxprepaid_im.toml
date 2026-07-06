@@ -1,0 +1,59 @@
+[[carrier_id]]
+mcc_mnc = "23458"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "23458851"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "web.prontogo.net"
+value = "web.prontogo.net"
+type = ["default", "supl"]
+user = "webgo"
+password = "webgo"
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms.prontogo.net"
+type = ["mms"]
+user = "mmsgo"
+password = "mmsgo"
+authtype = 3
+mmsc = "http://mms.manxpronto.net:8002"
+mmsc_proxy = "195.10.99.41"
+mmsc_proxy_port = "8080"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+default_vm_number = "121"
+show_4g_for_lte_data_icon = true
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1724979979

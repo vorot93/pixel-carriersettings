@@ -1,0 +1,35 @@
+[[carrier_id]]
+mcc_mnc = "53703"
+
+[[settings.apns.apn]]
+name = "PNG WAP"
+value = "wap.digicelpng.com"
+type = ["default", "supl"]
+proxy = "10.149.83.116"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "PNG WEB"
+value = "internet.digicelpng.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Papua New Guinea:Digicel:Modem"
+value = "wap.digicel.com.pg"
+type = ["dun"]
+proxy = "10.149.122.12"
+port = "8080"
+authtype = 1
+mmsc = "http://wapdigicel.com"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "PNG MMS"
+value = "wap.digicelpng.com"
+type = ["mms"]
+mmsc = "http://mms.digicelpng.com:8990"
+mmsc_proxy = "10.149.83.116"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+show_4g_for_lte_data_icon = true

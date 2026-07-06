@@ -1,0 +1,71 @@
+[[carrier_id]]
+mcc_mnc = "51502"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "myGlobe Internet"
+value = "internet.globe.com.ph"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "myGlobe INET"
+value = "http.globe.com.ph"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "myGlobe Connect"
+value = "www.globe.com.ph"
+type = ["default", "supl"]
+proxy = "203.177.42.214"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "myGlobe MMS"
+value = "mms.globe.com.ph"
+type = ["mms"]
+mmsc = "http://192.40.100.22:10021/mmsc"
+mmsc_proxy = "203.177.42.214"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+child_session_aes_cbc_key_size = [128]
+diffie_hellman_groups = [2]
+epdg_address_priority = [0]
+epdg_static_address = "weconnect.globe.com.ph"
+ike_remote_id_type = 11
+ike_session_encryption_aes_cbc_key_size = [128, 256]
+supported_integrity_algorithms = [2]
+
+[settings.field8]
+seconds = 1769617073

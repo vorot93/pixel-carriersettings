@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "25062"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Tinkoff"
+
+[[carrier_id]]
+mcc_mnc = "25062"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Tinkoff Mobile"
+value = "m.tinkoff"
+type = ["default", "supl"]
+
+[settings.config]
+
+[settings.field8]
+seconds = 1762783759

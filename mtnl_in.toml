@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "40468"
+
+[[carrier_id]]
+mcc_mnc = "40469"
+
+[[settings.apns.apn]]
+name = "MTNL"
+value = "mtnl.net"
+type = ["default", "mms", "supl", "dun", "fota"]
+user = "mtnl"
+password = "mtnl123"
+authtype = 0
+mmsc = "http://mtnlmms/"
+mmsc_proxy = "10.10.10.10"
+mmsc_proxy_port = "9401"
+protocol = "ipv4v6"
+user_editable = false
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+prevent_clir_activation_and_deactivation_code = true
+roaming_operator = ["404", "405"]

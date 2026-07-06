@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "37004"
+
+[[settings.apns.apn]]
+name = "Viva Edge (GSM)"
+value = "edge.viva.net.do"
+type = ["default", "supl"]
+proxy = "192.168.16.10"
+port = "9401"
+user = "viva"
+password = "viva"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Viva MMS"
+value = "mms.viva.net.do"
+type = ["mms"]
+user = "viva"
+password = "viva"
+authtype = 1
+mmsc = "http://10.200.16.4/mms/wapenc"
+mmsc_proxy = "192.168.16.10"
+mmsc_proxy_port = "9401"
+
+[settings.config]

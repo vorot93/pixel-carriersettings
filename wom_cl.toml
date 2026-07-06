@@ -1,0 +1,37 @@
+[[carrier_id]]
+mcc_mnc = "73009"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Internet WOM"
+value = "internet"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "MMS Nextel"
+value = "mms.nextelmovil.cl"
+type = ["mms"]
+authtype = 0
+mmsc = "http://3gmms.nextelmovil.cl"
+mmsc_proxy = "129.192.129.104"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1739493502

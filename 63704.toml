@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63704"
+
+[[settings.apns.apn]]
+name = "Somafone"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

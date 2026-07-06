@@ -1,0 +1,39 @@
+[[carrier_id]]
+mcc_mnc = "73003"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Banda Ancha Movil"
+value = "bam.clarochile.cl"
+type = ["default", "supl"]
+user = "clarochile"
+password = "clarochile"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MMS Claro"
+value = "mms.clarochile.cl"
+type = ["mms"]
+user = "clarochile"
+password = "clarochile"
+authtype = 1
+mmsc = "http://mms.clarochile.cl"
+mmsc_proxy = "172.23.200.200"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS Claro CL"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1732242357

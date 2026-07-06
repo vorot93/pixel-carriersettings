@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63601"
+
+[[settings.apns.apn]]
+name = "ETH-MTN"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

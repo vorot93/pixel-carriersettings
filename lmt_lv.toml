@@ -1,0 +1,76 @@
+[[carrier_id]]
+mcc_mnc = "24701"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "LMT LV"
+value = "internet.lmt.lv"
+type = ["default", "mms", "supl"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|20"
+mmsc = "http://mmsc.lmt.lv/mmsc"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "LMT MMS WIFI"
+value = "hos"
+type = ["mms"]
+bearer_bitmask = "18"
+mmsc = "http://mmsc.lmt.lv/mmsc"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "hos"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+ims_reasoninfo_mapping = ["338|busy everywhere|1017", "510|Call completed elsewhere|1014"]
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+ike_device_identity_supported = true
+
+[settings.config.qns]
+idle_eutran_rsrp = [-102, -110]
+mms_rat_preference = 2
+voice_eutran_rsrp = [-102, -110]
+
+[settings.field8]
+seconds = 1769617073

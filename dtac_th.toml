@@ -1,0 +1,39 @@
+[[carrier_id]]
+mcc_mnc = "52005"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "dtac Internet"
+value = "www.dtac.co.th"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "dtac MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms2.dtac.co.th:8002/"
+mmsc_proxy = "10.10.10.10"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+roaming_operator = ["520"]
+show_4g_for_lte_data_icon = true
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.field8]
+seconds = 1770215858

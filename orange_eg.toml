@@ -1,0 +1,30 @@
+[[carrier_id]]
+mcc_mnc = "60201"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Mobinil Web"
+value = "mobinilweb"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Mobinil WAP"
+value = "mobinilwap"
+type = ["default", "supl"]
+proxy = "62.241.155.45"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Mobinil MMS"
+value = "mobinilmms"
+type = ["mms"]
+mmsc = "http://10.7.13.24:8002"
+mmsc_proxy = "62.241.155.45"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+
+[settings.field8]
+seconds = 1756887206

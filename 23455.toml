@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "23455"
+
+[[settings.apns.apn]]
+name = "C&W Guernsey Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Sure Picture Messaging"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mmsc.gprs.cw.com/"
+mmsc_proxy = "10.0.3.101"
+mmsc_proxy_port = "80"
+
+[settings.config]

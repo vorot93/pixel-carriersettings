@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "45601"
+
+[[carrier_id]]
+mcc_mnc = "45618"
+
+[[settings.apns.apn]]
+name = "Cellcard"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

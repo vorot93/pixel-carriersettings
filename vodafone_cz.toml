@@ -1,0 +1,98 @@
+[[carrier_id]]
+mcc_mnc = "23003"
+
+[settings]
+version = 77000000008
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms"
+mmsc_proxy = "10.11.10.111"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+call_barring_visibility = true
+carrier_allow_transfer_ims_call = true
+carrier_certificate = ["E4441B21B7374947FBA0CB34EEA9F600F05181056126FAC5FFEB9C34A2841C88:com.zentity.vodafone"]
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "+420608989898"
+display_hd_plus_icon = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+smsToMmsTextThreshold = 6
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ipsec_authentication_algorithms = [1]
+request_uri_type = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+conference_subscribe_type = 0
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = -1
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9002"],"RetryArray": ["1800", "-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}]}]'
+
+[settings.config.qns]
+block_iwlan_in_international_roaming_without_wwan = true
+sos_transport_type = 2
+support_wfc_recovery = false
+
+[settings.field8]
+seconds = 1765981876

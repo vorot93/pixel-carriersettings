@@ -1,0 +1,64 @@
+[[carrier_id]]
+mcc_mnc = "72405"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Java Session"
+value = "java.claro.com.br"
+type = ["default", "supl"]
+user = "claro"
+password = "claro"
+
+[[settings.apns.apn]]
+name = "Claro Foto"
+value = "mms.claro.com.br"
+type = ["mms"]
+user = "claro"
+password = "claro"
+authtype = 1
+mmsc = "http://mms.claro.com.br"
+mmsc_proxy = "200.169.126.10"
+mmsc_proxy_port = "8799"
+
+[[settings.apns.apn]]
+name = "Claro IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Claro XCAP"
+value = "xcap"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+show_4g_for_lte_data_icon = true
+
+[settings.config.bsf]
+bsf_server_port = 8080
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_as_server_port = 8090
+ut_terminal_based_services = [0]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1724979979

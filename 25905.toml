@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "25905"
+
+[[settings.apns.apn]]
+name = "Unite Internet PrePay"
+value = "internet3g.unite.md"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Unite Internet PostPay"
+value = "internet.unite.md"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Unite MMS"
+value = "mms.unite.md"
+type = ["mms"]
+mmsc = "http://10.32.15.68:38090/was"
+mmsc_proxy = "10.32.15.164"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+only_single_dc_allowed = [1, 2, 3, 9, 10, 11, 14, 15]

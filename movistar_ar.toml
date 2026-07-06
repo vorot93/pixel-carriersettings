@@ -1,0 +1,43 @@
+[[carrier_id]]
+mcc_mnc = "72207"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Movistar INTERNET"
+value = "wap.gprs.unifon.com.ar"
+type = ["default", "supl"]
+user = "wap"
+password = "wap"
+authtype = 1
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Movistar MMS"
+value = "mms.gprs.unifon.com.ar"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms.movistar.com.ar"
+mmsc_proxy = "200.68.32.239"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Movistar IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1755679363

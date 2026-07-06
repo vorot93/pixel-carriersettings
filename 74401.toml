@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "74401"
+
+[[settings.apns.apn]]
+name = "VOX INTERNET"
+value = "vox.internet"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Paraguay:Voxx:Modem"
+value = "vox.wap"
+type = ["dun"]
+authtype = 1
+user_editable = false
+
+[[settings.apns.apn]]
+name = "VOX MMS"
+value = "vox.mms"
+type = ["mms"]
+user = "vox"
+password = "vox"
+authtype = 1
+mmsc = "http://mms.vox.com.py/mmsc"
+mmsc_proxy = "172.24.97.29"
+mmsc_proxy_port = "8080"
+
+[settings.config]

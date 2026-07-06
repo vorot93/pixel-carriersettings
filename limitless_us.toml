@@ -1,0 +1,67 @@
+[[carrier_id]]
+mcc_mnc = "310340"
+
+[[carrier_id]]
+mcc_mnc = "310690"
+
+[[carrier_id]]
+mcc_mnc = "311600"
+
+[[carrier_id]]
+mcc_mnc = "312180"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Limitless"
+value = "limitless.us4g.com"
+type = ["default", "mms", "xcap", "ia"]
+mmsc = "http://mms.limitless.csky.us:6672/"
+mmsc_proxy = "209.4.229.79"
+mmsc_proxy_port = "9401"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config.imsemergency]
+emergency_registration_timer_millis = 30000
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc690.mcc310.pub.3gppnetwork.org"
+ut_requires_ims_registration = true
+ut_supported_when_ps_data_off = false
+
+[settings.config.imsvoice]
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.amrwb_payload_description.100]
+amr_codec_attribute_modeset = [0, 1, 2]
+
+[settings.config.imsvoice.amrwb_payload_description.105]
+amr_codec_attribute_modeset = [0, 1, 2]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

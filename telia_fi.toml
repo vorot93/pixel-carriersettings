@@ -1,0 +1,98 @@
+[[carrier_id]]
+mcc_mnc = "24491"
+
+[settings]
+version = 77000000007
+
+[[settings.apns.apn]]
+name = "Telia Internet"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Telia MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms"
+mmsc_proxy = "195.156.25.33"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "hos"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_default_wfc_ims_roaming_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_wfc_roaming_mode = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+ims_reasoninfo_mapping = ["338|busy everywhere|1017", "510|Call completed elsewhere|1014"]
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+maxMessageSize = 2097152
+prefer_3g_visibility = false
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ipv4_sip_mtu_size_cellular = 1300
+ipv6_sip_mtu_size_cellular = 1300
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.config.imsss]
+ut_server_based_services = [1, 3, 4, 7, 6, 5, 2, 8, 9, 11]
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice]
+conference_subscribe_type = 0
+ringback_timer_millis = 180000
+ringing_timer_millis = 180000
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 2
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 87000
+child_sa_rekey_soft_timer_sec = 86400
+child_session_aes_cbc_key_size = [128]
+diffie_hellman_groups = [14, 15]
+dpd_timer_sec = 330
+ike_rekey_hard_timer_in_sec = 88500
+ike_rekey_soft_timer_sec = 87900
+ike_remote_id_type = 11
+ike_session_encryption_aes_cbc_key_size = [128, 256]
+supported_integrity_algorithms = [12, 2]
+supported_prf_algorithms = [2, 5]
+
+[settings.field8]
+seconds = 1773841160

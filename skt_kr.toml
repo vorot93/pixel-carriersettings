@@ -1,0 +1,92 @@
+[[carrier_id]]
+mcc_mnc = "45005"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "SKT IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+field27 = "1|2|3|8|9|10|13|14|15|18|20"
+
+[[settings.apns.apn]]
+name = "SKT LTE INTERNET"
+value = "lte.sktelecom.com"
+type = ["cbs", "default", "mms", "supl", "fota"]
+server = "*"
+mmsc = "http://omms.nate.com:9082/oma_mms"
+mmsc_proxy = "smart.nate.com"
+mmsc_proxy_port = "9093"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "SKT IA"
+value = ""
+type = ["ia"]
+protocol = "ipv4v6"
+
+[settings.config]
+allow_emergency_numbers_in_call_log = true
+bandwidth = ["GPRS:24,24", "EDGE:70,18", "UMTS:115,115", "CDMA-IS95A:14,14", "CDMA-IS95B:14,14", "1xRTT:30,30", "EvDo-rev.0:750,48", "EvDo-rev.A:950,550", "HSDPA:4300,620", "HSUPA:4300,1800", "HSPA:4300,1800", "EvDo-rev.B:1500,550", "eHRPD:750,48", "HSPAP:13000,3400", "TD-SCDMA:115,115", "LTE:30000,15000", "NR_NSA:563200,61440", "NR_NSA_MMWAVE:563200,614400", "NR_SA:563200,61440"]
+carrier_certificate = ["AD27B68A191CE2D91204BADB438550F4620054C15EBFA13C10B492CD998FDC40"]
+carrier_instant_lettering_available = false
+carrier_instant_lettering_encoding = "EUC-KR"
+carrier_instant_lettering_escaped_chars = '"\'
+carrier_instant_lettering_invalid_chars = '[\n]'
+carrier_instant_lettering_length_limit = 16
+enableSMSDeliveryReports = false
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+support_conference_call = true
+
+[settings.config.ims]
+ims_user_agent = "TTA-VoLTE/3.0 #MODEL#/#BUILD# Device-Type/#TYPE# #OPERATOR#"
+registration_event_package_supported = false
+sip_over_ipsec_enabled = false
+sip_timer_b_millis = 8000
+sip_timer_c_millis = 72000
+sip_timer_d_millis = 32000
+sip_timer_f_millis = 44000
+sip_timer_h_millis = 36000
+sip_timer_j_millis = 32000
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_qos_precondition_supported = false
+emergency_requires_ims_registration = true
+
+[settings.config.imsrtt]
+text_qos_precondition_supported = false
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+audio_inactivity_call_end_reasons = [2, 4]
+audio_rtp_inactivity_timer_millis = 10000
+conference_factory_uri = "conference-factory@sktims.net"
+session_expires_timer_sec = 180
+voice_qos_precondition_supported = false
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imsvt]
+video_qos_precondition_supported = false
+
+[settings.field8]
+seconds = 1724979979

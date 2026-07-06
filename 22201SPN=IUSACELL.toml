@@ -1,0 +1,45 @@
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "IUSACELL"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "UNEFON"
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms.iusacellgsm.mx"
+type = ["mms"]
+user = "mmsiusacellgsm"
+password = "mmsiusacellgsm"
+authtype = 0
+mmsc = "http://mms.iusacell3g.com/"
+
+[[settings.apns.apn]]
+name = "Modem"
+value = "modem.iusacellgsm.mx"
+type = ["dun"]
+user = "iusacellgsm"
+password = "iusacellgsm"
+authtype = 0
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "web.iusacellgsm.mx"
+type = ["default"]
+user = "iusacellgsm"
+password = "iusacellgsm"
+authtype = 0
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+show_4g_for_lte_data_icon = true

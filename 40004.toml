@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "40004"
+
+[[settings.apns.apn]]
+name = "Nar Mobile"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

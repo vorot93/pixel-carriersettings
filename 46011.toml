@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "46011"
+
+[[settings.apns.apn]]
+name = "ctlte"
+value = "ctlte"
+type = ["cbs", "default", "supl", "hipri", "fota"]
+server = "*"
+authtype = 0
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "CTWAP"
+value = "ctwap"
+type = ["mms"]
+server = "*"
+authtype = 0
+mmsc = "http://mmsc.vnet.mobi"
+mmsc_proxy = "10.0.0.200"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+
+[settings.config]
+allow_emergency_numbers_in_call_log = true
+ascii_7_bit_support_for_long_message = true
+show_apn_setting_cdma = false

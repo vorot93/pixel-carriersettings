@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "310380"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "50"
+
+[[settings.apns.apn]]
+name = "AGMS Global"
+value = "agms.nl.gmm"
+type = ["default"]
+mtu = 1410
+
+[settings.config]
+csp_enabled = true
+enableSMSDeliveryReports = false
+inflate_signal_strength = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+recipientLimit = 10
+rtt_supported = true

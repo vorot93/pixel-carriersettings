@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "62601"
+
+[[settings.apns.apn]]
+name = "CSTmovel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

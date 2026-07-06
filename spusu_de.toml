@@ -1,0 +1,54 @@
+[[carrier_id]]
+mcc_mnc = "24007"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "50"
+
+[[carrier_id]]
+mcc_mnc = "26221"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "spusu"
+value = "web"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+request_uri_type = 1
+sip_over_ipsec_enabled = false
+sip_preferred_transport = 0
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3, 5]
+
+[settings.config.iwlan]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc021.mcc262.pub.3gppnetwork.org"
+
+[settings.field8]
+seconds = 1774443087

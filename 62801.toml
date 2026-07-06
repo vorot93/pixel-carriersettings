@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "62801"
+
+[[settings.apns.apn]]
+name = "Libertis"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

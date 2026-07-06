@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60703"
+
+[[settings.apns.apn]]
+name = "Comium"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

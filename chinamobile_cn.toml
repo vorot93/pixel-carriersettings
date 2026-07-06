@@ -1,0 +1,48 @@
+[[carrier_id]]
+mcc_mnc = "46000"
+
+[[carrier_id]]
+mcc_mnc = "46002"
+
+[[carrier_id]]
+mcc_mnc = "46004"
+
+[[carrier_id]]
+mcc_mnc = "46007"
+
+[[carrier_id]]
+mcc_mnc = "46008"
+
+[[settings.apns.apn]]
+name = "中国移动 (China Mobile) GPRS"
+value = "cmnet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "中国移动彩信 (China Mobile)"
+value = "cmwap"
+type = ["mms"]
+proxy = "10.0.0.172"
+port = "80"
+mmsc = "http://mmsc.monternet.com"
+mmsc_proxy = "10.0.0.172"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "中国移动 (China Mobile) IMS"
+value = "ims"
+type = ["ims"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+allow_add_call_during_video_call = false
+allow_emergency_numbers_in_call_log = true
+allow_hold_video_call = false
+support_tdscdma = false
+support_video_conference_call = false

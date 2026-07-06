@@ -1,0 +1,75 @@
+[[carrier_id]]
+mcc_mnc = "312130"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Appalachian"
+value = "4g.myawi.com"
+type = ["default", "mms", "supl", "dun", "fota"]
+bearer_bitmask = "14"
+mmsc = "http://mms.ekn.com"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Appalachian IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Appalachian Emergency"
+value = "sos"
+type = ["emergency"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Appalachian XCAP"
+value = "hos.myawi.com"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Appalachian MMS"
+value = "mms.myawi.com"
+type = ["mms"]
+bearer_bitmask = "18"
+mmsc = "http://mms.ekn.com"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+httpParams = "X-MDN: ##LINE1##"
+maxImageHeight = 2432
+maxImageWidth = 4320
+maxMessageSize = 1228800
+maxSubjectLength = 80
+recipientLimit = 20
+smsToMmsTextThreshold = 1
+wfc_emergency_address_carrier_app = "com.android.imsserviceentitlement/.WfcActivationActivity"
+wfc_spn_format_idx = 1
+
+[settings.config.imsserviceentitlement]
+entitlement_server_url = "https://aes.ekn.com"
+show_vowifi_webview = true
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14, 5, 2]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.myawi.com"
+
+[settings.field8]
+seconds = 1757597065

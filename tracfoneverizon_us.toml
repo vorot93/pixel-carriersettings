@@ -1,0 +1,427 @@
+[[carrier_id]]
+mcc_mnc = "310590"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "310591"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "310592"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "310593"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "310594"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "310595"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "310596"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "310597"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "310598"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "310599"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[[carrier_id]]
+mcc_mnc = "311480"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA01270000000000"
+
+[settings]
+version = 77000000009
+
+[[settings.apns.apn]]
+name = "Verizon"
+value = "internet"
+type = ["default", "mms", "supl", "dun", "fota", "cbs"]
+bearer_bitmask = "4|5|6|7|8|12"
+authtype = 3
+mmsc = "http://mms.vzwreseller.com/servlets/mms"
+protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Verizon"
+value = "VZWINTERNET"
+type = ["default", "supl", "dun"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+authtype = 0
+protocol = "ipv4v6"
+profile_id = 0
+max_conns = 20
+max_conns_time = 300
+modem_cognitive = true
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Verizon"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+authtype = 0
+protocol = "ipv4v6"
+profile_id = 3
+max_conns = 20
+max_conns_time = 300
+modem_cognitive = true
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Verizon"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14|18|20"
+authtype = 0
+protocol = "ipv4v6"
+roaming_protocol = "ipv6"
+profile_id = 2
+max_conns = 20
+max_conns_time = 300
+modem_cognitive = true
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Verizon"
+value = "VZWAPP"
+type = ["cbs", "mms"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+authtype = 0
+mmsc = "http://mms.vzwreseller.com/servlets/mms"
+protocol = "ipv4v6"
+profile_id = 4
+max_conns = 20
+max_conns_time = 300
+modem_cognitive = true
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Verizon Emergency"
+value = "VZWEMERGENCY"
+type = ["emergency"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+_5g_icon_configuration = "connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G"
+_5g_icon_display_grace_period = "connected_mmwave,any,3;not_restricted_rrc_idle,not_restricted_rrc_con,2"
+_5g_icon_display_secondary_grace_period = "connected_mmwave,not_restricted_rrc_idle,60"
+_5g_nr_ssrsrp_thresholds = [-115, -105, -95, -85]
+_5g_nr_sssinr_thresholds = [-3, 1, 5, 13]
+additional_nr_advanced_bands = [77]
+additional_settings_call_waiting_visibility = false
+additional_settings_caller_id_visibility = false
+aliasEnabled = true
+allowAttachAudio = false
+allow_add_call_during_video_call = false
+allow_hold_in_ims_call = false
+allow_merge_wifi_calls_when_vowifi_off = false
+boosted_lte_earfcns = ["600-1199", "1950-2399", "66436-67335"]
+boosted_nrarfcns = ["200000-866666"]
+broadcast_emergency_call_state_changes = true
+call_forwarding_blocks_while_roaming = ["*71", "*72"]
+call_forwarding_visibility = false
+carrier_allow_turnoff_ims = false
+carrier_certificate = ["E751E163E91E041382839556D31302DB7058C44D9DF1B5B27FC43BD8F0EE2BBA", "4AD124DE517BC6BA915B88C17F0AADF764469842156325C26B7CD8B888C41C71", "55BB3B316919620008AA76A4891E90384BFF2A76AE95C395FE738C2AC609F13F"]
+carrier_cross_sim_ims_available = false
+carrier_data_call_retry_network_requested_max_count = 20
+carrier_default_data_roaming_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_default_wfc_ims_roaming_mode = 1
+carrier_eri_file_name = "eri.xml"
+carrier_metered_apn_types = ["default", "dun", "supl"]
+carrier_metered_roaming_apn_types = ["default", "dun", "supl"]
+carrier_provisioning_app = "com.android.omadm.service/.TelephonyBroadcastReceiver"
+carrier_roaming_ntn_connect_type = 1
+carrier_roaming_ntn_emergency_call_to_satellite_handover_type = 1
+carrier_roaming_satellite_t911_to_esos_handover_supported = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_volte_override_wfc_provisioning = true
+carrier_volte_provisioned = true
+carrier_volte_provisioning_required = false
+carrier_wfc_ims_available = true
+cdma_enhanced_roaming_indicator_for_home_network = [1]
+cdma_home_registered_plmn_name = ""
+cdma_home_registered_plmn_name_override = false
+ci_action_on_sys_update = true
+ci_action_on_sys_update_extra = "ServerID"
+ci_action_on_sys_update_extra_val = "com.vzwdmserver"
+ci_action_on_sys_update_intent = "com.android.omadm.service.CONFIGURATION_UPDATE"
+default_vm_number = "*86"
+dial_string_replace = ["*611:+19085594899", "*86:+1MDN"]
+disable_cdma_activation_code = false
+disable_severe_when_extreme_disabled = false
+drop_video_call_when_answering_audio_call = true
+dtmf_type_enabled = true
+editable_enhanced_4g_lte = false
+editable_wfc_mode = false
+editable_wfc_roaming_mode = true
+emailGatewayNumber = "6245"
+emergency_number_prefix = ["#", "*", "*272"]
+enable_apps = ["com.android.omadm.service", "com.android.sdm.plugins.connmo", "com.android.sdm.plugins.dcmo", "com.android.sdm.plugins.diagmon", "com.google.omadm.trigger", "com.verizon.mips.services", "com.vzw.apnlib"]
+enabledNotifyWapMMSC = true
+enabledTransID = true
+filtered_cnap_names = ["WIRELESS CALLER", "UNKNOWN NAME"]
+force_imei = false
+hide_enhanced_4g_lte = true
+httpParams = "x-up-calling-line-id: 1##LINE1NOCOUNTRYCODE##|X-VzW-MDN: 1##LINE1NOCOUNTRYCODE##"
+ignore_rtt_mode_setting = true
+ims_reasoninfo_mapping = ["332|simultaneous call limit has already been reached|1403", "332|Forbidden: Simultaneous Call Limit Has Already Been Reached|1403", "338|another device sent all devices busy response|1404", "501|call completion elsewhere|1014", "510|Call Completion Elsewhere|1014", "501|call has been pulled by another device|1016", "510|call has been pulled by another device|1016", "501|another device sent all devices busy response|1404", "510|another device sent all devices busy response|1404", "1014|call has been pulled by another device|1016", "*|Call is dropped due to Wi-Fi signal is degraded|1407"]
+inflate_signal_strength = true
+is_ims_conference_size_enforced = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS|EIMS|MMS|XCAP|CBS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS|EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS|EIMS|MMS|XCAP|CBS", "source=EUTRAN|NGRAN|IWLAN|UNKNOWN, target=EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS|MMS|XCAP|CBS"]
+lte_earfcns_rsrp_boost = 6
+lte_rsrp_thresholds = [-115, -105, -95, -85]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1258291
+maxSubjectLength = 80
+mdn_is_additional_voicemail_number = true
+mmsCloseConnection = true
+notify_handover_video_from_wifi_to_lte = true
+notify_international_call_on_wfc = true
+notify_vt_handover_to_wifi_failure = true
+nr_advanced_capable_pco_id = 65283
+nrarfcns_rsrp_boost = [6]
+operator_selection_expand = true
+parameters_use_for_5g_nr_signal_bar = 5
+parameters_used_for_lte_signal_bar = 5
+prefer_2g = false
+recipientLimit = 20
+rtt_downgrade_supported = true
+rtt_supported = true
+satellite_attach_supported = true
+satellite_connection_hysteresis_sec = 0
+satellite_display_name = "Satellite"
+satellite_esos_supported = true
+satellite_nidd_apn_name = "VZWNTN.LBO"
+satellite_roaming_esos_inactivity_timeout_sec = 2147483
+satellite_roaming_p2p_sms_supported = true
+satellite_roaming_turn_off_session_for_emergency_call = false
+show_apn_setting_cdma = false
+smsToMmsTextThreshold = 7
+sms_requires_destination_number_conversion = true
+support_3gpp_call_forwarding_while_roaming = false
+support_downgrade_vt_to_audio = false
+support_emergency_sms_over_ims = true
+support_pause_ims_video_calls = true
+support_swap_after_merge = true
+telephony_data_setup_retry_rules = ["capabilities=eims, retry_interval=1000, maximum_retries=20", "permanent_fail_causes=8|27|28|29|32|33|35|50|51|-5|-6|65538|-3, retry_interval=2500", "capabilities=mms|supl|cbs, retry_interval=2000", "capabilities=internet|enterprise|dun|ims|fota, retry_interval=2500|3000|5000|10000|15000|20000|40000|60000|120000|240000|600000|1200000|1800000, maximum_retries=20"]
+treat_downgraded_video_calls_as_video_calls = true
+uaProfTagName = "Profile"
+video_calls_can_be_hd_audio = false
+voicemail_notification_persistent = true
+volte_replacement_rat = 3
+wfc_emergency_address_carrier_app = "com.google.android.wfcactivation/.VzwEmergencyAddressActivity"
+wfc_spn_format_idx = 7
+wifi_calls_can_be_hd_audio = false
+world_mode_enabled = false
+
+[settings.config.carrier_supported_satellite_services_per_provider]
+90198 = [3]
+
+[settings.config.com_google_android_dialer]
+display_wifi_calling_button = true
+
+[settings.config.ims]
+geolocation_pidf_in_sip_invite_support = [4, 2]
+geolocation_pidf_in_sip_register_support = [4, 2]
+ims_pdn_enabled_in_no_vops_support = [1]
+ims_user_agent = "#MANUFACTURE#---#MODEL#---#BUILD#"
+ipv4_sip_mtu_size_cellular = 1428
+ipv6_sip_mtu_size_cellular = 1428
+phone_context_domain_name = "vzims.com"
+sip_over_ipsec_enabled = false
+sip_timer_b_millis = 192000
+sip_timer_f_millis = 30000
+sip_timer_h_millis = 192000
+sip_timer_j_millis = 192000
+sip_timer_t1_millis = 3000
+
+[settings.config.ims.mmtel_requires_provisioning]
+capability_type_video = [0]
+capability_type_voice = [1]
+
+[settings.config.imsemergency]
+emergency_callback_mode_supported = true
+emergency_qos_precondition_supported = false
+emergency_requires_ims_registration = true
+emergency_scan_timer_sec = 10
+emergency_vowifi_requires_condition = 2
+maximum_cellular_search_timer_sec = 10
+refresh_geolocation_timeout_millis = 2000
+
+[settings.config.imsrtt]
+text_on_default_bearer_supported = true
+text_qos_precondition_supported = false
+text_rr_bandwidth_bps = 300
+text_rs_bandwidth_bps = 100
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+audio_as_bandwidth_kbps = 38
+audio_rr_bandwidth_bps = 2400
+audio_rs_bandwidth_bps = 800
+conference_factory_uri = "confserver@vzims.com"
+conference_subscribe_type = 0
+include_caller_id_service_codes_in_sip_invite = true
+minimum_session_expires_timer_sec = 300
+mo_call_request_timeout_millis = 0
+multiendpoint_supported = true
+prack_supported_for_18x = true
+ringback_timer_millis = 60000
+ringing_timer_millis = 55000
+session_expires_timer_sec = 300
+session_refresher_type = 0
+srvcc_type = [2]
+voice_on_default_bearer_supported = true
+voice_qos_precondition_supported = false
+
+[settings.config.imsvoice.amrnb_payload_description.102]
+amr_codec_attribute_modeset = [7]
+codec_attribute_mode_change_capability = 1
+
+[settings.config.imsvoice.amrnb_payload_description.106]
+amr_codec_attribute_payload_format = 0
+codec_attribute_mode_change_capability = 1
+
+[settings.config.imsvoice.amrnb_payload_description.108]
+amr_codec_attribute_modeset = [7]
+amr_codec_attribute_payload_format = 1
+codec_attribute_mode_change_capability = 1
+
+[settings.config.imsvoice.amrwb_payload_description.104]
+amr_codec_attribute_modeset = [2]
+codec_attribute_mode_change_capability = 1
+
+[settings.config.imsvoice.amrwb_payload_description.110]
+amr_codec_attribute_modeset = [2]
+amr_codec_attribute_payload_format = 1
+codec_attribute_mode_change_capability = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102, 108, 106]
+amrwb_payload_type = [104, 110]
+dtmfnb_payload_type = [100]
+dtmfwb_payload_type = [105]
+evs_payload_type = [115, 109]
+
+[settings.config.imsvoice.evs_payload_description.109]
+evs_codec_attribute_bandwidth = 2
+evs_codec_attribute_bitrate = [4, 4]
+evs_codec_attribute_ch_aw_recv = 3
+
+[settings.config.imsvoice.evs_payload_description.115]
+evs_codec_attribute_bitrate = [0, 4]
+evs_codec_attribute_ch_aw_recv = 3
+
+[settings.config.imsvt]
+video_as_bandwidth_kbps = 425
+video_on_default_bearer_supported = true
+video_qos_precondition_supported = false
+video_rr_bandwidth_bps = 28800
+video_rs_bandwidth_bps = 9600
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+add_wifi_mac_addr_to_nai = true
+child_sa_rekey_hard_timer_sec = 86500
+child_sa_rekey_soft_timer_sec = 86400
+diffie_hellman_groups = [14]
+epdg_address_priority = [2, 0]
+epdg_pco_id_ipv4 = 65282
+epdg_pco_id_ipv6 = 65281
+epdg_static_address = "wo.vzwwo.com"
+ike_rekey_hard_timer_in_sec = 86500
+ike_rekey_soft_timer_sec = 86400
+ike_remote_id_type = 11
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes":[{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["24", "9000-9050", "11000-11050"],"RetryArray": ["0", "0"],"UnthrottlingEvents": []}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["10500-10550"],"RetryArray": ["3600", "-1"],"UnthrottlingEvents": []}, {"ErrorType": "*","ErrorDetails": ["*"],"RetryArray": ["0", "0", "60+r15", "120", "480", "900", "-1"],"UnthrottlingEvents": ["WIFI_AP_CHANGED_EVENT"]}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["36"],"RetryArray": ["0", "0", "60+r15", "120", "480", "900", "-1"],"UnthrottlingEvents": ["WIFI_AP_CHANGED_EVENT"],"HandoverAttemptCount": "3"}]}]'
+retransmit_timer_sec = [1000, 2000, 4000, 8000]
+
+[settings.config.qns]
+allow_ims_over_iwlan_cellular_limited_case = true
+allow_video_over_iwlan_with_cellular_limited_case = true
+cbs_rat_preference = 3
+cbs_transport_type = 2
+enable_minimum_guarding_timer_after_connected_apn = ["ims", "emergency"]
+ho_guarding_by_preference = true
+idle_eutran_rsrp = [-100, -112, -115]
+idle_eutran_rsrq = [-11, -15, -18]
+idle_ngran_ssrsrp = [-100, -112, -115]
+idle_ngran_ssrsrq = [-11, -15, -18]
+idle_wifi_rssi = [-65, -80]
+ims_wlan_hysteresis_timer_ms = [120000, 0, 0]
+ims_wwan_hysteresis_timer_ms = [120000, 0, 0]
+in_call_rovein_allowed_and_fallback_reason = [3, 0]
+non_ims_wlan_hysteresis_timer_ms = [120000, 0]
+roam_transport_type_selection_without_signal_strength = true
+sos_transport_type = 2
+support_service_barring_check = true
+support_sos_apn_over_wifi_with_entitlement_only = true
+video_eutran_rsrp = [65535, 65535, -115]
+video_ngran_ssrsrp = [65535, 65535, -115]
+video_wifi_rssi = [-65, -75]
+voice_eutran_rsrp = [-100, -112, -115]
+voice_eutran_rsrq = [-11, -15, -18]
+voice_ngran_ssrsrp = [-100, -112, -115]
+voice_ngran_ssrsrq = [-11, -15, -18]
+voice_wifi_rssi = [-65, -80]
+waiting_time_for_preferred_transport_when_power_on = [45000, 0]
+
+[settings.field8]
+seconds = 1771422511

@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "61903"
+
+[[carrier_id]]
+mcc_mnc = "61905"
+
+[[settings.apns.apn]]
+name = "Africell"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

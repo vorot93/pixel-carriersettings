@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "28310"
+
+[[settings.apns.apn]]
+name = "Orange Armenia MMS"
+value = "mms"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms/"
+mmsc_proxy = "192.168.220.251"
+mmsc_proxy_port = "3128"
+
+[[settings.apns.apn]]
+name = "Orange Armenia Internet"
+value = "Internet"
+type = ["default"]
+authtype = 1
+
+[settings.config]

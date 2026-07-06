@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "54100"
+
+[[settings.apns.apn]]
+name = "AIL"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

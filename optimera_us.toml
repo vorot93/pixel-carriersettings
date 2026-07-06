@@ -1,0 +1,39 @@
+[[carrier_id]]
+mcc_mnc = "313380"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "OptimERA"
+value = "internet"
+type = ["default", "mms", "xcap"]
+mmsc = "http://mms.oexg.mobi"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "OptimERA Hotspot"
+value = "tether"
+type = ["dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "OptimERA IMS"
+value = "ims"
+type = ["ims"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_data_roaming_enabled = true
+carrier_volte_available = true
+hide_enhanced_4g_lte = true
+mmsRoamingAutoRetrieveByDefault = true
+
+[settings.field8]
+seconds = 1770819167

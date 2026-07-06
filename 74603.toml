@@ -1,0 +1,33 @@
+[[carrier_id]]
+mcc_mnc = "74603"
+
+[[settings.apns.apn]]
+name = "Suriname:Digicel:Internet"
+value = "web.digicelsr.com"
+type = ["default"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Suriname:Digicel:Mms"
+value = "wap.digicelsr.com"
+type = ["mms"]
+user = "wap"
+password = "wap"
+authtype = 1
+mmsc = "http://mmc.digicelsr.com/servlets/mms"
+mmsc_proxy = "172.20.6.12"
+mmsc_proxy_port = "9201"
+
+[[settings.apns.apn]]
+name = "Suriname:Digicel:Modem"
+value = "wap.digicelsr.com"
+type = ["dun"]
+proxy = "172.20.6.12"
+port = "8080"
+user = "wap"
+password = "wap"
+authtype = 1
+mmsc = "http://wapdigicel.com"
+user_editable = false
+
+[settings.config]

@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "62006"
+
+[[settings.apns.apn]]
+name = "Airtel Internet GH"
+value = "wap"
+type = ["default"]
+proxy = "10.93.85.88"
+port = "9201"
+
+[[settings.apns.apn]]
+name = "Airtel mms"
+value = "airtelmms.com"
+type = ["mms"]
+authtype = 0
+mmsc = "http://100.1.201.171:10021/mmsc"
+mmsc_proxy = "100.1.201.172"
+mmsc_proxy_port = "8799"
+
+[settings.config]

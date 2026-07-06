@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "405881"
+
+[[carrier_id]]
+mcc_mnc = "405882"
+
+[[carrier_id]]
+mcc_mnc = "405883"
+
+[[carrier_id]]
+mcc_mnc = "405884"
+
+[[carrier_id]]
+mcc_mnc = "405885"
+
+[[carrier_id]]
+mcc_mnc = "405886"
+
+[[settings.apns.apn]]
+name = "STEL"
+value = "gprs.stel.in"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[settings.config]
+roaming_operator = ["404", "405"]

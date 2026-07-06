@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "732103"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "UFF!"
+
+[[carrier_id]]
+mcc_mnc = "732111"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "UFF!"
+
+[[settings.apns.apn]]
+name = "UFFMOVIL"
+value = "web.uffmovil.com"
+type = ["default", "dun"]
+authtype = 1
+user_editable = false
+
+[settings.config]

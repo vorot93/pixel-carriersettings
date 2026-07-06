@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "708040"
+
+[[settings.apns.apn]]
+name = "Honduras:Digicel:Internet:2"
+value = "web.digicelhn.com"
+type = ["default"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Honduras:Digicel:Mms:2"
+value = "wap.digicelhn.com"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms.digicelsv.com/servlets/mms"
+mmsc_proxy = "172.26.5.12"
+mmsc_proxy_port = "9201"
+
+[settings.config]

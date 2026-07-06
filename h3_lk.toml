@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "41308"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "HUTCH"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+min_udp_port_4500_nat_timeout_sec = 120
+preferred_ike_protocol = 40
+
+[settings.field8]
+seconds = 1741940474

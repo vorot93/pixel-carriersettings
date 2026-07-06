@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "90104"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "ocx"
+value = "ocx"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[settings.config.imsss]
+use_csfb_on_xcap_over_ut_failure = false
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

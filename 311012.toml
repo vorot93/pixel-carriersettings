@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "311012"
+
+[settings.config]
+aliasEnabled = true
+allowAttachAudio = false
+emailGatewayNumber = "6245"
+enabledNotifyWapMMSC = true
+enabledTransID = true
+httpParams = "x-up-calling-line-id: 1##LINE1NOCOUNTRYCODE##|X-VzW-MDN: 1##LINE1NOCOUNTRYCODE##"
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1258291
+maxSubjectLength = 80
+recipientLimit = 20
+smsToMmsTextThreshold = 7
+uaProfTagName = "Profile"

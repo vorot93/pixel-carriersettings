@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "74405"
+
+[[settings.apns.apn]]
+name = "Personal Datos Py"
+value = "internet"
+type = ["default", "supl"]
+user = "personal"
+password = "personal"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Personal MMS Py"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms"
+mmsc_proxy = "172.16.192.7"
+mmsc_proxy_port = "8080"
+
+[settings.config]

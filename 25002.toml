@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "25002"
+
+[[settings.apns.apn]]
+name = "Megafon Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Megafon MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mmsc:8002"
+mmsc_proxy = "10.10.10.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,11 @@
+[[carrier_id]]
+mcc_mnc = "310040"
+
+[settings.config]
+httpParams = "X-MDN: ##LINE1##"
+maxImageHeight = 2432
+maxImageWidth = 4320
+maxMessageSize = 1048576
+maxSubjectLength = 80
+recipientLimit = 20
+smsToMmsTextThreshold = 1

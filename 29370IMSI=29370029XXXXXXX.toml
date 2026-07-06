@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "29370"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "29370029"
+
+[[settings.apns.apn]]
+name = "Telemach Internet"
+value = "telemach.net"
+type = ["default", "mms", "supl"]
+user = "telemach"
+password = "internet"
+mmsc = "http://mms.telemach.net:8002"
+mmsc_proxy = "91.185.221.85"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+show_4g_for_lte_data_icon = true

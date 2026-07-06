@@ -1,0 +1,8 @@
+[[carrier_id]]
+mcc_mnc = "24024"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+show_4g_for_lte_data_icon = true

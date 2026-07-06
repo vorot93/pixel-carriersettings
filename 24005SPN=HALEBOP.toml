@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "24005"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "HALEBOP"
+
+[[settings.apns.apn]]
+name = "Halebop Internet"
+value = "halebop.telia.se"
+type = ["default", "supl"]
+authtype = 0
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Halebop MMS"
+value = "mms.telia.se"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mmsc"
+mmsc_proxy = "193.209.134.132"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

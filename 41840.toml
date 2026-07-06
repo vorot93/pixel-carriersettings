@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "41840"
+
+[[settings.apns.apn]]
+name = "Korek 9595"
+value = "internet.korek.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Korek 9191"
+value = "net.korek.com"
+type = ["default", "supl"]
+user = "korek"
+password = "korek"
+
+[[settings.apns.apn]]
+name = "KOREK MMS"
+value = "mms.korek.com"
+type = ["mms"]
+user = "korek"
+password = "korek"
+authtype = 1
+mmsc = "http://mms.korektel.com/mms/wapenc"
+mmsc_proxy = "192.168.18.187"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "41220"
+
+[[settings.apns.apn]]
+name = "Roshan"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

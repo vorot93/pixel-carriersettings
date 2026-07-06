@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "45410"
+
+[[settings.apns.apn]]
+name = "one2free Tethering"
+value = "internet"
+type = ["dun"]
+authtype = 0
+user_visible = false
+
+[[settings.apns.apn]]
+name = "csl"
+value = "hkcsl"
+type = ["default", "mms", "supl"]
+authtype = 3
+mmsc = "http://192.168.58.171:8002"
+mmsc_proxy = "192.168.59.51"
+mmsc_proxy_port = "8080"
+
+[settings.config]

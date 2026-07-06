@@ -1,0 +1,54 @@
+[[carrier_id]]
+mcc_mnc = "45202"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Vina-wap-gprs"
+value = "m3-world"
+type = ["default", "supl"]
+user = "mms"
+password = "mms"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Vina-gprs-mms"
+value = "m3-mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms.vinaphone.com.vn"
+mmsc_proxy = "10.1.10.46"
+mmsc_proxy_port = "8000"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "SOS"
+value = "sos"
+type = ["emergency"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_mode = 1
+carrier_volte_available = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.field8]
+seconds = 1770215858

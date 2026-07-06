@@ -1,0 +1,106 @@
+[[carrier_id]]
+mcc_mnc = "21403"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "JAZZTEL"
+
+[[carrier_id]]
+mcc_mnc = "21421"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "JAZZTEL"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "jazzinternet"
+value = "jazzinternet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "jazzmms"
+type = ["mms"]
+authtype = 1
+mmsc = "http://jazztelmms.com/servlets/mms"
+mmsc_proxy = "37.132.0.10"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "jazzinternet"
+value = ""
+type = ["ia"]
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_certificate = ["b67affcda89e3193b1595036d7c6cdbe22be5ca24c9f6cf93fc6b48f91d7310d:com.orange.bluu.jazztel", "57f57c5433c6065644bb097111c7867d63896e394556ec452a7a0ae6fae4e816:com.orange.bluu.jazztel,com.orange.bluu.jazztel.staging", "dfbd378c05733f6e85ed6f048c97c587282eb41bc8e0eb0a4734b7bb85827597:com.orange.bluu.jazztel.debug,com.orange.bluu.jazztel.staging.debug"]
+carrier_use_ims_first_for_emergency = false
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+display_hd_plus_icon = true
+ignore_rtt_mode_setting = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 512000
+non_roaming_operator = ["21401", "21402", "21403", "21404", "21405", "21406", "21407", "21408", "21409", "214010", "214011", "214012", "214013", "214014", "214015", "214016", "214017", "214018", "214019", "214020"]
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# #MODEL# Android #AV# #BUILD# EU02369"
+ipv4_sip_mtu_size_cellular = 1300
+ipv6_sip_mtu_size_cellular = 1300
+request_uri_type = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_server_based_services = []
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+minimum_session_expires_timer_sec = 600
+mo_call_request_timeout_millis = 3000
+oip_source_from_header = true
+ringback_timer_millis = 60000
+ringing_timer_millis = 60000
+
+[settings.config.imsvoice.amrnb_payload_description.100]
+amr_codec_attribute_modeset = [0, 3, 6]
+
+[settings.config.imsvoice.amrnb_payload_description.101]
+amr_codec_attribute_modeset = [0, 3, 6]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.99]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [100, 101]
+amrwb_payload_type = [98, 99]
+dtmfnb_payload_type = [106]
+dtmfwb_payload_type = [105]
+
+[settings.field8]
+seconds = 1756276532

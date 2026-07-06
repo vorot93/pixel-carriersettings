@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "40101"
+
+[[settings.apns.apn]]
+name = "Beeline Internet"
+value = "internet.beeline.kz"
+type = ["default", "supl"]
+user = "@internet.beeline"
+password = "beeline"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Beeline MMS"
+value = "mms.beeline.kz"
+type = ["mms"]
+user = "@mms.beeline"
+password = "beeline"
+authtype = 1
+mmsc = "http://mms.beeline.kz/mms/wapenc"
+mmsc_proxy = "172.27.6.93"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "DOS Internet"
+value = "internet.dos.kz"
+type = ["default", "supl"]
+
+[settings.config]

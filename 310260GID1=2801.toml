@@ -1,0 +1,55 @@
+[[carrier_id]]
+mcc_mnc = "310260"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "2801"
+
+[[settings.apns.apn]]
+name = "Vodafone US"
+value = "us.vodafone.com"
+type = ["default", "mms", "supl", "dun"]
+mmsc = "http://wholesale.mmsmvno.com/mms/wapenc"
+protocol = "ipv6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Vodafone US IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv6"
+mtu = 1440
+user_visible = false
+field28 = 1
+
+[[settings.apns.apn]]
+name = "Vodafone US IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "18"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+mtu = 1440
+user_visible = false
+field28 = 1
+
+[[settings.apns.apn]]
+name = "Vodafone US Service"
+value = "service"
+type = ["mms"]
+mmsc = "http://wholesale.mmsmvno.com/mms/wapenc"
+protocol = "ipv6"
+
+[settings.config]
+carrier_ims_gba_required = true
+carrier_volte_available = true
+carrier_vt_available = false
+carrier_wfc_ims_available = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+rtt_supported = true
+volte_replacement_rat = 3
+wfc_operator_error_codes = ["REG09|0"]
+wfc_spn_format_idx = 1

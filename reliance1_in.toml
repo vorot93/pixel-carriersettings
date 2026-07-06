@@ -1,0 +1,90 @@
+[[carrier_id]]
+mcc_mnc = "40501"
+
+[[carrier_id]]
+mcc_mnc = "40503"
+
+[[carrier_id]]
+mcc_mnc = "40504"
+
+[[carrier_id]]
+mcc_mnc = "40505"
+
+[[carrier_id]]
+mcc_mnc = "40506"
+
+[[carrier_id]]
+mcc_mnc = "40507"
+
+[[carrier_id]]
+mcc_mnc = "40508"
+
+[[carrier_id]]
+mcc_mnc = "40509"
+
+[[carrier_id]]
+mcc_mnc = "40510"
+
+[[carrier_id]]
+mcc_mnc = "40511"
+
+[[carrier_id]]
+mcc_mnc = "40512"
+
+[[carrier_id]]
+mcc_mnc = "40513"
+
+[[carrier_id]]
+mcc_mnc = "40514"
+
+[[carrier_id]]
+mcc_mnc = "40515"
+
+[[carrier_id]]
+mcc_mnc = "40517"
+
+[[carrier_id]]
+mcc_mnc = "40518"
+
+[[carrier_id]]
+mcc_mnc = "40519"
+
+[[carrier_id]]
+mcc_mnc = "40520"
+
+[[carrier_id]]
+mcc_mnc = "40521"
+
+[[carrier_id]]
+mcc_mnc = "40522"
+
+[[carrier_id]]
+mcc_mnc = "40523"
+
+[[settings.apns.apn]]
+name = "Reliance MMS"
+value = "rcommms"
+type = ["mms"]
+mmsc = "http://mmsc.rcom.co.in/mms/"
+mmsc_proxy = "10.239.221.5"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Netconnect"
+value = "rcomnet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "RelianceMbWorld"
+value = "rcomwap"
+type = ["default", "supl"]
+proxy = "10.239.221.5"
+port = "8080"
+protocol = "ipv4v6"
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+prevent_clir_activation_and_deactivation_code = true
+roaming_operator = ["404", "405"]

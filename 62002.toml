@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "62002"
+
+[[settings.apns.apn]]
+name = "Vodafone Internet GH"
+value = "browse"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Vodafone_mms"
+value = "mms"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mms.vodaphone.com.gh/mms"
+mmsc_proxy = "172.24.97.1"
+mmsc_proxy_port = "9201"
+
+[settings.config]

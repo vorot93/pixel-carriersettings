@@ -1,0 +1,56 @@
+[[carrier_id]]
+mcc_mnc = "405818"
+
+[[carrier_id]]
+mcc_mnc = "405819"
+
+[[carrier_id]]
+mcc_mnc = "405820"
+
+[[carrier_id]]
+mcc_mnc = "405821"
+
+[[carrier_id]]
+mcc_mnc = "405822"
+
+[[carrier_id]]
+mcc_mnc = "405844"
+
+[[carrier_id]]
+mcc_mnc = "405875"
+
+[[carrier_id]]
+mcc_mnc = "405880"
+
+[[carrier_id]]
+mcc_mnc = "405927"
+
+[[carrier_id]]
+mcc_mnc = "405929"
+
+[[settings.apns.apn]]
+name = "Uninor Internet"
+value = "uninor"
+type = ["default", "supl"]
+authtype = 1
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Uninor Wap"
+value = "uninor"
+type = ["default", "supl"]
+proxy = "10.58.10.58"
+port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Uninor MMS"
+value = "uninor"
+type = ["mms"]
+mmsc = "http://10.58.2.120"
+mmsc_proxy = "10.58.10.59"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[settings.config]
+roaming_operator = ["404", "405"]

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "53943"
+
+[[settings.apns.apn]]
+name = "Shoreline Communication"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

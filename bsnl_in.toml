@@ -1,0 +1,139 @@
+[[carrier_id]]
+mcc_mnc = "40434"
+
+[[carrier_id]]
+mcc_mnc = "40438"
+
+[[carrier_id]]
+mcc_mnc = "40439"
+
+[[carrier_id]]
+mcc_mnc = "40451"
+
+[[carrier_id]]
+mcc_mnc = "40453"
+
+[[carrier_id]]
+mcc_mnc = "40454"
+
+[[carrier_id]]
+mcc_mnc = "40455"
+
+[[carrier_id]]
+mcc_mnc = "40457"
+
+[[carrier_id]]
+mcc_mnc = "40458"
+
+[[carrier_id]]
+mcc_mnc = "40459"
+
+[[carrier_id]]
+mcc_mnc = "40462"
+
+[[carrier_id]]
+mcc_mnc = "40464"
+
+[[carrier_id]]
+mcc_mnc = "40465"
+
+[[carrier_id]]
+mcc_mnc = "40466"
+
+[[carrier_id]]
+mcc_mnc = "40471"
+
+[[carrier_id]]
+mcc_mnc = "40472"
+
+[[carrier_id]]
+mcc_mnc = "40473"
+
+[[carrier_id]]
+mcc_mnc = "40474"
+
+[[carrier_id]]
+mcc_mnc = "40475"
+
+[[carrier_id]]
+mcc_mnc = "40476"
+
+[[carrier_id]]
+mcc_mnc = "40477"
+
+[[carrier_id]]
+mcc_mnc = "40479"
+
+[[carrier_id]]
+mcc_mnc = "40480"
+
+[[carrier_id]]
+mcc_mnc = "40481"
+
+[settings]
+version = 77000000009
+
+[[settings.apns.apn]]
+name = "bsnlmms"
+value = "bsnlmms"
+type = ["mms"]
+mmsc = "http://bsnlmmsc.in:8514"
+mmsc_proxy = "10.210.10.11"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "bsnlnet"
+value = "bsnlnet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "bsnllive"
+value = "bsnllive"
+type = ["default", "supl"]
+proxy = "10.220.67.131"
+port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+allow_hold_call_during_emergency = false
+carrier_ussd_method = 1
+carrier_volte_available = true
+non_roaming_operator = ["40434", "40451", "40459", "40462", "40453", "40455", "40454", "40474", "40438", "40475", "40481", "40477", "40476", "40473", "40464", "40472", "40480", "40471", "40458", "40457", "40466", "40439", "40465"]
+prevent_clir_activation_and_deactivation_code = true
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_terminal_based_services = [10]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.amrnb_payload_description.108]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.110]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102, 108]
+amrwb_payload_type = [104, 110]
+dtmfnb_payload_type = [100]
+dtmfwb_payload_type = [105]
+
+[settings.field8]
+seconds = 1765981876

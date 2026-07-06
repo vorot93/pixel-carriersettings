@@ -1,0 +1,57 @@
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "3597BFD533"
+
+[[carrier_id]]
+mcc_mnc = "26003"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "3597BFD533"
+
+[[carrier_id]]
+mcc_mnc = "26006"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "3597BFD533"
+
+[[carrier_id]]
+mcc_mnc = "26098"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "3597BFD533"
+
+[[carrier_id]]
+mcc_mnc = "42501"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "3597BFD533"
+
+[[carrier_id]]
+mcc_mnc = "45403"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "3597BFD533"
+
+[[carrier_id]]
+mcc_mnc = "51503"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "3597BFD533"
+
+[[settings.apns.apn]]
+name = "DENT"
+value = "global.telcoequity"
+type = ["default", "dun"]
+user_editable = false
+
+[settings.config]
+carrier_default_data_roaming_enabled = true

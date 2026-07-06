@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "53602"
+
+[[settings.apns.apn]]
+name = "Digicel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

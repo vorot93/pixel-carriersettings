@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "25020"
+
+[[settings.apns.apn]]
+name = "TELE2 Internet"
+value = "internet.tele2.ru"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "TELE2 MMS"
+value = "mms.tele2.ru"
+type = ["mms"]
+mmsc = "http://mmsc.tele2.ru"
+mmsc_proxy = "193.12.40.65"
+mmsc_proxy_port = "8080"
+
+[settings.config]

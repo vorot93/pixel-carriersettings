@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "732123"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "VIRGIN MOBILE"
+
+[[settings.apns.apn]]
+name = "Virgin Mobile"
+value = "web.vmc.net.co"
+type = ["default", "supl"]
+authtype = 1
+
+[settings.config]

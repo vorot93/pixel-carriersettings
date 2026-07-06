@@ -1,0 +1,52 @@
+[[carrier_id]]
+mcc_mnc = "22003"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "internet"
+value = "gprswap"
+type = ["default", "supl"]
+user = "mts"
+password = "064"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "mms"
+value = "mms"
+type = ["mms"]
+user = "mts"
+password = "064"
+authtype = 1
+mmsc = "http://mms.mts064.telekom.rs/mms/wapenc"
+mmsc_proxy = "172.17.85.131"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+call_barring_visibility = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+mmi_two_digit_number_pattern = ["92", "93", "94", "95", "96"]
+
+[settings.field8]
+seconds = 1753863668

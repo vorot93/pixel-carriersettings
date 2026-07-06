@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Install toolbox (latest master)
+        run: cargo install --git https://github.com/vorot93/pixel-carriersettings-toolbox pixel-carriersettings-toolbox
+
+      - name: Compute module metadata
+        id: meta
+        run: |
+          count=$(git rev-list --count HEAD)
+          {
+            echo "version_code=$count"
+            echo "version=r$count-$(git rev-parse --short HEAD)"
+            echo "carrier_count=$(find . -maxdepth 1 -name '*.toml' -not -name '.*' | wc -l | tr -d ' ')"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Validate all carriers
+        run: pixel-carriersettings-toolbox validate ./*.toml
+
+      - name: Build Magisk module
+        run: |
+          mkdir -p dist
+          pixel-carriersettings-toolbox build ./*.toml \
+            -o dist/pixel-carriersettings.zip \
+            --module-id pixel_carriersettings \
+            --module-name "Pixel CarrierSettings" \
+            --module-version "${{ steps.meta.outputs.version }}" \
+            --module-version-code "${{ steps.meta.outputs.version_code }}" \
+            --author vorot93 \
+            --description "Community Pixel CarrierSettings — built from ${{ github.sha }}"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pixel-carriersettings-zip
+          path: dist/pixel-carriersettings.zip
+
+      - name: Publish rolling "continuous" release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git tag -f continuous "${{ github.sha }}"
+          git push -f origin refs/tags/continuous
+          notes="Automated build of ${{ github.sha }} — ${{ steps.meta.outputs.carrier_count }} carriers, versionCode ${{ steps.meta.outputs.version_code }}. Replace-mode Magisk module: flashing wipes the stock CarrierSettings folder and ships only these carriers (uncovered SIMs fall back to Android defaults). Experimental, unverified on real hardware — keep a backup and know how to remove a Magisk module from recovery."
+          if gh release view continuous >/dev/null 2>&1; then
+            gh release edit continuous \
+              --title "Continuous build (${{ steps.meta.outputs.version }})" \
+              --notes "$notes" \
+              --prerelease
+            gh release upload continuous dist/pixel-carriersettings.zip --clobber
+          else
+            gh release create continuous dist/pixel-carriersettings.zip \
+              --target "${{ github.sha }}" \
+              --title "Continuous build (${{ steps.meta.outputs.version }})" \
+              --notes "$notes" \
+              --prerelease
+          fi

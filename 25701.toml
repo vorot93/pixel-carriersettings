@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "25701"
+
+[[settings.apns.apn]]
+name = "Velcom Internet"
+value = "web.velcom.by"
+type = ["default", "supl"]
+proxy = "10.200.15.15"
+port = "8080"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Velcom MMS"
+value = "mms.velcom.by"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mmsc"
+mmsc_proxy = "10.200.15.15"
+mmsc_proxy_port = "8080"
+
+[settings.config]

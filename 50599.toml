@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "50599"
+
+[[settings.apns.apn]]
+name = "Vodafone Live!"
+value = "live.vodafone.com"
+type = []
+mmsc = "http://pxt.vodafone.net.au/pxtsend"
+mmsc_proxy = "10.202.2.60"
+mmsc_proxy_port = "8080"
+
+[settings.config]

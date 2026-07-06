@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "46009"
+
+[[settings.apns.apn]]
+name = "China Unicom 3G"
+value = "3gnet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "China Unicom wap"
+value = "3gwap"
+type = ["default", "mms"]
+proxy = "10.0.0.172"
+port = "80"
+mmsc = "http://mmsc.myuni.com.cn"
+mmsc_proxy = "10.0.0.172"
+mmsc_proxy_port = "80"
+
+[settings.config]
+allow_emergency_numbers_in_call_log = true

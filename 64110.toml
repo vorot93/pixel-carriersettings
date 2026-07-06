@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64110"
+
+[[settings.apns.apn]]
+name = "MTN-WEB"
+value = "internet"
+type = ["default"]
+
+[settings.config]

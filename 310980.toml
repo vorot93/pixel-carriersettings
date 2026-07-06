@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "310980"
+
+[settings.config]
+csp_enabled = true
+enableSMSDeliveryReports = false
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576

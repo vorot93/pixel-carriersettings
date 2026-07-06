@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63401"
+
+[[settings.apns.apn]]
+name = "Zain SD"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

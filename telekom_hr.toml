@@ -1,0 +1,205 @@
+[[carrier_id]]
+mcc_mnc = "21901"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "01"
+
+[[carrier_id]]
+mcc_mnc = "21901"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "02"
+
+[[carrier_id]]
+mcc_mnc = "21901"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "03"
+
+[[carrier_id]]
+mcc_mnc = "21901"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "99"
+
+[[carrier_id]]
+mcc_mnc = "21901"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "FF"
+
+[[carrier_id]]
+mcc_mnc = "21901"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "R&D Network"
+
+[[carrier_id]]
+mcc_mnc = "21901"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "T-Mobile HR"
+
+[[carrier_id]]
+mcc_mnc = "21901"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "HT-Campus"
+
+[[carrier_id]]
+mcc_mnc = "21901"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "HT HR"
+
+[[carrier_id]]
+mcc_mnc = "21920"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "01"
+
+[[carrier_id]]
+mcc_mnc = "21920"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "02"
+
+[[carrier_id]]
+mcc_mnc = "21920"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "03"
+
+[[carrier_id]]
+mcc_mnc = "21920"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "99"
+
+[[carrier_id]]
+mcc_mnc = "21920"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "FF"
+
+[[carrier_id]]
+mcc_mnc = "21920"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "R&D Network"
+
+[[carrier_id]]
+mcc_mnc = "21920"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "T-Mobile HR"
+
+[[carrier_id]]
+mcc_mnc = "21920"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "HT-Campus"
+
+[[carrier_id]]
+mcc_mnc = "21920"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "HT HR"
+
+[settings]
+version = 77000000010
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet.ht.hr"
+type = ["default", "supl"]
+authtype = 1
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["mms", "xcap"]
+authtype = 1
+mmsc = "http://mms.t-mobile.hr/servlets/mms"
+mmsc_proxy = "10.12.0.4"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "+38598151100"
+display_hd_audio_property = false
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+mmi_two_digit_number_pattern = ["92", "93", "94", "95", "96"]
+prefer_3g_visibility = false
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 4
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# - #MODEL# - #BUILD#"
+keep_pdn_up_in_no_vops = true
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_registration_timer_millis = 5000
+
+[settings.config.imsss]
+ut_iptype_roaming = 0
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice]
+mo_call_request_timeout_millis = 0
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [126]
+
+[settings.config.imsvoice.evs_payload_description.126]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.qns]
+support_wfc_recovery = false
+
+[settings.field8]
+seconds = 1765981876

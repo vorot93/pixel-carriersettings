@@ -1,0 +1,46 @@
+[[carrier_id]]
+mcc_mnc = "23103"
+
+[settings]
+version = 77000000006
+
+[[settings.apns.apn]]
+name = "4ka Internet"
+value = "internet"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+
+[settings.field8]
+seconds = 1770819167

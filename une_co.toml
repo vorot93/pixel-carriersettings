@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "732103"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "UNE"
+
+[[carrier_id]]
+mcc_mnc = "732111"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "UNE"
+
+[[settings.apns.apn]]
+name = "UNE"
+value = "www.une.net.co"
+type = ["default", "dun"]
+user = "une"
+password = "une"
+authtype = 0
+user_editable = false
+
+[settings.config]

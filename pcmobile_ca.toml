@@ -1,0 +1,41 @@
+[[carrier_id]]
+mcc_mnc = "302220"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "5043"
+
+[[carrier_id]]
+mcc_mnc = "302221"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "5043"
+
+[[settings.apns.apn]]
+name = "Tethered Mobile Internet"
+value = "isp.mb.com"
+type = ["dun"]
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Mobile Internet"
+value = "sp.mb.com"
+type = ["default", "mms", "supl", "ia"]
+mmsc = "http://aliasredirect.net/proxy/mb/mmsc"
+mmsc_proxy = "mmscproxy.mobility.ca"
+mmsc_proxy_port = "8799"
+protocol = "ipv4v6"
+user_editable = false
+
+[settings.config]
+always_play_remote_hold_tone = true
+hide_lte_plus_data_icon = false
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+maxSubjectLength = 80
+read_only_apn_types = []
+recipientLimit = 10
+smsToMmsTextThreshold = 5
+voicemail_notification_persistent = true

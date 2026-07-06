@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "63301"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "63301010"
+
+[settings]
+version = 77000000001
+
+[settings.config]
+
+[settings.field8]
+seconds = 1762942431

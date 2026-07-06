@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "23812"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "lyca dk"
+value = "data.lycamobile.dk"
+type = ["default", "supl"]
+user = "lmdk"
+password = "plus"
+
+[settings.config]
+
+[settings.field8]
+seconds = 1747816853

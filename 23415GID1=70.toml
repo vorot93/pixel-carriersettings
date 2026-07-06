@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "23415"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "70"
+
+[[settings.apns.apn]]
+name = "TalkTalk WAP"
+value = "mobile.talktalk.co.uk"
+type = ["default", "mms", "supl"]
+mmsc = "http://mms.talktalk.co.uk/servlets/mms"
+mmsc_proxy = "212.183.137.12"
+mmsc_proxy_port = "8799"
+user_editable = false
+
+[settings.config]
+default_vm_number = "121"
+feature_access_codes = ["153", "132", "45"]
+read_only_apn_types = ["*"]
+show_4g_for_lte_data_icon = true
+smsToMmsTextThreshold = 10

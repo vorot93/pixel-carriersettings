@@ -1,0 +1,32 @@
+[[carrier_id]]
+mcc_mnc = "21601"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "DJUICE"
+
+[[settings.apns.apn]]
+name = "Djuice MMS"
+value = "mms"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mmsc.pgsm.hu/"
+mmsc_proxy = "84.225.255.1"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Djuice NET"
+value = "net"
+type = ["default"]
+authtype = 0
+
+[[settings.apns.apn]]
+name = "Djuice WAP"
+value = "wap"
+type = ["default"]
+proxy = "84.225.255.1"
+port = "8080"
+authtype = 0
+
+[settings.config]
+show_4g_for_lte_data_icon = true

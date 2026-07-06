@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "46003"
+
+[[settings.apns.apn]]
+name = "CTNET"
+value = "ctnet"
+type = ["cbs", "default", "hipri", "fota"]
+server = "*"
+user = "ctnet@mycdma.cn"
+password = "vnet.mobi"
+authtype = 3
+
+[[settings.apns.apn]]
+name = "CTWAP"
+value = "ctwap"
+type = ["default", "mms", "supl", "hipri", "fota", "cbs"]
+server = "*"
+user = "ctwap@mycdma.cn"
+password = "vnet.mobi"
+authtype = 3
+mmsc = "http://mmsc.vnet.mobi"
+mmsc_proxy = "10.0.0.200"
+mmsc_proxy_port = "80"
+
+[settings.config]
+allow_emergency_numbers_in_call_log = true
+ascii_7_bit_support_for_long_message = true
+show_apn_setting_cdma = false

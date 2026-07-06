@@ -1,0 +1,79 @@
+[[carrier_id]]
+mcc_mnc = "311650"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "United Wireless"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "United Wireless Internet"
+value = "unitedwireless"
+type = ["default", "mms"]
+mmsc = "http://mms.unitedwireless.com"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "United Wireless Tethering"
+value = "dun.unitedwireless"
+type = ["dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "United Wireless HOS"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "United Wireless FOTA"
+value = "ota.unitedwireless"
+type = ["fota"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "United IMS"
+value = "IMS"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "United Wireless SOS"
+value = "SOS"
+type = ["emergency"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "*86"
+dial_string_replace = ["*86:+1MDN"]
+hide_enhanced_4g_lte = true
+wfc_emergency_address_carrier_app = "com.android.imsserviceentitlement/.WfcActivationActivity"
+wfc_spn_format_idx = 4
+
+[settings.config.imsserviceentitlement]
+entitlement_server_url = "https://aes.mnc650.mcc311.pub.3gppnetwork.org"
+show_vowifi_webview = true
+
+[settings.field8]
+seconds = 1741179747

@@ -1,0 +1,56 @@
+[[carrier_id]]
+mcc_mnc = "21890"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "BHMobileInternet"
+value = "active.bhmobile.ba"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "BHMobileMMS"
+value = "mms.bhmobile.ba"
+type = ["mms"]
+mmsc = "http://mms.bhmobile.ba/servlets/mms"
+mmsc_proxy = "195.222.56.41"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap"
+type = ["xcap"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|20"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+default_vm_number = "+38761123123"
+xcap_apn_name = "xcap"
+
+[settings.config.imssms]
+sms_over_ims_supported = false
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+ut_iptype_home = 0
+ut_iptype_roaming = 0
+ut_server_based_services = [1, 2, 3, 4, 5, 6, 7, 12, 17, 18, 19, 20, 21, 13, 14, 15, 16, 8, 10, 11, 9]
+ut_terminal_based_services = [0]
+xcap_over_ut_supported_rats = [6, 3, 1, 2]
+
+[settings.field8]
+seconds = 1770819167

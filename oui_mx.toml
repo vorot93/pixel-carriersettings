@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "OUI"
+
+[[settings.apns.apn]]
+name = "Oui"
+value = "internet.oui.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Oui"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "53988"
+
+[[settings.apns.apn]]
+name = "Digicel"
+value = "default"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Tonga:Digicel:Modem"
+value = "wap"
+type = ["dun"]
+proxy = "172.16.7.12"
+port = "8080"
+authtype = 1
+mmsc = "http://wapdigicel.com"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Tonga:Digicel:Mms"
+value = "wap"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms.digicelgroup.com"
+mmsc_proxy = "172.16.7.12"
+mmsc_proxy_port = "9201"
+
+[settings.config]

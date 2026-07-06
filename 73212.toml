@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "73212"
+
+[[settings.apns.apn]]
+name = "Movistar INTERNET"
+value = "internet.movistar.com.co"
+type = ["default", "dun"]
+user = "movistar"
+password = "movistar"
+authtype = 1
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Movistar MMS"
+value = "mms.movistar.com.co"
+type = ["mms"]
+user = "movistar"
+password = "movistar"
+authtype = 1
+mmsc = "http://mms.movistar.com.co"
+mmsc_proxy = "192.168.222.7"
+mmsc_proxy_port = "9001"
+
+[settings.config]

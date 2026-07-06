@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "62007"
+
+[[settings.apns.apn]]
+name = "Glo Internet GH"
+value = "glowap"
+type = ["default"]
+proxy = "10.161.85.4"
+port = "8799"
+user = "glo"
+password = "glo"
+authtype = 1
+
+[settings.config]

@@ -1,0 +1,78 @@
+[[carrier_id]]
+mcc_mnc = "22601"
+
+[settings]
+version = 77000000008
+
+[[settings.apns.apn]]
+name = "Internet"
+value = ""
+type = ["ia"]
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "live.vodafone.com"
+type = ["default", "supl", "xcap"]
+authtype = 0
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+call_barring_visibility = true
+carrier_certificate = ["95D4443A60C07CCDEF793547C0CD76221D94A071BDAEE4D6CCE0F2C4E59D64F7:ro.vodafone.mcare.android"]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_metered_apn_types = ["default", "dun", "supl"]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "+40722033334"
+enabledMMS = false
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+prefer_3g_visibility = false
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.config.imsss]
+ut_iptype_home = 0
+ut_iptype_roaming = 0
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice.amrnb_payload_description.108]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.110]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102, 108]
+amrwb_payload_type = [104, 110]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [106]
+
+[settings.config.imsvoice.evs_payload_description.106]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 3
+
+[settings.config.iwlan]
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9002"],"RetryArray": ["1800", "-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}]}]'
+
+[settings.config.qns]
+support_wfc_recovery = false
+
+[settings.field8]
+seconds = 1765981876

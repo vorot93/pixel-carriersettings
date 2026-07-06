@@ -1,0 +1,29 @@
+[[carrier_id]]
+mcc_mnc = "41820"
+
+[[carrier_id]]
+mcc_mnc = "41830"
+
+[[settings.apns.apn]]
+name = "ZAIN-GPRS"
+value = "internet"
+type = ["default", "supl"]
+user = "atheer"
+password = "atheer"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Zain-MMS"
+value = "MMS"
+type = ["mms"]
+user = "atheer"
+password = "atheer"
+authtype = 1
+mmsc = "http://mms:8002/"
+mmsc_proxy = "172.29.11.12"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 153600

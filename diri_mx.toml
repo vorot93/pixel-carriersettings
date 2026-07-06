@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "DIRI"
+
+[[settings.apns.apn]]
+name = "Diri"
+value = "internet.diri.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Diri"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

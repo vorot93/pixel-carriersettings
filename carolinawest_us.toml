@@ -1,0 +1,103 @@
+[[carrier_id]]
+mcc_mnc = "310130"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Carolina West Wireless"
+value = "home.cww.com"
+type = ["default", "supl", "cbs"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Carolina West Tethering"
+value = "tethering.cww.com"
+type = ["dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Carolina West Wireless MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.cwwmms.com/cww/mms.php"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Carolina West XCAP"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "SOS"
+value = "sos"
+type = ["emergency"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+call_forwarding_when_unreachable_supported = false
+carrier_default_data_roaming_enabled = true
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+httpParams = "X-MDN: ##LINE1##"
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+maxImageHeight = 2432
+maxImageWidth = 4320
+maxMessageSize = 1048576
+maxSubjectLength = 80
+recipientLimit = 20
+smsToMmsTextThreshold = 1
+wfc_emergency_address_carrier_app = "com.android.imsserviceentitlement/.WfcActivationActivity"
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_port = 8091
+
+[settings.config.imsserviceentitlement]
+entitlement_server_url = "https://aes.mnc130.mcc310.pub.3gppnetwork.org"
+show_vowifi_webview = true
+
+[settings.config.imsss]
+ut_as_server_port = 8090
+
+[settings.config.imsvoice]
+include_caller_id_service_codes_in_sip_invite = true
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+diffie_hellman_groups = [16, 15, 14, 5, 2]
+
+[settings.config.qns]
+sos_transport_type = 2
+
+[settings.field8]
+seconds = 1753205231

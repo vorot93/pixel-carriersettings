@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "20601"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "B6"
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms.mobi.eastlink.ca"
+type = ["mms"]
+mmsc = "http://mmss.mobi.eastlink.ca"
+mmsc_proxy = "10.232.12.49"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "wisp.mobi.eastlink.ca"
+type = ["default", "supl"]
+
+[settings.config]

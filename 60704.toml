@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60704"
+
+[[settings.apns.apn]]
+name = "QCell"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

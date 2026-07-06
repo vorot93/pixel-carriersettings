@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63801"
+
+[[settings.apns.apn]]
+name = "Evatis"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

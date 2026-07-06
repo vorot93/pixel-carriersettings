@@ -1,0 +1,43 @@
+[[carrier_id]]
+mcc_mnc = "732123"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Movistar INTERNET"
+value = "internet.movistar.com.co"
+type = ["default", "supl", "ia"]
+user = "movistar"
+password = "movistar"
+authtype = 1
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Movistar MMS"
+value = "mms.movistar.com.co"
+type = ["mms"]
+user = "movistar"
+password = "movistar"
+authtype = 1
+mmsc = "http://mms.movistar.com.co"
+mmsc_proxy = "192.168.222.7"
+mmsc_proxy_port = "9001"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Movistar IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1733386101

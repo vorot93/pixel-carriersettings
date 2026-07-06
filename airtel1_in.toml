@@ -1,0 +1,57 @@
+[[carrier_id]]
+mcc_mnc = "405800"
+
+[[carrier_id]]
+mcc_mnc = "405802"
+
+[[carrier_id]]
+mcc_mnc = "405804"
+
+[[carrier_id]]
+mcc_mnc = "405805"
+
+[[carrier_id]]
+mcc_mnc = "405806"
+
+[[carrier_id]]
+mcc_mnc = "405807"
+
+[[carrier_id]]
+mcc_mnc = "405808"
+
+[[carrier_id]]
+mcc_mnc = "405810"
+
+[[carrier_id]]
+mcc_mnc = "405811"
+
+[[carrier_id]]
+mcc_mnc = "405812"
+
+[[settings.apns.apn]]
+name = "Aircel-GPRS"
+value = "aircelgprs"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Pocket Internet"
+value = "aircelwap"
+type = ["default", "supl"]
+proxy = "172.17.83.69"
+port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Aircel-MMS"
+value = "aircelmms"
+type = ["mms"]
+mmsc = "http://10.50.1.166/servlets/mms"
+mmsc_proxy = "172.17.83.69"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+prevent_clir_activation_and_deactivation_code = true
+roaming_operator = ["404", "405"]

@@ -1,0 +1,60 @@
+[[carrier_id]]
+mcc_mnc = "30801"
+
+[[carrier_id]]
+mcc_mnc = "30803"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "St. Pierre-et-Miquelon Télécom IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+mtu = 1300
+user_visible = false
+
+[[settings.apns.apn]]
+name = "spmtelecom"
+value = "spmtelecom"
+type = ["default"]
+
+[settings.config.ims]
+ipv4_sip_mtu_size_cellular = 1300
+ipv6_sip_mtu_size_cellular = 1300
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+prack_supported_for_18x = true
+ringback_timer_millis = 180000
+ringing_timer_millis = 180000
+
+[settings.config.imsvoice.amrnb_payload_description.100]
+amr_codec_attribute_modeset = [0, 3, 6]
+
+[settings.config.imsvoice.amrnb_payload_description.101]
+amr_codec_attribute_modeset = [0, 3, 6]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.99]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [100, 101]
+amrwb_payload_type = [98, 99]
+dtmfnb_payload_type = [106]
+dtmfwb_payload_type = [105]
+
+[settings.field8]
+seconds = 1724979979

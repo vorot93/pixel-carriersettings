@@ -1,0 +1,47 @@
+[[carrier_id]]
+mcc_mnc = "27877"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Melita Mobile"
+
+[[carrier_id]]
+mcc_mnc = "27877"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "melitaweb"
+value = "web.melita"
+type = ["default", "supl"]
+authtype = 0
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsvoice]
+conference_subscribe_type = 0
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+
+[settings.field8]
+seconds = 1755679363

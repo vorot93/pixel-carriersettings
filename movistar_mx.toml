@@ -1,0 +1,78 @@
+[[carrier_id]]
+mcc_mnc = "33403"
+
+[[carrier_id]]
+mcc_mnc = "334030"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Movistar INTERNET"
+value = "internet.movistar.mx"
+type = ["default", "supl"]
+user = "movistar"
+password = "movistar"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Movistar MMS"
+value = "mms.movistar.mx"
+type = ["mms"]
+user = "movistar"
+password = "movistar"
+authtype = 1
+mmsc = "http://mms.movistar.mx"
+mmsc_proxy = "10.2.20.1"
+mmsc_proxy_port = "80"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap"
+type = ["xcap"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc030.mcc334.pub.3gppnetwork.org"
+bsf_server_port = 8080
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+ut_as_server_fqdn = "naf.ims.mnc030.mcc334.pub.3gppnetwork.org"
+ut_as_server_port = 8090
+xcap_over_ut_supported_rats = [6, 3]
+
+[settings.config.imsvoice]
+conference_factory_uri = "conference@factory.ims.movistar.mx"
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.qns]
+xcap_transport_type = 0
+
+[settings.field8]
+seconds = 1724979979

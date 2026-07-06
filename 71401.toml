@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "71401"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "apn01.cwpanama.com.pa"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "apn02.cwpanama.com.pa"
+type = ["mms"]
+mmsc = "http://mms.zonamovil.com.pa"
+mmsc_proxy = "172.25.3.5"
+mmsc_proxy_port = "8080"
+
+[settings.config]

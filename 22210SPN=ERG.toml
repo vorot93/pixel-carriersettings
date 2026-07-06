@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "22210"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "ERG"
+
+[[settings.apns.apn]]
+name = "ErgMobile WAP"
+value = "mobile.erg.it"
+type = ["default", "supl", "dun", "fota"]
+authtype = 0
+user_editable = false
+
+[settings.config]
+carrier_volte_available = false
+default_vm_number = "42020"
+show_4g_for_lte_data_icon = true
+volte_replacement_rat = 3

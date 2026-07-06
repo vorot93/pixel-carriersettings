@@ -1,0 +1,30 @@
+[[carrier_id]]
+mcc_mnc = "21403"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2140352"
+
+[[settings.apns.apn]]
+name = "Carrefour"
+value = "CARREFOURINTERNET"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Carrefour MMS"
+value = "CARREFOURMMS"
+type = ["mms"]
+user = "CARREFOUR"
+password = "CARREFOUR"
+authtype = 1
+mmsc = "http://mms.orange.es"
+mmsc_proxy = "172.22.188.25"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]

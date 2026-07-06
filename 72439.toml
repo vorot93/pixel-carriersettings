@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "72439"
+
+[[settings.apns.apn]]
+name = "Nextel MMS"
+value = "mms.nextel3g.net.br"
+type = ["mms"]
+authtype = 0
+mmsc = "http://3gmms.nextel3g.net.br"
+mmsc_proxy = "129.192.129.104"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Nextel WAP"
+value = "wap.nextel3g.net.br"
+type = ["default"]
+authtype = 0
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+show_4g_for_lte_data_icon = true

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "45608"
+
+[[settings.apns.apn]]
+name = "Metfone"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

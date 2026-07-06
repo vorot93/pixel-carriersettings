@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63760"
+
+[[settings.apns.apn]]
+name = "Nationlink Telecom"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

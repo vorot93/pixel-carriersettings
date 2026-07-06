@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "25011"
+
+[[settings.apns.apn]]
+name = "YOTA Internet"
+value = "yota.ru"
+type = ["default", "supl"]
+
+[settings.config]

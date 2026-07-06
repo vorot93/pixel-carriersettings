@@ -1,0 +1,85 @@
+[[carrier_id]]
+mcc_mnc = "311350"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "NEMONT"
+
+[[settings.apns.apn]]
+name = "nemont"
+value = "CdmaNai"
+type = ["mms"]
+bearer_bitmask = "6"
+mmsc = "http://mms.nemont.mobi/mms/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nemont IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nemont IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nemont FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nemont FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nemont"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "13"
+mmsc = "http://mms.nemont.mobi/mms/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Nemont"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "14"
+mmsc = "http://mms.nemont.mobi/mms/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Nemont IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Nemont IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "42203"
+
+[[settings.apns.apn]]
+name = "Ooredoo MMS"
+value = "Ooredoo"
+type = ["mms"]
+authtype = 0
+mmsc = "http://10.128.240.16/servlets/mms"
+
+[[settings.apns.apn]]
+name = "Ooredoo Internet"
+value = "Ooredoo"
+type = ["default", "supl"]
+
+[settings.config]

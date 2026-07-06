@@ -1,0 +1,32 @@
+[[carrier_id]]
+mcc_mnc = "34403"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "net"
+value = "net"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "IMS"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsvoice]
+voice_qos_precondition_supported = false
+
+[settings.field8]
+seconds = 1753863668

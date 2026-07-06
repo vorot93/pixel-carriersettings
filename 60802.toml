@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60802"
+
+[[settings.apns.apn]]
+name = "Tigo Internet SN"
+value = "web.sentel.com"
+type = ["default", "supl"]
+
+[settings.config]

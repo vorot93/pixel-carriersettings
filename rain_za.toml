@@ -1,0 +1,61 @@
+[[carrier_id]]
+mcc_mnc = "65538"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "rain"
+
+[[carrier_id]]
+mcc_mnc = "65573"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "rain"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "rain"
+value = "rain"
+type = ["default", "dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+read_only_apn_types = []
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+
+[settings.config.imsvoice]
+carrier_volte_roaming_available = false
+prack_supported_for_18x = true
+voice_on_default_bearer_supported = true
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imsvt]
+video_on_default_bearer_supported = true
+
+[settings.field8]
+seconds = 1769617073

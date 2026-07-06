@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "72201"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "02"
+
+[[carrier_id]]
+mcc_mnc = "722010"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "01"
+
+[[settings.apns.apn]]
+name = "Servicio_WEB"
+value = "internet.movil"
+type = ["default"]
+user = "internet"
+password = "internet"
+authtype = 1
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

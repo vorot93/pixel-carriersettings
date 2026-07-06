@@ -1,0 +1,52 @@
+[[carrier_id]]
+mcc_mnc = "206018"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "8915518F"
+
+[[carrier_id]]
+mcc_mnc = "20801"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "8915518F"
+
+[[carrier_id]]
+mcc_mnc = "21407"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "8915518F"
+
+[[carrier_id]]
+mcc_mnc = "314610"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "8915518F"
+
+[[carrier_id]]
+mcc_mnc = "90101"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "8915518F"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "MetTel"
+value = "MetTel"
+type = ["default", "supl", "dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[settings.config]
+cellular_usage_setting = 2
+enabledMMS = false
+
+[settings.field8]
+seconds = 1752062637

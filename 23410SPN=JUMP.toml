@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "23410"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "JUMP"
+
+[[settings.apns.apn]]
+name = "Jump UK"
+value = "mobiledata"
+type = []
+authtype = 0
+
+[settings.config]
+default_vm_number = "901"
+hide_lte_plus_data_icon = false
+non_roaming_operator = ["23420", "23426", "23430", "23431", "23432", "23433", "23434", "23486"]
+prefer_2g = false
+radio_restart_failure_causes = [55]
+show_4g_for_lte_data_icon = true
+smsToMmsTextThreshold = 10

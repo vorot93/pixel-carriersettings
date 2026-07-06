@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "310066"
+
+[[settings.apns.apn]]
+name = "U.S.Cellular"
+value = "internet"
+type = []
+server = "*"
+user = "*"
+password = "*"
+mmsc = "http://mmsc1.uscc.net/mmsc/MMS"
+mtu = 1422
+
+[settings.config]

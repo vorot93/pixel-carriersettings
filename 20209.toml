@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "20209"
+
+[[settings.apns.apn]]
+name = "Q Internet"
+value = "myq"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Q-Telecom MMS GPRS"
+value = "q-mms.myq.gr"
+type = ["mms"]
+mmsc = "http://mms.myq.gr"
+mmsc_proxy = "192.168.80.134"
+mmsc_proxy_port = "8080"
+
+[settings.config]

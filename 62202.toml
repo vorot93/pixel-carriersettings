@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "62202"
+
+[[settings.apns.apn]]
+name = "Tawali"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

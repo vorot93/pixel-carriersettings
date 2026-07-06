@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "54720"
+
+[[settings.apns.apn]]
+name = "Vini"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

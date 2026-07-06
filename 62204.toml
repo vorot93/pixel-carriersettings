@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "62204"
+
+[[settings.apns.apn]]
+name = "Salam"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

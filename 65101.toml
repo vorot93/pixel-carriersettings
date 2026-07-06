@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "65101"
+
+[[settings.apns.apn]]
+name = "VCL Internet GPRS"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "VCL MMS GPRS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mmsc.vodacom4me.co.ls"
+mmsc_proxy = "10.113.63.11"
+mmsc_proxy_port = "8080"
+
+[settings.config]

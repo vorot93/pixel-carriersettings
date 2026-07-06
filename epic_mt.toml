@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "27801"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet"
+type = ["default", "supl"]
+authtype = 0
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[settings.config]
+
+[settings.field8]
+seconds = 1729679695

@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "63902"
+
+[[settings.apns.apn]]
+name = "safaricom GPRS"
+value = "safaricom"
+type = ["default", "supl"]
+proxy = "172.22.2.38"
+port = "8080"
+user = "saf"
+password = "data"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "safaricom mms"
+value = "safaricom"
+type = ["mms"]
+user = "saf"
+password = "data"
+authtype = 1
+mmsc = "http://mms.gprs.safaricom.com"
+mmsc_proxy = "172.22.2.38"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+carrier_certificate = ["F86A9F41A3616F82FAB02D4F23072FAFC7FF94B266C2E0A3558F097A95EA51D8", "F047BB9ED3FDFB7B32887F9DBAC1B933E58AE5857EC3455113C34DE26286FEC9"]

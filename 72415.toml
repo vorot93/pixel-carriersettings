@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "72415"
+
+[[settings.apns.apn]]
+name = "Sercomtel:Dados"
+value = "sercomtel.com.br"
+type = ["default"]
+user = "sercomtel"
+password = "sercomtel"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Sercomtel:MMS"
+value = "mms.sercomtel.com.br"
+type = ["mms"]
+user = "sercomtel"
+password = "sercomtel"
+authtype = 1
+mmsc = "http://mms.claro.com.br"
+mmsc_proxy = "200.169.126.10"
+mmsc_proxy_port = "8799"
+
+[settings.config]

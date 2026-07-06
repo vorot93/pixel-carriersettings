@@ -1,0 +1,42 @@
+[[carrier_id]]
+mcc_mnc = "00101"
+
+[settings]
+version = 77000000005
+
+[[settings.apns.apn]]
+name = "TEST_DEFAULT"
+value = "default"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+carrier_default_wfc_ims_mode = 1
+carrier_nr_availabilities = [1, 2]
+carrier_volte_available = true
+carrier_vt_available = true
+carrier_wfc_ims_available = true
+
+[settings.config.imsemergency]
+emergency_over_ims_roaming_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_rats = [3]
+scan_limited_service_after_volte_failure = true
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.vendor_ims]
+carrier_config_use_aosp_ims_config = false
+
+[settings.field8]
+seconds = 1753267268

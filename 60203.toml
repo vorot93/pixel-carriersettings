@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "60203"
+
+[[settings.apns.apn]]
+name = "Etisalat WAP"
+value = "etisalat"
+type = ["default", "supl"]
+proxy = "10.71.130.29"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Etisalat MMS"
+value = "etisalat"
+type = ["mms"]
+mmsc = "http://10.71.131.7:38090"
+mmsc_proxy = "10.71.130.29"
+mmsc_proxy_port = "8080"
+
+[settings.config]

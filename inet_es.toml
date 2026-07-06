@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "21405"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "214050104"
+
+[[carrier_id]]
+mcc_mnc = "21434"
+
+[[settings.apns.apn]]
+name = "INET Internet"
+value = "inet.es"
+type = ["default", "supl", "fota", "hipri"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]

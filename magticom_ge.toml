@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "28202"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "3g.ge"
+type = ["default", "supl"]
+mmsc = "http://mms.magticom.ge"
+mmsc_proxy = "81.95.160.16"
+mmsc_proxy_port = "9401"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.field8]
+seconds = 1740119850

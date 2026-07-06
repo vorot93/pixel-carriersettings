@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "60502"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet.tn"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Internet Portail"
+value = "gprs.tn"
+type = ["default", "supl"]
+user = "gprs"
+password = "gprs"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Tunisie Telecom MMS"
+value = "mms.tn"
+type = ["mms"]
+user = "mms@tt1"
+password = "mms"
+authtype = 1
+mmsc = "http://192.168.0.3:19090/was"
+mmsc_proxy = "192.168.0.2"
+mmsc_proxy_port = "8080"
+
+[settings.config]

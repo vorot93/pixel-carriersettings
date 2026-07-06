@@ -1,0 +1,109 @@
+[[carrier_id]]
+mcc_mnc = "26006"
+
+[settings]
+version = 77000000006
+
+[[settings.apns.apn]]
+name = "Play Internet"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Play MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mmsc.play.pl/mms/wapenc"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Play IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+field27 = "1|2|3|8|9|10|13|14|15|18|20"
+
+[[settings.apns.apn]]
+name = "Play XCAP"
+value = "xcap"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+user_editable = false
+
+[settings.config]
+call_barring_visibility = true
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_metered_apn_types = ["default", "dun", "supl", "enterprise"]
+carrier_name = "Play"
+carrier_name_override = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+display_hd_plus_icon = true
+gsm_nonroaming_networks = ["26003"]
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+non_roaming_operator = ["26003"]
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+smsToMmsTextThreshold = 6
+wfc_spn_format_idx = 11
+wfc_spn_use_root_locale = true
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_qos_precondition_supported = false
+emergency_registration_timer_millis = 8000
+
+[settings.config.imsrtt]
+text_qos_precondition_supported = false
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice]
+ringback_timer_millis = 20000
+ringing_timer_millis = 20000
+voice_qos_precondition_supported = false
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.imsvt]
+video_as_bandwidth_kbps = 700
+video_qos_precondition_supported = false
+video_rr_bandwidth_bps = 4800
+video_rs_bandwidth_bps = 14400
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 2400
+child_sa_rekey_soft_timer_sec = 1800
+diffie_hellman_groups = [14, 15, 16]
+dpd_timer_sec = 60
+ike_rekey_hard_timer_in_sec = 4200
+ike_rekey_soft_timer_sec = 3600
+ike_remote_id_type = 11
+supported_child_session_encryption_algorithms = [12, 13]
+supported_ike_session_encryption_algorithms = [12, 13]
+
+[settings.config.qns]
+mms_rat_preference = 2
+
+[settings.field8]
+seconds = 1769617073

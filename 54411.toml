@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "54411"
+
+[[settings.apns.apn]]
+name = "Bluesky"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

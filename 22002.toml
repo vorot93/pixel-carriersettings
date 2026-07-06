@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "22002"
+
+[[settings.apns.apn]]
+name = "Telenor MNE internet"
+value = "internet"
+type = ["default", "supl"]
+proxy = "192.168.246.5"
+port = "8080"
+user = "gprs"
+password = "gprs"
+
+[[settings.apns.apn]]
+name = "Telenor MNE mms"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+mmsc = "http://mm.vor.telenor.me"
+mmsc_proxy = "192.168.246.5"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+mmi_two_digit_number_pattern = ["92", "93", "94", "95", "96"]

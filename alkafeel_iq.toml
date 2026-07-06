@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "41892"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Omnnea.net"
+value = "internet"
+type = ["default", "ia"]
+
+[[settings.apns.apn]]
+name = "Omnnea.ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+user_visible = false
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

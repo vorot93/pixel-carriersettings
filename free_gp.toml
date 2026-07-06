@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "20815"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F007"
+
+[[carrier_id]]
+mcc_mnc = "34009"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Free Gp"
+value = "free.gp"
+type = ["default", "mms"]
+mmsc = "http://mms.free.gp"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+maxMessageSize = 614400
+
+[settings.field8]
+seconds = 1753205231

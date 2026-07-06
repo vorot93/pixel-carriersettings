@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "51008"
+
+[[settings.apns.apn]]
+name = "AXIS-SNS"
+value = "AXIS"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "AXISwap"
+value = "AXIS"
+type = ["default", "supl"]
+proxy = "10.8.3.8"
+port = "8080"
+user = "axis"
+password = "123456"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "AXISmms"
+value = "AXISmms"
+type = ["mms"]
+user = "axis"
+password = "123456"
+authtype = 1
+mmsc = "http://mmsc.axis"
+mmsc_proxy = "10.8.3.8"
+mmsc_proxy_port = "8080"
+
+[settings.config]

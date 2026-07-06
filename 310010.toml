@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "310010"
+
+[settings.config]
+enableMultipartSMS = false
+enableSMSDeliveryReports = false
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+mmsCloseConnection = true
+sendMultipartSmsAsSeparateMessages = true
+supportMmsContentDisposition = false

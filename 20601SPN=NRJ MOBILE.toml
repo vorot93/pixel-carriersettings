@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "20601"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "NRJ MOBILE"
+
+[[settings.apns.apn]]
+name = "NRJMMS"
+value = "event.proximus.be"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 0
+mmsc = "http://mmsc.proximus.be/mms"
+mmsc_proxy = "10.55.14.75"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "NRJWEB"
+value = "internet.proximus.be"
+type = ["default", "supl", "dun", "fota"]
+authtype = 0
+user_editable = false
+
+[settings.config]

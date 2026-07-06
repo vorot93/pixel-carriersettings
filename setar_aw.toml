@@ -1,0 +1,45 @@
+[[carrier_id]]
+mcc_mnc = "36301"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "3630100"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "SETAR Internet"
+value = "internet.setar.aw"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "SETAR MMS"
+value = "mms.setar.aw"
+type = ["mms"]
+authtype = 3
+mmsc = "http://mms.setar.aw"
+mmsc_proxy = "201.229.65.204"
+mmsc_proxy_port = "8081"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "IMS"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.config.ims]
+request_uri_type = 1
+
+[settings.field8]
+seconds = 1770819167

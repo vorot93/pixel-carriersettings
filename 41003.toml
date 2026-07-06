@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "41003"
+
+[[settings.apns.apn]]
+name = "Ufone WAP"
+value = "Ufone.internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Ufone MMS"
+value = "Ufone.mms"
+type = ["mms"]
+mmsc = "http://www.ufonemms.com:80/"
+mmsc_proxy = "172.16.13.27"
+mmsc_proxy_port = "8080"
+
+[settings.config]

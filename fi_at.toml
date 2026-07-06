@@ -1,0 +1,158 @@
+[[carrier_id]]
+mcc_mnc = "23210"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0306"
+
+[settings]
+version = 77000000009
+
+[settings.apns]
+apn = []
+
+[settings.config]
+_5g_nr_ssrsrp_thresholds = [-125, -120, -114, -109]
+additional_settings_call_waiting_visibility = false
+additional_settings_caller_id_visibility = false
+allow_non_emergency_calls_in_ecm = true
+call_barring_visibility = false
+carrier_app_required_during_setup = true
+carrier_app_wake_signal_config = []
+carrier_auto_cancel_cs_notification = true
+carrier_certificate = ["B9CFCE1C47A6AC713442718F15EF55B00B3A6D1A6D48CB46249FA8EB51465350:com.google.android.apps.tycho", "4C36AF4A5BDAD97C1F3D8B283416D244496C2AC5EAFE8226079EF6F676FD1859:com.google.android.apps.tycho"]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_default_wfc_ims_roaming_mode = 1
+carrier_metered_apn_types = ["default", "dun", "supl"]
+carrier_metered_roaming_apn_types = ["default", "dun", "supl"]
+carrier_name = "Google Fi"
+carrier_name_override = true
+carrier_nr_availabilities = [1, 2]
+carrier_settings_enable = false
+carrier_supports_ss_over_ut = false
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_vowifi_tty_supported = false
+carrier_vt_available = false
+carrier_vvm_package_name_string = ""
+carrier_wfc_ims_available = false
+cdma_3waycall_flash_delay = 0
+cdma_roaming_mode = 2
+config_telephony_use_own_number_for_voicemail = true
+data_warning_threshold_bytes = -2
+display_hd_audio_property = false
+display_hd_plus_icon = false
+editable_voicemail_number_setting = false
+emailGatewayNumber = ""
+enableSMSDeliveryReports = false
+force_home_network = true
+groupChatDefaultsToMMS = true
+hide_carrier_network_settings = false
+hide_enhanced_4g_lte = true
+hide_sim_lock_settings = true
+ignore_rtt_mode_setting = true
+ignore_sim_network_locked_events = true
+maxImageHeight = 1994
+maxImageWidth = 2592
+maxMessageSize = 1048576
+min_udp_port_4500_nat_timeout_sec = 570
+non_roaming_operator = ["23203", "23205"]
+prefer_2g = true
+recipientLimit = 20
+require_entitlement_checks = false
+rtt_downgrade_supported = false
+rtt_supported = false
+rtt_supported_while_roaming = false
+show_4g_for_lte_data_icon = false
+sim_country_iso_override = "us"
+volte_replacement_rat = 3
+vonr_enabled = false
+vonr_on_by_default = true
+vvm_destination_number = ""
+vvm_port_number = 0
+vvm_type = "vvm_type_disabled"
+
+[settings.config.com_google_android_apps_privacy_wildlife]
+allow_vpn_on_mobile_network = true
+
+[settings.config.com_google_android_dialer]
+carrier_supports_voip_calls = true
+spam_blocking_controlled_by_carrier = true
+
+[settings.config.ims]
+registration_expiry_timer_sec = 36000
+request_uri_type = 1
+
+[settings.config.imsemergency]
+emergency_over_ims_roaming_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_rats = [6, 3, 5]
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+ut_server_based_services = [12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 8, 9, 11]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+audio_inactivity_call_end_reasons = [2, 4]
+audio_rtp_inactivity_timer_millis = 15000
+conference_subscribe_type = 0
+minimum_session_expires_timer_sec = 600
+ringback_timer_millis = 120000
+ringing_timer_millis = 120000
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.imsvt]
+video_as_bandwidth_kbps = 384
+video_rr_bandwidth_bps = 14400
+video_rs_bandwidth_bps = 4800
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 3600
+child_sa_rekey_soft_timer_sec = 1800
+child_session_aes_cbc_key_size = [256]
+diffie_hellman_groups = [14]
+ike_rekey_hard_timer_in_sec = 3600
+ike_rekey_soft_timer_sec = 1800
+ike_session_encryption_aes_cbc_key_size = [256]
+supported_integrity_algorithms = [14]
+supported_prf_algorithms = [5, 7]
+
+[settings.config.qns]
+condition_rove_in_idle_wifi_pref_home = ["Condition:WIFI_GOOD"]
+condition_rove_in_idle_wifi_pref_roam = ["Condition:WIFI_GOOD"]
+condition_rove_out_idle_wifi_pref_home = ["Condition:WIFI_BAD"]
+condition_rove_out_idle_wifi_pref_roam = ["Condition:WIFI_BAD"]
+idle_eutran_rsrp = [-108, -115]
+idle_geran_rssi = [-90, -100]
+idle_ngran_ssrsrp = [-109, -114]
+idle_utran_rscp = [-97, -107]
+idle_wifi_rssi = [-74, -85]
+override_cell_pref_to_ims_pref_home = true
+sos_transport_type = 2
+video_eutran_rsrp = [-108, -115]
+video_geran_rssi = [-90, -100]
+video_ngran_ssrsrp = [-109, -114]
+video_utran_rscp = [-97, -107]
+video_wifi_rssi = [-74, -85]
+voice_eutran_rsrp = [-108, -115]
+voice_geran_rssi = [-90, -100]
+voice_ngran_ssrsrp = [-109, -114]
+voice_utran_rscp = [-97, -107]
+voice_wifi_rssi = [-74, -85]
+
+[settings.field8]
+seconds = 1766559539

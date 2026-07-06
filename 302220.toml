@@ -1,0 +1,13 @@
+[[carrier_id]]
+mcc_mnc = "302220"
+
+[settings.config]
+always_play_remote_hold_tone = true
+hide_lte_plus_data_icon = false
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+maxSubjectLength = 80
+recipientLimit = 10
+smsToMmsTextThreshold = 5
+voicemail_notification_persistent = true

@@ -1,0 +1,74 @@
+[[carrier_id]]
+mcc_mnc = "302270"
+
+[settings]
+version = 77000000005
+
+[[settings.apns.apn]]
+name = "Eastlink MMS"
+value = "mms.mobi.eastlink.ca"
+type = ["mms"]
+mmsc = "http://mmss.mobi.eastlink.ca"
+mmsc_proxy = "10.232.12.49"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Eastlink Internet"
+value = "wisp.mobi.eastlink.ca"
+type = ["default"]
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Eastlink XCAP"
+value = "services"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+hide_enhanced_4g_lte = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+maxSubjectLength = 80
+recipientLimit = 20
+smsToMmsTextThreshold = 6
+
+[settings.config.gps]
+es_extension_sec = "300"
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_registration_timer_millis = 10000
+
+[settings.config.imsss]
+use_csfb_on_xcap_over_ut_failure = false
+ut_server_based_services = [1, 2, 3, 4, 5, 6, 7, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+ut_terminal_based_services = [0, 8, 10]
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.field8]
+seconds = 1774443087

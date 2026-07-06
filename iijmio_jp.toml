@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "44003"
+
+[[settings.apns.apn]]
+name = "iijmio"
+value = "iijmio.jp"
+type = ["default"]
+user = "mio@iij"
+password = "iij"
+authtype = 3
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "vmobile"
+value = "vmobile.jp"
+type = ["default"]
+user = "vmobile@jp"
+password = "vmobile"
+authtype = 3
+protocol = "ipv4v6"
+
+[settings.config]
+_5g_nr_ssrsrp_thresholds = [-128, -118, -108, -98]
+show_4g_for_lte_data_icon = true
+show_blocking_pay_phone_option = true
+sim_country_iso_override = "jp"

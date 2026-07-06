@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60601"
+
+[[settings.apns.apn]]
+name = "Madar"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "20601"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "206018016"
+
+[[carrier_id]]
+mcc_mnc = "27215"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "75696531"
+
+[[carrier_id]]
+mcc_mnc = "27215"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "75696532"
+
+[[settings.apns.apn]]
+name = "Virgin Media Ireland"
+value = "internet"
+type = ["default"]
+
+[settings.config]

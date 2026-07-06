@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "20606"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Lycamobile"
+
+[[settings.apns.apn]]
+name = "lycamobile"
+value = "data.lycamobile.be"
+type = ["default", "supl"]
+authtype = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]

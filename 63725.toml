@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63725"
+
+[[settings.apns.apn]]
+name = "Hormuud"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

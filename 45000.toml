@@ -1,0 +1,8 @@
+[[carrier_id]]
+mcc_mnc = "45000"
+
+[settings.config]
+carrier_volte_available = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576

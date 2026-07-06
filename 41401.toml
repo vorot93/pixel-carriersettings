@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "41401"
+
+[[settings.apns.apn]]
+name = "MPT"
+value = "mptnet"
+type = ["default"]
+
+[settings.config]

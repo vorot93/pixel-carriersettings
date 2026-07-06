@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "25901"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Orange Internet"
+value = "wap.orange.md"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Orange VoLTE"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1747202480

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64101"
+
+[[settings.apns.apn]]
+name = "Airtel Internet UG"
+value = "internet"
+type = ["default"]
+
+[settings.config]

@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "42506"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet"
+type = ["default", "supl"]
+proxy = "10.100.129.111"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Wataniya_mms"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.wataniya.ps/servlets/mms"
+mmsc_proxy = "10.100.129.111"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,52 @@
+[[carrier_id]]
+mcc_mnc = "262830"
+
+[[carrier_id]]
+mcc_mnc = "262840"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "internet.alkaa"
+value = "internet.alkaa"
+type = ["default"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+profile_id = 0
+
+[[settings.apns.apn]]
+name = "ims.alkaa"
+value = "ims.alkaa"
+type = ["ims"]
+protocol = "ipv4v6"
+profile_id = 1
+
+[[settings.apns.apn]]
+name = "em.alkaa"
+value = "em.alkaa"
+type = ["emergency"]
+protocol = "ipv4v6"
+profile_id = 2
+
+[[settings.apns.apn]]
+name = "3g.alkaa"
+value = "3g.alkaa"
+type = ["default"]
+bearer_bitmask = "1|2|3|9|10|11|13|15"
+profile_id = 3
+
+[settings.config]
+carrier_nr_availabilities = [1, 2]
+carrier_volte_available = true
+carrier_vt_available = true
+carrier_wfc_ims_available = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_over_ims_roaming_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_rats = [6, 3, 5]
+
+[settings.field8]
+seconds = 1756887206

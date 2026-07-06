@@ -1,0 +1,33 @@
+[[carrier_id]]
+mcc_mnc = "60202"
+
+[[settings.apns.apn]]
+name = "vodafone internet"
+value = "internet.vodafone.net"
+type = ["default", "supl"]
+user = "internet"
+password = "internet"
+authtype = 3
+
+[[settings.apns.apn]]
+name = "Vodafone WAP"
+value = "wap.vodafone.com.eg"
+type = ["default", "supl"]
+proxy = "163.121.178.2"
+port = "8080"
+user = "wap"
+password = "wap"
+authtype = 3
+
+[[settings.apns.apn]]
+name = "Vodafone MMS"
+value = "mms.vodafone.com.eg"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms.vodafone.com.eg/servlets/mms"
+mmsc_proxy = "163.121.178.2"
+mmsc_proxy_port = "8080"
+
+[settings.config]

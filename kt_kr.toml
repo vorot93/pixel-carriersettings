@@ -1,0 +1,72 @@
+[[carrier_id]]
+mcc_mnc = "45002"
+
+[[carrier_id]]
+mcc_mnc = "45004"
+
+[[carrier_id]]
+mcc_mnc = "45008"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "KT IMS"
+value = "ims.ktfwing.com"
+type = ["ims"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "KT"
+value = "lte.ktfwing.com"
+type = ["cbs", "default", "mms", "supl", "fota"]
+server = "*"
+mmsc = "http://mmsc.ktfwing.com:9082"
+
+[[settings.apns.apn]]
+name = "KT IA"
+value = ""
+type = ["ia"]
+protocol = "ipv4v6"
+
+[settings.config]
+allow_emergency_numbers_in_call_log = true
+bandwidth = ["GPRS:24,24", "EDGE:70,18", "UMTS:115,115", "CDMA-IS95A:14,14", "CDMA-IS95B:14,14", "1xRTT:30,30", "EvDo-rev.0:750,48", "EvDo-rev.A:950,550", "HSDPA:4300,620", "HSUPA:4300,1800", "HSPA:4300,1800", "EvDo-rev.B:1500,550", "eHRPD:750,48", "HSPAP:13000,3400", "TD-SCDMA:115,115", "LTE:30000,15000", "NR_NSA:563200,61440", "NR_NSA_MMWAVE:563200,614400", "NR_SA:563200,61440"]
+carrier_certificate = ["98987CACCAAF8355A4DC1FEF2600441F8B0EC923BBFAA3327D099CE4CDE29B0E", "7117EE13C842F1009553C8B70FFF7CF30EC8F04118AE87B6722E2F05193EA09A", "30BCC971FC0B69D54E7795B73EA2B11BF526E783850AFD2E73E1EE66DF120630", "5EB5628F73BDA9BA3E89EDE80779F105EB45392F19B58844C879E078394CC0B6", "EAF56C49D86B958F040A14CE1A94D4C416E44AA19C6AF87C2CC7E02E5DD9B771", "EE0E64652EC30DE70A3753F4B139B782092608739A9FD213A0A9075F13F97DC5", "34DF0E7A9F1CF1892E45C056B4973CD81CCF148A4050D11AEA4AC5A65F900A42", "0334C8DDD8877B41912D950754D82BE8713E0573AF6D56FBB0537E1FD322A125", "F5A500ED4E83B7E9BDF80E1837B4A7A1D5D2D03C6B5AE66060644E8C9BF76C87", "C14BC5BC392DA316E7477D3BB4FB1AC045CDB7FA07874967143633F69373493F"]
+carrier_instant_lettering_available = false
+carrier_instant_lettering_encoding = "EUC-KR"
+carrier_instant_lettering_invalid_chars = '["<>\\\n]'
+carrier_instant_lettering_length_limit = 64
+enableSMSDeliveryReports = false
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+support_conference_call = false
+
+[settings.config.ims]
+sip_server_port_number = 5080
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_qos_precondition_supported = false
+emergency_requires_ims_registration = true
+
+[settings.config.imsrtt]
+text_qos_precondition_supported = false
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+voice_qos_precondition_supported = false
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [3, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.imsvt]
+video_qos_precondition_supported = false
+
+[settings.field8]
+seconds = 1756887206

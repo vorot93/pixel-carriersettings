@@ -1,0 +1,166 @@
+[[carrier_id]]
+mcc_mnc = "405840"
+
+[[carrier_id]]
+mcc_mnc = "405854"
+
+[[carrier_id]]
+mcc_mnc = "405855"
+
+[[carrier_id]]
+mcc_mnc = "405856"
+
+[[carrier_id]]
+mcc_mnc = "405857"
+
+[[carrier_id]]
+mcc_mnc = "405858"
+
+[[carrier_id]]
+mcc_mnc = "405859"
+
+[[carrier_id]]
+mcc_mnc = "405860"
+
+[[carrier_id]]
+mcc_mnc = "405861"
+
+[[carrier_id]]
+mcc_mnc = "405862"
+
+[[carrier_id]]
+mcc_mnc = "405863"
+
+[[carrier_id]]
+mcc_mnc = "405864"
+
+[[carrier_id]]
+mcc_mnc = "405865"
+
+[[carrier_id]]
+mcc_mnc = "405866"
+
+[[carrier_id]]
+mcc_mnc = "405867"
+
+[[carrier_id]]
+mcc_mnc = "405868"
+
+[[carrier_id]]
+mcc_mnc = "405869"
+
+[[carrier_id]]
+mcc_mnc = "405870"
+
+[[carrier_id]]
+mcc_mnc = "405871"
+
+[[carrier_id]]
+mcc_mnc = "405872"
+
+[[carrier_id]]
+mcc_mnc = "405873"
+
+[[carrier_id]]
+mcc_mnc = "405874"
+
+[settings]
+version = 77000000006
+
+[[settings.apns.apn]]
+name = "Jio 4G"
+value = "jionet"
+type = ["default", "supl", "xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+_5g_nr_ssrsrp_thresholds = [-128, -118, -108, -98]
+additional_settings_caller_id_visibility = false
+allowed_initial_attach_apn_types = ["ia", "default"]
+apn_settings_default_apn_types = ["default"]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_nr_availabilities = [2]
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 3
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_enhanced_4g_lte = false
+editable_wfc_mode = true
+hide_enhanced_4g_lte = true
+hide_ims_apn = true
+ims_conference_size_limit = 6
+is_ims_conference_size_enforced = true
+non_roaming_operator = ["405840", "405854", "405855", "405856", "405857", "405858", "405859", "405860", "405861", "405862", "405863", "405864", "405865", "405866", "405867", "405868", "405869", "405870", "405871", "405872", "405873", "405874"]
+prefer_3g_visibility = false
+prevent_clir_activation_and_deactivation_code = true
+roaming_operator = ["404"]
+smart_forwarding_config_component_name = "com.qti.xdivert/com.qti.xdivert.XDivertSetting"
+volte_replacement_rat = 3
+vonr_enabled = true
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_port = 7080
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE#_#MODEL#_#BUILD#"
+ipv4_sip_mtu_size_cellular = 1300
+ipv6_sip_mtu_size_cellular = 1300
+sip_timer_c_millis = 180000
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_qos_precondition_supported = false
+prefer_ims_emergency_when_voice_calls_on_cs = true
+
+[settings.config.imsrtt]
+text_qos_precondition_supported = false
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+use_csfb_on_xcap_over_ut_failure = false
+ut_as_server_port = 7077
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = []
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+mo_call_request_timeout_millis = 10000
+ringing_timer_millis = 45000
+srvcc_type = []
+voice_qos_precondition_supported = false
+
+[settings.config.imsvt]
+video_qos_precondition_supported = false
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 86500
+child_sa_rekey_soft_timer_sec = 86400
+epdg_plmn_priority = [0, 1]
+epdg_static_address = "vowifi.jio.com"
+epdg_static_address_roaming = "InternationalVoWiFi.jio.com"
+ike_rekey_hard_timer_in_sec = 86500
+ike_rekey_soft_timer_sec = 86400
+ike_remote_id_type = 11
+ike_sa_transforms_reorder = false
+mcc_mncs = ["405-840", "405-854", "405-855", "405-856", "405-857", "405-858", "405-859", "405-860", "405-861", "405-862", "405-863", "405-864", "405-865", "405-866", "405-867", "405-868", "405-869", "405-870", "405-871", "405-872", "405-873", "405-874"]
+
+[settings.config.qns]
+support_wfc_during_airplane_mode = false
+
+[settings.field8]
+seconds = 1762942431

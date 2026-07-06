@@ -1,0 +1,5 @@
+[[carrier_id]]
+mcc_mnc = "310418"
+
+[settings.config]
+default_vm_number = "*86"

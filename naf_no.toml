@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "24202"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "5DFFFFFFFFFFFFFF"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "mki-slice.phonero.no"
+value = "mki-slice.phonero.no"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+carrier_nr_availabilities = [2]
+cellular_usage_setting = 2
+hide_preferred_network_type = true
+
+[settings.field8]
+seconds = 1763550047

@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "21671"
+
+[[settings.apns.apn]]
+name = "UPC Mobil Internet"
+value = "Internet.hu.upcmobile.com"
+type = ["default"]
+authtype = 0
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "UPC MMS"
+value = "mms.hu.upcmobile.com"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mms.hu.upcmobile.com:8080/servlets/mms"
+mmsc_proxy = "62.179.127.18"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[settings.config]

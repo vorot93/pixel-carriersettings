@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "311530"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "BLAZE WIRELESS"
+
+[[settings.apns.apn]]
+name = "Blaze"
+value = "mms.mymobiletxt.com"
+type = ["default", "mms"]
+mmsc = "http://mms2.mymobiletxt.net"
+
+[settings.config]

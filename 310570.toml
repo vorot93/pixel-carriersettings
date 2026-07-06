@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "310570"
+
+[[settings.apns.apn]]
+name = "Cellular One Smartphone"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Cellular One MMS"
+value = "clearsky"
+type = ["mms"]
+mmsc = "http://mmsc.mtpcs.csky.us:6672/"
+mmsc_proxy = "209.4.229.229"
+mmsc_proxy_port = "9201"
+
+[settings.config]

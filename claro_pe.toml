@@ -1,0 +1,43 @@
+[[carrier_id]]
+mcc_mnc = "71610"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "CLARO DATOS"
+value = "claro.pe"
+type = ["default", "supl"]
+user = "claro"
+password = "claro"
+authtype = 1
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "CLARO MMS"
+value = "mms.claro.pe"
+type = ["mms"]
+user = "claro"
+password = "claro"
+authtype = 1
+mmsc = "http://claro/servlets/mms"
+mmsc_proxy = "192.168.231.30"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1774443087

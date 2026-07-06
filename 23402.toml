@@ -1,0 +1,33 @@
+[[carrier_id]]
+mcc_mnc = "23402"
+
+[[settings.apns.apn]]
+name = "O2 MOBILE WEB"
+value = "mobile.o2.co.uk"
+type = ["default", "supl"]
+user = "O2web"
+password = "O2web"
+
+[[settings.apns.apn]]
+name = "O2 MMS Prepay"
+value = "payandgo.o2.co.uk"
+type = ["mms"]
+user = "payandgo"
+password = "password"
+mmsc = "http://mmsc.mms.o2.co.uk:8002"
+mmsc_proxy = "82.132.254.1"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "O2 MMS Postpay"
+value = "wap.o2.co.uk"
+type = ["mms"]
+user = "o2wap"
+password = "password"
+mmsc = "http://mmsc.mms.o2.co.uk:8002"
+mmsc_proxy = "82.132.254.1"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+prefer_2g = false
+show_4g_for_lte_data_icon = true

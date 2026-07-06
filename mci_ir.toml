@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "43211"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "MCI-GPRS"
+value = "mcinet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MCCI MMS"
+value = "mcinet"
+type = ["mms"]
+mmsc = "http://192.168.193.134:38090/was"
+mmsc_proxy = "192.168.194.73"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+
+[settings.field8]
+seconds = 1762783759

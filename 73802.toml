@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "73802"
+
+[[settings.apns.apn]]
+name = "GT&T Cellink Plus"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

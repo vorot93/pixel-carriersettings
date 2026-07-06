@@ -1,0 +1,30 @@
+[[carrier_id]]
+mcc_mnc = "41501"
+
+[[settings.apns.apn]]
+name = "Alfa Internet"
+value = "internet.mic1.com.lb"
+type = ["default", "supl"]
+user = "mic1"
+password = "mic1"
+
+[[settings.apns.apn]]
+name = "Alfawap"
+value = "wap.mic1.com.lb"
+type = ["default", "supl"]
+proxy = "192.168.23.50"
+port = "80"
+user = "mic1"
+password = "mic1"
+
+[[settings.apns.apn]]
+name = "Alfa MMS"
+value = "mms.mic1.com.lb"
+type = ["mms"]
+user = "mic1"
+password = "mic1"
+mmsc = "http://mms.mic1.com.lb"
+mmsc_proxy = "192.168.23.51"
+mmsc_proxy_port = "8080"
+
+[settings.config]

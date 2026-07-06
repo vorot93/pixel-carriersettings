@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "20601"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2060188"
+
+[[settings.apns.apn]]
+name = "Telenet Internet"
+value = "telenetwap.be"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Telenet MMS"
+value = "mms.be"
+type = ["mms"]
+mmsc = "http://mmsc.telenet.be"
+mmsc_proxy = "195.130.149.100"
+mmsc_proxy_port = "80"
+
+[settings.config]

@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "41601"
+
+[[settings.apns.apn]]
+name = "Zain JO Internet"
+value = "zain"
+type = ["default", "supl"]
+user = "zain"
+password = "zain"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Zain JO MMS"
+value = "zain"
+type = ["mms"]
+user = "zain"
+password = "zain"
+authtype = 1
+mmsc = "http://mms.jo.zain.com"
+mmsc_proxy = "192.168.55.10"
+mmsc_proxy_port = "80"
+
+[settings.config]

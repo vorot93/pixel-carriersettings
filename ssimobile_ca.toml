@@ -1,0 +1,59 @@
+[[carrier_id]]
+mcc_mnc = "302480"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "01"
+
+[[carrier_id]]
+mcc_mnc = "302480"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "302480017"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "SSI"
+value = "ssi992.ssimicro.com"
+type = ["default", "mms"]
+mmsc = "http://mms.ssimicro.com"
+mmsc_proxy = "mms.ssimicro.com"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap"
+type = ["xcap"]
+user_visible = false
+
+[settings.config.imsvoice]
+oip_source_from_header = true
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

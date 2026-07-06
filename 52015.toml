@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "52015"
+
+[[settings.apns.apn]]
+name = "TOT 3G Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "TOT 3G MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.tot3g.net:8002"
+mmsc_proxy = "192.168.0.72"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+roaming_operator = ["520"]

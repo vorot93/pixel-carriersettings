@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "27211"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0A"
+
+[[settings.apns.apn]]
+name = "Tesco"
+value = "tescomobile.liffeytelecom.com"
+type = ["default", "mms", "supl"]
+mmsc = "http://mmc1/servlets/mms"
+mmsc_proxy = "10.1.11.19"
+mmsc_proxy_port = "8080"
+
+[settings.config]

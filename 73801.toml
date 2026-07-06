@@ -1,0 +1,32 @@
+[[carrier_id]]
+mcc_mnc = "73801"
+
+[[settings.apns.apn]]
+name = "Digicel"
+value = "default"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Guyana:Digicel:Modem"
+value = "wap.digicelgy.com"
+type = ["dun"]
+proxy = "172.20.6.12"
+port = "8080"
+user = "wap"
+password = "wap"
+authtype = 1
+mmsc = "http://www.digicelive.com"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Guyana:Digicel:Mms"
+value = "wap.digicelgy.com"
+type = ["mms"]
+user = "wap"
+password = "wap"
+authtype = 1
+mmsc = "http://mmc.digicelgy.com/servlets/mms"
+mmsc_proxy = "172.20.6.12"
+mmsc_proxy_port = "9201"
+
+[settings.config]

@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "21407"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2140759577"
+
+[[carrier_id]]
+mcc_mnc = "21407"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2140796692"
+
+[[settings.apns.apn]]
+name = "T-2"
+value = "internet.t-2.net"
+type = ["default", "mms", "supl", "ims"]
+mmsc = "http://www.mms.t-2.net:8002"
+mmsc_proxy = "172.20.18.137"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 512000
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]

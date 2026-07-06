@@ -1,0 +1,71 @@
+[[carrier_id]]
+mcc_mnc = "20815"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F003"
+
+[[carrier_id]]
+mcc_mnc = "22250"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F003"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "iliad"
+value = "iliad"
+type = ["default", "mms"]
+mmsc = "http://mms.iliad.it"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[settings.config]
+carrier_certificate = ["8227db5476f1d42a17bead90b73c8624b262152edad34ebd8f7e6472a47c6e03"]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+maxMessageSize = 204800
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+sim_country_iso_override = "it"
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+diffie_hellman_groups = [2]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc050.mcc222.pub.3gppnetwork.org"
+
+[settings.config.qns]
+sos_transport_type = 2
+
+[settings.field8]
+seconds = 1736946312

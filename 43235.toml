@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "43235"
+
+[[settings.apns.apn]]
+name = "Irancell-Internet"
+value = "mtnirancell"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Irancell-MMS"
+value = "mtnirancell"
+type = ["mms"]
+mmsc = "http://mms:8002"
+mmsc_proxy = "10.131.26.138"
+mmsc_proxy_port = "8080"
+
+[settings.config]

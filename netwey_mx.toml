@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "NETWEY"
+
+[[settings.apns.apn]]
+name = "Netwey"
+value = "internet.netwey.com.mx"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Netwey"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

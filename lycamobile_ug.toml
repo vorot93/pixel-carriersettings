@@ -1,0 +1,30 @@
+[[carrier_id]]
+mcc_mnc = "64104"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Lycamobile"
+
+[[carrier_id]]
+mcc_mnc = "64104"
+
+[[carrier_id]]
+mcc_mnc = "64126"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Lycamobile"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "lycamobile"
+value = "data.lycamobile.ug"
+type = ["default", "supl"]
+authtype = 1
+
+[settings.config]
+
+[settings.field8]
+seconds = 1762783759

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "41845"
+
+[[settings.apns.apn]]
+name = "Mobitel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

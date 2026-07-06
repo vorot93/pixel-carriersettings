@@ -1,0 +1,13 @@
+[[carrier_id]]
+mcc_mnc = "60803"
+
+[[settings.apns.apn]]
+name = "Expresso Internet SN"
+value = "expresso"
+type = ["default"]
+proxy = "10.71.123.69"
+port = "8080"
+user = "wap"
+password = "wap"
+
+[settings.config]

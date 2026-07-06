@@ -1,0 +1,41 @@
+[[carrier_id]]
+mcc_mnc = "22005"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "A1 SRB Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "A1 SRB mms"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.a1.rs"
+
+[[settings.apns.apn]]
+name = "A1 SRB IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "A1 SRB XCAP"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+mmi_two_digit_number_pattern = ["92", "93", "94", "95", "96"]
+
+[settings.field8]
+seconds = 1753863668

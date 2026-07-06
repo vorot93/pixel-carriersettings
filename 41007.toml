@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "41007"
+
+[[settings.apns.apn]]
+name = "Warid WAP"
+value = "Wap.warid"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Warid MMS"
+value = "mms.warid"
+type = ["mms"]
+mmsc = "http://10.4.0.132/servlets/MMS"
+mmsc_proxy = "10.4.2.1"
+mmsc_proxy_port = "8080"
+
+[settings.config]

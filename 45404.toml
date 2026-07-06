@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "45404"
+
+[[settings.apns.apn]]
+name = "3(2G) MMS"
+value = "mms-g.three.com.hk"
+type = ["mms"]
+mmsc = "http://10.30.15.51:10021/mmsc"
+mmsc_proxy = "10.30.15.53"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "3(2G) GPRS"
+value = "web-g.three.com.hk"
+type = ["default", "supl"]
+proxy = "10.30.3.151"
+port = "8080"
+
+[settings.config]

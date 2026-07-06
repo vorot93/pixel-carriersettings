@@ -1,0 +1,90 @@
+[[carrier_id]]
+mcc_mnc = "312420"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "NexTech Ota"
+value = "admin.lte.ntwls.com"
+type = ["fota"]
+bearer_bitmask = "13|14"
+server = "*"
+mmsc = "http://mms.ntwls.net/nex-tech/mms.php"
+
+[[settings.apns.apn]]
+name = "NexTech Wireless"
+value = "internet.lte.ntwls.com"
+type = ["default", "mms", "supl", "hipri"]
+server = "*"
+mmsc = "http://mms.ntwls.net/nex-tech/mms.php"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "NexTech Tether"
+value = "modem.lte.ntwls.com"
+type = ["dun"]
+bearer_bitmask = "13|14"
+server = "*"
+mmsc = "http://mms.ntwls.net/nex-tech/mms.php"
+protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "xcap"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_data_roaming_enabled = true
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "7856399999"
+ignore_rtt_mode_setting = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+mmsRoamingAutoRetrieveByDefault = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_roaming_indicator = false
+wfc_emergency_address_carrier_app = "com.android.imsserviceentitlement/.WfcActivationActivity"
+wfc_spn_format_idx = 4
+
+[settings.config.bsf]
+bsf_server_port = 81
+
+[settings.config.imsserviceentitlement]
+entitlement_server_url = "https://aes.mnc420.mcc312.pub.3gppnetwork.org"
+show_vowifi_webview = true
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+include_caller_id_service_codes_in_sip_invite = true
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+
+[settings.field8]
+seconds = 1741179747

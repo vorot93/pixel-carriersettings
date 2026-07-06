@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "61404"
+
+[[settings.apns.apn]]
+name = "Orange MMS"
+value = "orange.mms"
+type = ["mms"]
+user = "orange"
+password = "orange"
+mmsc = "http://10.10.10.35:38090/was"
+mmsc_proxy = "10.10.10.36"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Orange Internet"
+value = "orange.ne"
+type = ["default"]
+
+[settings.config]

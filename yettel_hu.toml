@@ -1,0 +1,67 @@
+[[carrier_id]]
+mcc_mnc = "21601"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Yettel online"
+value = "online"
+type = ["default", "supl", "xcap"]
+authtype = 1
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Yettel MMS"
+value = "mms"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mmsc.yettel.hu"
+mmsc_proxy = "84.225.255.1"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[settings.config]
+carrier_allow_transfer_ims_call = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+prefer_2g = true
+prefer_3g_visibility = false
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc001.mcc216.pub.3gppnetwork.org"
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc001.mcc216.pub.3gppnetwork.org"
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice.evs_payload_description.127]
+codec_attribute_cmr = 2
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+evs_codec_attribute_hf_only = 0
+
+[settings.field8]
+seconds = 1736946312

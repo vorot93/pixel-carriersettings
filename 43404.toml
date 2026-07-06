@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "43404"
+
+[[settings.apns.apn]]
+name = "Beeline-UZB Internet"
+value = "internet.beeline.uz"
+type = ["default", "supl"]
+user = "beeline"
+password = "beeline"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Beeline-UZB MMS"
+value = "mms.beeline.uz"
+type = ["mms"]
+user = "beeline"
+password = "beeline"
+authtype = 1
+mmsc = "http://mms"
+mmsc_proxy = "172.30.30.166"
+mmsc_proxy_port = "8080"
+
+[settings.config]

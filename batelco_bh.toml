@@ -1,0 +1,61 @@
+[[carrier_id]]
+mcc_mnc = "42601"
+
+[[carrier_id]]
+mcc_mnc = "42605"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "GPRS"
+value = "batelco.com"
+type = ["default", "supl"]
+authtype = 0
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "batelco.com"
+type = ["mms"]
+authtype = 0
+mmsc = "http://192.168.36.10/servlets/mms"
+mmsc_proxy = "192.168.1.2"
+mmsc_proxy_port = "80"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "hos"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.field8]
+seconds = 1753205231

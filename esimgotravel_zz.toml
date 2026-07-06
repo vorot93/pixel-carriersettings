@@ -1,0 +1,59 @@
+[[carrier_id]]
+mcc_mnc = "20601"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0409"
+
+[[carrier_id]]
+mcc_mnc = "20628"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0409"
+
+[[carrier_id]]
+mcc_mnc = "20809"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0409"
+
+[[carrier_id]]
+mcc_mnc = "23210"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0409"
+
+[[carrier_id]]
+mcc_mnc = "23457"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0409"
+
+[[carrier_id]]
+mcc_mnc = "27225"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "0409"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "data.esim"
+type = ["default", "supl", "ia", "dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[settings.config]
+carrier_default_data_roaming_enabled = true
+carrier_volte_available = false
+
+[settings.field8]
+seconds = 1773236747

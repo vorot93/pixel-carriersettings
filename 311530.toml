@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "311530"
+
+[[settings.apns.apn]]
+name = "Duet Internet"
+value = "wap.mymobiletxt.com"
+type = ["default", "mms"]
+mmsc = "http://172.16.16.103/mms/"
+mmsc_proxy = "172.16.16.102"
+mmsc_proxy_port = "8080"
+
+[settings.config]

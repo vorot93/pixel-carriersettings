@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "PagaPhone"
+
+[[settings.apns.apn]]
+name = "Rocketel"
+value = "internet.rocketel.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Rocketel"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

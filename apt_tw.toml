@@ -1,0 +1,62 @@
+[[carrier_id]]
+mcc_mnc = "46605"
+
+[settings]
+version = 77000000007
+
+[[settings.apns.apn]]
+name = "GT Internet"
+value = "gtnet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "GT Internet IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_2g_protection_enabled = true
+carrier_volte_available = true
+hide_enhanced_4g_lte = true
+hide_lte_plus_data_icon = false
+lte_endc_using_user_data_for_rrc_detection = true
+non_roaming_operator = ["46601", "46602", "46603"]
+
+[settings.config.ims]
+sip_over_ipsec_enabled = false
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+prefer_ims_emergency_when_voice_calls_on_cs = true
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 10, 9]
+ut_terminal_based_services = []
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+conference_factory_uri = "APT_CONF@volte.aptg.com.tw"
+session_refresh_method = 0
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.rilext]
+ims_prefer_apm_normal_ecc_enable = true
+
+[settings.field8]
+seconds = 1769617073

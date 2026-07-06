@@ -1,0 +1,13 @@
+[[carrier_id]]
+mcc_mnc = "310910"
+
+[[settings.apns.apn]]
+name = "WOW_WAP"
+value = "wap.firstcellular.com"
+type = ["default", "mms", "supl"]
+mmsc = "http://mms.firstcellular.net/mmsc"
+mmsc_proxy = "10.101.1.5"
+mmsc_proxy_port = "3128"
+
+[settings.config]
+mmsCloseConnection = true

@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "45416"
+
+[[carrier_id]]
+mcc_mnc = "45419"
+
+[[settings.apns.apn]]
+name = "csl"
+value = "pccw"
+type = ["default", "mms", "hipri"]
+authtype = 3
+mmsc = "http://mms.hkcsl.com:8080"
+mmsc_proxy = "10.140.14.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]

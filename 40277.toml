@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "40277"
+
+[[settings.apns.apn]]
+name = "TashiCell"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

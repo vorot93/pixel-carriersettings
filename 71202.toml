@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "71202"
+
+[[settings.apns.apn]]
+name = "KOLBI 3G"
+value = "kolbi3g"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Kolbi_Multimedia"
+value = "kolbimundo"
+type = ["mms"]
+mmsc = "http://mmsice"
+mmsc_proxy = "10.184.202.24"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "37001"
+
+[[settings.apns.apn]]
+name = "Orange Internet (LTE)"
+value = "orangeinternet"
+type = ["ia", "supl", "default"]
+
+[[settings.apns.apn]]
+name = "Orange net (3G)"
+value = "orangenet.com.do"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Orange MMS"
+value = "orangeworld"
+type = ["mms"]
+user = "orange"
+password = "orange"
+authtype = 1
+mmsc = "http://mms.orange.com.do/servlets/mms"
+mmsc_proxy = "172.16.126.70"
+mmsc_proxy_port = "8080"
+
+[settings.config]

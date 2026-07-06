@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "74001"
+
+[[carrier_id]]
+mcc_mnc = "740010"
+
+[[settings.apns.apn]]
+name = "Internet Claro"
+value = "internet.claro.com.ec"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS Claro"
+value = "mms.claro.com.ec"
+type = ["mms"]
+user = "portamms"
+password = "portamms2003"
+authtype = 1
+mmsc = "http://iesmms.porta.com.ec/"
+mmsc_proxy = "216.250.208.94"
+mmsc_proxy_port = "8799"
+
+[settings.config]

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "45701"
+
+[[settings.apns.apn]]
+name = "LTC"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

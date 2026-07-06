@@ -1,0 +1,51 @@
+[[carrier_id]]
+mcc_mnc = "42526"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "Internet"
+type = ["default", "dun"]
+
+[[settings.apns.apn]]
+name = "hos"
+value = "hos"
+type = ["xcap"]
+user_visible = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|IWLAN, target=EUTRAN|IWLAN, type=allowed, capabilities=IMS"]
+read_only_apn_types = []
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+
+[settings.config.imsvoice]
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

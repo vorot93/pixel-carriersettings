@@ -1,0 +1,38 @@
+[[carrier_id]]
+mcc_mnc = "45403"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "3"
+value = "mobile.three.com.hk"
+type = ["default", "mms", "supl"]
+authtype = 1
+mmsc = "http://mms.um.three.com.hk:10021/mmsc"
+mmsc_proxy = "mms.three.com.hk"
+mmsc_proxy_port = "8799"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_mode = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+
+[settings.config.ims]
+sip_over_ipsec_enabled = false
+
+[settings.config.iwlan]
+epdg_address_priority = [0]
+epdg_static_address = "wlan.three.com.hk"
+
+[settings.field8]
+seconds = 1773236747

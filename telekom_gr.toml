@@ -1,0 +1,84 @@
+[[carrier_id]]
+mcc_mnc = "20201"
+
+[settings]
+version = 77000000009
+
+[[settings.apns.apn]]
+name = "Cosmote Internet"
+value = "internet"
+type = ["default", "supl", "xcap"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|20"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Cosmote MMS"
+value = "mms"
+type = ["mms"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|20"
+mmsc = "http://mmsc.cosmote.gr:8002"
+mmsc_proxy = "10.10.10.20"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "hos"
+value = "hos"
+type = ["xcap", "mms"]
+bearer_bitmask = "18"
+mmsc = "http://mmsc.cosmote.gr:8002"
+mmsc_proxy = "10.10.10.20"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_name = "COSMOTE"
+carrier_name_override = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "+306971000123"
+display_hd_plus_icon = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+maxMessageSize = 614400
+prefer_2g = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 11
+wfc_spn_use_root_locale = true
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# - #MODEL# - #BUILD#"
+keep_pdn_up_in_no_vops = true
+
+[settings.config.imsemergency]
+emergency_registration_timer_millis = 5000
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice]
+mo_call_request_timeout_millis = 0
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.qns]
+support_wfc_recovery = false
+
+[settings.field8]
+seconds = 1765981876

@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "65202"
+
+[[settings.apns.apn]]
+name = "Orange BW MMS"
+value = "mms.orange.co.bw"
+type = ["mms"]
+mmsc = "http://10.0.0.242/servlets/mms"
+mmsc_proxy = "10.0.0.226"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Orange WAP BW"
+value = "internet.orange.co.bw"
+type = ["default"]
+proxy = "10.0.0.226"
+port = "8080"
+
+[settings.config]

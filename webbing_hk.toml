@@ -1,0 +1,106 @@
+[[carrier_id]]
+mcc_mnc = "20404"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[[carrier_id]]
+mcc_mnc = "20801"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[[carrier_id]]
+mcc_mnc = "26006"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[[carrier_id]]
+mcc_mnc = "311588"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[[carrier_id]]
+mcc_mnc = "42402"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[[carrier_id]]
+mcc_mnc = "45400"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[[carrier_id]]
+mcc_mnc = "45412"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[[carrier_id]]
+mcc_mnc = "45435"
+
+[[carrier_id]]
+mcc_mnc = "72418"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[[carrier_id]]
+mcc_mnc = "90101"
+
+[[carrier_id]]
+mcc_mnc = "90131"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "536E617065"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "Webbing"
+value = "wbdata"
+type = ["default", "supl", "ia", "dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+read_only_apn_types = []
+xcap_apn_name = "xcap"
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = [6, 3, 1, 2]
+
+[settings.field8]
+seconds = 1770819167

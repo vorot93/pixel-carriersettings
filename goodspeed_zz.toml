@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "23203"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "C5"
+
+[[carrier_id]]
+mcc_mnc = "24042"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "C5"
+
+[[settings.apns.apn]]
+name = "Goodspeed"
+value = "uros.iot"
+type = ["default"]
+
+[settings.config]
+force_home_network = true

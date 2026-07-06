@@ -1,0 +1,32 @@
+[[carrier_id]]
+mcc_mnc = "21403"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2140359"
+
+[[settings.apns.apn]]
+name = "Euskaltel Internet"
+value = "internet.euskaltel.mobi"
+type = ["default", "supl"]
+user = "CLIENTE"
+password = "EUSKALTEL"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Euskaltel MMS"
+value = "euskaltelmms.euskaltel.mobi"
+type = ["mms"]
+user = "MMS"
+password = "EUSKALTEL"
+authtype = 1
+mmsc = "http://mms.euskaltel.mobi"
+mmsc_proxy = "172.16.18.74"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]

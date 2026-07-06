@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "37413"
+
+[[carrier_id]]
+mcc_mnc = "374130"
+
+[[settings.apns.apn]]
+name = "INTERNET Trinidad"
+value = "web.digiceltt.com"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MMS Trinidad"
+value = "wap.digiceltt.com"
+type = ["mms"]
+user = "wap"
+password = "wap"
+authtype = 1
+mmsc = "http://mmc.digiceltt.com/servlets/mms"
+mmsc_proxy = "172.20.6.12"
+mmsc_proxy_port = "8080"
+
+[settings.config]

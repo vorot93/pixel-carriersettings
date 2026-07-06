@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "310480"
+
+[[settings.apns.apn]]
+name = "DataConnect"
+value = "isp.cingular"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MediaNet"
+value = "wap.cingular"
+type = ["default", "mms", "supl"]
+user = "WAP@CINGULARGPRS.COM"
+password = "CINGULAR1"
+mmsc = "http://mmsc.cingular.com"
+mmsc_proxy = "66.209.11.32"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "43406"
+
+[[settings.apns.apn]]
+name = "Perfectum Mobile"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

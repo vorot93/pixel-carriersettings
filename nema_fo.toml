@@ -1,0 +1,72 @@
+[[carrier_id]]
+mcc_mnc = "27402"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "274029"
+
+[[carrier_id]]
+mcc_mnc = "27402"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Nema"
+
+[[carrier_id]]
+mcc_mnc = "28802"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "internet"
+value = "gprs.is"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 2
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc002.mcc274.pub.3gppnetwork.org"
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc002.mcc274.pub.3gppnetwork.org"
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+
+[settings.config.imsvoice.evs_payload_description.127]
+codec_attribute_cmr = 3
+evs_codec_attribute_bandwidth = 2
+evs_codec_attribute_ch_aw_recv = 3
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14, 15, 16]
+
+[settings.field8]
+seconds = 1740426872

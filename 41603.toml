@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "41603"
+
+[[settings.apns.apn]]
+name = "Umniah internet"
+value = "net"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Umniah WAP"
+value = "wap"
+type = ["default", "supl"]
+proxy = "10.1.1.10"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "Umniah MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.umniah.com/"
+mmsc_proxy = "10.1.1.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]

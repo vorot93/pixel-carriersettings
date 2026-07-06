@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "21402"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "FIBRACAT"
+
+[[settings.apns.apn]]
+value = "fibracat.cat"
+type = ["default"]
+
+[settings.config]
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]

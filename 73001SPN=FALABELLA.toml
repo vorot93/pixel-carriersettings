@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "73001"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "FALABELLA"
+
+[[settings.apns.apn]]
+name = "Internet Móvil"
+value = "internet.movilfalabella.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms.movilfalabella.com"
+type = ["mms"]
+mmsc = "http://mmsc.movilfalabella.com"
+
+[settings.config]
+non_roaming_operator = ["73010"]

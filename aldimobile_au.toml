@@ -1,0 +1,57 @@
+[[carrier_id]]
+mcc_mnc = "50501"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "ALDImobile"
+
+[[settings.apns.apn]]
+name = "Mobile Data"
+value = "mdata.net.au"
+type = ["default", "hipri", "mms", "supl", "dun"]
+mmsc = "http://mmsc.mdata.net.au:8003"
+mmsc_proxy = "10.1.1.180"
+mmsc_proxy_port = "80"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Telstra XCAP"
+value = "hos"
+type = ["xcap"]
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_mode = 1
+carrier_name = "ALDImobile"
+carrier_name_override = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_vt_available = false
+carrier_wfc_ims_available = true
+default_vm_number = "+61101"
+editable_wfc_mode = false
+hide_enhanced_4g_lte = true
+lte_rsrp_thresholds = [-120, -115, -100, -90]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 2097152
+show_4g_for_lte_data_icon = true
+
+[settings.config.ims]
+ims_user_agent = "Telstra #MANUFACTURE# #HWSKU# Android#AV# #BUILD#"
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]

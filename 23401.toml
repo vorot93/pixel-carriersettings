@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "23401"
+
+[[settings.apns.apn]]
+name = "UBIQUISYS"
+value = "internet"
+type = ["default", "supl"]
+
+[settings.config]

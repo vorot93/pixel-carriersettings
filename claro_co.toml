@@ -1,0 +1,43 @@
+[[carrier_id]]
+mcc_mnc = "732101"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Web Claro CO"
+value = "internet.comcel.com.co"
+type = ["default", "supl", "ia", "xcap"]
+user = "COMCELWEB"
+password = "COMCELWEB"
+authtype = 1
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "MMS Claro CO"
+value = "mms.comcel.com.co"
+type = ["mms"]
+user = "COMCELMMS"
+password = "COMCELMMS"
+authtype = 1
+mmsc = "http://www.comcel.com.co/mms/"
+mmsc_proxy = "198.228.90.225"
+mmsc_proxy_port = "8799"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS Claro CO"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1732098921

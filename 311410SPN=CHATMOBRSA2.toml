@@ -1,0 +1,92 @@
+[[carrier_id]]
+mcc_mnc = "311410"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "CHATMOBRSA2"
+
+[[settings.apns.apn]]
+name = "chatmobrsa2"
+value = "CdmaNai"
+type = ["mms"]
+bearer_bitmask = "6"
+mmsc = "http://mmsc.hawkeyeswitch.net/mms/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Chatmobrsa2 IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Chatmobrsa2 IMS"
+value = "VZWIMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Chatmobrsa2 FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Chatmobrsa2 FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Chatmobrsa2"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "13"
+mmsc = "http://mmsc.hawkeyeswitch.net/mms/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Chatmobrsa2"
+value = "VZWINTERNET"
+type = ["default", "mms", "supl", "dun"]
+bearer_bitmask = "14"
+mmsc = "http://mmsc.hawkeyeswitch.net/mms/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Chatmobrsa2 IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "13"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Chatmobrsa2 IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "14"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+httpParams = "X-MDN: ##LINE1##"
+maxImageHeight = 2432
+maxImageWidth = 4320
+maxMessageSize = 1048576
+maxSubjectLength = 80
+recipientLimit = 20
+smsToMmsTextThreshold = 1

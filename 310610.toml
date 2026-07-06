@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "310610"
+
+[[settings.apns.apn]]
+name = "EpicINT"
+value = "internet.epictouch"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "EpicMMS"
+value = "mms.epictouch"
+type = ["mms"]
+mmsc = "http://mmsc.westlinkcom.com/servlets/mms"
+mmsc_proxy = "63.99.231.135"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,38 @@
+[[carrier_id]]
+mcc_mnc = "65507"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "6550710"
+
+[[settings.apns.apn]]
+name = "VIRGIN_INTERNET_1"
+value = "vdata"
+type = ["default", "supl"]
+proxy = "196.31.116.241"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "VIRGIN_INTERNET_2"
+value = "vdata"
+type = ["default", "supl"]
+proxy = "196.31.116.241"
+port = "9201"
+
+[[settings.apns.apn]]
+name = "Virgin_MMS_1"
+value = "vmms"
+type = ["mms"]
+mmsc = "http://mms.virginmobile.co.za"
+mmsc_proxy = "196.31.116.242"
+mmsc_proxy_port = "9201"
+
+[[settings.apns.apn]]
+name = "Virgin_MMS_1"
+value = "vmms"
+type = ["mms"]
+mmsc = "http://mms.virginmobile.co.za"
+mmsc_proxy = "196.31.116.242"
+mmsc_proxy_port = "8080"
+
+[settings.config]

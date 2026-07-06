@@ -1,0 +1,44 @@
+[[carrier_id]]
+mcc_mnc = "45501"
+
+[[carrier_id]]
+mcc_mnc = "45504"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "CTM Data"
+value = "ctm-mobile"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "CTM MMS"
+value = "ctmmms"
+type = ["mms"]
+mmsc = "http://mms.wap.ctm.net:8002"
+mmsc_proxy = "192.168.99.3"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "CTM (Prepaid)"
+value = "ctmprepaid"
+type = ["default", "mms", "supl"]
+mmsc = "http://mms.wap.ctm.net:8002"
+mmsc_proxy = "192.168.99.3"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1757476386

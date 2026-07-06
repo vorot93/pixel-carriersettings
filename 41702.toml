@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "41702"
+
+[[settings.apns.apn]]
+name = "MTN WAP"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MTN MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms/"
+mmsc_proxy = "10.110.0.134"
+mmsc_proxy_port = "8799"
+
+[settings.config]

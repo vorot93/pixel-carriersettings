@@ -1,0 +1,53 @@
+[[carrier_id]]
+mcc_mnc = "314020"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "Spectrum"
+value = "spectrum"
+type = ["default"]
+protocol = "ipv4v6"
+
+[settings.config]
+_5g_nr_ssrsrp_thresholds = [-125, -119, -114, -104]
+always_show_primary_signal_bar_in_opportunistic_network = true
+boosted_lte_earfcns = ["600-1199", "1950-2399"]
+carrier_nr_availabilities = [2]
+lte_earfcns_rsrp_boost = 6
+lte_rsrp_thresholds = [-115, -105, -95, -85]
+opportunistic_network_data_switch_exit_hysteresis_time = 2000
+opportunistic_network_data_switch_hysteresis_time = 2000
+opportunistic_network_entry_threshold_rsrp = -111
+opportunistic_network_entry_threshold_rssnr = -100
+opportunistic_network_exit_threshold_rsrp = -120
+opportunistic_network_exit_threshold_rssnr = -110
+ping_test_before_data_switch = false
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.opportunistic]
+_5g_backoff_time = 5000
+_5g_data_switch_exit_hysteresis_time = 2000
+_5g_data_switch_hysteresis_time = 2000
+_5g_max_backoff_time = 25000
+entry_threshold_ss_rsrp = -115
+entry_threshold_ss_rsrq = -35.0
+exit_threshold_ss_rsrp = -120
+exit_threshold_ss_rsrq = -35.0
+
+[settings.field8]
+seconds = 1763550047

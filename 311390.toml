@@ -1,0 +1,71 @@
+[[carrier_id]]
+mcc_mnc = "311390"
+
+[[settings.apns.apn]]
+name = "Ericsson Test-SIM Internet"
+value = "internet"
+type = ["default", "dun", "supl", "mms", "fota", "cbs"]
+bearer_bitmask = "4|5|6|7|8|12"
+authtype = 3
+mmsc = "http://mms.vtext.com/servlets/mms"
+protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Ericsson Test-SIM Internet"
+value = "VZWINTERNET"
+type = ["default", "dun", "supl"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+authtype = 0
+mmsc = "http://mms.vtext.com/servlets/mms"
+protocol = "ipv4v6"
+profile_id = 0
+max_conns = 1023
+max_conns_time = 300
+modem_cognitive = true
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Ericsson Test-SIM FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+authtype = 0
+protocol = "ipv4v6"
+profile_id = 3
+max_conns = 1023
+max_conns_time = 300
+modem_cognitive = true
+
+[[settings.apns.apn]]
+name = "Ericsson Test-SIM CBS"
+value = "VZWAPP"
+type = ["cbs", "mms"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+authtype = 0
+mmsc = "http://mms.vtext.com/servlets/mms"
+protocol = "ipv4v6"
+profile_id = 4
+max_conns = 1023
+max_conns_time = 300
+modem_cognitive = true
+
+[[settings.apns.apn]]
+name = "Ericsson Test-SIM IMS"
+value = "IMS"
+type = ["ia", "ims"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+authtype = 0
+protocol = "ipv4v6"
+roaming_protocol = "ipv6"
+profile_id = 2
+max_conns = 1023
+max_conns_time = 300
+modem_cognitive = true
+
+[settings.config]
+carrier_volte_available = true
+dtmf_type_enabled = true
+mmsCloseConnection = true
+show_apn_setting_cdma = false
+volte_replacement_rat = 6

@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "22873"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "internet"
+value = "internet"
+type = ["default", "supl", "fota", "ia", "dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+read_only_apn_types = []
+
+[settings.field8]
+seconds = 1770819167

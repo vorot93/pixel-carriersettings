@@ -1,0 +1,87 @@
+[[carrier_id]]
+mcc_mnc = "334050"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "424C5545FFFFFFFFFF"
+
+[settings]
+version = 77000000016
+
+[[settings.apns.apn]]
+name = "Sky_5G"
+value = "apn.5g.blue.mx"
+type = ["default"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "modem"
+value = "modem.blue.mx"
+type = ["dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+allow_emergency_numbers_in_call_log = true
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = false
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_voicemail_number_setting = false
+editable_wfc_mode = false
+gsm_cdma_calls_can_be_hd_audio = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+mmi_two_digit_number_pattern = ["#9"]
+skip_cf_fail_to_disable_dialog = true
+smsToMmsTextThreshold = 5
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+conference_factory_uri = "ALU_CONF@ims.attmex.mx"
+conference_subscribe_type = 0
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+child_session_aes_cbc_key_size = [256]
+diffie_hellman_groups = [5]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc050.mcc334.pub.3gppnetwork.org"
+ike_session_encryption_aes_cbc_key_size = [256]
+supported_integrity_algorithms = [2]
+supported_prf_algorithms = [2]
+
+[settings.config.qns]
+idle_eutran_rsrp = [-90, -120]
+ims_wlan_hysteresis_timer_ms = [60000, 0, 0]
+ims_wwan_hysteresis_timer_ms = [60000, 0, 0]
+voice_eutran_rsrp = [-90, -120]
+
+[settings.field8]
+seconds = 1753863668

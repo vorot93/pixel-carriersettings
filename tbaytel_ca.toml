@@ -1,0 +1,166 @@
+[[carrier_id]]
+mcc_mnc = "302720"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "BA"
+
+[settings]
+version = 77000000005
+
+[[settings.apns.apn]]
+name = "Tbaytel Tethering"
+value = "ltedata.apn"
+type = ["dun"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Tbaytel Internet"
+value = "ltemobile.apn"
+type = ["default", "mms", "supl", "hipri", "fota"]
+bearer_bitmask = "1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+mmsc = "http://mms.gprs.rogers.com"
+mmsc_proxy = "mmsproxy.rogers.com"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Netsvcs"
+value = "netsvcs"
+type = ["mms", "xcap"]
+bearer_bitmask = "18"
+mmsc = "http://mms.gprs.rogers.com"
+mmsc_proxy = "mmsproxy.rogers.com"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Netsvcs XCAP"
+value = "netsvcs"
+type = ["xcap"]
+bearer_bitmask = "1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Emergency"
+value = "EMERGENCY"
+type = ["emergency"]
+protocol = "ipv6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+allow_metered_network_for_cert_download = false
+call_forwarding_map_non_number_to_voicemail = true
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+hide_lte_plus_data_icon = false
+imsi_key_availability = 0
+imsi_key_download_url = ""
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|CBS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS|XCAP", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS|XCAP", "source=EUTRAN|IWLAN, target=EUTRAN|IWLAN, type=allowed, capabilities=IMS|XCAP"]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+maxSubjectLength = 80
+min_udp_port_4500_nat_timeout_sec = 20
+non_roaming_operator = ["302220", "302370", "302610", "302660", "302780"]
+prefer_2g = false
+prefer_3g_visibility = false
+read_only_apn_types = []
+recipientLimit = 20
+smsToMmsTextThreshold = 6
+use_wfc_home_network_mode_in_roaming_network = true
+voicemail_notification_persistent = true
+wfc_emergency_address_carrier_app = "com.google.android.wfcactivation/.WfcActivationCanadaActivity"
+wfc_spn_format_idx = 1
+
+[settings.config.gps]
+es_extension_sec = "300"
+
+[settings.config.ims]
+ims_pdn_enabled_in_no_vops_support = [0]
+ims_user_agent = "Rogers #MODEL# #BUILD#"
+ipv4_sip_mtu_size_cellular = 1430
+ipv6_sip_mtu_size_cellular = 1430
+sip_timer_f_millis = 32000
+sip_timer_j_millis = 32000
+supported_rats = [3, 1, 2, 5, 6]
+
+[settings.config.imsemergency]
+emergency_registration_timer_millis = 10000
+emergency_scan_timer_sec = 10
+maximum_cellular_search_timer_sec = 10
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = [1, 2, 3, 6, 5]
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice]
+conference_factory_uri = "mmtel@conf-factory.ims.mnc720.mcc302.3gppnetwork.org"
+conference_subscribe_type = 0
+session_refresher_type = 2
+srvcc_type = [0, 1, 2]
+
+[settings.config.imsvoice.amrnb_payload_description.108]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.110]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102, 108]
+amrwb_payload_type = [104, 110]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [106]
+
+[settings.config.imsvoice.evs_payload_description.106]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+epdg_address_priority = [0, 1]
+epdg_static_address = "epdg.epc.mnc720.mcc302.pub.3gppnetwork.org"
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["24"],"RetryArray": ["10", "20", "20", "20"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}]}]'
+
+[settings.config.qns]
+choose_wfc_preferred_transport_in_both_bad_condition = [1, 2]
+idle_wifi_rssi = [-65, -78]
+ims_cellular_allowed_rat = ["LTE", "NR", "3G", "2G"]
+mms_rat_preference = 2
+sos_transport_type = 2
+support_wfc_recovery = false
+video_wifi_rssi = [-65, -78]
+voice_wifi_rssi = [-65, -78]
+xcap_rat_preference = 2
+
+[settings.config.wifi]
+carrier_profiles_version = -1
+network_profiles = []
+passpoint_profiles = ['<?xml version="1.0" encoding="UTF-8"?><PasspointProfile><PPSMO><![CDATA[<MgmtTree xmlns="syncml:dmddf1.2"><VerDTD>1.2</VerDTD><Node><NodeName>PerProviderSubscription</NodeName><RTProperties><Type><DDFName>urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0</DDFName></Type></RTProperties><Node><NodeName>i001</NodeName><Node><NodeName>HomeSP</NodeName><Node><NodeName>FriendlyName</NodeName><Value>Rogers Wi-Fi Hotspots</Value></Node><Node><NodeName>FQDN</NodeName><Value>rogers.com</Value></Node></Node><Node><NodeName>Credential</NodeName><Node><NodeName>Realm</NodeName><Value>wlan.mnc720.mcc302.3gppnetwork.org</Value></Node><Node><NodeName>SIM</NodeName><Node><NodeName>IMSI</NodeName><Value>302720*</Value></Node><Node><NodeName>EAPType</NodeName><Value>50</Value></Node></Node></Node></Node></Node></MgmtTree>]]></PPSMO></PasspointProfile>']
+
+[settings.field8]
+seconds = 1772035424

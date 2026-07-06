@@ -1,0 +1,15 @@
+[[carrier_id]]
+mcc_mnc = "43219"
+
+[[settings.apns.apn]]
+name = "MCI-GPRS"
+value = "mcinet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MCCI MMS"
+value = "MCI-GPRS"
+type = ["mms"]
+mmsc = "http://192.168.193.134"
+
+[settings.config]

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60606"
+
+[[settings.apns.apn]]
+name = "Hatef Libya"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

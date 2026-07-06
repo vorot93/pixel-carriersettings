@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "64502"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "MTN"
+value = "default"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "IMS"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+
+[settings.field8]
+seconds = 1769617073

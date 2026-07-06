@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "65701"
+
+[[settings.apns.apn]]
+name = "Eritel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

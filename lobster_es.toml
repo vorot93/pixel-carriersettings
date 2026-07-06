@@ -1,0 +1,61 @@
+[[carrier_id]]
+mcc_mnc = "21410"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "2141080000018"
+
+[[carrier_id]]
+mcc_mnc = "21410"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Lobster"
+
+[[carrier_id]]
+mcc_mnc = "21410"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "INTERNET"
+value = "lobster"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "lobstermms"
+type = ["mms"]
+mmsc = "http://lobstermms:8081"
+mmsc_proxy = "mms.lobster.es"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+ut_supported_when_ps_data_off = false
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

@@ -1,0 +1,60 @@
+[[carrier_id]]
+mcc_mnc = "314200"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "Xfinity Mobile"
+value = "internet"
+type = ["default"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Xfinity Mobile"
+value = "admin.comcast"
+type = ["fota"]
+protocol = "ipv4v6"
+
+[settings.config]
+_5g_nr_ssrsrp_thresholds = [-122, -114, -108, -105]
+always_show_primary_signal_bar_in_opportunistic_network = true
+avoid_bad_wifi = true
+boosted_lte_earfcns = ["600-1199", "1950-2399"]
+carrier_certificate = ["3557afac6c4a4951b6d669408dc35bf6dfb1b1536eeb465493f9d29ad166c91d:com.xfinity.digitalhome", "953f5a4c22e7fd16adc3f12eb038682aad377fef9a18b9d12c1abea78911c749:com.xfinity.digitalhome", "06aada946110e64414aebe3af34ae06baf239ef75c947149fb67263d8a2547c3:com.xfinity.digitalhome.debug", "06aada946110e64414aebe3af34ae06baf239ef75c947149fb67263d8a2547c3:com.xfinity.dh.xm.app", "141E264EB08B576F6C32E49FD47A34300553A132EC5EB1DD58B354A0B15A5E40:com.xfinitymobile.cometcarrierservice", "914C26403B57D2D482359FC235CC825AD00D52B0121C18EF2B2B9D4DDA4B8996:com.comcast.mobile.mxs", "3557afac6c4a4951b6d669408dc35bf6dfb1b1536eeb465493f9d29ad166c91d:com.xfinity.mobile.spamfilter", "953f5a4c22e7fd16adc3f12eb038682aad377fef9a18b9d12c1abea78911c749:com.xfinity.mobile.spamfilter", "EA827BB79F9F4B30723A3988D1159624BA856EEAD7B330B819EE04AFE313A14D:com.pocketgeek.xfinity.android"]
+carrier_nr_availabilities = [2]
+data_switch_validation_min_gap = 0
+data_switch_validation_timeout = 6000
+lte_earfcns_rsrp_boost = 6
+lte_rsrp_thresholds = [-115, -105, -95, -85]
+opportunistic_network_data_switch_exit_hysteresis_time = 2000
+opportunistic_network_data_switch_hysteresis_time = 2000
+opportunistic_network_entry_threshold_rsrp = -111
+opportunistic_network_entry_threshold_rssnr = -100
+opportunistic_network_exit_threshold_rsrp = -120
+opportunistic_network_exit_threshold_rssnr = -110
+ping_test_before_data_switch = true
+show_avoid_bad_wifi = true
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.opportunistic]
+_5g_backoff_time = 30000
+_5g_data_switch_exit_hysteresis_time = 500
+_5g_data_switch_hysteresis_time = 3000
+_5g_max_backoff_time = 60000
+_5g_ping_pong_time = 60000
+entry_threshold_ss_rsrp = -115
+entry_threshold_ss_rsrq = -35.0
+exit_threshold_ss_rsrp = -123
+exit_threshold_ss_rsrq = -35.0
+
+[settings.field8]
+seconds = 1766559539

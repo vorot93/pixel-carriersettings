@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "310840"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "isp"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.edgemobile.net/mmsc"
+mmsc_proxy = "12.108.12.13"
+mmsc_proxy_port = "3128"
+
+[[settings.apns.apn]]
+name = "Edge MMS Prepay"
+value = "ppmms"
+type = ["mms"]
+mmsc = "http://mms.edgemobile.net/mmsc"
+mmsc_proxy = "12.108.12.13"
+mmsc_proxy_port = "3128"
+
+[settings.config]

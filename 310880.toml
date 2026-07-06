@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "310880"
+
+[[settings.apns.apn]]
+name = "DTC dtcwap"
+value = "wapdtcw.com"
+type = ["default"]
+proxy = "204.181.155.218"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "DTC MMS"
+value = "mms.adv.com"
+type = ["mms"]
+mmsc = "http://mms.iot1.com/advantage/mms.php"
+
+[settings.config]

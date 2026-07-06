@@ -1,0 +1,45 @@
+[[carrier_id]]
+mcc_mnc = "27602"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "VFAL Internet"
+value = "vodafoneweb"
+type = ["default", "supl"]
+user = "web"
+password = "web"
+authtype = 1
+user_editable = false
+
+[[settings.apns.apn]]
+name = "VFAL IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "VFAL XCAP"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "135"
+wfc_spn_format_idx = 1
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+
+[settings.field8]
+seconds = 1754475104

@@ -1,0 +1,36 @@
+[[carrier_id]]
+mcc_mnc = "41006"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Telenor WAP"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Telenor MMS"
+value = "mms"
+type = ["mms"]
+user = "Telenor"
+password = "Telenor"
+mmsc = "http://mmstelenor"
+mmsc_proxy = "172.18.19.11"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+enhanced_4g_lte_on_by_default = false
+
+[settings.field8]
+seconds = 1763550047

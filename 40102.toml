@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "40102"
+
+[[settings.apns.apn]]
+name = "Kcell Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Kcell MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.kcell.kz/post"
+mmsc_proxy = "195.47.255.7"
+mmsc_proxy_port = "8080"
+
+[settings.config]

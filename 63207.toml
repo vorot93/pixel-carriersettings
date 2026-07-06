@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63207"
+
+[[settings.apns.apn]]
+name = "Guinetel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

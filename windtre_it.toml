@@ -1,0 +1,111 @@
+[[carrier_id]]
+mcc_mnc = "22288"
+
+[[carrier_id]]
+mcc_mnc = "22299"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+field27 = "1|2|3|8|9|10|13|14|15|18|20"
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet.it"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "xcap"
+type = ["xcap"]
+user_visible = false
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mms.it"
+type = ["mms"]
+mmsc = "http://mms.windtre.it"
+mmsc_proxy = "mmsproxy.windtre.it"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+call_barring_visibility = true
+carrier_certificate = ["7A6D2E2EDEA23A93FA95A447535675CFB543919698196FB720B1520658D25DC7", "A69A419CFB5FB8344D2AEDCED6BC2A7FCB74F85161BCA9265C54E95E478839C3", "998DA7CED0E1A3A14E51FAEF1F8608A494BDA791B6609A1C5E599F9B64F01674"]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "4200"
+hide_enhanced_4g_lte = true
+hide_ims_apn = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+smsToMmsTextThreshold = 10
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ipv4_sip_mtu_size_cellular = 1450
+ipv6_sip_mtu_size_cellular = 1450
+registration_retry_max_timer_millis = 300000
+request_uri_type = 1
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_iptype_home = 0
+ut_requires_ims_registration = true
+ut_supported_when_roaming = false
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice]
+audio_rtcp_inactivity_timer_millis = 10000
+audio_rtp_inactivity_timer_millis = 10000
+conference_subscribe_type = 0
+prack_supported_for_18x = true
+ringback_timer_millis = 67000
+ringing_timer_millis = 65000
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = -1
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14, 15, 16, 2, 5]
+dpd_timer_sec = 600
+
+[settings.config.qns]
+idle_eutran_rsrp = [-96, -116]
+idle_geran_rssi = [-90, -100]
+idle_utran_rscp = [-100, -110]
+idle_wifi_rssi = [-70, -80]
+ims_wlan_hysteresis_timer_ms = [60000, 30000, 0]
+ims_wwan_hysteresis_timer_ms = [60000, 30000, 0]
+rtp_metrics = [120, 40, 3000, 2000]
+sos_transport_type = 2
+support_wfc_during_airplane_mode = false
+voice_eutran_rsrp = [-96, -116]
+voice_wifi_rssi = [-70, -80]
+
+[settings.field8]
+seconds = 1736946312

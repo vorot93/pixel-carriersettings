@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "41503"
+
+[[settings.apns.apn]]
+name = "touch"
+value = "touch"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "touch_WAP"
+value = "wap"
+type = ["default", "supl"]
+proxy = "192.168.4.11"
+port = "80"
+
+[[settings.apns.apn]]
+name = "touch_MMS"
+value = "mms"
+type = ["mms"]
+user = "touch"
+mmsc = "http://mms:8088/mms/"
+mmsc_proxy = "192.168.4.103"
+mmsc_proxy_port = "80"
+
+[settings.config]

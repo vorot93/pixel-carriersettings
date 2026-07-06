@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "42888"
+
+[[settings.apns.apn]]
+name = "Unitel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

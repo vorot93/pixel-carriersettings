@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "90137"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "mobiledata"
+type = ["default"]
+
+[settings.config]
+cellular_usage_setting = 2
+show_4g_for_lte_data_icon = true
+
+[settings.field8]
+seconds = 1770819167

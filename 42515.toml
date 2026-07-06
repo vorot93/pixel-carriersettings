@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "42515"
+
+[[settings.apns.apn]]
+name = "Home Cellular Internet"
+value = "hcminternet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Home Cellular MMS"
+value = "hcmMMS"
+type = ["mms"]
+mmsc = "http://82.166.164.229:9000/mmsc"
+mmsc_proxy = "82.166.164.229"
+mmsc_proxy_port = "8898"
+
+[settings.config]

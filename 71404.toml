@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "71404"
+
+[[settings.apns.apn]]
+name = "Digicel Internet"
+value = "web.digicelpanama.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "wap.digicelpanama.com"
+type = ["mms"]
+mmsc = "http://mmc.digicelpanama.com/servlets/mms"
+mmsc_proxy = "172.27.99.99"
+mmsc_proxy_port = "8080"
+
+[settings.config]

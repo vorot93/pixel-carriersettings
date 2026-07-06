@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "90143"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "65"
+
+[[carrier_id]]
+mcc_mnc = "90143"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "emnify"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "emnify"
+value = "em"
+type = ["default", "dun", "ia"]
+
+[settings.config]
+read_only_apn_types = []
+
+[settings.field8]
+seconds = 1769617073

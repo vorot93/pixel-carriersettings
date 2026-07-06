@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "311080"
+
+[[settings.apns.apn]]
+name = "PINE WAP"
+value = "PINE"
+type = ["default", "mms"]
+mmsc = "http://69.8.34.146/mms/"
+mmsc_proxy = "69.8.34.146"
+mmsc_proxy_port = "9401"
+
+[settings.config]

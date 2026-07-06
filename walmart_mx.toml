@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "BAIT"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Walmart MX"
+value = "internet.wm.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Walmart MX IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1724979979

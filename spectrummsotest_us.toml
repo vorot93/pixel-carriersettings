@@ -1,0 +1,36 @@
+[[carrier_id]]
+mcc_mnc = "310014"
+
+[[carrier_id]]
+mcc_mnc = "311400"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "XM LAB1"
+value = "internet"
+type = ["default"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "XM LAB1"
+value = "admin.comcast"
+type = ["default"]
+protocol = "ipv4v6"
+
+[settings.config]
+always_show_primary_signal_bar_in_opportunistic_network = true
+boosted_lte_earfcns = ["600-1199", "1950-2399"]
+carrier_nr_availabilities = [2]
+lte_earfcns_rsrp_boost = 6
+lte_rsrp_thresholds = [-115, -105, -95, -85]
+opportunistic_network_data_switch_exit_hysteresis_time = 2000
+opportunistic_network_data_switch_hysteresis_time = 2000
+opportunistic_network_entry_threshold_rsrp = -111
+opportunistic_network_entry_threshold_rssnr = 10
+opportunistic_network_exit_threshold_rsrp = -120
+opportunistic_network_exit_threshold_rssnr = 9
+
+[settings.field8]
+seconds = 1725936050

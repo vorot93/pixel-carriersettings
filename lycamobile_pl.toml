@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "26009"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Lycamobile"
+
+[[settings.apns.apn]]
+name = "lycamobile"
+value = "data.lycamobile.pl"
+type = ["default", "supl"]
+authtype = 1
+
+[settings.config]

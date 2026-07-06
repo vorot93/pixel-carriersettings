@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "72231"
+
+[[carrier_id]]
+mcc_mnc = "722310"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Claro AR"
+value = "igprs.claro.com.ar"
+type = ["default", "mms", "supl"]
+mmsc = "http://mms.claro.com.ar"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Claro IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1755076382

@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "47202"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Wataniya"
+value = "default"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1755679363

@@ -1,0 +1,45 @@
+[[carrier_id]]
+mcc_mnc = "71606"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Movistar INTERNET"
+value = "movistar.pe"
+type = ["default", "supl"]
+user = "movistar@datos"
+password = "movistar"
+authtype = 1
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Movistar MMS"
+value = "mms.movistar.pe"
+type = ["mms"]
+user = "movistar@mms"
+password = "movistar"
+authtype = 1
+mmsc = "http://mmsc.telefonicamovistar.com.pe:8088/mms/"
+mmsc_proxy = "200.4.196.118"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_certificate = ["8C960CA3CBF4A9DA851774F2DE072E57B1289A9CF7D6BDA4A6B386A42BC4FFB3"]
+carrier_volte_available = true
+enableGroupMms = false
+enabledMMS = false
+groupChatDefaultsToMMS = false
+
+[settings.field8]
+seconds = 1774443087

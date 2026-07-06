@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "60401"
+
+[[settings.apns.apn]]
+name = "Internet Mobile"
+value = "www.iamgprs1.ma"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MobileZone"
+value = "wap.iamgprs.ma"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS IAM"
+value = "mmsiam"
+type = ["mms"]
+mmsc = "http://mms:8002/"
+mmsc_proxy = "10.16.35.50"
+mmsc_proxy_port = "8080"
+
+[settings.config]

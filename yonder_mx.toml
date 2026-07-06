@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "YO"
+
+[[settings.apns.apn]]
+name = "Yonder"
+value = "internet.yotelco.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Yonder"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

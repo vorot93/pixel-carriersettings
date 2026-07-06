@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Mega4.5 G"
+
+[[settings.apns.apn]]
+name = "Megacable"
+value = "mega45g.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Megacable"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

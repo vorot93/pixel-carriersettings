@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "60602"
+
+[[settings.apns.apn]]
+name = "Al-Jeel Phone"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

@@ -1,0 +1,37 @@
+[[carrier_id]]
+mcc_mnc = "62001"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "MTN Internet GH"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "MTN MMS"
+value = "mms"
+type = ["mms"]
+authtype = 0
+mmsc = "http://172.17.3.7"
+mmsc_proxy = "172.17.3.7"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+
+[settings.field8]
+seconds = 1769617073

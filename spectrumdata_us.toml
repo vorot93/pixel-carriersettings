@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "313450"
+
+[[settings.apns.apn]]
+name = "spectrum.fwa"
+value = "spectrum.fwa"
+type = ["default"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "spectrum.ota"
+value = "spectrum.ota"
+type = ["fota"]
+protocol = "ipv4v6"
+
+[settings.config]

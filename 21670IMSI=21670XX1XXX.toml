@@ -1,0 +1,32 @@
+[[carrier_id]]
+mcc_mnc = "21670"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "21670xx1"
+
+[[settings.apns.apn]]
+name = "Vodafone Internet VitaMAX"
+value = "vitamax.internet.vodafone.net"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Vodafone MMS"
+value = "mms.vodafone.net"
+type = ["mms"]
+mmsc = "http://mms.vodafone.hu/servlets/mms"
+mmsc_proxy = "80.244.97.2"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Vodafone Live! VitaMAX"
+value = "vitamax.wap.vodafone.net"
+type = ["default", "supl"]
+proxy = "10.9.8.7"
+port = "8080"
+user = "vodawap"
+password = "vodawap"
+authtype = 1
+
+[settings.config]
+show_4g_for_lte_data_icon = true

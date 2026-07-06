@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "73404"
+
+[[settings.apns.apn]]
+name = "Movistar INTERNET"
+value = "internet.movistar.ve"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Movistar MMS"
+value = "mms.movistar.ve"
+type = ["mms"]
+mmsc = "http://mms.movistar.com.ve:8088/mms"
+mmsc_proxy = "200.35.64.73"
+mmsc_proxy_port = "9001"
+
+[[settings.apns.apn]]
+name = "Movistar WAP"
+value = "wap.movistar.ve"
+type = ["default", "supl"]
+mmsc_proxy = "200.35.64.73"
+mmsc_proxy_port = "9001"
+
+[settings.config]

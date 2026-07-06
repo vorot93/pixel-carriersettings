@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "20465"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "50"
+
+[[settings.apns.apn]]
+name = "AGMS NL"
+value = "agms.nl.gmm"
+type = ["default"]
+mtu = 1410
+
+[settings.config]

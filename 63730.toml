@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "63730"
+
+[[settings.apns.apn]]
+name = "Golis"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

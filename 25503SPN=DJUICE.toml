@@ -1,0 +1,24 @@
+[[carrier_id]]
+mcc_mnc = "25503"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "DJUICE"
+
+[[settings.apns.apn]]
+name = "Djuice MMS"
+value = "mms.djuice.com.ua"
+type = ["mms"]
+user = "djuice"
+password = "mms"
+authtype = 1
+mmsc = "http://mms.kyivstar.net"
+mmsc_proxy = "10.10.10.10"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Djuice Internet"
+value = "www.djuice.com.ua"
+type = ["default", "supl"]
+
+[settings.config]

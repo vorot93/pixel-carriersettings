@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "40107"
+
+[[settings.apns.apn]]
+name = "ALTEL INTERNET"
+value = "internet"
+type = ["default", "supl"]
+
+[settings.config]

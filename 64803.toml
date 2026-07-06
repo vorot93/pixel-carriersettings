@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64803"
+
+[[settings.apns.apn]]
+name = "Telecel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "52018"
+
+[[settings.apns.apn]]
+name = "dtac MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.dtac.co.th:8002/"
+mmsc_proxy = "203.155.200.133"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "dtac Internet"
+value = "www.dtac.co.th"
+type = ["default", "supl"]
+
+[settings.config]
+roaming_operator = ["520"]

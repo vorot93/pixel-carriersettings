@@ -1,0 +1,105 @@
+[[carrier_id]]
+mcc_mnc = "302220"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6624"
+
+[[carrier_id]]
+mcc_mnc = "310040"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6624"
+
+[[carrier_id]]
+mcc_mnc = "311500"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6624"
+
+[[carrier_id]]
+mcc_mnc = "311588"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6624"
+
+[[carrier_id]]
+mcc_mnc = "313460"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6624"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "mobi Internet"
+value = "4g.mobi.net"
+type = ["default", "supl", "dun", "ia"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "mobi IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "mobi MMS"
+value = "mms.mobi.net"
+type = ["mms"]
+mmsc = "http://mms.mobi.net"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "mobi XCAP"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "mobi OTA"
+value = "ota.mobi.net"
+type = ["fota"]
+
+[settings.config]
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|IWLAN, target=EUTRAN|IWLAN, type=allowed, capabilities=IMS"]
+read_only_apn_types = []
+
+[settings.config.imsss]
+use_csfb_on_xcap_over_ut_failure = false
+ut_as_server_fqdn = "xcap.ims.mnc460.mcc313.pub.3gppnetwork.org"
+
+[settings.config.imsvoice]
+oip_source_from_header = true
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+epdg_static_address = "epdg.epc.mnc460.mcc313.pub.3gppnetwork.org"
+
+[settings.field8]
+seconds = 1769617073

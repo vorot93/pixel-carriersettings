@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "55299"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "PMCI"
+
+[settings]
+version = 77000000001
+
+[settings.config]
+
+[settings.field8]
+seconds = 1762942431

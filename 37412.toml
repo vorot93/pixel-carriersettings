@@ -1,0 +1,49 @@
+[[carrier_id]]
+mcc_mnc = "37412"
+
+[[carrier_id]]
+mcc_mnc = "374120"
+
+[[carrier_id]]
+mcc_mnc = "374121"
+
+[[carrier_id]]
+mcc_mnc = "374122"
+
+[[carrier_id]]
+mcc_mnc = "374123"
+
+[[carrier_id]]
+mcc_mnc = "374124"
+
+[[carrier_id]]
+mcc_mnc = "374125"
+
+[[carrier_id]]
+mcc_mnc = "374126"
+
+[[carrier_id]]
+mcc_mnc = "374127"
+
+[[carrier_id]]
+mcc_mnc = "374128"
+
+[[carrier_id]]
+mcc_mnc = "374129"
+
+[[settings.apns.apn]]
+name = "Bmobile internet"
+value = "internet"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Bmobile mms"
+value = "mms"
+type = ["mms"]
+authtype = 1
+mmsc = "http://192.168.210.104/mmrelay.app"
+mmsc_proxy = "192.168.210.104"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "62402"
+
+[[settings.apns.apn]]
+name = "Orange CM"
+value = "orangecmgprs"
+type = ["default", "mms"]
+proxy = "192.168.122.101"
+port = "8080"
+user = "orange"
+password = "orange"
+mmsc = "http://mms.orange.cm"
+mmsc_proxy = "192.168.122.101"
+mmsc_proxy_port = "8080"
+
+[settings.config]

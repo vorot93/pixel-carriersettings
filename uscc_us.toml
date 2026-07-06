@@ -1,0 +1,223 @@
+[[carrier_id]]
+mcc_mnc = "20404"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "U.S. CELLULAR"
+
+[[carrier_id]]
+mcc_mnc = "311220"
+
+[[carrier_id]]
+mcc_mnc = "311221"
+
+[[carrier_id]]
+mcc_mnc = "311222"
+
+[[carrier_id]]
+mcc_mnc = "311223"
+
+[[carrier_id]]
+mcc_mnc = "311224"
+
+[[carrier_id]]
+mcc_mnc = "311225"
+
+[[carrier_id]]
+mcc_mnc = "311226"
+
+[[carrier_id]]
+mcc_mnc = "311227"
+
+[[carrier_id]]
+mcc_mnc = "311228"
+
+[[carrier_id]]
+mcc_mnc = "311229"
+
+[[carrier_id]]
+mcc_mnc = "311580"
+
+[[carrier_id]]
+mcc_mnc = "311581"
+
+[[carrier_id]]
+mcc_mnc = "311582"
+
+[[carrier_id]]
+mcc_mnc = "311583"
+
+[[carrier_id]]
+mcc_mnc = "311584"
+
+[[carrier_id]]
+mcc_mnc = "311585"
+
+[[carrier_id]]
+mcc_mnc = "311586"
+
+[[carrier_id]]
+mcc_mnc = "311587"
+
+[[carrier_id]]
+mcc_mnc = "311588"
+
+[[carrier_id]]
+mcc_mnc = "311589"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "U.S. Cellular"
+value = "usccinternet"
+type = ["default", "mms", "dun", "hipri", "fota"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+mmsc = "http://mmsc1.uscc.net/mmsc/MMS"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+mtu = 1422
+user_editable = false
+
+[[settings.apns.apn]]
+name = "U.S. Cellular"
+value = ""
+type = ["default", "mms", "dun", "hipri", "fota"]
+bearer_bitmask = "4|5|6|7|8|12"
+authtype = 3
+mmsc = "http://mmsc1.uscc.net/mmsc/MMS"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+mtu = 1422
+user_visible = false
+
+[[settings.apns.apn]]
+name = "U.S. Cellular IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_default_wfc_ims_roaming_mode = 1
+carrier_eri_file_name = "eri.xml"
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+cdma_3waycall_flash_delay = 0
+cdma_nonroaming_networks = []
+config_telephony_use_own_number_for_voicemail = true
+disable_cdma_activation_code = false
+dtmf_type_enabled = true
+emailGatewayNumber = "6245"
+emergency_number_prefix = ["#", "*", "*272"]
+enableMultipartSMS = false
+enabledNotifyWapMMSC = true
+enabledTransID = true
+gsm_nonroaming_networks = ["310120", "310260", "310410", "311480", "312530"]
+hide_enhanced_4g_lte = true
+hide_preferred_network_type = true
+hide_sim_lock_settings = true
+httpParams = "x-vzw-mdn: 1##LINE1NOCOUNTRYCODE##"
+is_ims_conference_size_enforced = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+maxSubjectLength = 80
+non_roaming_operator = ["310", "311", "312", "313", "314", "315", "316"]
+recipientLimit = 20
+rtt_downgrade_supported = true
+rtt_supported = true
+show_apn_setting_cdma = false
+show_cdma_choices = false
+sim_country_iso_override = "us"
+support_ims_conference_event_package = false
+support_ss_over_cdma = true
+support_swap_after_merge = true
+uaProfTagName = "x-wap-profile"
+use_otasp_for_provisioning = false
+use_wfc_home_network_mode_in_roaming_network = true
+volte_5g_limited_alert_dialog = true
+volte_replacement_rat = 6
+wfc_emergency_address_carrier_app = "com.android.imsserviceentitlement/.WfcActivationActivity"
+wfc_spn_format_idx = 1
+world_mode_enabled = false
+
+[settings.config.ims]
+ipv4_sip_mtu_size_cellular = 1080
+ipv6_sip_mtu_size_cellular = 1280
+registration_expiry_timer_sec = 7200
+registration_subscribe_expiry_timer_sec = 7200
+request_uri_type = 1
+sip_over_ipsec_enabled = false
+sip_timer_b_millis = 130000
+sip_timer_j_millis = 32000
+
+[settings.config.imsemergency]
+emergency_callback_mode_supported = true
+emergency_domain_preference_roaming = [2, 1]
+emergency_registration_timer_millis = 10000
+emergency_vowifi_requires_condition = 1
+
+[settings.config.imsrtt]
+text_as_bandwidth_kbps = 3
+text_rr_bandwidth_bps = 300
+text_rs_bandwidth_bps = 100
+
+[settings.config.imsserviceentitlement]
+entitlement_server_url = "https://aes.mnc580.mcc311.pub.3gppnetwork.org/rcs-entitlement"
+fcm_sender_id = "1074633755707"
+show_vowifi_webview = true
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+conference_factory_uri = "usccconf@usccims.com"
+dedicated_bearer_wait_timer_millis = 10000
+include_caller_id_service_codes_in_sip_invite = true
+minimum_session_expires_timer_sec = 900
+ringback_timer_millis = 120000
+ringing_timer_millis = 60000
+session_refresher_type = 2
+srvcc_type = [1, 2, 3]
+
+[settings.config.imsvoice.amrnb_payload_description.102]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.104]
+amr_codec_attribute_modeset = [0, 1, 2]
+
+[settings.config.imsvoice.amrwb_payload_description.105]
+amr_codec_attribute_modeset = [0, 1, 2]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102, 103]
+amrwb_payload_type = [104, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [126]
+
+[settings.config.imsvoice.evs_payload_description.126]
+evs_codec_attribute_bitrate = [4, 4]
+evs_codec_attribute_ch_aw_recv = 2
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.qns]
+sos_transport_type = 2
+
+[settings.field8]
+seconds = 1726812815

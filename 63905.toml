@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "63905"
+
+[[settings.apns.apn]]
+name = "Yu Internet"
+value = "Internet"
+type = ["default", "mms", "supl"]
+proxy = "10.4.16.6"
+port = "8080"
+mmsc = "http://10.4.16.22/servlets/mms"
+mmsc_proxy = "10.4.16.6"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Yu mms"
+value = "Yu"
+type = ["mms"]
+mmsc = "http://10.4.16.22/servlets/mms"
+mmsc_proxy = "10.4.16.6"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "34020"
+
+[[settings.apns.apn]]
+name = "Digicel"
+value = "digicel"
+type = ["default", "mms", "supl"]
+authtype = 1
+mmsc = "http://mmc.digicelfr.com/servlets/mms"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+prefer_2g = true

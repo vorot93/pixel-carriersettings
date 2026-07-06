@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "41701"
+
+[[settings.apns.apn]]
+name = "Syriatel Net"
+value = "net.syriatel.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Syriatel MMS"
+value = "mms.syriatel.com"
+type = ["mms"]
+mmsc = "http://mymms.syriatel.com/"
+mmsc_proxy = "172.20.5.6"
+mmsc_proxy_port = "80"
+
+[settings.config]

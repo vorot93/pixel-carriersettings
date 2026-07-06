@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "42898"
+
+[[settings.apns.apn]]
+name = "G.Mobile"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

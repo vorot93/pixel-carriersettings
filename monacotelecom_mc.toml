@@ -1,0 +1,34 @@
+[[carrier_id]]
+mcc_mnc = "21210"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Monaco Telecom"
+value = "internet"
+type = ["default", "mms", "dun"]
+mmsc = "http://mms.monaco-telecom.mc"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+maxMessageSize = 614400
+read_only_apn_types = []
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.field8]
+seconds = 1724979979

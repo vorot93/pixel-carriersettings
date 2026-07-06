@@ -1,0 +1,47 @@
+[[carrier_id]]
+mcc_mnc = "50213"
+
+[[carrier_id]]
+mcc_mnc = "50219"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Celcom Internet"
+value = "celcom3g"
+type = ["default", "mms", "supl"]
+authtype = 1
+mmsc = "http://mms.celcom.net.my"
+mmsc_proxy = "10.128.1.242"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_mode = 1
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.field8]
+seconds = 1752062637

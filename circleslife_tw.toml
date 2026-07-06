@@ -1,0 +1,104 @@
+[[carrier_id]]
+mcc_mnc = "46692"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "無框行動"
+
+[[settings.apns.apn]]
+name = "無框行動 (Internet)"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "無框行動 (MMS)"
+value = "emome"
+type = ["mms"]
+mmsc = "http://mms.emome.net:8002"
+mmsc_proxy = "10.1.1.1"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "無框行動 (IMS)"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "無框行動 XCAP"
+value = "hos"
+type = ["xcap"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|18|20"
+user_visible = false
+
+[settings.config]
+_5g_icon_configuration = "connected_mmwave:5G,connected:5G,not_restricted_rrc_idle:5G"
+_5g_icon_display_grace_period = "connected_mmwave,legacy,31;connected,legacy,31;connected_mmwave,not_restricted_rrc_con,31;connected,not_restricted_rrc_con,31;not_restricted_rrc_idle,not_restricted_rrc_con,15"
+carrier_default_2g_protection_enabled = true
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_name = ""
+carrier_name_override = false
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+display_hd_plus_icon = true
+hide_enhanced_4g_lte = true
+hide_lte_plus_data_icon = false
+is_ims_conference_size_enforced = true
+lte_endc_using_user_data_for_rrc_detection = true
+min_udp_port_4500_nat_timeout_sec = 120
+nr_timers_reset_if_non_endc_and_rrc_idle = true
+preferred_ike_protocol = 40
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_port = 8088
+
+[settings.config.ims]
+ipv4_sip_mtu_size_cellular = 1300
+ipv6_sip_mtu_size_cellular = 1300
+sip_timer_f_millis = 32000
+sip_timer_j_millis = 32000
+
+[settings.config.imsemergency]
+prefer_ims_emergency_when_voice_calls_on_cs = true
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_iptype_home = 0
+ut_iptype_roaming = 0
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+conference_subscribe_type = 0
+ringback_timer_millis = 120000
+ringing_timer_millis = 120000
+srvcc_type = [0, 2]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 2
+
+[settings.config.imsvt]
+video_qos_precondition_supported = false
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+dpd_timer_sec = 600
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc092.mcc466.pub.3gppnetwork.org"
+
+[settings.config.qns]
+sos_transport_type = 2
+
+[settings.config.rilext]
+ims_prefer_apm_normal_ecc_enable = true

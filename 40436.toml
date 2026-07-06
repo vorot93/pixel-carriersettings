@@ -1,0 +1,36 @@
+[[carrier_id]]
+mcc_mnc = "40436"
+
+[[settings.apns.apn]]
+name = "Reliance MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://10.239.221.47/mms/"
+mmsc_proxy = "10.239.221.7"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Reliance Net"
+value = "smartnet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Reliance WAP"
+value = "smartwap"
+type = ["default", "supl"]
+proxy = "10.239.221.7"
+port = "8080"
+authtype = 1
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Reliance Internet (40436)"
+value = "rcomnet"
+type = ["default", "supl", "dun", "fota"]
+protocol = "ipv4v6"
+user_editable = false
+
+[settings.config]
+roaming_operator = ["404", "405"]

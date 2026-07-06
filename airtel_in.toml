@@ -1,0 +1,170 @@
+[[carrier_id]]
+mcc_mnc = "40402"
+
+[[carrier_id]]
+mcc_mnc = "40403"
+
+[[carrier_id]]
+mcc_mnc = "40410"
+
+[[carrier_id]]
+mcc_mnc = "40416"
+
+[[carrier_id]]
+mcc_mnc = "40431"
+
+[[carrier_id]]
+mcc_mnc = "40440"
+
+[[carrier_id]]
+mcc_mnc = "40445"
+
+[[carrier_id]]
+mcc_mnc = "40449"
+
+[[carrier_id]]
+mcc_mnc = "40470"
+
+[[carrier_id]]
+mcc_mnc = "40490"
+
+[[carrier_id]]
+mcc_mnc = "40492"
+
+[[carrier_id]]
+mcc_mnc = "40493"
+
+[[carrier_id]]
+mcc_mnc = "40494"
+
+[[carrier_id]]
+mcc_mnc = "40495"
+
+[[carrier_id]]
+mcc_mnc = "40496"
+
+[[carrier_id]]
+mcc_mnc = "40497"
+
+[[carrier_id]]
+mcc_mnc = "40498"
+
+[[carrier_id]]
+mcc_mnc = "40551"
+
+[[carrier_id]]
+mcc_mnc = "40552"
+
+[[carrier_id]]
+mcc_mnc = "40553"
+
+[[carrier_id]]
+mcc_mnc = "40554"
+
+[[carrier_id]]
+mcc_mnc = "40555"
+
+[[carrier_id]]
+mcc_mnc = "40556"
+
+[settings]
+version = 77000000011
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "airtelgprs.com"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Airtel MMS"
+value = "airtelmms.com"
+type = ["mms"]
+authtype = 1
+mmsc = "http://100.1.201.171:10021/mmsc"
+mmsc_proxy = "100.1.201.172"
+mmsc_proxy_port = "8799"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+field27 = "1|2|3|8|9|10|13|14|15|18|20"
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+allow_hold_call_during_emergency = false
+auto_retry_failed_wifi_emergency_call = true
+carrier_certificate = ["7170F9C35AC5966C1687372089AF55713DACC17635BAD248370DA67DDF8472B6", "FB9FD5425AB63FA933CF8125B2F3EFC0DF11F0DE0C9C01EF2F2B71A3EBD135A3"]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_name = "airtel"
+carrier_name_override = true
+carrier_nr_availabilities = [1, 2]
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+ims_reasoninfo_mapping = ["510|Call completed elsewhere|1014", "*|Call is dropped due to Wi-Fi signal is degraded|1407"]
+is_ims_conference_size_enforced = true
+non_roaming_operator = ["40402", "40403", "40410", "40416", "40431", "40440", "40445", "40449", "40470", "40490", "40492", "40493", "40494", "40495", "40496", "40497", "40498", "40551", "40552", "40553", "40554", "40555", "40556", "40400"]
+prevent_clir_activation_and_deactivation_code = true
+smart_forwarding_config_component_name = "com.qti.xdivert/com.qti.xdivert.XDivertSetting"
+use_wfc_home_network_mode_in_roaming_network = true
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE#_#MODEL#_#BUILD#"
+
+[settings.config.imsss]
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+minimum_session_expires_timer_sec = 3600
+prack_supported_for_18x = true
+ringing_timer_millis = 35000
+session_expires_timer_sec = 7200
+
+[settings.config.imsvoice.amrnb_payload_description.100]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.101]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [118, 100]
+amrwb_payload_type = [116, 101]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [127]
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 28800
+child_sa_rekey_soft_timer_sec = 28700
+ike_rekey_hard_timer_in_sec = 86400
+ike_rekey_soft_timer_sec = 86300
+ike_remote_id_type = 11
+ike_sa_transforms_reorder = false
+mcc_mncs = ["404-02", "404-03", "404-10", "404-16", "404-31", "404-40", "404-45", "404-49", "404-70", "404-90", "404-92", "404-93", "404-94", "404-95", "404-96", "404-97", "404-98", "405-51", "405-52", "405-53", "405-54", "405-55", "405-56", "404-00"]
+
+[settings.config.qns]
+disallow_iwlan_initial_attach = 2
+sos_transport_type = 2
+support_wfc_during_airplane_mode = false
+support_wfc_in_international_roaming = false
+
+[settings.field8]
+seconds = 1769617073

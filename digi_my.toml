@@ -1,0 +1,90 @@
+[[carrier_id]]
+mcc_mnc = "50210"
+
+[[carrier_id]]
+mcc_mnc = "502143"
+
+[[carrier_id]]
+mcc_mnc = "502146"
+
+[[carrier_id]]
+mcc_mnc = "50216"
+
+[settings]
+version = 77000000007
+
+[[settings.apns.apn]]
+name = "DiGi Internet"
+value = "diginet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "DiGi MMS"
+value = "digimms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms.digi.com.my/servlets/mms"
+mmsc_proxy = "203.92.128.160"
+mmsc_proxy_port = "80"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "hos"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+
+[settings.config]
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+sip_timer_b_millis = 32000
+sip_timer_d_millis = 32500
+sip_timer_f_millis = 32000
+sip_timer_h_millis = 32000
+sip_timer_j_millis = 32000
+sip_timer_t1_millis = 500
+sip_timer_t2_millis = 4000
+sip_timer_t4_millis = 5000
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+conference_subscribe_type = 0
+ringback_timer_millis = 60000
+ringing_timer_millis = 60000
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+evs_codec_attribute_dtx = false
+evs_codec_attribute_dtx_recv = false
+
+[settings.field8]
+seconds = 1769007046

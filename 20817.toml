@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "20817"
+
+[[settings.apns.apn]]
+name = "Legos"
+value = "bornsip"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Legos MMS"
+value = "bornsipmms"
+type = ["mms"]
+mmsc = "http://mms.bornsip.fr:8191"
+
+[settings.config]
+prefer_2g = true

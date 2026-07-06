@@ -1,0 +1,34 @@
+[[carrier_id]]
+mcc_mnc = "44000"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "IMS"
+type = ["ims"]
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+
+[[settings.apns.apn]]
+name = "Application"
+value = "plus.acs.jp"
+type = ["default", "mms", "supl", "hipri"]
+user = "ym"
+password = "ym"
+authtype = 2
+mmsc = "http://mms-s"
+mmsc_proxy = "andmms.plusacs.ne.jp"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+_5g_nr_ssrsrp_thresholds = [-128, -118, -108, -98]
+carrier_force_disable_etws_cmas_test = true
+carrier_volte_available = true
+gsm_dtmf_tone_delay = 300
+ims_dtmf_tone_delay = 300
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 307200
+recipientLimit = -1
+show_4g_for_lte_data_icon = true
+show_blocking_pay_phone_option = true
+volte_replacement_rat = 3

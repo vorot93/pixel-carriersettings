@@ -1,0 +1,11 @@
+[[carrier_id]]
+mcc_mnc = "21404"
+gid2 = "89344"
+
+[settings]
+version = 77000000001
+
+[settings.config]
+
+[settings.field8]
+seconds = 1762942431

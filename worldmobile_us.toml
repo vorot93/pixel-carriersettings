@@ -1,0 +1,68 @@
+[[carrier_id]]
+mcc_mnc = "310420"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "internet"
+value = "internet"
+type = ["default", "ia"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "hos"
+value = "hos"
+type = ["xcap", "mms"]
+mmsc = "http://mms.worldmobile.net"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "tethering"
+value = "tethering"
+type = ["dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+
+[settings.config.imsemergency]
+emergency_qos_precondition_supported = false
+
+[settings.config.imsrtt]
+text_qos_precondition_supported = false
+
+[settings.config.imsss]
+use_csfb_on_xcap_over_ut_failure = false
+ut_as_server_fqdn = "xcap.ims.mnc420.mcc310.pub.3gppnetwork.org"
+
+[settings.config.imsvoice]
+voice_qos_precondition_supported = false
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imsvt]
+video_qos_precondition_supported = false
+
+[settings.field8]
+seconds = 1769617073

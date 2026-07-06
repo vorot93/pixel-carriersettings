@@ -1,0 +1,43 @@
+[[carrier_id]]
+mcc_mnc = "20810"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "12"
+
+[[settings.apns.apn]]
+name = "Coriolis"
+value = "fnetcoriolis"
+type = ["dun"]
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Coriolis WAP"
+value = ""
+type = ["ia"]
+
+[[settings.apns.apn]]
+name = "APN sl2sfr"
+value = "sl2sfr"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS smartphone"
+value = "sl2sfr"
+type = ["mms"]
+mmsc = "http://mms1"
+mmsc_proxy = "10.151.0.1"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "APN websfr"
+value = "websfr"
+type = ["dun"]
+user_editable = false
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+prefer_2g = true
+show_4g_for_lte_data_icon = true

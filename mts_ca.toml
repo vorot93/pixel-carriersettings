@@ -1,0 +1,34 @@
+[[carrier_id]]
+mcc_mnc = "302370"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "2C"
+
+[[settings.apns.apn]]
+name = "MTS Tethering"
+value = "internet.mts"
+type = ["dun"]
+user_visible = false
+
+[[settings.apns.apn]]
+name = "MTS"
+value = "sp.mts"
+type = ["default", "mms", "supl"]
+mmsc = "http://mmsc2.mts.net/"
+mmsc_proxy = "wapgw1.mts.net"
+mmsc_proxy_port = "9201"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+call_forwarding_map_non_number_to_voicemail = true
+hide_lte_plus_data_icon = false
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+maxSubjectLength = 80
+non_roaming_operator = ["302220", "302610", "302660", "302720", "302780"]
+read_only_apn_types = []
+recipientLimit = 20
+smsToMmsTextThreshold = 6

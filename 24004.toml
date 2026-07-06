@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "24004"
+
+[[settings.apns.apn]]
+name = "3"
+value = "data.tre.se"
+type = ["default", "mms", "supl"]
+authtype = 0
+mmsc = "http://mms.tre.se"
+mmsc_proxy = "mmsproxy.tre.se"
+mmsc_proxy_port = "8799"
+protocol = "ipv4v6"
+
+[settings.config]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+show_4g_for_lte_data_icon = true

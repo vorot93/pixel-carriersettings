@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "24010"
+
+[[settings.apns.apn]]
+name = "Spring data"
+value = "data.springmobil.se"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Spring MMS"
+value = "mms.springmobil.se"
+type = ["mms"]
+mmsc = "http://mms.springmobil.se"
+mmsc_proxy = "213.88.184.37"
+mmsc_proxy_port = "8080"
+
+[settings.config]

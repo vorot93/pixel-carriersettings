@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "62150"
+
+[[settings.apns.apn]]
+name = "Glo Direct"
+value = "glosecure"
+type = ["default", "supl"]
+user = "gprs"
+password = "gprs"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Glo MMS"
+value = "glomms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://mms.gloworld.com/mmsc"
+mmsc_proxy = "10.100.82.4"
+mmsc_proxy_port = "8080"
+
+[settings.config]

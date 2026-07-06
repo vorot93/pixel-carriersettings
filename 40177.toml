@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "40177"
+
+[[settings.apns.apn]]
+name = "Tele2 Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Tele2 MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.tele2.kz/mms/wapenc"
+mmsc_proxy = "10.1.26.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]

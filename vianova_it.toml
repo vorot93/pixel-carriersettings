@@ -1,0 +1,43 @@
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "vianova"
+
+[[carrier_id]]
+mcc_mnc = "22249"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "vianova"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Vianova"
+value = "apn.vianova.it"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "IMS"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+
+[settings.config.ims]
+request_uri_type = 1
+
+[settings.field8]
+seconds = 1740560798

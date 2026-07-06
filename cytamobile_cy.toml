@@ -1,0 +1,44 @@
+[[carrier_id]]
+mcc_mnc = "28001"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Cyta"
+value = "cytamobile"
+type = ["default", "mms", "supl"]
+mmsc = "http://mmsc.cyta.com.cy"
+mmsc_proxy = "212.31.96.161"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_default_wfc_ims_mode = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.iwlan]
+child_session_aes_cbc_key_size = [256]
+diffie_hellman_groups = [14]
+ike_session_encryption_aes_cbc_key_size = [256]
+supported_integrity_algorithms = [12]
+
+[settings.field8]
+seconds = 1752617339

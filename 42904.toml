@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "42904"
+
+[[settings.apns.apn]]
+name = "SmartCell"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

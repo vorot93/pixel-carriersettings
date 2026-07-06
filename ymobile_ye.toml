@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "42111"
+
+[[settings.apns.apn]]
+name = "YemenMobile"
+value = "ymdata"
+type = ["default", "supl", "fota", "cbs", "dun"]
+protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "YemenMobile"
+value = "ymims"
+type = ["ims"]
+protocol = "ipv4v6"
+
+[settings.config]

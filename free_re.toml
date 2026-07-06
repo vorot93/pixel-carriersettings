@@ -1,0 +1,46 @@
+[[carrier_id]]
+mcc_mnc = "20815"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F2330002"
+
+[[carrier_id]]
+mcc_mnc = "64703"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F2330002"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Free Re"
+value = "free.re"
+type = ["default", "dun", "supl", "mms"]
+mmsc = "http://mms.free.re"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+maxMessageSize = 614400
+read_only_apn_types = []
+show_4g_for_lte_data_icon = true
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1753205231

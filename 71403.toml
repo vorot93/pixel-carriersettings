@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "71403"
+
+[[settings.apns.apn]]
+name = "WEB Claro"
+value = "web.claro.com.pa"
+type = ["default", "supl"]
+user = "CLAROWEB"
+password = "CLAROWEB"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MMS Claro"
+value = "mms.claro.com.pa"
+type = ["mms"]
+user = "CLAROMMS"
+password = "CLAROMMS"
+authtype = 1
+mmsc = "http://www.claro.com.pa/mms/"
+mmsc_proxy = "10.240.3.129"
+mmsc_proxy_port = "8799"
+
+[settings.config]

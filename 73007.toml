@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "73007"
+
+[[settings.apns.apn]]
+name = "Virgin Internet Movil"
+value = "imovil.virginmobile.cl"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Virgin MMS"
+value = "mmsc.virginmobile.cl"
+type = ["mms"]
+mmsc = "http://mms.virginmobile.cl:1981/mms"
+
+[settings.config]
+enableGroupMms = false
+enabledMMS = false
+groupChatDefaultsToMMS = false
+non_roaming_operator = ["73002"]

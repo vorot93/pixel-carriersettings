@@ -1,0 +1,70 @@
+[[carrier_id]]
+mcc_mnc = "34001"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "Orange World"
+value = "orangeweb"
+type = ["default", "supl"]
+protocol = "ipv6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Orange MMS"
+value = "orangewap"
+type = ["mms"]
+user = "orange"
+password = "orange"
+authtype = 1
+mmsc = "http://193.251.160.246/servlets/mms"
+mmsc_proxy = "10.0.0.10"
+mmsc_proxy_port = "8082"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_certificate = ["b67affcda89e3193b1595036d7c6cdbe22be5ca24c9f6cf93fc6b48f91d7310d:com.orange.caraibe.orangeetmoicaraibe,com.orange.caraibe.soshcaraibe,com.orange.update,com.orange.phone"]
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+config_plans_package_override = "com.orange.caraibe.orangeetmoicaraibe"
+hide_enhanced_4g_lte = true
+non_roaming_operator = ["20801", "20815"]
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ims_user_agent = "PRD-IR92/15 #MANUFACTURE#/#MODEL#-#BUILD# device-type/#TYPE# mno-custom/#MCCMNC#"
+
+[settings.config.imsemergency]
+emergency_scan_timer_sec = 5
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.amrnb_payload_description.101]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.99]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [100, 101]
+amrwb_payload_type = [98, 99]
+dtmfnb_payload_type = [106]
+dtmfwb_payload_type = [105]
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+
+[settings.field8]
+seconds = 1730898298

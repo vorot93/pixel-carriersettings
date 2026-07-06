@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "25001"
+
+[[settings.apns.apn]]
+name = "MTS Internet"
+value = "internet.mts.ru"
+type = ["default", "supl"]
+user = "mts"
+password = "mts"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MTS MMS"
+value = "mms.mts.ru"
+type = ["mms"]
+user = "mts"
+password = "mts"
+authtype = 1
+mmsc = "http://mmsc"
+mmsc_proxy = "192.168.192.192"
+mmsc_proxy_port = "8080"
+
+[settings.config]

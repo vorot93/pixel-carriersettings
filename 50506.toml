@@ -1,0 +1,13 @@
+[[carrier_id]]
+mcc_mnc = "50506"
+
+[[settings.apns.apn]]
+name = "Planet 3"
+value = "3services"
+type = []
+authtype = 0
+mmsc = "http://mmsc.three.net.au:10021/mmsc"
+mmsc_proxy = "10.176.57.25"
+mmsc_proxy_port = "8799"
+
+[settings.config]

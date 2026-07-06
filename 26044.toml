@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "26044"
+
+[[settings.apns.apn]]
+name = "Rebtel"
+value = "rebtel"
+type = ["default", "mms", "supl"]
+mmsc = "http://mmsc.rebtel.com"
+mmsc_proxy = "185.114.248.80"
+mmsc_proxy_port = "8080"
+
+[settings.config]

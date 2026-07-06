@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "21803"
+
+[[settings.apns.apn]]
+name = "ERONET WEB"
+value = "web.eronet.ba"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "ERONET START"
+value = "gprs.eronet.ba"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "MMS-ERONET"
+value = "mms.eronet.ba"
+type = ["mms"]
+mmsc = "http://mms.gprs.eronet.ba/mms/wapenc"
+mmsc_proxy = "10.12.3.11"
+mmsc_proxy_port = "8080"
+
+[settings.config]

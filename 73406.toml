@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "73406"
+
+[[settings.apns.apn]]
+name = "MODEM"
+value = "int.movilnet.com.ve"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "mm.movilnet.com.ve"
+type = ["mms"]
+mmsc = "http://mms2.movilnet.com.ve/servlets/mms"
+mmsc_proxy = "192.168.16.12"
+mmsc_proxy_port = "8080"
+
+[settings.config]

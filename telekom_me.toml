@@ -1,0 +1,65 @@
+[[carrier_id]]
+mcc_mnc = "29702"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "T-Mobile ME Internet"
+value = "tmcg-4g"
+type = ["default", "supl"]
+user = "38267"
+password = "38267"
+authtype = 1
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["xcap"]
+authtype = 1
+protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+display_hd_audio_property = false
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# - #MODEL# - #BUILD#"
+keep_pdn_up_in_no_vops = true
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+emergency_registration_timer_millis = 5000
+
+[settings.config.imsss]
+ut_iptype_roaming = 0
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+mo_call_request_timeout_millis = 0
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+
+[settings.field8]
+seconds = 1756276532

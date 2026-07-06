@@ -1,0 +1,38 @@
+[[carrier_id]]
+mcc_mnc = "20838"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Lebara"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Lebara"
+value = "fr.lebara.mobi"
+type = ["default", "dun", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Lebara IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+
+[settings.field8]
+seconds = 1739493502

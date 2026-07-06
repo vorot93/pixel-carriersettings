@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "28413"
+
+[[settings.apns.apn]]
+name = "MAX TELECOM"
+value = "apn.maxtelecom.bg"
+type = ["default", "supl"]
+
+[settings.config]

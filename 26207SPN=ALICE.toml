@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "26207"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "ALICE"
+
+[[settings.apns.apn]]
+name = "Alice"
+value = "internet.partner1"
+type = []
+authtype = 0
+mmsc = "http://10.81.0.7:8002"
+mmsc_proxy = "82.113.100.41"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+default_vm_number = "+491793000333"
+hide_ims_apn = true
+hide_lte_plus_data_icon = false
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+prefer_2g = true
+show_4g_for_lte_data_icon = true

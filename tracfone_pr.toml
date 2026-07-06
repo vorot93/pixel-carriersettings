@@ -1,0 +1,33 @@
+[[carrier_id]]
+mcc_mnc = "330110"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "DDFF"
+
+[[carrier_id]]
+mcc_mnc = "330110"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "DEFF"
+
+[[settings.apns.apn]]
+name = "TRACFONE"
+value = "wap.tracfone"
+type = ["default", "supl", "hipri", "fota"]
+
+[[settings.apns.apn]]
+name = "TRACFONE MMS"
+value = "wap.tracfone"
+type = ["mms"]
+mmsc = "http://mmsg.claropr.com:10021/mmsc"
+mmsc_proxy = "10.50.38.3"
+mmsc_proxy_port = "8799"
+
+[settings.config]
+enableGroupMms = false
+maxMessageSize = 1048576
+maxSubjectLength = 80
+recipientLimit = 20
+smsToMmsTextThreshold = 6

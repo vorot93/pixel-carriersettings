@@ -1,0 +1,27 @@
+[[carrier_id]]
+mcc_mnc = "25050"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "FA3207"
+
+[[settings.apns.apn]]
+name = "Sberbank-Telecom Internet"
+value = "internet.sberbank-tele.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Sberbank-Telecom MMS"
+value = "mms.sberbank-tele.com"
+type = ["mms"]
+mmsc = "http://mmsc"
+mmsc_proxy = "10.77.36.100"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Sberbank-Telecom IMS"
+value = "ims"
+type = ["ims"]
+protocol = "ipv4v6"
+
+[settings.config]

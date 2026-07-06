@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "20601"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "52"
+
+[[carrier_id]]
+mcc_mnc = "20823"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "52"
+
+[[settings.apns.apn]]
+name = "Virgin mobile"
+value = "virgin-mobile.fr"
+type = ["default", "supl"]
+proxy = "10.6.10.1"
+port = "8080"
+
+[[settings.apns.apn]]
+name = "VM MMS"
+value = "virgin-mobile.fr"
+type = ["mms"]
+mmsc = "http://virginmms.fr"
+mmsc_proxy = "10.6.10.1"
+mmsc_proxy_port = "8080"
+
+[settings.config]
+prefer_2g = true

@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "24801"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "248010x2"
+
+[[carrier_id]]
+mcc_mnc = "24801"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "248010x3"
+
+[[settings.apns.apn]]
+name = "Send"
+value = "send.ee"
+type = ["default", "mms", "supl"]
+mmsc = "http://mms.emt.ee/servlets/mms"
+mmsc_proxy = "217.71.32.82"
+mmsc_proxy_port = "8080"
+
+[settings.config]

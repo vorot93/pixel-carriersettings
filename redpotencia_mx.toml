@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Redpotencia"
+
+[[settings.apns.apn]]
+name = "Redpotencia"
+value = "internet.edilar.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Redpotencia"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

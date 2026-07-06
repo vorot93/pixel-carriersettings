@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "732103"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "MOVIL EXITO"
+
+[[carrier_id]]
+mcc_mnc = "732111"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "MOVIL EXITO"
+
+[[settings.apns.apn]]
+name = "Internet Éxito"
+value = "movilexito.net.co"
+type = ["default", "dun"]
+authtype = 1
+user_editable = false
+
+[settings.config]

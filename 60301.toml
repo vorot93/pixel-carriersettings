@@ -1,0 +1,33 @@
+[[carrier_id]]
+mcc_mnc = "60301"
+
+[[settings.apns.apn]]
+name = "mobilis wap"
+value = "wap"
+type = ["default", "supl"]
+proxy = "172.25.49.2"
+port = "8080"
+user = "wap"
+password = "wap"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Mobilis internet"
+value = "internet"
+type = ["default", "supl"]
+user = "internet"
+password = "internet"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Mobilis mms"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://172.25.49.9/servlets/mms"
+mmsc_proxy = "172.25.49.2"
+mmsc_proxy_port = "8080"
+
+[settings.config]

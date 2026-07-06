@@ -1,0 +1,37 @@
+[[carrier_id]]
+mcc_mnc = "51011"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Internet"
+value = "internet"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "XL-MMS"
+value = "www.xlmms.net"
+type = ["mms"]
+user = "xlgprs"
+password = "proxl"
+authtype = 1
+mmsc = "http://mmc.xl.net.id/servlets/mms"
+mmsc_proxy = "202.152.240.50"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1724979979

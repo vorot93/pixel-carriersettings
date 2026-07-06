@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "43405"
+
+[[settings.apns.apn]]
+name = "UCELL Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "UCELL MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mmsc:8002/"
+mmsc_proxy = "10.64.164.10"
+mmsc_proxy_port = "8080"
+
+[settings.config]

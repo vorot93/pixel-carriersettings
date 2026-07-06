@@ -1,0 +1,40 @@
+[[carrier_id]]
+mcc_mnc = "732103"
+
+[[carrier_id]]
+mcc_mnc = "732111"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "TIGO WEB"
+value = "web.colombiamovil.com.co"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "TIGO Multimedia"
+value = "mms.colombiamovil.com.co"
+type = ["mms"]
+user = "mms-cm1900"
+password = "mms-cm1900"
+authtype = 1
+mmsc = "http://mms.ola.com.co"
+mmsc_proxy = "190.102.206.48"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "TIGO IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1732242357

@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "74402"
+
+[[settings.apns.apn]]
+name = "Claro PY"
+value = "igprs.claro.com.py"
+type = ["default", "supl"]
+user = "ctigprs"
+password = "ctigprs999"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MMS GPRS PY"
+value = "mms.ctimovil.com.py"
+type = ["mms"]
+user = "ctimms"
+password = "ctimms999"
+authtype = 1
+mmsc = "http://mms.ctimovil.com.py"
+mmsc_proxy = "170.51.255.240"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,15 @@
+[[carrier_id]]
+mcc_mnc = "21425"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Lycamobile"
+
+[[settings.apns.apn]]
+name = "lycamobile"
+value = "data.lycamobile.es"
+type = ["default", "supl"]
+authtype = 1
+
+[settings.config]
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]

@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "73603"
+
+[[settings.apns.apn]]
+name = "WAPTIGO"
+value = "wap.tigo.bo"
+type = ["default", "supl"]
+proxy = "172.25.100.8"
+port = "8080"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "MMSTIGO"
+value = "mms.tigo.bo"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms"
+mmsc_proxy = "172.25.100.8"
+mmsc_proxy_port = "8080"
+
+[settings.config]

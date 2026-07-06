@@ -1,0 +1,87 @@
+[[carrier_id]]
+mcc_mnc = "20827"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Coriolis"
+value = "coriolis"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Coriolis IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Coriolis MMS"
+value = "mmscoriolis"
+type = ["mms"]
+mmsc = "http://mms.coriolis.fr"
+mmsc_proxy = "10.12.0.1"
+mmsc_proxy_port = "9028"
+
+[settings.config]
+carrier_cross_sim_ims_available = false
+editable_wfc_mode = false
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+non_roaming_operator = ["20801", "20810"]
+prefer_2g = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+sim_country_iso_override = "fr"
+
+[settings.config.ims]
+ipsec_encryption_algorithms = [0]
+ipv4_sip_mtu_size_cellular = 1300
+ipv6_sip_mtu_size_cellular = 1300
+registration_event_package_supported = false
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+conference_factory_uri = "mmtel@conf-factory.ims.mnc027.mcc208.3gppnetwork.org"
+conference_subscribe_type = 0
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [102]
+amrwb_payload_type = [104]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [127]
+
+[settings.config.imsvoice.evs_payload_description.127]
+codec_attribute_cmr = 3
+evs_codec_attribute_bitrate = [3, 6]
+evs_codec_attribute_ch_aw_recv = 255
+evs_codec_attribute_hf_only = 1
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 64900
+child_sa_rekey_soft_timer_sec = 64800
+diffie_hellman_groups = [14]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc027.mcc208.pub.3gppnetwork.org"
+ike_rekey_hard_timer_in_sec = 64900
+ike_rekey_soft_timer_sec = 64800
+ike_remote_id_type = 11
+
+[settings.field8]
+seconds = 1736946312

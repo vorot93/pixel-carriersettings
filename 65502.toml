@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "65502"
+
+[[settings.apns.apn]]
+name = "Telkom Mobile Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Telkom Mobile MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.8ta.com:38090/was"
+mmsc_proxy = "41.151.254.162"
+mmsc_proxy_port = "8080"
+
+[settings.config]

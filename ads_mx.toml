@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "MEXFON"
+
+[[settings.apns.apn]]
+name = "Ads"
+value = "internet.mexfon.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Ads"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

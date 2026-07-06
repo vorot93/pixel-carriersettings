@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "338070"
+
+[[settings.apns.apn]]
+name = "Claro Web"
+value = "internet.ideasclaro.com.jm"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Claro MMS"
+value = "mms.ideasclaro.com.jm"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms.ideasclaro.com.jm/mms/wapenc"
+mmsc_proxy = "190.80.147.118"
+mmsc_proxy_port = "8080"
+
+[settings.config]

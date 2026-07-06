@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "20630"
+
+[[settings.apns.apn]]
+name = "Unleashed"
+value = "web.be"
+type = ["default", "supl"]
+
+[settings.config]

@@ -1,0 +1,15 @@
+[[carrier_id]]
+mcc_mnc = "52505"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "525053095"
+
+[[settings.apns.apn]]
+name = "GT Roaming"
+value = "gtnet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

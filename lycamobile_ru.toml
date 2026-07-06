@@ -1,0 +1,10 @@
+[[carrier_id]]
+mcc_mnc = "25013"
+
+[settings]
+version = 77000000001
+
+[settings.config]
+
+[settings.field8]
+seconds = 1762942431

@@ -1,0 +1,83 @@
+[[carrier_id]]
+mcc_mnc = "42402"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "Data"
+value = "etisalat.ae"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "etisalat.ae"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms/servlets/mms"
+mmsc_proxy = "10.12.0.32"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Etisalat XCAP"
+value = "ut"
+type = ["xcap"]
+user_visible = false
+
+[settings.config]
+additional_settings_caller_id_visibility = false
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+editable_wfc_mode = false
+hide_enhanced_4g_lte = true
+prefer_3g_visibility = false
+wfc_spn_format_idx = 4
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc002.mcc424.pub.3gppnetwork.org"
+bsf_server_port = 8088
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = [5]
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc002.mcc424.pub.3gppnetwork.org"
+ut_as_server_port = 8080
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+conference_factory_uri = "atsconf@ims.mnc002.mcc424.3gppnetwork.org"
+
+[settings.config.imsvoice.evs_payload_description.127]
+codec_attribute_cmr = 3
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.iwlan]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.epc.mnc002.mcc424.etisalat.ae"
+
+[settings.field8]
+seconds = 1755076382

@@ -1,0 +1,112 @@
+[[carrier_id]]
+mcc_mnc = "20820"
+
+[[carrier_id]]
+mcc_mnc = "20821"
+
+[[carrier_id]]
+mcc_mnc = "20888"
+
+[settings]
+version = 77000000008
+
+[[settings.apns.apn]]
+name = "Bouygues Telecom"
+value = "mmsbouygtel.com"
+type = ["default", "supl", "mms"]
+authtype = 1
+mmsc = "http://mms.bouyguestelecom.fr/mms/wapenc"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Bouygues XCAP"
+value = "mmsbouygtel.com"
+type = ["xcap"]
+authtype = 1
+protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Bouygues Telecom IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+field27 = "1|2|3|8|9|10|13|14|15|18|20"
+
+[settings.config]
+carrier_certificate = ["A0058F6467628EA2031C4C9D8519ABECB2671F6A1752B15A89369CDCB8D2952B"]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_nr_availabilities = [1]
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+ims_conference_size_limit = 2
+is_ims_conference_size_enforced = true
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 614400
+prefer_3g_visibility = false
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+supportHttpCharsetHeader = false
+
+[settings.config.bsf]
+bsf_server_port = 4001
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# #MODEL# Android #AV# #BUILD# EU00745"
+ipv4_sip_mtu_size_cellular = 1354
+ipv6_sip_mtu_size_cellular = 1354
+request_uri_type = 1
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_as_server_port = 4000
+ut_requires_ims_registration = true
+ut_supported_when_roaming = false
+xcap_over_ut_supported_rats = [6, 3, 1, 2]
+
+[settings.config.imsvoice]
+conference_subscribe_type = 0
+minimum_session_expires_timer_sec = 900
+ringback_timer_millis = 40000
+ringing_timer_millis = 40000
+session_refresher_type = 2
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 2
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 7400
+child_sa_rekey_soft_timer_sec = 7300
+diffie_hellman_groups = [14]
+ike_rekey_hard_timer_in_sec = 14800
+ike_rekey_soft_timer_sec = 14700
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9000", "10000"],"RetryArray": ["0", "0"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["10500"],"RetryArray": ["3600", "-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["11002", "11003"],"RetryArray": [],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}]}]'
+
+[settings.config.qns]
+idle_eutran_rsrp = [-114, -120]
+idle_geran_rssi = [-60, -70]
+idle_utran_rscp = [-90, -100]
+idle_wifi_rssi = [-64, -72]
+ims_cellular_allowed_rat = ["LTE", "NR", "3G", "2G"]
+mms_rat_preference = 0
+mms_transport_type = 0
+voice_eutran_rsrp = [-114, -120]
+voice_geran_rssi = [-60, -70]
+voice_utran_rscp = [-90, -100]
+voice_wifi_rssi = [-64, -72]
+xcap_transport_type = 0
+
+[settings.field8]
+seconds = 1770215858

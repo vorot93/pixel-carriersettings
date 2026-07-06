@@ -1,0 +1,43 @@
+[[carrier_id]]
+mcc_mnc = "28022"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Cablenet"
+value = "cablenet"
+type = ["default", "supl", "hipri"]
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "xcap"
+value = "hos"
+type = ["xcap"]
+bearer_bitmask = "1|2|3|9|10|11|13|14|15|20"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+xcap_apn_name = "hos"
+
+[settings.config.imsss]
+ut_iptype_home = 0
+ut_iptype_roaming = 0
+ut_requires_ims_registration = true
+ut_server_based_services = [1, 2, 3, 4, 5, 6, 12, 17, 18, 19, 20, 21, 13, 14, 15, 16, 8, 11, 9]
+xcap_over_ut_supported_rats = [6, 3, 1, 2]
+
+[settings.field8]
+seconds = 1769007046

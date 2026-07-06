@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "22872"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "SolNet"
+
+[settings]
+version = 77000000003
+
+[[settings.apns.apn]]
+name = "SolNet Internet"
+value = "solnet"
+type = ["default", "ia", "supl", "dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+read_only_apn_types = []
+
+[settings.field8]
+seconds = 1770819167

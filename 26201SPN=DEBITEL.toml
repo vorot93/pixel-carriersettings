@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "26201"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "DEBITEL"
+
+[[settings.apns.apn]]
+name = "Telekom Internet"
+value = "internet.telekom"
+type = []
+user = "telekom"
+password = "telekom"
+authtype = 1
+mmsc = "http://mms.t-mobile.de/servlets/mms"
+mmsc_proxy = "172.28.23.131"
+mmsc_proxy_port = "8008"
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+default_vm_number = "3311"
+display_hd_audio_property = false
+editable_wfc_mode = false
+hide_lte_plus_data_icon = false
+prefer_2g = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1

@@ -1,0 +1,5 @@
+[[carrier_id]]
+mcc_mnc = "46005"
+
+[settings.config]
+show_apn_setting_cdma = false

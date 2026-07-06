@@ -1,0 +1,11 @@
+[[carrier_id]]
+mcc_mnc = "64122"
+
+[[settings.apns.apn]]
+name = "Warid Telecom Internet UG"
+value = "web.waridtel.co.ug"
+type = ["default"]
+proxy = "10.5.27.80"
+port = "8080"
+
+[settings.config]

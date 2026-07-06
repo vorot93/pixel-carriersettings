@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "70800"
+
+[[settings.apns.apn]]
+name = "Internet Claro"
+value = "internet.ideasclaro"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS Claro"
+value = "mms.ideasclaro"
+type = ["mms"]
+mmsc = "http://10.6.32.27/servlets/mms"
+mmsc_proxy = "10.6.32.2"
+mmsc_proxy_port = "8080"
+
+[settings.config]

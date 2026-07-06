@@ -1,0 +1,29 @@
+[[carrier_id]]
+mcc_mnc = "64702"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F004"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Only Internet"
+value = "internet"
+type = ["default", "dun", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Only MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mmsc.telcooi.re:9091"
+
+[settings.config]
+maxMessageSize = 614400
+read_only_apn_types = []
+
+[settings.field8]
+seconds = 1769617073

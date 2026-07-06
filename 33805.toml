@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "33805"
+
+[[carrier_id]]
+mcc_mnc = "338050"
+
+[[settings.apns.apn]]
+name = "INTERNET Digicel"
+value = "web"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS Digicel"
+value = "wap"
+type = ["mms"]
+mmsc = "http://mms.digicelgroup.com"
+mmsc_proxy = "172.16.7.12"
+mmsc_proxy_port = "8080"
+
+[settings.config]

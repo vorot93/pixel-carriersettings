@@ -1,0 +1,14 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[[settings.apns.apn]]
+name = "Altan"
+value = "internet.altan"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Altan"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

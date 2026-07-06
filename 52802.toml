@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "52802"
+
+[[settings.apns.apn]]
+name = "B-Mobile"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

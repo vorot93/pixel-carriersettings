@@ -1,0 +1,39 @@
+[[carrier_id]]
+mcc_mnc = "45201"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Mobi-wap-gprs 2"
+value = "m-wap"
+type = ["default", "supl"]
+user = "mms"
+password = "mms"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Mobi-gprs-mms"
+value = "m-i090"
+type = ["mms"]
+user = "mms"
+password = "mms"
+authtype = 1
+mmsc = "http://203.162.21.114/mmsc"
+mmsc_proxy = "203.162.21.114"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1724979979

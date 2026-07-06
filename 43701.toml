@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "43701"
+
+[[settings.apns.apn]]
+name = "Beeline"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

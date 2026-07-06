@@ -1,0 +1,94 @@
+[[carrier_id]]
+mcc_mnc = "405025"
+
+[[carrier_id]]
+mcc_mnc = "405026"
+
+[[carrier_id]]
+mcc_mnc = "405027"
+
+[[carrier_id]]
+mcc_mnc = "405028"
+
+[[carrier_id]]
+mcc_mnc = "405029"
+
+[[carrier_id]]
+mcc_mnc = "405030"
+
+[[carrier_id]]
+mcc_mnc = "405031"
+
+[[carrier_id]]
+mcc_mnc = "405032"
+
+[[carrier_id]]
+mcc_mnc = "405033"
+
+[[carrier_id]]
+mcc_mnc = "405034"
+
+[[carrier_id]]
+mcc_mnc = "405035"
+
+[[carrier_id]]
+mcc_mnc = "405036"
+
+[[carrier_id]]
+mcc_mnc = "405037"
+
+[[carrier_id]]
+mcc_mnc = "405038"
+
+[[carrier_id]]
+mcc_mnc = "405039"
+
+[[carrier_id]]
+mcc_mnc = "405040"
+
+[[carrier_id]]
+mcc_mnc = "405041"
+
+[[carrier_id]]
+mcc_mnc = "405042"
+
+[[carrier_id]]
+mcc_mnc = "405043"
+
+[[carrier_id]]
+mcc_mnc = "405044"
+
+[[carrier_id]]
+mcc_mnc = "405045"
+
+[[carrier_id]]
+mcc_mnc = "405046"
+
+[[carrier_id]]
+mcc_mnc = "405047"
+
+[[settings.apns.apn]]
+name = "TATA DOCOMO INTERNET"
+value = "TATA.DOCOMO.INTERNET"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "TATA DOCOMO DIVE-IN"
+value = "TATA.DOCOMO.DIVE.IN"
+type = ["default", "supl"]
+proxy = "10.124.94.7"
+port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "TATA DOCOMO MMS"
+value = "TATA.DOCOMO.MMS"
+type = ["mms"]
+mmsc = "http://mmsc/"
+mmsc_proxy = "10.124.26.94"
+mmsc_proxy_port = "8799"
+protocol = "ipv4v6"
+
+[settings.config]
+roaming_operator = ["404", "405"]

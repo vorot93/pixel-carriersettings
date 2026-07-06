@@ -1,0 +1,16 @@
+[[carrier_id]]
+mcc_mnc = "311500"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "24-7 WIRELESS"
+
+[[settings.apns.apn]]
+name = "24-7 WAP"
+value = "wap"
+type = []
+mmsc = "http://mmsc.ctc.csky.us:6672"
+mmsc_proxy = "9.4.229.46"
+mmsc_proxy_port = "9201"
+
+[settings.config]

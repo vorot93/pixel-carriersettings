@@ -1,0 +1,58 @@
+[[carrier_id]]
+mcc_mnc = "28401"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Mtel Internet"
+value = "wap-gprs.mtel.bg"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MTel MMS"
+value = "mms-gprs.mtel.bg"
+type = ["mms"]
+user = "mtel"
+password = "mtel"
+mmsc = "http://mmsc/"
+mmsc_proxy = "10.150.0.33"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+wfc_spn_format_idx = 1
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.iwlan]
+diffie_hellman_groups = [5, 14]
+
+[settings.field8]
+seconds = 1725429790

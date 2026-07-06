@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "70602"
+
+[[settings.apns.apn]]
+name = "Digicel Internet"
+value = "web.digicelsv.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "MMS"
+value = "wap.digicelsv.com"
+type = ["mms"]
+mmsc = "http://mmc.digiceljamaica.com/servlets/mms"
+mmsc_proxy = "172.26.5.12"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,12 @@
+[[carrier_id]]
+mcc_mnc = "28020"
+
+[[settings.apns.apn]]
+name = "Primetel"
+value = "ip.primetel"
+type = ["default", "mms", "supl"]
+mmsc = "http://mms.primetel"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

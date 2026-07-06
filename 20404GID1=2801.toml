@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "20404"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "2801"
+
+[[settings.apns.apn]]
+name = "Vodafone US"
+value = "us.vodafone.com"
+type = ["default", "mms", "supl", "dun"]
+mmsc = "http://wholesale.mmsmvno.com/mms/wapenc"
+protocol = "ipv6"
+user_editable = false
+
+[settings.config]
+default_vm_number = "+31654501233"
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+show_4g_for_lte_data_icon = true

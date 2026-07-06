@@ -1,0 +1,33 @@
+[[carrier_id]]
+mcc_mnc = "37202"
+
+[[settings.apns.apn]]
+name = "Haiti:Digicel:Internet"
+value = "wap.digicelha.com"
+type = ["default"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Haiti:Digicel:Mms"
+value = "wap.digicelha.com"
+type = ["mms"]
+user = "wapha"
+password = "wap01ha"
+authtype = 1
+mmsc = "http://mmc.digicelhaiti.com/servlets/mms"
+mmsc_proxy = "172.20.200.12"
+mmsc_proxy_port = "9201"
+
+[[settings.apns.apn]]
+name = "Haiti:Digicel:Modem"
+value = "wap.digicelha.com"
+type = ["dun"]
+proxy = "172.20.200.12"
+port = "8080"
+user = "wapha"
+password = "wap01ha"
+authtype = 1
+mmsc = "http://wapdigicel.com"
+user_editable = false
+
+[settings.config]

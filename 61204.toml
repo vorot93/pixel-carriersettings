@@ -1,0 +1,13 @@
+[[carrier_id]]
+mcc_mnc = "61204"
+
+[[settings.apns.apn]]
+name = "Koz Internet CI"
+value = "gprs.koz.ci"
+type = ["default"]
+proxy = "10.20.3.10"
+port = "8080"
+user = "web"
+password = "web"
+
+[settings.config]

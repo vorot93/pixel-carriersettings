@@ -1,0 +1,17 @@
+[[carrier_id]]
+mcc_mnc = "310470"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "NTELOS"
+
+[[settings.apns.apn]]
+name = "nTelos Wireless"
+value = "CdmaNai"
+type = ["mms"]
+bearer_bitmask = "6"
+mmsc = "http://mms.ntelospcs.net/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]

@@ -1,0 +1,15 @@
+[[carrier_id]]
+mcc_mnc = "64114"
+
+[[settings.apns.apn]]
+name = "Orange Internet UG"
+value = "orange.ug"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Orange MMS"
+value = "orangemms"
+type = ["mms"]
+mmsc = "http://mms/"
+
+[settings.config]

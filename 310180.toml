@@ -1,0 +1,22 @@
+[[carrier_id]]
+mcc_mnc = "310180"
+
+[[settings.apns.apn]]
+name = "WCW-INTERNET"
+value = "internet.wcc.net"
+type = ["default"]
+user = "13257630000"
+password = "mmsc"
+
+[[settings.apns.apn]]
+name = "WCW-MMS"
+value = "mms.wcc.net"
+type = ["mms"]
+user = "13257630000"
+password = "mmsc"
+authtype = 3
+mmsc = "http://mms.wcc.net"
+mmsc_proxy = "209.55.70.246"
+mmsc_proxy_port = "80"
+
+[settings.config]

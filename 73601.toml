@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "73601"
+
+[[settings.apns.apn]]
+name = "VIVA3G"
+value = "internet.nuevatel.com"
+type = ["default", "supl"]
+proxy = "192.168.101.4"
+port = "3128"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "VIVAMMS"
+value = "mms.nuevatel.com"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mmsgw.nuevatel.com:1981"
+mmsc_proxy = "192.168.101.4"
+mmsc_proxy_port = "3128"
+
+[settings.config]

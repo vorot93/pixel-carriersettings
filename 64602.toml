@@ -1,0 +1,32 @@
+[[carrier_id]]
+mcc_mnc = "64602"
+
+[[settings.apns.apn]]
+name = "Orange MG Internet"
+value = "orangenet"
+type = ["default", "supl", "dun", "fota"]
+authtype = 0
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Orange MG MMS"
+value = "orangemms"
+type = ["mms"]
+user = "mms"
+password = "orange"
+mmsc = "http://10.152.10.70.38090"
+mmsc_proxy = "10.150.0.115"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Orange World MG"
+value = "orangeworld"
+type = ["default"]
+proxy = "10.150.0.115"
+port = "8080"
+user = "world"
+password = "orange"
+
+[settings.config]
+carrier_certificate = ["b67affcda89e3193b1595036d7c6cdbe22be5ca24c9f6cf93fc6b48f91d7310d:com.orange.phone.mea,com.orange.myorange.omg,com.orange.update"]
+config_plans_package_override = "com.orange.myorange.omg"

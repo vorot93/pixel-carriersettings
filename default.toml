@@ -1,0 +1,141 @@
+[[carrier_id]]
+mcc_mnc = "000000"
+
+[settings]
+version = 77000000010
+
+[settings.config]
+_5g_nr_ssrsrp_thresholds = [-128, -118, -108, -98]
+carrier_cross_sim_ims_available = true
+carrier_data_call_retry_network_requested_max_count = 20
+carrier_eri_file_name = "eri.xml"
+carrier_nr_availabilities = [1]
+carrier_promote_wfc_on_call_fail = true
+carrier_volte_tty_supported = false
+cdma_3waycall_flash_delay = 0
+cdma_enhanced_roaming_indicator_for_home_network = [1]
+cdma_home_registered_plmn_name = ""
+cdma_home_registered_plmn_name_override = false
+config_ims_rcs_package_override = "com.google.android.ims"
+delay_ims_tear_down_until_call_end = true
+disable_cdma_activation_code = false
+emergency_sms_mode_timer_ms = 300000
+force_imei = false
+ims_reasoninfo_mapping = ["510|Call completed elsewhere|1014"]
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+show_apn_setting_cdma = false
+show_cdma_choices = false
+show_iccid_in_sim_status = true
+support_cdma_1x_voice_calls = false
+support_swap_after_merge = true
+support_tdscdma = false
+support_tdscdma_roaming_networks = []
+telephony_data_setup_retry_rules = ["capabilities=eims, retry_interval=1000, maximum_retries=20", "permanent_fail_causes=8|27|28|29|30|32|33|35|50|51|111|-5|-6|65537|65538|-3|65543|65547|2252|2253|2254, retry_interval=2500", "capabilities=mms|supl|cbs|rcs, retry_interval=2000", "capabilities=internet|enterprise|dun|ims|fota|xcap|mcx|prioritize_bandwidth|prioritize_latency, retry_interval=2500|3000|5000|10000|15000|20000|40000|60000|120000|240000|600000|1200000|1800000, maximum_retries=20"]
+use_usim = false
+world_mode_enabled = false
+
+[settings.config.gps]
+a_glonass_pos_protocol_select = "6"
+enable_active_sim_emergency_supl = false
+longterm_psds_server_1 = "https://1.ssiloc.com/p4/42F3"
+lpp_profile = "2"
+nfw_proxy_apps = "com.google.android.carrierlocation"
+supl_ver = "0x20002"
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE#_#MODEL#_Android #AV#_#BUILD#"
+supported_rats = [3, 5, 6]
+
+[settings.config.imsemergency]
+emergency_registration_timer_millis = 0
+
+[settings.config.imsrtt]
+text_rr_bandwidth_bps = 51
+text_rs_bandwidth_bps = 153
+
+[settings.config.imssms]
+sms_max_retry_over_ims_count = 0
+sms_over_ims_supported_rats = [3, 6, 5]
+
+[settings.config.imsss]
+terminal_based_call_waiting_sync_type = 0
+ut_server_based_services = [1, 2, 3, 4, 5, 6, 7, 12, 17, 18, 19, 20, 21, 13, 14, 15, 16, 8, 11, 9]
+ut_terminal_based_services = [0, 10]
+xcap_over_ut_supported_rats = [3, 6, 5, 1, 2]
+
+[settings.config.imsvoice]
+audio_inactivity_call_end_reasons = [0, 2, 4]
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.105]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+evs_payload_type = [127]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [3, 6]
+
+[settings.config.imsvt]
+video_rtcp_inactivity_timer_millis = 0
+video_rtp_inactivity_timer_millis = 19000
+
+[settings.config.imswfc]
+pidf_short_code = []
+
+[settings.config.iwlan]
+handover_to_wwan_release_delay_second = 5
+ike_sa_transforms_reorder = true
+supports_child_session_multiple_sa_proposals = true
+supports_ike_session_multiple_sa_proposals = true
+underlying_network_validation_events = [0, 1, 2]
+update_n1_mode_on_ui_change = false
+
+[settings.config.qns]
+block_ipv6_only_wifi = false
+enable_minimum_guarding_timer_after_connected_apn = ["ims"]
+ho_restrict_time_with_low_rtp_quality = [60000, 60000]
+idle_eutran_rsrp = [-115, -120]
+idle_geran_rssi = [-100, -105]
+idle_ngran_ssrsrp = [-110, -115]
+idle_utran_rscp = [-105, -115]
+idle_wifi_rssi = [-75, -80]
+iwlan_network_validation_by_making_ims_call_rate_limit_period_millis = 120000
+iwlan_network_validation_condition = [0, 1, 2]
+iwlan_underlying_network_validation_condition = [0, 1]
+minimum_handover_guarding_timer_ms = 3000
+mms_rat_preference = 3
+mms_transport_type = 2
+network_validation_fail_restricted_time = [30000, 0]
+support_wfc_recovery = true
+video_eutran_rsrp = [-115, -120]
+video_geran_rssi = [-100, -105]
+video_ngran_ssrsrp = [-110, -115]
+video_utran_rscp = [-105, -115]
+video_wifi_rssi = [-75, -80]
+voice_eutran_rsrp = [-115, -120]
+voice_geran_rssi = [-100, -105]
+voice_ngran_ssrsrp = [-110, -115]
+voice_utran_rscp = [-105, -115]
+voice_wifi_rssi = [-75, -80]
+wfc_recovery_pcscf_retry_maximum_time = 350000
+xcap_transport_type = 2
+
+[settings.config.rilext]
+pcscf_reselection_support = -1
+
+[settings.config.vendor_ims]
+carrier_config_use_aosp_ims_config = true
+
+[[settings.vendor_configs.client]]
+name = "ril"
+value = "CkQKMXJpbGV4dC5za2lwX2Zkbl9mb3Jfbm9ybWFsX3JvdXRpbmdfZW1lcmdlbmN5X2NhbGwSDzIwOCwyMjgsNDY2LDUyNQ=="
+
+[settings.field8]
+seconds = 1762942431

@@ -1,0 +1,19 @@
+[[carrier_id]]
+mcc_mnc = "23450"
+
+[[settings.apns.apn]]
+name = "Jersey Telecom"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+mmsc = "http://mms.surfmail.com/mmsc"
+mmsc_proxy = "212.9.19.199"
+mmsc_proxy_port = "3130"
+
+[[settings.apns.apn]]
+name = "pepperWEB (Jersey)"
+value = "pepper"
+type = ["default", "supl"]
+
+[settings.config]

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "43705"
+
+[[settings.apns.apn]]
+name = "MegaCom"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

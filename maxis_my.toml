@@ -1,0 +1,78 @@
+[[carrier_id]]
+mcc_mnc = "50212"
+
+[[carrier_id]]
+mcc_mnc = "502142"
+
+[[carrier_id]]
+mcc_mnc = "502147"
+
+[[carrier_id]]
+mcc_mnc = "50217"
+
+[settings]
+version = 77000000005
+
+[[settings.apns.apn]]
+name = "Maxis Internet"
+value = "unet"
+type = ["default", "mms", "supl"]
+user = "maxis"
+password = "wap"
+authtype = 1
+mmsc = "http://172.16.74.100:10021/mmsc"
+mmsc_proxy = "202.75.133.49"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "hos"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+allow_hold_call_during_emergency = false
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_nr_availabilities = [1]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc012.mcc502.pub.3gppnetwork.org"
+bsf_server_port = 8091
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc012.mcc502.pub.3gppnetwork.org"
+ut_as_server_port = 8090
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.qns]
+xcap_rat_preference = 3
+
+[settings.field8]
+seconds = 1771422511

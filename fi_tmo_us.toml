@@ -1,0 +1,197 @@
+[[carrier_id]]
+mcc_mnc = "310240"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "4276"
+
+[[carrier_id]]
+mcc_mnc = "310260"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "4276"
+
+[[carrier_id]]
+mcc_mnc = "310260"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "31026097"
+
+[settings]
+version = 77000000010
+
+[settings.apns]
+apn = []
+
+[settings.config]
+_5g_nr_ssrsrp_thresholds = [-120, -114, -109, -100]
+additional_settings_call_waiting_visibility = false
+additional_settings_caller_id_visibility = false
+allow_non_emergency_calls_in_ecm = true
+call_barring_visibility = false
+carrier_app_required_during_setup = true
+carrier_app_wake_signal_config = []
+carrier_auto_cancel_cs_notification = true
+carrier_certificate = ["B9CFCE1C47A6AC713442718F15EF55B00B3A6D1A6D48CB46249FA8EB51465350:com.google.android.apps.tycho", "4C36AF4A5BDAD97C1F3D8B283416D244496C2AC5EAFE8226079EF6F676FD1859:com.google.android.apps.tycho"]
+carrier_default_data_roaming_enabled = true
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_default_wfc_ims_roaming_mode = 2
+carrier_metered_apn_types = ["default", "dun", "supl"]
+carrier_metered_roaming_apn_types = ["default", "dun", "supl"]
+carrier_name = "Google Fi"
+carrier_name_override = true
+carrier_nr_availabilities = [1, 2]
+carrier_settings_enable = false
+carrier_supports_ss_over_ut = false
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_vowifi_tty_supported = false
+carrier_vt_available = false
+carrier_vvm_package_name_string = ""
+carrier_wfc_ims_available = false
+cdma_3waycall_flash_delay = 0
+cdma_roaming_mode = 2
+config_telephony_use_own_number_for_voicemail = true
+data_connected_roaming_notification_excluded_mccs = ["310", "311", "312", "313", "314", "315", "316"]
+data_connected_roaming_notification_included_mcc_mncs = ["310032", "310033", "310110", "310140", "310370", "310400", "310470", "310500", "310970", "311170", "311250"]
+data_warning_threshold_bytes = -2
+disconnect_cause_network_busy = [60]
+display_hd_audio_property = false
+display_hd_plus_icon = false
+editable_voicemail_number_setting = false
+emailGatewayNumber = ""
+enableSMSDeliveryReports = false
+enable_carrier_display_name_resolver = true
+force_home_network = true
+groupChatDefaultsToMMS = true
+gsm_roaming_networks = ["310032", "310033", "310110", "310140", "310370", "310400", "310470", "310500", "310970", "311170", "311250"]
+hide_carrier_network_settings = false
+hide_enhanced_4g_lte = true
+hide_sim_lock_settings = true
+hide_tty_hco_vco_with_rtt = true
+ignore_rtt_mode_setting = true
+ignore_sim_network_locked_events = true
+ims_reasoninfo_mapping = ["510|Call completed elsewhere|1014", "*|Call is dropped due to Wi-Fi signal is degraded|1407"]
+inflate_signal_strength = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+lte_rsrp_thresholds = [-120, -114, -109, -100]
+maxImageHeight = 1994
+maxImageWidth = 2592
+maxMessageSize = 1048576
+min_udp_port_4500_nat_timeout_sec = 1680
+mmi_two_digit_number_pattern = ["*2"]
+nr_timers_reset_on_voice_qos = true
+prefer_2g = true
+preferred_ike_protocol = 40
+read_only_apn_types = []
+recipientLimit = 20
+require_entitlement_checks = false
+rtt_downgrade_supported = false
+rtt_supported = false
+rtt_supported_while_roaming = false
+show_4g_for_lte_data_icon = false
+show_roaming_indicator = false
+sim_country_iso_override = "us"
+volte_replacement_rat = 3
+vonr_enabled = false
+vonr_on_by_default = true
+vvm_destination_number = ""
+vvm_port_number = 0
+vvm_type = "vvm_type_disabled"
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.msg.pc.t-mobile.com"
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.com_google_android_apps_privacy_wildlife]
+allow_vpn_on_mobile_network = true
+
+[settings.config.com_google_android_dialer]
+carrier_supports_voip_calls = true
+spam_blocking_controlled_by_carrier = true
+
+[settings.config.ims]
+geolocation_pidf_in_sip_invite_support = [4, 2]
+geolocation_pidf_in_sip_register_support = [4, 2]
+gruu_enabled = true
+ims_user_agent = "PRD-NG114/1 CPM/OMA2.2 RCS-client/UP_2.3 term-#MANUFACTURE#/#MODEL# client-#MANUFACTURE#/#BUILD# OS-Android/#AV# cc/2.37"
+request_uri_type = 1
+
+[settings.config.imsemergency]
+emergency_lte_preferred_after_nr_failed = true
+emergency_over_ims_roaming_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_3gpp_network_types = [6, 3]
+emergency_over_ims_supported_rats = [6, 3, 5]
+emergency_registration_timer_millis = 10000
+emergency_scan_timer_sec = 50
+retry_emergency_on_ims_pdn = true
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_as_server_fqdn = "xcap.msg.pc.t-mobile.com"
+ut_as_server_port = 443
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+ut_transport_type = 3
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+audio_inactivity_call_end_reasons = [0, 1, 2]
+audio_rtcp_inactivity_timer_millis = 30000
+audio_rtp_inactivity_timer_millis = 30000
+conference_factory_uri = "8881112663@msg.pc.t-mobile.com"
+dedicated_bearer_wait_timer_millis = 40000
+include_caller_id_service_codes_in_sip_invite = true
+mo_call_request_timeout_millis = 0
+ringback_timer_millis = 128000
+rtp_packet_loss_rate_threshold = 30
+voice_on_default_bearer_supported = true
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 4]
+evs_codec_attribute_ch_aw_recv = 2
+
+[settings.config.imsvt]
+video_as_bandwidth_kbps = 560
+video_rs_bandwidth_bps = 5200
+video_rtp_dscp = 34
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+epdg_address_priority = [0, 1]
+epdg_plmn_priority = [3, 1]
+epdg_static_address = "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org"
+ike_session_encryption_aes_cbc_key_size = [128, 256]
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["10500"],"RetryArray": ["3600","7200","10800"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"]},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["15500"],"NumAttemptsPerFqdn": "6","RetryArray": ["0","0","300","600","1200","0","0","0","300","600","1200","-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"]},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["11001","11011"],"RetryArray": [],"UnthrottlingEvents": []},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["8192"],"RetryArray": ["5","10","10","20","40","80","160","320","640","1280","1800","3600","-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"],"HandoverAttemptCount": "3"}]}]'
+supported_integrity_algorithms = [5, 12]
+supported_prf_algorithms = [2, 4, 5]
+supports_child_session_multiple_sa_proposals = false
+supports_ike_session_multiple_sa_proposals = false
+
+[settings.config.qns]
+idle_eutran_rsrp = [-109, -114]
+idle_geran_rssi = [-95, -105]
+idle_ngran_ssrsrp = [-109, -114]
+idle_utran_ecno = [-10, -15]
+idle_utran_rscp = [-100, -110]
+idle_wifi_rssi = [-70, -80]
+ims_wlan_hysteresis_timer_ms = [10000, 10000, 10000]
+ims_wwan_hysteresis_timer_ms = [10000, 10000, 10000]
+video_eutran_rsrp = [-109, -114]
+video_ngran_ssrsrp = [-109, -114]
+video_wifi_rssi = [-70, -80]
+voice_eutran_rsrp = [-109, -114]
+voice_ngran_ssrsrp = [-109, -114]
+voice_wifi_rssi = [-70, -80]
+
+[settings.config.wifi]
+avoid_5ghz_softap_for_laa = true
+avoid_5ghz_wifi_direct_for_laa = true
+
+[settings.field8]
+seconds = 1777512376

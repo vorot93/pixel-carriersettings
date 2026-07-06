@@ -1,0 +1,10 @@
+[[carrier_id]]
+mcc_mnc = "40211"
+
+[[settings.apns.apn]]
+name = "B-Mobile"
+value = "default"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+
+[settings.config]

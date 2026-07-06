@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64501"
+
+[[settings.apns.apn]]
+name = "Airtel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

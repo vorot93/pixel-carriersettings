@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "72432"
+
+[[settings.apns.apn]]
+name = "CTBC:Dados:1"
+value = "ctbc.br"
+type = ["default"]
+user = "CTBC"
+password = "1212"
+authtype = 1
+
+[[settings.apns.apn]]
+name = "CTBC:MMS:1"
+value = "mms.ctbc.br"
+type = ["mms"]
+user = "CTBC"
+password = "1212"
+authtype = 1
+mmsc = "http://mms.ctbccelular.com.br/was"
+mmsc_proxy = "172.29.7.70"
+mmsc_proxy_port = "8080"
+
+[settings.config]

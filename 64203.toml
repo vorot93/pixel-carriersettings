@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64203"
+
+[[settings.apns.apn]]
+name = "Onatel"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

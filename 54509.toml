@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "54509"
+
+[[settings.apns.apn]]
+name = "Kiribati - Frigate Net"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

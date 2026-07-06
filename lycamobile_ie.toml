@@ -1,0 +1,10 @@
+[[carrier_id]]
+mcc_mnc = "27213"
+
+[[settings.apns.apn]]
+name = "lycamobile"
+value = "data.lycamobile.ie"
+type = ["default", "supl"]
+authtype = 1
+
+[settings.config]

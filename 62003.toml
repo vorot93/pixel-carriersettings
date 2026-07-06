@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "62003"
+
+[[settings.apns.apn]]
+name = "Tigo Internet GH"
+value = "web.tigo.com.gh"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "Tigo mms"
+value = "mms.tigo.com.gh"
+type = ["mms"]
+authtype = 0
+mmsc = "http://mms/"
+mmsc_proxy = "10.4.1.7"
+mmsc_proxy_port = "8080"
+
+[settings.config]

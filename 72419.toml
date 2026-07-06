@@ -1,0 +1,21 @@
+[[carrier_id]]
+mcc_mnc = "72419"
+
+[[settings.apns.apn]]
+name = "TelemigC GPRS"
+value = "gprs.telemigcelular.com.br"
+type = ["default", "supl"]
+user = "celular"
+password = "celular"
+
+[[settings.apns.apn]]
+name = "MMS Telemig"
+value = "mmsgprs.telemigcelular.com.br"
+type = ["mms"]
+user = "celular"
+password = "celular"
+mmsc = "http://mms.telemigcelular.com.br"
+mmsc_proxy = "200.192.230.142"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,25 @@
+[[carrier_id]]
+mcc_mnc = "23439"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "JUMP"
+
+[[carrier_id]]
+mcc_mnc = "24007"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "JUMP"
+
+[[settings.apns.apn]]
+name = "Jump"
+value = "Jump"
+type = ["all"]
+mmsc = "http://mmsc.mobi/servlets/mms"
+mmsc_proxy = "164.39.236.69"
+mmsc_proxy_port = "80"
+user_editable = false
+
+[settings.config]
+sim_country_iso_override = "gb"

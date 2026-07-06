@@ -1,0 +1,90 @@
+[[carrier_id]]
+mcc_mnc = "23002"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "O2 internet"
+value = "internet"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "O2 MMS"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.o2active.cz:8002"
+mmsc_proxy = "160.218.160.218"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "O2 VoLTE"
+value = "xcap"
+type = ["xcap"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv6"
+roaming_protocol = "ipv6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "emergency"
+value = "EMERGENCY"
+type = ["emergency"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+allow_hold_in_rtt_call = false
+carrier_default_wfc_ims_mode = 1
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+display_hd_plus_icon = true
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc002.mcc230.pub.3gppnetwork.org"
+
+[settings.config.imsemergency]
+emergency_domain_preference_roaming = [2, 1]
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc002.mcc230.pub.3gppnetwork.org"
+ut_requires_ims_registration = true
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+xcap_over_ut_supported_rats = [6, 3, 5]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 255
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.qns]
+sos_transport_type = 2
+
+[settings.field8]
+seconds = 1770819167

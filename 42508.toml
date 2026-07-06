@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "42508"
+
+[[settings.apns.apn]]
+name = "GolanTelecom Internet"
+value = "internet.golantelecom.net.il"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "GolanTelecom MMS"
+value = "mms.golantelecom.net.il"
+type = ["mms"]
+mmsc = "http://mmsc.golantelecom.co.il"
+mmsc_proxy = "10.224.228.81"
+mmsc_proxy_port = "80"
+
+[settings.config]
+non_roaming_operator = ["42502"]

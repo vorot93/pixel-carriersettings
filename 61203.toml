@@ -1,0 +1,23 @@
+[[carrier_id]]
+mcc_mnc = "61203"
+
+[[settings.apns.apn]]
+name = "OWORLD CI"
+value = "orangeciwap"
+type = ["default"]
+proxy = "172.20.4.33"
+port = "8080"
+user = "wap"
+password = "wap"
+
+[[settings.apns.apn]]
+name = "Omms CI"
+value = "orangecimms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+mmsc = "http://172.20.6.1/servlets/mms"
+mmsc_proxy = "172.20.4.33"
+mmsc_proxy_port = "8080"
+
+[settings.config]

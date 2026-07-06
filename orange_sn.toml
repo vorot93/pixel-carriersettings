@@ -1,0 +1,36 @@
+[[carrier_id]]
+mcc_mnc = "60801"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Orange MMS SN"
+value = "mms"
+type = ["mms"]
+user = "mms"
+password = "mms"
+mmsc = "http://mmsalize/servlets/mms"
+mmsc_proxy = "172.16.30.9"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Orange Wap SN"
+value = "wap"
+type = ["default"]
+proxy = "172.16.30.9"
+port = "8080"
+user = "wap"
+password = "wap"
+
+[[settings.apns.apn]]
+name = "Orange Web SN"
+value = "internet"
+type = ["default"]
+user = "internet"
+password = "internet"
+
+[settings.config]
+
+[settings.field8]
+seconds = 1756887206

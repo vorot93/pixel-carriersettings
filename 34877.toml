@@ -1,0 +1,33 @@
+[[carrier_id]]
+mcc_mnc = "34877"
+
+[[settings.apns.apn]]
+name = "Bvi:Digicel:Internet"
+value = "wap.digicelbvi.com"
+type = ["default"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "Bvi:Digicel:Mms"
+value = "wap.digicelbvi.com"
+type = ["mms"]
+user = "wapbvi"
+password = "wapbvi"
+authtype = 1
+mmsc = "http://mmc.digiceljamaica.com/servlets/mms"
+mmsc_proxy = "172.16.7.12"
+mmsc_proxy_port = "9201"
+
+[[settings.apns.apn]]
+name = "Bvi:Digicel:Modem"
+value = "wap.digicelbvi.com"
+type = ["dun"]
+proxy = "172.16.7.12"
+port = "8080"
+user = "wapbvi"
+password = "wapbvi"
+authtype = 1
+mmsc = "http://wapdigicel.com"
+user_editable = false
+
+[settings.config]

@@ -1,0 +1,18 @@
+[[carrier_id]]
+mcc_mnc = "334140"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "NeWWW"
+
+[[settings.apns.apn]]
+name = "NeWWW"
+value = "internet.newww.com"
+type = ["default"]
+
+[[settings.apns.apn]]
+name = "NeWWW"
+value = "ims"
+type = ["ims"]
+
+[settings.config]

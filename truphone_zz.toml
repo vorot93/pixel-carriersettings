@@ -1,0 +1,148 @@
+[[carrier_id]]
+mcc_mnc = "20404"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "20404"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "20404794"
+
+[[carrier_id]]
+mcc_mnc = "20408"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "20433"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "20809"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "20812"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "21427"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "23410"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "23425"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "26033"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "26242"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "45400"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "45408"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[[carrier_id]]
+mcc_mnc = "50538"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "547275554B3030656E"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "1GLOBAL DATA"
+value = "truphone.com"
+type = ["default", "supl", "mms", "dun"]
+mmsc = "http://mmsc.truphone.com:1981/mm1"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "1GLOBAL IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "1GLOBAL HOS"
+value = "hos"
+type = ["xcap"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+show_4g_for_lte_data_icon = true
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.truphone.net"
+bsf_server_port = 443
+bsf_transport_type = 3
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.truphone.net"
+ut_as_server_port = 443
+ut_transport_type = 3
+
+[settings.config.iwlan]
+epdg_address_priority = [0]
+epdg_static_address = "epdg.eps.truphone.net"
+
+[settings.field8]
+seconds = 1770819167

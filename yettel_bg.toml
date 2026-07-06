@@ -1,0 +1,52 @@
+[[carrier_id]]
+mcc_mnc = "28405"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "Yettel Internet"
+value = "internet"
+type = ["default", "supl"]
+authtype = 0
+
+[[settings.apns.apn]]
+name = "Yettel MMS"
+value = "mms"
+type = ["mms"]
+user = "mms"
+authtype = 0
+mmsc = "http://mmsc"
+mmsc_proxy = "192.168.87.11"
+mmsc_proxy_port = "8004"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+hide_enhanced_4g_lte = true
+prefer_3g_visibility = false
+
+[settings.config.imsemergency]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imsss]
+ut_server_based_services = [20, 12, 18, 14, 19, 21, 15, 16, 17, 13, 1, 3, 4, 7, 6, 5, 2, 0, 8, 9, 11]
+ut_terminal_based_services = [10]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1763550047

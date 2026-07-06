@@ -1,0 +1,42 @@
+[[carrier_id]]
+mcc_mnc = "90146"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "globalnet"
+value = "globalnet"
+type = ["default", "supl", "mms"]
+mmsc = "http://mms.globalsim"
+mmsc_proxy = "10.110.22.37"
+mmsc_proxy_port = "8089"
+
+[[settings.apns.apn]]
+name = "ims"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+user_visible = false
+
+[settings.config.imsss]
+ut_requires_ims_registration = true
+
+[settings.config.imsvoice]
+prack_supported_for_18x = true
+
+[settings.config.imsvoice.amrnb_payload_description.103]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrnb_payload_description.98]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.field8]
+seconds = 1769617073

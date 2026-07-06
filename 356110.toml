@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "356110"
+
+[[settings.apns.apn]]
+name = "St Kitts And Nevis:Lime:Internet"
+value = "internet"
+type = ["default"]
+authtype = 1
+mmsc = "http://www.time4lime.com/"
+
+[[settings.apns.apn]]
+name = "St Kitts And Nevis:Lime:Mms"
+value = "multimedia"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mmsc"
+mmsc_proxy = "10.20.5.34"
+mmsc_proxy_port = "8799"
+
+[settings.config]

@@ -1,0 +1,99 @@
+[[carrier_id]]
+mcc_mnc = "50503"
+
+[settings]
+version = 77000000004
+
+[[settings.apns.apn]]
+name = "Vodafone AU"
+value = "live.vodafone.com"
+type = ["default", "supl", "hipri", "fota", "cbs"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Vodafone AU MMS"
+value = "HOS"
+type = ["mms", "xcap"]
+mmsc = "http://pxt.vodafone.net.au/pxtsend"
+mmsc_proxy = "10.202.2.60"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "IMS"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+_5g_icon_configuration = "connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G"
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_nr_availabilities = [1, 2]
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+display_hd_plus_icon = true
+epsfb_silent_retry_error_code = ["403", "500", "503"]
+hide_enhanced_4g_lte = true
+is_ims_conference_size_enforced = true
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN|NGRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN|NGRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|IWLAN, target=EUTRAN|IWLAN, type=allowed, capabilities=IMS"]
+min_udp_port_4500_nat_timeout_sec = 120
+non_roaming_operator = ["505"]
+prefer_2g = false
+prefer_3g_visibility = false
+show_4g_for_lte_data_icon = true
+use_wfc_home_network_mode_in_roaming_network = true
+volte_replacement_rat = 3
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# #MODEL# Android #BUILD#"
+
+[settings.config.imsemergency]
+emergency_over_ims_roaming_supported_3gpp_network_types = [3, 6]
+emergency_over_ims_supported_3gpp_network_types = [3, 6]
+emergency_over_ims_supported_rats = [6, 3, 5]
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+xcap_over_ut_supported_rats = [5, 6, 3, 1, 2]
+
+[settings.config.imsvoice]
+conference_subscribe_type = 0
+session_refresher_type = 2
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.imsvt]
+video_as_bandwidth_kbps = 408
+
+[settings.config.iwlan]
+child_sa_rekey_hard_timer_sec = 64900
+child_sa_rekey_soft_timer_sec = 64800
+diffie_hellman_groups = [14]
+dpd_timer_sec = 90
+ike_rekey_hard_timer_in_sec = 64900
+ike_rekey_soft_timer_sec = 64800
+ike_remote_id_type = 11
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9000","9002"],"RetryArray": [],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}]}]'
+
+[settings.config.qns]
+block_iwlan_in_international_roaming_without_wwan = true
+idle_eutran_rsrp = [-104, -113]
+idle_wifi_rssi = [-74, -80]
+video_eutran_rsrp = [-104, -113]
+video_wifi_rssi = [-74, -80]
+voice_eutran_rsrp = [-104, -113]
+voice_wifi_rssi = [-74, -80]
+
+[settings.field8]
+seconds = 1774974076

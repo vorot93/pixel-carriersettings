@@ -1,0 +1,90 @@
+[[carrier_id]]
+mcc_mnc = "26801"
+
+[[carrier_id]]
+mcc_mnc = "26891"
+
+[[carrier_id]]
+mcc_mnc = "26892"
+
+[settings]
+version = 77000000007
+
+[[settings.apns.apn]]
+name = "Vodafone PT"
+value = ""
+type = ["ia"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Vodafone Net2"
+value = "net2.vodafone.pt"
+type = ["default", "mms", "supl", "xcap"]
+authtype = 0
+mmsc = "http://mms.vodafone.pt/servlets/mms"
+mmsc_proxy = "iproxy.vodafone.pt"
+mmsc_proxy_port = "80"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "Vodafone Internet"
+value = "internet.vodafone.pt"
+type = ["dun"]
+authtype = 0
+protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_certificate = ["1EE6A3F2CBCADB2060075A9147F5336B8B9D68E0979FD097A65CD7DD70852389:com.vodafone.mCare"]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+default_vm_number = "123"
+feature_access_codes = ["231", "45", "46", "112", "121", "132", "611", "621", "155", "157", "211", "221", "321", "51", "114", "311"]
+hide_enhanced_4g_lte = true
+ignore_rtt_mode_setting = true
+ims_reasoninfo_mapping = ["338|busy everywhere|1017", "510|Call completed elsewhere|1014"]
+prefer_2g = true
+prefer_3g_visibility = false
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+smsToMmsTextThreshold = 5
+volte_replacement_rat = 3
+
+[settings.config.ims]
+ipsec_authentication_algorithms = [1]
+ipsec_encryption_algorithms = [0, 2]
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 6]
+evs_codec_attribute_ch_aw_recv = 2
+
+[settings.config.qns]
+support_wfc_recovery = false
+
+[settings.field8]
+seconds = 1765981876

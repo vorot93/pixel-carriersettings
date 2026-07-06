@@ -1,0 +1,37 @@
+[[carrier_id]]
+mcc_mnc = "310028"
+
+[[settings.apns.apn]]
+name = "ALU Test-SIM Internet"
+value = "VZWINTERNET"
+type = ["default", "dun"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "ALU Test-SIM FOTA"
+value = "VZWADMIN"
+type = ["fota"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ALU Test-SIM CBS"
+value = "VZWAPP"
+type = ["cbs", "mms"]
+mmsc = "http://mms.vtext.com/servlets/mms"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "ALU Test-SIM IMS"
+value = "IMS"
+type = ["ia", "ims"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+
+[settings.config]
+carrier_volte_available = true
+show_apn_setting_cdma = false
+volte_replacement_rat = 6

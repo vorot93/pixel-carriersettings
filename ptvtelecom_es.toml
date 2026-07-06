@@ -1,0 +1,49 @@
+[[carrier_id]]
+mcc_mnc = "21403"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "PTV Telecom"
+
+[[carrier_id]]
+mcc_mnc = "21406"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "PTV Telecom"
+
+[[carrier_id]]
+mcc_mnc = "21415"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "PTV Telecom"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "PTV Telecom"
+value = "datos"
+type = ["default", "supl", "dun"]
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+ignore_rtt_mode_setting = true
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]
+
+[settings.field8]
+seconds = 1755076382

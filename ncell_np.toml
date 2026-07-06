@@ -1,0 +1,26 @@
+[[carrier_id]]
+mcc_mnc = "42902"
+
+[settings]
+version = 77000000001
+
+[[settings.apns.apn]]
+name = "Ncell"
+value = "default"
+type = ["default", "supl"]
+authtype = 1
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_volte_available = true
+
+[settings.field8]
+seconds = 1749144206

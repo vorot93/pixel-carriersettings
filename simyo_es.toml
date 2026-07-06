@@ -1,0 +1,138 @@
+[[carrier_id]]
+mcc_mnc = "21403"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "simyo"
+
+[[carrier_id]]
+mcc_mnc = "21419"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "simyo"
+
+[settings]
+version = 77000000006
+
+[[settings.apns.apn]]
+name = "internet simyo"
+value = "orangeworld"
+type = ["default", "supl", "dun"]
+user = "orange"
+password = "orange"
+authtype = 1
+user_editable = false
+
+[[settings.apns.apn]]
+name = "simyo MMS"
+value = "orangemms"
+type = ["mms"]
+user = "orange"
+password = "orange"
+authtype = 1
+mmsc = "http://mms.orange.es"
+mmsc_proxy = "172.22.188.25"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+mtu = 1400
+user_visible = false
+
+[settings.config]
+carrier_allow_transfer_ims_call = true
+carrier_certificate = ["ea37f9873dfee6b6612f41f1cc88f37edb9150388bf810a73087ce58786d2251:com.simyo,com.simyo.staging", "dfbd378c05733f6e85ed6f048c97c587282eb41bc8e0eb0a4734b7bb85827597:com.simyo.debug,com.simyo.staging.debug"]
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+config_plans_package_override = "com.orange.miorange"
+default_vm_number = "242"
+display_hd_plus_icon = true
+hide_redundant_options_menu_on_stk_input_screen = true
+ignore_rtt_mode_setting = true
+ims_reasoninfo_mapping = ["510|Call completed elsewhere|1014", "*|Call is dropped due to Wi-Fi signal is degraded|1407"]
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+maxImageHeight = 1944
+maxImageWidth = 2592
+maxMessageSize = 1048576
+non_roaming_operator = ["21401", "21402", "21403", "21404", "21405", "21406", "21407", "21408", "21409", "214010", "214011", "214012", "214013", "214014", "214015", "214016", "214017", "214018", "214020", "214021"]
+rtt_downgrade_supported = true
+rtt_supported = true
+rtt_supported_while_roaming = true
+show_4g_for_lte_data_icon = true
+unloggable_numbers = ["900018018", "016", "021", "024", "028", "116000", "116111", "900202010"]
+use_wfc_home_network_mode_in_roaming_network = true
+wfc_spn_format_idx = 1
+
+[settings.config.ims]
+ims_user_agent = "#MANUFACTURE# #MODEL# Android #AV# #BUILD# EU02369"
+ipv4_sip_mtu_size_cellular = 1300
+ipv6_sip_mtu_size_cellular = 1300
+request_uri_type = 1
+
+[settings.config.imsemergency]
+emergency_scan_timer_sec = 5
+
+[settings.config.imssms]
+sms_over_ims_supported_rats = []
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_server_based_services = []
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+minimum_session_expires_timer_sec = 600
+mo_call_request_timeout_millis = 3000
+oip_source_from_header = true
+ringback_timer_millis = 60000
+ringing_timer_millis = 60000
+
+[settings.config.imsvoice.amrnb_payload_description.100]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+
+[settings.config.imsvoice.amrnb_payload_description.101]
+amr_codec_attribute_modeset = [0, 2, 4, 7]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.amrwb_payload_description.99]
+amr_codec_attribute_payload_format = 1
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [100, 101]
+amrwb_payload_type = [98, 99]
+dtmfnb_payload_type = [106]
+dtmfwb_payload_type = [105]
+evs_payload_type = [96, 97]
+
+[settings.config.imsvoice.evs_payload_description.96]
+evs_codec_attribute_bandwidth = 2
+evs_codec_attribute_bitrate = [3, 6]
+
+[settings.config.imsvoice.evs_payload_description.97]
+evs_codec_attribute_bitrate = [0, 6]
+
+[settings.config.iwlan]
+add_ke_to_child_session_rekey = true
+child_sa_rekey_hard_timer_sec = 64900
+child_sa_rekey_soft_timer_sec = 64800
+diffie_hellman_groups = [14, 5]
+ike_rekey_hard_timer_in_sec = 64900
+ike_rekey_soft_timer_sec = 64800
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["*"],"RetryArray": ["4", "8", "43200", "-1"],"UnthrottlingEvents": ["WIFI_DISABLE_EVENT"]}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9000", "11001", "11011"],"RetryArray": ["43200"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["9006"],"RetryArray": ["86400"],"UnthrottlingEvents": ["APM_ENABLE_EVENT", "WIFI_DISABLE_EVENT", "WIFI_AP_CHANGED_EVENT", "WIFI_CALLING_DISABLE_EVENT"]}, {"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["36"],"RetryArray": ["4", "8", "43200", "-1"],"UnthrottlingEvents": ["WIFI_DISABLE_EVENT"],"HandoverAttemptCount": "3"}]}]'
+
+[settings.config.qns]
+idle_wifi_rssi = [-65, -75]
+idle_wifi_rssi_without_cellular = [-85, -90]
+voice_wifi_rssi = [-65, -75]
+voice_wifi_rssi_without_cellular = [-85, -90]
+xcap_transport_type = 0
+
+[settings.field8]
+seconds = 1773841160

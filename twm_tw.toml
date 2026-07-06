@@ -1,0 +1,108 @@
+[[carrier_id]]
+mcc_mnc = "46697"
+
+[settings]
+version = 77000000008
+
+[[settings.apns.apn]]
+name = "台灣大哥大(TW Mobile) (Internet)"
+value = "internet"
+type = ["default", "supl", "hipri"]
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "台灣大哥大(TW Mobile) (MMS)"
+value = "mms"
+type = ["mms"]
+mmsc = "http://mms.catch.net.tw"
+mmsc_proxy = "10.1.1.2"
+mmsc_proxy_port = "80"
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "XCAP"
+value = "hos"
+type = ["xcap"]
+user_visible = false
+
+[settings.config]
+_5g_icon_configuration = "connected_mmwave:5G,connected:5G,not_restricted_rrc_idle:5G"
+_5g_icon_display_grace_period = "connected_mmwave,legacy,31;connected,legacy,31;connected_mmwave,not_restricted_rrc_con,31;connected,not_restricted_rrc_con,31;not_restricted_rrc_idle,not_restricted_rrc_con,15"
+allow_hold_call_during_emergency = false
+carrier_default_2g_protection_enabled = true
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_name = "台灣大哥大"
+carrier_name_override = true
+carrier_supports_ss_over_ut = true
+carrier_ussd_method = 2
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+hide_lte_plus_data_icon = false
+ims_reasoninfo_mapping = ["510|Call completed elsewhere|1014", "*|Call is dropped due to Wi-Fi signal is degraded|1407"]
+is_ims_conference_size_enforced = true
+lte_endc_using_user_data_for_rrc_detection = true
+min_udp_port_4500_nat_timeout_sec = 120
+nr_timers_reset_if_non_endc_and_rrc_idle = true
+support_ims_conference_event_package = false
+volte_replacement_rat = 3
+wfc_spn_format_idx = 1
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.taiwanmobile.com"
+
+[settings.config.ims]
+sip_timer_f_millis = 32000
+sip_timer_j_millis = 32000
+
+[settings.config.imsemergency]
+emergency_requires_volte_enabled = true
+prefer_ims_emergency_when_voice_calls_on_cs = true
+
+[settings.config.imsss]
+network_initiated_ussd_over_ims_supported = false
+ut_as_server_fqdn = "xcap.ims.taiwanmobile.com"
+ut_iptype_home = 0
+ut_iptype_roaming = 0
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.config.imsvoice]
+conference_factory_uri = "conf-factory@ims.taiwanmobile.com"
+ringback_timer_millis = 120000
+ringing_timer_millis = 120000
+session_refresh_method = 0
+srvcc_type = [0, 2]
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imsvt]
+video_qos_precondition_supported = false
+
+[settings.config.iwlan]
+add_ke_to_child_session_rekey = true
+diffie_hellman_groups = [14]
+epdg_address_priority = [0, 1]
+epdg_static_address = "epdg.epc.mnc097.mcc466.pub.3gppnetwork.org"
+ike_session_encryption_aes_cbc_key_size = [128]
+supported_ike_session_encryption_algorithms = [12]
+supported_integrity_algorithms = [2]
+supported_prf_algorithms = [2]
+
+[settings.config.rilext]
+ims_prefer_apm_normal_ecc_enable = true
+
+[settings.field8]
+seconds = 1769617073

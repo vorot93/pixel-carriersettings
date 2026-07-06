@@ -1,0 +1,60 @@
+[[carrier_id]]
+mcc_mnc = "73001"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Internet Movil"
+value = "bam.entelpcs.cl"
+type = ["default", "supl"]
+user = "entelpcs"
+password = "entelpcs"
+authtype = 1
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "MMS Entel PCS"
+value = "mms.entelpcs.cl"
+type = ["mms"]
+user = "entelpcs"
+password = "entelpcs"
+authtype = 1
+mmsc = "http://mmsc.entelpcs.cl"
+mmsc_proxy = "10.99.0.10"
+mmsc_proxy_port = "8080"
+protocol = "ipv4v6"
+
+[[settings.apns.apn]]
+name = "IMS Claro CL"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[[settings.apns.apn]]
+name = "Entel XCAP"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+non_roaming_operator = ["73010"]
+
+[settings.config.bsf]
+bsf_server_fqdn = "bsf.ims.mnc001.mcc730.pub.3gppnetwork.org"
+bsf_server_port = 10080
+
+[settings.config.imsss]
+ut_as_server_fqdn = "xcap.ims.mnc001.mcc730.pub.3gppnetwork.org"
+ut_as_server_port = 8080
+xcap_over_ut_supported_rats = [6, 3, 5, 1, 2]
+
+[settings.field8]
+seconds = 1738826971

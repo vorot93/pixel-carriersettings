@@ -1,0 +1,60 @@
+[[carrier_id]]
+mcc_mnc = "22201"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "GigSky"
+
+[[carrier_id]]
+mcc_mnc = "23801"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6E"
+
+[[carrier_id]]
+mcc_mnc = "23801"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6F"
+
+[[carrier_id]]
+mcc_mnc = "24007"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6E"
+
+[[carrier_id]]
+mcc_mnc = "24007"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6F"
+
+[[carrier_id]]
+mcc_mnc = "310380"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6E"
+
+[[carrier_id]]
+mcc_mnc = "310380"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "6F"
+
+[[carrier_id]]
+mcc_mnc = "312870"
+
+[[settings.apns.apn]]
+name = "GigSky"
+value = "gigsky"
+type = ["default"]
+
+[settings.config]
+force_home_network = true
+inflate_signal_strength = true

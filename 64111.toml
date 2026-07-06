@@ -1,0 +1,11 @@
+[[carrier_id]]
+mcc_mnc = "64111"
+
+[[settings.apns.apn]]
+name = "UTL Internet UG"
+value = "utweb"
+type = ["default"]
+proxy = "10.76.101.51"
+port = "8080"
+
+[settings.config]

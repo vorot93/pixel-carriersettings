@@ -1,0 +1,68 @@
+[[carrier_id]]
+mcc_mnc = "310020"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "Union Wireless Data"
+value = "smart.com"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "Union Wireless MMS"
+value = "union.mms.com"
+type = ["mms"]
+mmsc = "http://mms.unionwireless.com/"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "HOS"
+value = "hos"
+type = ["xcap"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "SOS"
+value = "sos"
+type = ["emergency"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+
+[[settings.apns.apn]]
+name = "IMS"
+value = "ims"
+type = ["ims"]
+bearer_bitmask = "14|18|20"
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_visible = false
+
+[settings.config]
+carrier_supports_ss_over_ut = true
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+wfc_emergency_address_carrier_app = "com.android.imsserviceentitlement/.WfcActivationActivity"
+wfc_spn_format_idx = 4
+
+[settings.config.imsserviceentitlement]
+entitlement_server_url = "https://aes.mnc020.mcc310.pub.3gppnetwork.org/des/ts43"
+show_vowifi_webview = true
+
+[settings.config.imswfc]
+emergency_call_over_emergency_pdn = true
+
+[settings.config.qns]
+sos_transport_type = 2
+
+[settings.field8]
+seconds = 1726812815

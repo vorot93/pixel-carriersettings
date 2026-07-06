@@ -1,0 +1,95 @@
+[[carrier_id]]
+mcc_mnc = "302760"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "F1"
+
+[settings]
+version = 77000000007
+
+[[settings.apns.apn]]
+name = "U+264A CA"
+value = "h3g3"
+type = ["default", "supl"]
+user_editable = false
+
+[settings.config]
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_default_wfc_ims_roaming_mode = 2
+carrier_ims_gba_required = true
+carrier_name = "Google"
+carrier_name_override = true
+carrier_ussd_method = 1
+carrier_volte_available = true
+carrier_vowifi_tty_supported = false
+carrier_wfc_ims_available = false
+config_telephony_use_own_number_for_voicemail = true
+display_hd_audio_property = false
+enableSMSDeliveryReports = false
+force_home_network = true
+hide_carrier_network_settings = false
+hide_enhanced_4g_lte = true
+hide_sim_lock_settings = true
+ignore_sim_network_locked_events = true
+ims_reasoninfo_mapping = ["510|Call completed elsewhere|1014", "*|Call is dropped due to Wi-Fi signal is degraded|1407"]
+iwlan_handover_policy = ["source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS", "source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, roaming=true, type=disallowed, capabilities=IMS", "source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS", "source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS", "source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS"]
+require_entitlement_checks = false
+rtt_downgrade_supported = false
+rtt_supported = false
+rtt_supported_while_roaming = false
+volte_replacement_rat = 3
+vvm_type = "vvm_type_disabled"
+
+[settings.config.gps]
+es_extension_sec = "300"
+
+[settings.config.imsemergency]
+emergency_domain_preference = [2, 1]
+emergency_domain_preference_roaming = [2, 1]
+emergency_over_ims_supported_rats = [3]
+emergency_registration_timer_millis = 10000
+emergency_scan_timer_sec = 10
+maximum_cellular_search_timer_sec = 10
+
+[settings.config.imsss]
+xcap_over_ut_supported_rats = []
+
+[settings.config.imsvoice]
+mo_call_request_timeout_millis = 0
+
+[settings.config.imsvoice.audio_codec_capability_payload_types]
+amrnb_payload_type = [98, 103]
+amrwb_payload_type = [100, 105]
+dtmfnb_payload_type = [97]
+dtmfwb_payload_type = [96]
+
+[settings.config.imsvoice.evs_payload_description.127]
+evs_codec_attribute_bitrate = [0, 4]
+evs_codec_attribute_ch_aw_recv = 2
+
+[settings.config.iwlan]
+diffie_hellman_groups = [14]
+epdg_address_priority = [0, 1]
+epdg_plmn_priority = [3, 1]
+epdg_static_address = "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org"
+key_error_policy_config = '[{"ApnName": "*","ErrorTypes": [{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["10500"],"RetryArray": ["3600","7200","10800"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"]},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["15500"],"NumAttemptsPerFqdn": "6","RetryArray": ["0","0","300","600","1200","0","0","0","300","600","1200","-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"]},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["11001","11011"],"RetryArray": [],"UnthrottlingEvents": []},{"ErrorType": "IKE_PROTOCOL_ERROR_TYPE","ErrorDetails": ["8192"],"RetryArray": ["5","10","10","20","40","80","160","320","640","1280","1800","3600","-1"],"UnthrottlingEvents": ["APM_ENABLE_EVENT","WIFI_DISABLE_EVENT","WIFI_CALLING_DISABLE_EVENT"],"HandoverAttemptCount": "3"}]}]'
+
+[settings.config.qns]
+idle_eutran_rsrp = [-109, -114]
+idle_geran_rssi = [-95, -105]
+idle_utran_ecno = [-10, -15]
+idle_utran_rscp = [-100, -110]
+idle_wifi_rssi = [-70, -80]
+ims_wlan_hysteresis_timer_ms = [10000, 10000, 10000]
+ims_wwan_hysteresis_timer_ms = [10000, 10000, 10000]
+voice_eutran_rsrp = [-109, -114]
+voice_wifi_rssi = [-70, -80]
+
+[settings.config.rilext]
+pcscf_reselection_support = 0
+
+[settings.field8]
+seconds = 1772636232

@@ -1,0 +1,9 @@
+[[carrier_id]]
+mcc_mnc = "64804"
+
+[[settings.apns.apn]]
+name = "Econet"
+value = "default"
+type = ["default", "supl"]
+
+[settings.config]

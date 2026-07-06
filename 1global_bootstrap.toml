@@ -1,0 +1,49 @@
+[[carrier_id]]
+mcc_mnc = "20433"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "31472D47474C454254"
+
+[[carrier_id]]
+mcc_mnc = "20809"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "31472D47474C454254"
+
+[[carrier_id]]
+mcc_mnc = "23425"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "31472D47474C454254"
+
+[[carrier_id]]
+mcc_mnc = "50538"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "31472D47474C454254"
+
+[settings]
+version = 77000000002
+
+[[settings.apns.apn]]
+name = "1Global Bootstrap"
+value = "gbs.connectnow"
+type = ["default", "supl"]
+protocol = "ipv4v6"
+roaming_protocol = "ipv4v6"
+user_editable = false
+field28 = 1
+field31 = 1
+
+[settings.config]
+carrier_name = ""
+carrier_name_override = true
+cellular_usage_setting = 2
+operator_name_filter_pattern = "()"
+
+[settings.field8]
+seconds = 1773841160

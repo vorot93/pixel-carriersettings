@@ -1,0 +1,31 @@
+[[carrier_id]]
+mcc_mnc = "63903"
+
+[[settings.apns.apn]]
+name = "Airtel Internet"
+value = "internet"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Airtel mms"
+value = "mms"
+type = ["mms"]
+authtype = 1
+mmsc = "http://mms.ke.airtel.com:8002"
+mmsc_proxy = "172.30.9.8"
+mmsc_proxy_port = "8080"
+
+[[settings.apns.apn]]
+name = "Airtel"
+value = "ke.celtel.com"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "mms"
+value = "ke.celtel.com"
+type = ["mms"]
+mmsc = "http://mms.ke.celtel.com/servlets/mms"
+mmsc_proxy = "172.30.8.50"
+mmsc_proxy_port = "8080"
+
+[settings.config]

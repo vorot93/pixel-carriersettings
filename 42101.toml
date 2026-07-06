@@ -1,0 +1,20 @@
+[[carrier_id]]
+mcc_mnc = "42101"
+
+[[settings.apns.apn]]
+name = "SabaFon"
+value = "default"
+type = ["default", "supl"]
+
+[[settings.apns.apn]]
+name = "Sabafon MMS"
+value = "mms"
+type = ["mms"]
+user = "wap"
+password = "wap"
+authtype = 0
+mmsc = "http://mms.sabafon.com/"
+mmsc_proxy = "192.168.30.174"
+mmsc_proxy_port = "8080"
+
+[settings.config]

@@ -1,0 +1,28 @@
+[[carrier_id]]
+mcc_mnc = "311530"
+
+[carrier_id.mvno_data]
+kind = "gid1"
+value = "FF"
+
+[[carrier_id]]
+mcc_mnc = "311530"
+
+[carrier_id.mvno_data]
+kind = "imsi"
+value = "3115300006"
+
+[[carrier_id]]
+mcc_mnc = "311530"
+
+[carrier_id.mvno_data]
+kind = "spn"
+value = "Rock Wireless"
+
+[settings]
+version = 77000000001
+
+[settings.config]
+
+[settings.field8]
+seconds = 1762942431
