@@ -1,6 +1,9 @@
 [[carrier_id]]
 mcc_mnc = "25020"
 
+[settings]
+version = 77000000001
+
 [[settings.apns.apn]]
 name = "TELE2 Internet"
 value = "internet.tele2.ru"
@@ -15,3 +18,14 @@ mmsc_proxy = "193.12.40.65"
 mmsc_proxy_port = "8080"
 
 [settings.config]
+carrier_default_2g_protection_enabled = true
+prefer_3g_visibility = false
+carrier_default_wfc_ims_enabled = true
+carrier_default_wfc_ims_mode = 1
+carrier_default_wfc_ims_roaming_enabled = true
+carrier_default_wfc_ims_roaming_mode = 1
+carrier_volte_available = true
+carrier_wfc_ims_available = true
+hide_enhanced_4g_lte = true
+editable_enhanced_4g_lte = false
+show_4g_for_lte_data_icon = true
